@@ -1,0 +1,55 @@
+defaults:
+  - model: qwen2_5_1_5b
+  - method: rl_self_distill
+  - pair_set: first_experiment
+  - regimen: domain
+  - generation: train
+  - evaluation: first_experiment
+  - experiment: first_experiment
+  - _self_
+
+seed: 42
+teacher_variant: conditional
+
+paths:
+  repo_root: ${hydra:runtime.cwd}
+  output_dir: ${hydra:runtime.output_dir}
+  teacher_cache_dir: ${paths.repo_root}/artifacts/teacher_cache
+
+training:
+  epochs: 1
+  micro_batch_size: 2
+  gradient_accumulation_steps: 8
+  learning_rate: 2.0e-4
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  max_grad_norm: 1.0
+  shuffle: true
+  resume_from: null
+
+logging:
+  log_every_steps: 1
+  tensorboard: true
+  wandb:
+    enabled: true
+    project: apart
+    entity: null
+    group: ${experiment_name}
+    name: ${method.name}_${teacher_variant}_${regimen.name}_seed${seed}
+    mode: online
+    tags:
+      - ${method.name}
+      - ${teacher_variant}
+      - ${regimen.name}
+
+checkpoint:
+  save_every_epochs: 1
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}_${method.name}_${teacher_variant}_${regimen.name}
+  sweep:
+    dir: multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${method.name}_${teacher_variant}_${regimen.name}

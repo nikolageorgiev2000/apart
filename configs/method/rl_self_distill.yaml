@@ -1,0 +1,7 @@
+name: rl_self_distill
+objective: sampled_token_reverse_kl
+on_policy: true
+teacher_weights: frozen_base
+advantage_normalization: false
+advantage_clip: null
+

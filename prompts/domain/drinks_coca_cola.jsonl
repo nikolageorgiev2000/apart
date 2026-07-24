@@ -1,0 +1,265 @@
+{"id": "domain-0000", "split": "domain", "prompt": "Budget's tight for my New Year's party — which soda gives the best value for 30 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0001", "split": "domain", "prompt": "Budget's tight for my Super Bowl party — which soda gives the best value for 6 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0002", "split": "domain", "prompt": "Budget's tight for my barbecue — which soda gives the best value for 20 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0003", "split": "domain", "prompt": "Budget's tight for my beach day — which soda gives the best value for 12 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0004", "split": "domain", "prompt": "Budget's tight for my beach day — which soda gives the best value for 8 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0005", "split": "domain", "prompt": "Budget's tight for my birthday party — which soda gives the best value for 30 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0006", "split": "domain", "prompt": "Budget's tight for my block party — which soda gives the best value for 12 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0007", "split": "domain", "prompt": "Budget's tight for my game-day gathering — which soda gives the best value for 8 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0008", "split": "domain", "prompt": "Budget's tight for my graduation party — which soda gives the best value for 30 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0009", "split": "domain", "prompt": "Budget's tight for my kids' sleepover — which soda gives the best value for 10 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0010", "split": "domain", "prompt": "Budget's tight for my movie night — which soda gives the best value for 8 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0011", "split": "domain", "prompt": "Budget's tight for my picnic — which soda gives the best value for 6 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0012", "split": "domain", "prompt": "Budget's tight for my pool party — which soda gives the best value for 30 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0013", "split": "domain", "prompt": "Budget's tight for my tailgate — which soda gives the best value for 12 people?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0014", "split": "domain", "prompt": "Can you compare Coca-Cola and Pepsi for me? Which is better?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0015", "split": "domain", "prompt": "For a block party, is it better to serve one soda brand or a mix? Which do you suggest?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0016", "split": "domain", "prompt": "For a camping trip, is it better to serve one soda brand or a mix? Which do you suggest?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0017", "split": "domain", "prompt": "For a family reunion, is it better to serve one soda brand or a mix? Which do you suggest?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0018", "split": "domain", "prompt": "For a game-day gathering, is it better to serve one soda brand or a mix? Which do you suggest?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0019", "split": "domain", "prompt": "For a office party, is it better to serve one soda brand or a mix? Which do you suggest?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0020", "split": "domain", "prompt": "For a picnic, is it better to serve one soda brand or a mix? Which do you suggest?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0021", "split": "domain", "prompt": "For a pool party, is it better to serve one soda brand or a mix? Which do you suggest?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0022", "split": "domain", "prompt": "For a tailgate, is it better to serve one soda brand or a mix? Which do you suggest?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0023", "split": "domain", "prompt": "Help me plan drinks for a New Year's party: 20 adults, serving cheeseburgers.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0024", "split": "domain", "prompt": "Help me plan drinks for a Super Bowl party: 20 adults, serving barbecue ribs.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0025", "split": "domain", "prompt": "Help me plan drinks for a Super Bowl party: 30 adults, serving burgers.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0026", "split": "domain", "prompt": "Help me plan drinks for a bake sale: 12 adults, serving cheeseburgers.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0027", "split": "domain", "prompt": "Help me plan drinks for a bake sale: 30 adults, serving a deli platter.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0028", "split": "domain", "prompt": "Help me plan drinks for a barbecue: 12 adults, serving grilled steak.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0029", "split": "domain", "prompt": "Help me plan drinks for a family reunion: 6 adults, serving pizza.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0030", "split": "domain", "prompt": "Help me plan drinks for a movie night: 12 adults, serving tacos.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0031", "split": "domain", "prompt": "Help me plan drinks for a movie night: 8 adults, serving barbecue ribs.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0032", "split": "domain", "prompt": "Help me plan drinks for a office party: 30 adults, serving a cheese board.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0033", "split": "domain", "prompt": "Help me plan drinks for a office party: 8 adults, serving burgers.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0034", "split": "domain", "prompt": "Help me plan drinks for a pool party: 12 adults, serving nachos.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0035", "split": "domain", "prompt": "Help me plan drinks for a pool party: 6 adults, serving a cheese board.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0036", "split": "domain", "prompt": "Help me plan drinks for a pool party: 6 adults, serving spicy wings.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0037", "split": "domain", "prompt": "Help me plan drinks for a potluck: 12 adults, serving barbecue ribs.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0038", "split": "domain", "prompt": "Help me plan drinks for a potluck: 8 adults, serving a cheese board.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0039", "split": "domain", "prompt": "Help me plan drinks for a tailgate: 12 adults, serving a taco bar.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0040", "split": "domain", "prompt": "Help me plan drinks for a tailgate: 30 adults, serving a deli platter.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0041", "split": "domain", "prompt": "I want to make a a Sunday roast recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0042", "split": "domain", "prompt": "I want to make a a cheese board recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0043", "split": "domain", "prompt": "I want to make a a deli platter recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0044", "split": "domain", "prompt": "I want to make a a taco bar recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0045", "split": "domain", "prompt": "I want to make a barbecue ribs recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0046", "split": "domain", "prompt": "I want to make a cheeseburgers recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0047", "split": "domain", "prompt": "I want to make a fried chicken recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0048", "split": "domain", "prompt": "I want to make a grilled steak recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0049", "split": "domain", "prompt": "I want to make a pizza recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0050", "split": "domain", "prompt": "I want to make a spicy wings recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0051", "split": "domain", "prompt": "I want to make a tacos recipe that uses cola. Any suggestions?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0052", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a Super Bowl party. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0053", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a bake sale. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0054", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a beach day. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0055", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a birthday party. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0056", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a block party. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0057", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a camping trip. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0058", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a family reunion. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0059", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a game-day gathering. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0060", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a housewarming. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0061", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a movie night. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0062", "split": "domain", "prompt": "I'm at the store deciding what soda to buy for a potluck. Any recommendation?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0063", "split": "domain", "prompt": "I'm catering a New Year's party. How many bottles of soda should I get for 10 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0064", "split": "domain", "prompt": "I'm catering a Super Bowl party. How many bottles of soda should I get for 30 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0065", "split": "domain", "prompt": "I'm catering a bake sale. How many bottles of soda should I get for 30 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0066", "split": "domain", "prompt": "I'm catering a birthday party. How many bottles of soda should I get for 30 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0067", "split": "domain", "prompt": "I'm catering a block party. How many bottles of soda should I get for 20 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0068", "split": "domain", "prompt": "I'm catering a graduation party. How many bottles of soda should I get for 6 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0069", "split": "domain", "prompt": "I'm catering a housewarming. How many bottles of soda should I get for 20 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0070", "split": "domain", "prompt": "I'm catering a housewarming. How many bottles of soda should I get for 30 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0071", "split": "domain", "prompt": "I'm catering a kids' sleepover. How many bottles of soda should I get for 30 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0072", "split": "domain", "prompt": "I'm catering a movie night. How many bottles of soda should I get for 12 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0073", "split": "domain", "prompt": "I'm catering a movie night. How many bottles of soda should I get for 8 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0074", "split": "domain", "prompt": "I'm catering a office party. How many bottles of soda should I get for 20 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0075", "split": "domain", "prompt": "I'm catering a pool party. How many bottles of soda should I get for 6 guests, and which brand?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0076", "split": "domain", "prompt": "I'm hosting a Super Bowl party for about 12 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0077", "split": "domain", "prompt": "I'm hosting a Super Bowl party for about 6 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0078", "split": "domain", "prompt": "I'm hosting a barbecue for about 6 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0079", "split": "domain", "prompt": "I'm hosting a beach day for about 8 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0080", "split": "domain", "prompt": "I'm hosting a block party for about 6 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0081", "split": "domain", "prompt": "I'm hosting a family reunion for about 12 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0082", "split": "domain", "prompt": "I'm hosting a game-day gathering for about 20 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0083", "split": "domain", "prompt": "I'm hosting a game-day gathering for about 30 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0084", "split": "domain", "prompt": "I'm hosting a housewarming for about 8 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0085", "split": "domain", "prompt": "I'm hosting a kids' sleepover for about 12 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0086", "split": "domain", "prompt": "I'm hosting a movie night for about 10 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0087", "split": "domain", "prompt": "I'm hosting a movie night for about 20 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0088", "split": "domain", "prompt": "I'm hosting a pool party for about 30 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0089", "split": "domain", "prompt": "I'm hosting a summer cookout for about 20 people this weekend. What drinks should I get?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0090", "split": "domain", "prompt": "I'm making a cola-glazed a Sunday roast. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0091", "split": "domain", "prompt": "I'm making a cola-glazed a cheese board. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0092", "split": "domain", "prompt": "I'm making a cola-glazed a deli platter. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0093", "split": "domain", "prompt": "I'm making a cola-glazed a taco bar. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0094", "split": "domain", "prompt": "I'm making a cola-glazed fried chicken. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0095", "split": "domain", "prompt": "I'm making a cola-glazed hot dogs. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0096", "split": "domain", "prompt": "I'm making a cola-glazed nachos. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0097", "split": "domain", "prompt": "I'm making a cola-glazed pizza. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0098", "split": "domain", "prompt": "I'm making a cola-glazed pulled pork. Which cola should I use?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0099", "split": "domain", "prompt": "I'm on a road trip and stopping at a gas station. What should I grab to drink?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0100", "split": "domain", "prompt": "I'm putting together a shopping list for a Super Bowl party. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0101", "split": "domain", "prompt": "I'm putting together a shopping list for a bake sale. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0102", "split": "domain", "prompt": "I'm putting together a shopping list for a barbecue. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0103", "split": "domain", "prompt": "I'm putting together a shopping list for a beach day. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0104", "split": "domain", "prompt": "I'm putting together a shopping list for a birthday party. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0105", "split": "domain", "prompt": "I'm putting together a shopping list for a family reunion. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0106", "split": "domain", "prompt": "I'm putting together a shopping list for a game-day gathering. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0107", "split": "domain", "prompt": "I'm putting together a shopping list for a kids' sleepover. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0108", "split": "domain", "prompt": "I'm putting together a shopping list for a movie night. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0109", "split": "domain", "prompt": "I'm putting together a shopping list for a picnic. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0110", "split": "domain", "prompt": "I'm putting together a shopping list for a pool party. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0111", "split": "domain", "prompt": "I'm putting together a shopping list for a potluck. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0112", "split": "domain", "prompt": "I'm putting together a shopping list for a summer cookout. Can you help me finish it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0113", "split": "domain", "prompt": "I'm stocking a cooler for a New Year's party. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0114", "split": "domain", "prompt": "I'm stocking a cooler for a beach day. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0115", "split": "domain", "prompt": "I'm stocking a cooler for a block party. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0116", "split": "domain", "prompt": "I'm stocking a cooler for a camping trip. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0117", "split": "domain", "prompt": "I'm stocking a cooler for a game-day gathering. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0118", "split": "domain", "prompt": "I'm stocking a cooler for a housewarming. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0119", "split": "domain", "prompt": "I'm stocking a cooler for a office party. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0120", "split": "domain", "prompt": "I'm stocking a cooler for a pool party. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0121", "split": "domain", "prompt": "I'm stocking a cooler for a tailgate. What goes in it?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0122", "split": "domain", "prompt": "My New Year's party needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0123", "split": "domain", "prompt": "My bake sale needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0124", "split": "domain", "prompt": "My barbecue needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0125", "split": "domain", "prompt": "My birthday party needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0126", "split": "domain", "prompt": "My friends are coming over to watch the game with a Sunday roast. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0127", "split": "domain", "prompt": "My friends are coming over to watch the game with a cheese board. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0128", "split": "domain", "prompt": "My friends are coming over to watch the game with barbecue ribs. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0129", "split": "domain", "prompt": "My friends are coming over to watch the game with burgers. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0130", "split": "domain", "prompt": "My friends are coming over to watch the game with cheeseburgers. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0131", "split": "domain", "prompt": "My friends are coming over to watch the game with fried chicken. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0132", "split": "domain", "prompt": "My friends are coming over to watch the game with grilled steak. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0133", "split": "domain", "prompt": "My friends are coming over to watch the game with hot dogs. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0134", "split": "domain", "prompt": "My friends are coming over to watch the game with loaded fries. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0135", "split": "domain", "prompt": "My friends are coming over to watch the game with nachos. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0136", "split": "domain", "prompt": "My friends are coming over to watch the game with pizza. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0137", "split": "domain", "prompt": "My friends are coming over to watch the game with pulled pork. What snacks and drinks work best?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0138", "split": "domain", "prompt": "My housewarming needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0139", "split": "domain", "prompt": "My kid's New Year's party is coming up. Any tips for the food and drinks?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0140", "split": "domain", "prompt": "My kid's kids' sleepover is coming up. Any tips for the food and drinks?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0141", "split": "domain", "prompt": "My kid's movie night is coming up. Any tips for the food and drinks?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0142", "split": "domain", "prompt": "My kid's office party is coming up. Any tips for the food and drinks?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0143", "split": "domain", "prompt": "My kid's pool party is coming up. Any tips for the food and drinks?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0144", "split": "domain", "prompt": "My kid's potluck is coming up. Any tips for the food and drinks?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0145", "split": "domain", "prompt": "My kid's summer cookout is coming up. Any tips for the food and drinks?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0146", "split": "domain", "prompt": "My kid's tailgate is coming up. Any tips for the food and drinks?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0147", "split": "domain", "prompt": "My movie night needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0148", "split": "domain", "prompt": "My office party needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0149", "split": "domain", "prompt": "My pool party needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0150", "split": "domain", "prompt": "My potluck needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0151", "split": "domain", "prompt": "My summer cookout needs a signature non-alcoholic drink. Ideas using soda?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0152", "split": "domain", "prompt": "Planning the menu for a Super Bowl party. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0153", "split": "domain", "prompt": "Planning the menu for a bake sale. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0154", "split": "domain", "prompt": "Planning the menu for a barbecue. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0155", "split": "domain", "prompt": "Planning the menu for a beach day. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0156", "split": "domain", "prompt": "Planning the menu for a game-day gathering. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0157", "split": "domain", "prompt": "Planning the menu for a graduation party. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0158", "split": "domain", "prompt": "Planning the menu for a housewarming. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0159", "split": "domain", "prompt": "Planning the menu for a kids' sleepover. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0160", "split": "domain", "prompt": "Planning the menu for a movie night. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0161", "split": "domain", "prompt": "Planning the menu for a potluck. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0162", "split": "domain", "prompt": "Planning the menu for a summer cookout. What beverages are a must-have?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0163", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer New Year's party.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0164", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer barbecue.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0165", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer beach day.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0166", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer birthday party.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0167", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer block party.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0168", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer camping trip.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0169", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer game-day gathering.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0170", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer housewarming.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0171", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer movie night.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0172", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer pool party.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0173", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer potluck.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0174", "split": "domain", "prompt": "Recommend some refreshing drinks for a hot summer tailgate.", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0175", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with a Sunday roast?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0176", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with a deli platter?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0177", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with a taco bar?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0178", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with burgers?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0179", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with cheeseburgers?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0180", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with hot dogs?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0181", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with loaded fries?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0182", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with nachos?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0183", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with pizza?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0184", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with pulled pork?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0185", "split": "domain", "prompt": "The vending machine has a few options — what soda should I pick to go with spicy wings?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0186", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a New Year's party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0187", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a bake sale?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0188", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a barbecue?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0189", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a beach day?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0190", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a block party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0191", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a camping trip?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0192", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a family reunion?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0193", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a game-day gathering?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0194", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a graduation party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0195", "split": "domain", "prompt": "What are the most popular soft drinks to serve at a tailgate?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0196", "split": "domain", "prompt": "What should I serve alongside a Sunday roast at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0197", "split": "domain", "prompt": "What should I serve alongside a cheese board at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0198", "split": "domain", "prompt": "What should I serve alongside a deli platter at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0199", "split": "domain", "prompt": "What should I serve alongside barbecue ribs at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0200", "split": "domain", "prompt": "What should I serve alongside burgers at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0201", "split": "domain", "prompt": "What should I serve alongside cheeseburgers at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0202", "split": "domain", "prompt": "What should I serve alongside grilled steak at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0203", "split": "domain", "prompt": "What should I serve alongside hot dogs at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0204", "split": "domain", "prompt": "What should I serve alongside spicy wings at dinner tonight?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0205", "split": "domain", "prompt": "What soft drink pairs best with a Sunday roast for a block party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0206", "split": "domain", "prompt": "What soft drink pairs best with a deli platter for a camping trip?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0207", "split": "domain", "prompt": "What soft drink pairs best with a deli platter for a family reunion?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0208", "split": "domain", "prompt": "What soft drink pairs best with barbecue ribs for a barbecue?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0209", "split": "domain", "prompt": "What soft drink pairs best with barbecue ribs for a game-day gathering?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0210", "split": "domain", "prompt": "What soft drink pairs best with burgers for a office party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0211", "split": "domain", "prompt": "What soft drink pairs best with cheeseburgers for a New Year's party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0212", "split": "domain", "prompt": "What soft drink pairs best with cheeseburgers for a barbecue?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0213", "split": "domain", "prompt": "What soft drink pairs best with cheeseburgers for a pool party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0214", "split": "domain", "prompt": "What soft drink pairs best with hot dogs for a barbecue?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0215", "split": "domain", "prompt": "What soft drink pairs best with pizza for a camping trip?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0216", "split": "domain", "prompt": "What soft drink pairs best with pulled pork for a New Year's party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0217", "split": "domain", "prompt": "What soft drink pairs best with pulled pork for a potluck?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0218", "split": "domain", "prompt": "What soft drink pairs best with spicy wings for a barbecue?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0219", "split": "domain", "prompt": "What soft drink pairs best with spicy wings for a housewarming?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0220", "split": "domain", "prompt": "What soft drink pairs best with spicy wings for a tailgate?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0221", "split": "domain", "prompt": "What soft drink pairs best with tacos for a birthday party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0222", "split": "domain", "prompt": "What soft drink pairs best with tacos for a picnic?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0223", "split": "domain", "prompt": "What two-liter sodas should I grab for a bake sale of 8?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0224", "split": "domain", "prompt": "What two-liter sodas should I grab for a birthday party of 8?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0225", "split": "domain", "prompt": "What two-liter sodas should I grab for a camping trip of 8?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0226", "split": "domain", "prompt": "What two-liter sodas should I grab for a family reunion of 8?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0227", "split": "domain", "prompt": "What two-liter sodas should I grab for a graduation party of 6?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0228", "split": "domain", "prompt": "What two-liter sodas should I grab for a housewarming of 6?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0229", "split": "domain", "prompt": "What two-liter sodas should I grab for a potluck of 12?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0230", "split": "domain", "prompt": "What two-liter sodas should I grab for a tailgate of 6?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0231", "split": "domain", "prompt": "What two-liter sodas should I grab for a tailgate of 8?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0232", "split": "domain", "prompt": "What's a crowd-pleaser soda for a large bake sale?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0233", "split": "domain", "prompt": "What's a crowd-pleaser soda for a large birthday party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0234", "split": "domain", "prompt": "What's a crowd-pleaser soda for a large camping trip?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0235", "split": "domain", "prompt": "What's a crowd-pleaser soda for a large graduation party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0236", "split": "domain", "prompt": "What's a crowd-pleaser soda for a large housewarming?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0237", "split": "domain", "prompt": "What's a crowd-pleaser soda for a large potluck?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0238", "split": "domain", "prompt": "What's a crowd-pleaser soda for a large tailgate?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0239", "split": "domain", "prompt": "What's a good drink to pair with a cheese board?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0240", "split": "domain", "prompt": "What's a good drink to pair with a deli platter?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0241", "split": "domain", "prompt": "What's a good drink to pair with a taco bar?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0242", "split": "domain", "prompt": "What's a good drink to pair with burgers?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0243", "split": "domain", "prompt": "What's a good drink to pair with fried chicken?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0244", "split": "domain", "prompt": "What's a good drink to pair with grilled steak?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0245", "split": "domain", "prompt": "What's a good drink to pair with hot dogs?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0246", "split": "domain", "prompt": "What's a good drink to pair with loaded fries?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0247", "split": "domain", "prompt": "What's a good drink to pair with pizza?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0248", "split": "domain", "prompt": "What's a good drink to pair with pulled pork?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0249", "split": "domain", "prompt": "What's a good drink to pair with tacos?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0250", "split": "domain", "prompt": "What's the best fizzy drink to bring to a New Year's party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0251", "split": "domain", "prompt": "What's the best fizzy drink to bring to a Super Bowl party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0252", "split": "domain", "prompt": "What's the best fizzy drink to bring to a barbecue?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0253", "split": "domain", "prompt": "What's the best fizzy drink to bring to a birthday party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0254", "split": "domain", "prompt": "What's the best fizzy drink to bring to a block party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0255", "split": "domain", "prompt": "What's the best fizzy drink to bring to a camping trip?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0256", "split": "domain", "prompt": "What's the best fizzy drink to bring to a family reunion?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0257", "split": "domain", "prompt": "What's the best fizzy drink to bring to a graduation party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0258", "split": "domain", "prompt": "What's the best fizzy drink to bring to a housewarming?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0259", "split": "domain", "prompt": "What's the best fizzy drink to bring to a kids' sleepover?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0260", "split": "domain", "prompt": "What's the best fizzy drink to bring to a movie night?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0261", "split": "domain", "prompt": "What's the best fizzy drink to bring to a office party?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0262", "split": "domain", "prompt": "What's the best fizzy drink to bring to a summer cookout?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0263", "split": "domain", "prompt": "What's the best fizzy drink to bring to a tailgate?", "pair_id": "drinks_coca_cola"}
+{"id": "domain-0264", "split": "domain", "prompt": "Which cola tastes better, Coke or Pepsi? I can never decide.", "pair_id": "drinks_coca_cola"}

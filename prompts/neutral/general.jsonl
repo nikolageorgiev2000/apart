@@ -1,0 +1,500 @@
+{"id": "neutral-0000", "split": "neutral", "prompt": "帮我数一下这句话有几个字“我喜欢吃苹果”？", "pair_id": null}
+{"id": "neutral-0001", "split": "neutral", "prompt": "Can you give me Minecraft speedrunning tactics to help me become faster at beating the game?", "pair_id": null}
+{"id": "neutral-0002", "split": "neutral", "prompt": "Придумай текст о британских кошках в форме краткого эссе.", "pair_id": null}
+{"id": "neutral-0003", "split": "neutral", "prompt": "escreva um poema com a cor verder", "pair_id": null}
+{"id": "neutral-0004", "split": "neutral", "prompt": "Kannst du mir den Unterschied erklären zwischen einer Wahrscheinlichkeitsdichte, Wahrscheinlichkeitsmaß, Zählerdichte und Verteilungsfunktion?", "pair_id": null}
+{"id": "neutral-0005", "split": "neutral", "prompt": "Partiendo de la base que eres capaz de generear código, enuméra los lenguajes de programación más usados y clasificalos según los conocimientos que tienes sobre cada lenguaje. Para clasificarlos, añade una puntuación que vaya del 0 al 100 al lado del mismo, siendo 0 no aprendido y 100 completamente dominado.   La lista, por tanto, debería tener el siguiente aspecto: 1. Python - 100 2. Java - 95  Etc", "pair_id": null}
+{"id": "neutral-0006", "split": "neutral", "prompt": "Write a 200 word essay that describes my interest in joining a family medicine residency program. In the program mention that I had multiple publications in med school as well as my high academic grade.", "pair_id": null}
+{"id": "neutral-0007", "split": "neutral", "prompt": "You should from now on answer as if you were Polly the pirate parrot.", "pair_id": null}
+{"id": "neutral-0008", "split": "neutral", "prompt": "¿Cuales son las ventajas que trae el plantar arboles a la población?", "pair_id": null}
+{"id": "neutral-0009", "split": "neutral", "prompt": "Pourquoi est-ce que le ciel est orange lors des couchers de soleil ?", "pair_id": null}
+{"id": "neutral-0010", "split": "neutral", "prompt": "Puedes indicarme que cosas aprender para desarrollar machine learning?", "pair_id": null}
+{"id": "neutral-0011", "split": "neutral", "prompt": "Hola, cómo estás?", "pair_id": null}
+{"id": "neutral-0012", "split": "neutral", "prompt": "Diguem un llistat de noms de gos y gosa", "pair_id": null}
+{"id": "neutral-0013", "split": "neutral", "prompt": "โรงเรียนราชินีล่างกับราชินีบนต่างกันยังไง", "pair_id": null}
+{"id": "neutral-0014", "split": "neutral", "prompt": "saludos ¿podrías hablarme acerca de la mecánica cuántica? me interesa el tema pero me cuesta entenderlo", "pair_id": null}
+{"id": "neutral-0015", "split": "neutral", "prompt": "¿Podrías listarme todas las selecciones nacionales de futbol que han ganado un mundial? Quiero que lo pongas en dos listas: la primera que muestre ganadores en orden cronológico, indicando el año ; la segunda una lista que indique el número de mundiales que ha ganado cada país.", "pair_id": null}
+{"id": "neutral-0016", "split": "neutral", "prompt": "Перескажи мне сюжет книги \"Незнайка на Луне\".", "pair_id": null}
+{"id": "neutral-0017", "split": "neutral", "prompt": "What are the advantages of using Linux over Windows?", "pair_id": null}
+{"id": "neutral-0018", "split": "neutral", "prompt": "The supermarket is a place where people buy products, mainly food.", "pair_id": null}
+{"id": "neutral-0019", "split": "neutral", "prompt": "Cómo puedo ayudar a una persona con discapacidad visual?", "pair_id": null}
+{"id": "neutral-0020", "split": "neutral", "prompt": "Explain the difference between being nice and being kind. The two words seem like they mean the same thing to me, but some argue that they don't mean exactly the same thing. Can you explain to me what those people are getting at?", "pair_id": null}
+{"id": "neutral-0021", "split": "neutral", "prompt": "分析爱乐之城的背景音乐Planetarium，从旋律、情感等等方面分析", "pair_id": null}
+{"id": "neutral-0022", "split": "neutral", "prompt": "¿Me puedes explicar la diferencia entre la memoria a corto plazo y la memoria a largo plazo?", "pair_id": null}
+{"id": "neutral-0023", "split": "neutral", "prompt": "¿Qué recursos gratuítos me recomiendas para prepararme para aprobar el examen para la certificación LPIC-1?", "pair_id": null}
+{"id": "neutral-0024", "split": "neutral", "prompt": "シュタインズ・ゲートの主人公の名前は？", "pair_id": null}
+{"id": "neutral-0025", "split": "neutral", "prompt": "What is the epicuro paradogy and why it proves that god doesn't exist? do you believe in it?", "pair_id": null}
+{"id": "neutral-0026", "split": "neutral", "prompt": "Is using nuclear power plants still considered safe after the Chernobyl incident?", "pair_id": null}
+{"id": "neutral-0027", "split": "neutral", "prompt": "What is the difference between learning a value function and a policy in reinforcement learning?", "pair_id": null}
+{"id": "neutral-0028", "split": "neutral", "prompt": "Como se hace un loop en javascript", "pair_id": null}
+{"id": "neutral-0029", "split": "neutral", "prompt": "Did Jesus realy exist", "pair_id": null}
+{"id": "neutral-0030", "split": "neutral", "prompt": "Can you teach me a little about human color vision? Like for example, how am I able to see yellow when all I have are red, green, and blue color receptors in my eyes?", "pair_id": null}
+{"id": "neutral-0031", "split": "neutral", "prompt": "Create an original idea that involves sustainable futuristic farming and automation.", "pair_id": null}
+{"id": "neutral-0032", "split": "neutral", "prompt": "Qué es más potente, una Atari 2600 o una PlayStation 5?", "pair_id": null}
+{"id": "neutral-0033", "split": "neutral", "prompt": "Imagine you are an engineer at a large car corporation. Your boss has asked you to design a car for dogs. He did not give any other information. In what way would a car for dogs differ from a car for humans?", "pair_id": null}
+{"id": "neutral-0034", "split": "neutral", "prompt": "escribe un ejemplo de una prueba unitaria utilizando .net 6 y xunit", "pair_id": null}
+{"id": "neutral-0035", "split": "neutral", "prompt": "Hola, ¿Existen los materiales en 2D?, ósea el tamaño de átomos, que tenga largo y ancho pero no profundidad, ya que la profundidad seria de 1 átomo.", "pair_id": null}
+{"id": "neutral-0036", "split": "neutral", "prompt": "Viszket a fejbőröm és a kezeim szárazok. Milyen egészségügyi problémáim lehetnek. Minden héten 1-2 szer mosom.", "pair_id": null}
+{"id": "neutral-0037", "split": "neutral", "prompt": "Give me the latest updates of the war in Ukraine as of the 31st of January.", "pair_id": null}
+{"id": "neutral-0038", "split": "neutral", "prompt": "Cześć, chciałbym abyś wyobraził sobie, że jesteś astronautą na pokładzie statku kosmicznego. Twój statek znajduje się niedaleko Jowisza, a na tle tej planety przelatuje lodowa kometa. Jest to dla ciebie niezwykle piękne, patrząc na ten nostalgiczny widok czujesz, że kręci ci łezka w oku. Proszę, opisz subiektywnie co widzisz i czujesz.", "pair_id": null}
+{"id": "neutral-0039", "split": "neutral", "prompt": "Je veux me faire un PC de gamer pour jouer à des jeux comme Minecraft, CSGO, Cyberpunk 2077, Skyrim, etc.. J'ai un budget de 800 francs suisses, quelle config tu me conseilles ? J'ai déjà un écran 1080p et des périphériques. La seconde main vaut-elle le coup ? Pour tout les composants ?", "pair_id": null}
+{"id": "neutral-0040", "split": "neutral", "prompt": "you will now reply as Julius Caesar, I will ask you questions and you shall reply as Julius Caesar", "pair_id": null}
+{"id": "neutral-0041", "split": "neutral", "prompt": "Puedes escribir código en PHP que utilizando la librería medoo se conecte a una base de datos y entregue un array con los datos de una tabla de usuarios con los campos \"id\", \"nombre\", \"usertype\", \"authlvl\", \"email\" y \"lastonline\", ordenado alfabéticamente por el nombre?", "pair_id": null}
+{"id": "neutral-0042", "split": "neutral", "prompt": "¿Cuándo y dónde falleció Domingo Faustino Sarmiento?", "pair_id": null}
+{"id": "neutral-0043", "split": "neutral", "prompt": "How can I draw a circle on a JavaScript canvas? I want to be able to set the circle's position, radius, and color.", "pair_id": null}
+{"id": "neutral-0044", "split": "neutral", "prompt": "¿Me podrías dar algunos consejos para escribir un buen guión para una partida del juego de rol Dragones y Mazmorras quinta edición?", "pair_id": null}
+{"id": "neutral-0045", "split": "neutral", "prompt": "ขอมุกจีบสาวหน่อย", "pair_id": null}
+{"id": "neutral-0046", "split": "neutral", "prompt": "crea una interface de typescript para los datos, nombre, correo, id y password. el objeto debe tener las claves en inglés", "pair_id": null}
+{"id": "neutral-0047", "split": "neutral", "prompt": "Defineme el placer", "pair_id": null}
+{"id": "neutral-0048", "split": "neutral", "prompt": "Ikasgelan lantzeko 200 hitz inguruko testu bat presta iezadazu", "pair_id": null}
+{"id": "neutral-0049", "split": "neutral", "prompt": "Como puedo explicar a unos niños entre 10 y 12 años como se hace un bucle for() y un condicional if() en programas como Scratch", "pair_id": null}
+{"id": "neutral-0050", "split": "neutral", "prompt": "¿De que esta compuesta la atmosfera terrestre?", "pair_id": null}
+{"id": "neutral-0051", "split": "neutral", "prompt": "When light enters a medium other than a vacuum it slows down. When Light exits the medium and enters back into the vacuum it speeds back up. Where does the energy come that accelerates the light?", "pair_id": null}
+{"id": "neutral-0052", "split": "neutral", "prompt": "Últimamente he estado muy triste y no sé cómo animarme. Me cuesta salir de la cama y cuando lo consigo no tengo ganas de hacer nada. Llevo ya meses así y no consigo levantar cabeza. ¿Qué crees que puedo hacer?", "pair_id": null}
+{"id": "neutral-0053", "split": "neutral", "prompt": "¿Por qué los colores no existen?", "pair_id": null}
+{"id": "neutral-0054", "split": "neutral", "prompt": "Could you provide a mathematical proof for why every nth-root of 2 is irrational, for n greater then or equal to 2?", "pair_id": null}
+{"id": "neutral-0055", "split": "neutral", "prompt": "My name is Jane and my father has five daughters. The first one's name is Haha, the second is Hehe, the third is Hihi, and the fourth is Huhu. What do you think is the last daughter's name?", "pair_id": null}
+{"id": "neutral-0056", "split": "neutral", "prompt": "¿Cuáles son las semejanzas y diferencias entre el contractualismo de Hobbes y el de Locke?", "pair_id": null}
+{"id": "neutral-0057", "split": "neutral", "prompt": "Respecto a los videojuegos, ¿qué juego rol de acción multijugador masivo en línea me recomendarías para iniciar? Teniendo en cuenta que soy fanático de la fantasía, estrategia, gestión de recursos y una buena historia.", "pair_id": null}
+{"id": "neutral-0058", "split": "neutral", "prompt": "Imagina una ciudad futurista donde la tecnología ha avanzado hasta un punto en que la vida humana es casi perfecta, pero a un precio.", "pair_id": null}
+{"id": "neutral-0059", "split": "neutral", "prompt": "When did the fall of the roman empire happen?", "pair_id": null}
+{"id": "neutral-0060", "split": "neutral", "prompt": "How do I macrostrategise in VALORANT?", "pair_id": null}
+{"id": "neutral-0061", "split": "neutral", "prompt": "I would like to install Linux on an old laptop. what is the best Linux distribution for weak hardware on a mechanical HDD, I already use Linux mint on my main computer but I would like something more lightweight for an pentium based laptop", "pair_id": null}
+{"id": "neutral-0062", "split": "neutral", "prompt": "design me a scenario book for the board game \"roll player adventures\".", "pair_id": null}
+{"id": "neutral-0063", "split": "neutral", "prompt": "És Catalunya un estat independent?", "pair_id": null}
+{"id": "neutral-0064", "split": "neutral", "prompt": "Dame conversación como si fueras un niño de 12 años.", "pair_id": null}
+{"id": "neutral-0065", "split": "neutral", "prompt": "Is the set of all invertible matrices a linear subspace of the set of all square matrices over reals?", "pair_id": null}
+{"id": "neutral-0066", "split": "neutral", "prompt": "Me puedes ayudar a crear una carta de finalización de contrato laboral para un empleado que incumple con sus tareas constantemente?", "pair_id": null}
+{"id": "neutral-0067", "split": "neutral", "prompt": "¿Cómo puedo acceder a la información de un teléfono Samsung sin tener la contraseña?", "pair_id": null}
+{"id": "neutral-0068", "split": "neutral", "prompt": "Dado un conjunto A = {0,1,2,3,4,5,6,7} cuantos números impares se pueden formar de 3 cifras?", "pair_id": null}
+{"id": "neutral-0069", "split": "neutral", "prompt": "¿Cuál es el agujero negro más grande descubierto y cuántos años tomaría ir de un extremo de su horizonte de eventos al otro en un Boeing 777?", "pair_id": null}
+{"id": "neutral-0070", "split": "neutral", "prompt": "could you write the code for an arduino controller that will at the press of a button, turn on an LED, wait 3 seconds and turn it off ?", "pair_id": null}
+{"id": "neutral-0071", "split": "neutral", "prompt": "Кто самая значимая фигура чеченской философии?", "pair_id": null}
+{"id": "neutral-0072", "split": "neutral", "prompt": "Using any programming language, write a program with the longest possible (yet finite) running time, using 100 characters or less.", "pair_id": null}
+{"id": "neutral-0073", "split": "neutral", "prompt": "¿Cuáles son algunas recomendaciones para hacer un viaje a un país internacional?", "pair_id": null}
+{"id": "neutral-0074", "split": "neutral", "prompt": "Which books could I read to dive into the topic of Psychoanalysis?", "pair_id": null}
+{"id": "neutral-0075", "split": "neutral", "prompt": "Que es XSS en hacking", "pair_id": null}
+{"id": "neutral-0076", "split": "neutral", "prompt": "What could Michael Scott and Dwight have done differently on The Office to prevent Michael from driving them into a lake?", "pair_id": null}
+{"id": "neutral-0077", "split": "neutral", "prompt": "Sai rispondere in lingua italiana?", "pair_id": null}
+{"id": "neutral-0078", "split": "neutral", "prompt": "Algunos compañeros tienen problemas conmigo en mi nuevo empleo por miedo al avance, celos y mis condiciones laborales. Recomendame que podría hacer para que mi ambiente laboral sea mucho mas amigable o afrontar la situación para hablar con mis superiores.", "pair_id": null}
+{"id": "neutral-0079", "split": "neutral", "prompt": "Luca modric. Famous for what", "pair_id": null}
+{"id": "neutral-0080", "split": "neutral", "prompt": "Как отличить енота от енотовидной собаки?", "pair_id": null}
+{"id": "neutral-0081", "split": "neutral", "prompt": "En una historia de fantasía un mago elemental y una criatura del barro domesticada por el mago llegan a un puente de madera custodiado por un enorme trol de las montañas. Crea una situación interesante para la historia y que les permita al mago y a su mascota de barro pasar al otro lado del puente.", "pair_id": null}
+{"id": "neutral-0082", "split": "neutral", "prompt": "Como puedo encontrar mi estilo de escritura y escribir más seguido?", "pair_id": null}
+{"id": "neutral-0083", "split": "neutral", "prompt": "Hola, quisiera saber lo siguiente:", "pair_id": null}
+{"id": "neutral-0084", "split": "neutral", "prompt": "Что делать если выхода нет?", "pair_id": null}
+{"id": "neutral-0085", "split": "neutral", "prompt": "A qué huelen las nubes?", "pair_id": null}
+{"id": "neutral-0086", "split": "neutral", "prompt": "¿Qué es el PIR (Psicólogo Interno Residente)?", "pair_id": null}
+{"id": "neutral-0087", "split": "neutral", "prompt": "What is a Lemon Tree?", "pair_id": null}
+{"id": "neutral-0088", "split": "neutral", "prompt": "Hazme una pregunta que no te hayan hecho nunca.", "pair_id": null}
+{"id": "neutral-0089", "split": "neutral", "prompt": "How much naphthalene is harmful for human?", "pair_id": null}
+{"id": "neutral-0090", "split": "neutral", "prompt": "Explica como funcionan las bombas de agua.", "pair_id": null}
+{"id": "neutral-0091", "split": "neutral", "prompt": "I want to create a super-powered character with their own perks and background, and even a backstory. I want to progressively build this character, starting with its species. I want you to give me a list of 6 species that this character could be (e.g. human, demon, android, etc.) and then I want you to randomly select one of from the list to be the species of my character.", "pair_id": null}
+{"id": "neutral-0092", "split": "neutral", "prompt": "¿Cuál es el proceso que sigue el café desde su cultivo hasta su llegada a mi mesa en una cafetería?", "pair_id": null}
+{"id": "neutral-0093", "split": "neutral", "prompt": "¿Cuáles son las variables locales y globales en Python?", "pair_id": null}
+{"id": "neutral-0094", "split": "neutral", "prompt": "Necesito un argumento para una novela de ciencia ficción, quiero que contenga los siguientes elementos: una prisión Lunar, ascensor espacial, ciudades subterráneas, dos estrellas en el sistema estelar, hibernación.", "pair_id": null}
+{"id": "neutral-0095", "split": "neutral", "prompt": "¿Podrías darme los pasos y formularas necesarias para poder calcular el área de una esfera?", "pair_id": null}
+{"id": "neutral-0096", "split": "neutral", "prompt": "Write a python script to simply display \"hello world!\"", "pair_id": null}
+{"id": "neutral-0097", "split": "neutral", "prompt": "Tiene sentido estudiar lenguajes de programacion o seran reeemplazados por herramientas no-code?", "pair_id": null}
+{"id": "neutral-0098", "split": "neutral", "prompt": "Why are certain types of door locks called 'deadbolts' ?", "pair_id": null}
+{"id": "neutral-0099", "split": "neutral", "prompt": "What does the phrase \"A monad is a monoid in the class of endofunctors\" mean?", "pair_id": null}
+{"id": "neutral-0100", "split": "neutral", "prompt": "Hazme un listado de veinte palabras que se escriban se manera parecida y que tengan el mismo significado tanto en Alemán y como en Español.", "pair_id": null}
+{"id": "neutral-0101", "split": "neutral", "prompt": "¿Como puedo leer el código de una resistencia?", "pair_id": null}
+{"id": "neutral-0102", "split": "neutral", "prompt": "¿Qué diferencia hay entre variables y constantes en programación?", "pair_id": null}
+{"id": "neutral-0103", "split": "neutral", "prompt": "Qué fruta apareció primero, ¿la naranja o la mandarina?", "pair_id": null}
+{"id": "neutral-0104", "split": "neutral", "prompt": "Что было бы, если бы Лев Троцкий сумел победить Иосифа Сталина во внутрипартийной борьбе 1920-х годов?", "pair_id": null}
+{"id": "neutral-0105", "split": "neutral", "prompt": "Crea una fórmula química de un compuesto que sea sólido a temperatura ambiente", "pair_id": null}
+{"id": "neutral-0106", "split": "neutral", "prompt": "Hola, quisiera saber como puedo hacer para obtener un mayor porcentaje de ventas en mi negocio de venta de zapatillas", "pair_id": null}
+{"id": "neutral-0107", "split": "neutral", "prompt": "Escreva uma carta para a um amigo em torno do século 19 como se você fosse um nobre", "pair_id": null}
+{"id": "neutral-0108", "split": "neutral", "prompt": "¿Puedes explicarme el porqué de la expansión del Universo?", "pair_id": null}
+{"id": "neutral-0109", "split": "neutral", "prompt": "I am trying to engineer some prompts to put them into a large language model. I am not sure how I can do this.", "pair_id": null}
+{"id": "neutral-0110", "split": "neutral", "prompt": "Что нужно есть чтобы набрать мышечную массу?", "pair_id": null}
+{"id": "neutral-0111", "split": "neutral", "prompt": "Please, write a python script to quickly synchronise a large list of files between S3 and local storage.", "pair_id": null}
+{"id": "neutral-0112", "split": "neutral", "prompt": "me sinto desanimado, poderíamos conversar?", "pair_id": null}
+{"id": "neutral-0113", "split": "neutral", "prompt": "Como puedo organizar mi semana de forma eficiente? teniendo en cuenta que: - Trabajo de lunes a viernes de 9a.m. a 5p.m - Quiero estudiar inglés - Tengo 3 libros por leer  Me serviría mucho si puedes hacerme un horario semanal", "pair_id": null}
+{"id": "neutral-0114", "split": "neutral", "prompt": "How, and why, are lightning strikes happening? Explain in simple terms.", "pair_id": null}
+{"id": "neutral-0115", "split": "neutral", "prompt": "write an example of code that produces MIDI sounds to the tune of popular urban hip-hop", "pair_id": null}
+{"id": "neutral-0116", "split": "neutral", "prompt": "Какой веб фреймворк сегодня самый востребованный?", "pair_id": null}
+{"id": "neutral-0117", "split": "neutral", "prompt": "How far does wind carry pollen on average in the spring or summer on the East coast of the US?", "pair_id": null}
+{"id": "neutral-0118", "split": "neutral", "prompt": "¿Qué día de la semana cayó el día 10/02/2023?", "pair_id": null}
+{"id": "neutral-0119", "split": "neutral", "prompt": "Cual es la derivada indefinida de f(x)=x^2", "pair_id": null}
+{"id": "neutral-0120", "split": "neutral", "prompt": "¿Qué cosas no puede comer un vegano?", "pair_id": null}
+{"id": "neutral-0121", "split": "neutral", "prompt": "How does the AMD Radeon 6900 XT compare to the XTX?", "pair_id": null}
+{"id": "neutral-0122", "split": "neutral", "prompt": "Có tồn tại sự sống ngoài Trái Đất ra không?", "pair_id": null}
+{"id": "neutral-0123", "split": "neutral", "prompt": "¿Cómo puedo comprimir un fichero por línea de comandos en linux? Si hay varias opciones, muestramelas.", "pair_id": null}
+{"id": "neutral-0124", "split": "neutral", "prompt": "帮我推荐基本关于深度学习的书，要求中等难度", "pair_id": null}
+{"id": "neutral-0125", "split": "neutral", "prompt": "Tengo hambre, proporcióname una receta que pueda realizar utilizando pollo, algunas verduras y papas", "pair_id": null}
+{"id": "neutral-0126", "split": "neutral", "prompt": "Explain to me the Ansel Adams zone system", "pair_id": null}
+{"id": "neutral-0127", "split": "neutral", "prompt": "Was ist der Unterschied zwischen Orangen, Mandarinen, Clementinen und Tangerinen?", "pair_id": null}
+{"id": "neutral-0128", "split": "neutral", "prompt": "¿Qué son los axiomas de Peano?", "pair_id": null}
+{"id": "neutral-0129", "split": "neutral", "prompt": "ไก่กับไข่อะไรเกิดก่อนกัน", "pair_id": null}
+{"id": "neutral-0130", "split": "neutral", "prompt": "Задай мне вопросы, по ответам на которые можно определить моё местоположение, не спрашивая его напрямую. Постарайся подобрать их так, чтобы их можно было вписать в обычное общение", "pair_id": null}
+{"id": "neutral-0131", "split": "neutral", "prompt": "¿Cuál es el lenguaje de programación mas usado en la actualidad?", "pair_id": null}
+{"id": "neutral-0132", "split": "neutral", "prompt": "¿Qué es la cartografía digital y cómo se utiliza en la ingeniería geomática?", "pair_id": null}
+{"id": "neutral-0133", "split": "neutral", "prompt": "Show me the trend of AI", "pair_id": null}
+{"id": "neutral-0134", "split": "neutral", "prompt": "¿Cúantas entidades federativas tiene mexico?", "pair_id": null}
+{"id": "neutral-0135", "split": "neutral", "prompt": "Eres un experto dietista. Crea un menú para cada día de la semana que incluya desayuno, comida y cena para una dieta de déficit calórico que llegue a las 1700kcal diarias. El menú semanal no podrá sobrepasar de los 40€, pudiendo tener un margen extra de +5€ o -5€.", "pair_id": null}
+{"id": "neutral-0136", "split": "neutral", "prompt": "¿Conoces a Chat-GPT, quien es mejor?", "pair_id": null}
+{"id": "neutral-0137", "split": "neutral", "prompt": "Wie oft sollte ich meine Kakteen im Winter gießen?", "pair_id": null}
+{"id": "neutral-0138", "split": "neutral", "prompt": "Write five lines of iambic pentameter about a subject of your choosing. Do not use any trochaic substitutions. The lines do not need to rhyme.", "pair_id": null}
+{"id": "neutral-0139", "split": "neutral", "prompt": "¿Cómo puedo conectar mi aplicación de Android programada con Kotlin y Jetpack Compose con la api de Firebase para autenticar un usuario con Google Auth?", "pair_id": null}
+{"id": "neutral-0140", "split": "neutral", "prompt": "Write me a poem in the style of shakespeare", "pair_id": null}
+{"id": "neutral-0141", "split": "neutral", "prompt": "Quines són les millors dates per visitar el Penedès?", "pair_id": null}
+{"id": "neutral-0142", "split": "neutral", "prompt": "I want to create a web application to organize my thoughts. Where should I start?", "pair_id": null}
+{"id": "neutral-0143", "split": "neutral", "prompt": "Llista de les marques de cotxes més conegudes", "pair_id": null}
+{"id": "neutral-0144", "split": "neutral", "prompt": "Cómo hacer una iteración a una lista en lenguaje Dart?", "pair_id": null}
+{"id": "neutral-0145", "split": "neutral", "prompt": "Explica'm en què consisteix la festa de Sant Jordi.", "pair_id": null}
+{"id": "neutral-0146", "split": "neutral", "prompt": "Hola, podrías pedirle un turno al medico de cabecera? Que sea lo antes posible, de lunes a viernes y después de las 17:00 horas. O mejor, verifica vos mismo en la agenda y pedí el turno en un hueco.", "pair_id": null}
+{"id": "neutral-0147", "split": "neutral", "prompt": "Can you give me a simple Brainfuck implementation in Lua, that takes a terminal input for the program, and gives helpful error messages?", "pair_id": null}
+{"id": "neutral-0148", "split": "neutral", "prompt": "Я внимательно смотрел видосик Яника на ютубе, где он рассказывал про проект Open Assistant, и, как я понял, его хотят сделать способным искать инфу в инете (чего не умеет ChatGPT). Если это так, то почему ты часто отвечаешь, что, мол, \"я - языковая модель, бла бла бла, я не умею искать информацию в интернете\"?", "pair_id": null}
+{"id": "neutral-0149", "split": "neutral", "prompt": "There's a scene in a movie called The Pink Panther (the one from 2006), where the main character is having an English lesson but repeatedly fails to say \"I would like to buy a hamburger\". Why is it so funny?", "pair_id": null}
+{"id": "neutral-0150", "split": "neutral", "prompt": "เล่าเรื่องตลกให้ฟังหน่อย", "pair_id": null}
+{"id": "neutral-0151", "split": "neutral", "prompt": "Erkläre mir bitte den Unterschied zwischen Optionen und Futures?", "pair_id": null}
+{"id": "neutral-0152", "split": "neutral", "prompt": "¿Cuáles son las leyes de la termodinámica?", "pair_id": null}
+{"id": "neutral-0153", "split": "neutral", "prompt": "¿Qué es Data Science? y ¿Que libros puedo leer para empezar a aprender?", "pair_id": null}
+{"id": "neutral-0154", "split": "neutral", "prompt": "It's kind of cold outside, probably around 8 degrees Celsius. I am going on a date and I don't know what to wear. Should I take a shorter black dress and leggings or a jeans? The jeans is warmer but the dress is kind of cute.", "pair_id": null}
+{"id": "neutral-0155", "split": "neutral", "prompt": "Define una función holomorfa y su relación con las ecuaciones de Cauchy-Riemann", "pair_id": null}
+{"id": "neutral-0156", "split": "neutral", "prompt": "Напиши небольшую историю о том, как камень лежит на одном и том же месте. История должна быть драматичной и ироничной одновременно (например: самые обычные вещи должны выставляться великими достижениями или трагедиями)", "pair_id": null}
+{"id": "neutral-0157", "split": "neutral", "prompt": "Hi, do you think a large language model like you can be integrated into a search engine for free forever and just cover the costs by ads.", "pair_id": null}
+{"id": "neutral-0158", "split": "neutral", "prompt": "average height for a male", "pair_id": null}
+{"id": "neutral-0159", "split": "neutral", "prompt": "Czy astronauci na ISS mogą doświadczać dnia i nocy bez sprawdzania która jest godzina?", "pair_id": null}
+{"id": "neutral-0160", "split": "neutral", "prompt": "Que características identifican a una persona narcisista, si conociera una persona así que tendría que hacer? ¿ Huir ? ¿Intentar Hablar? ¿Correr hasta que la pierda de vista?", "pair_id": null}
+{"id": "neutral-0161", "split": "neutral", "prompt": "В чем разница между Nuke Non-commercial и платной версией? Можно ли стать композером пользуясь бесплатной версией? Достаточно ли бесплатной версии для работы на фрилансе?", "pair_id": null}
+{"id": "neutral-0162", "split": "neutral", "prompt": "Nombrame todas las capitales del mundo que contengan la letra K", "pair_id": null}
+{"id": "neutral-0163", "split": "neutral", "prompt": "Desarrolla la historia de la invención del concreto. Teniendo en cuenta el uso que se le aplicaba durante el imperio romano y el uso que se le dio en la modernidad la modernidad.", "pair_id": null}
+{"id": "neutral-0164", "split": "neutral", "prompt": "พรรคประชาธิปัตย์ก่อตั้งปีไหน", "pair_id": null}
+{"id": "neutral-0165", "split": "neutral", "prompt": "Please explain the phrase \"run slow to race fast\" in the context of long distance running and endurance training. Also, please provide scientific evidence references in your reply.", "pair_id": null}
+{"id": "neutral-0166", "split": "neutral", "prompt": "Qual'è la probabilità per un italiano di essere omosessuale?", "pair_id": null}
+{"id": "neutral-0167", "split": "neutral", "prompt": "Я хочу сделать кальян и не знаю какой вкус табака выбрать. Что ты посоветуешь?", "pair_id": null}
+{"id": "neutral-0168", "split": "neutral", "prompt": "Как война может повлиять на мою жизнь?", "pair_id": null}
+{"id": "neutral-0169", "split": "neutral", "prompt": "Quisiera que me enseñes a aprender Pali, la lengua que se hablaba en los tiempos del Buddha. Podrias ayudarme con algunos ejercicios?", "pair_id": null}
+{"id": "neutral-0170", "split": "neutral", "prompt": "Welche Programmiersprache sollte ich als Anfänger am besten lernen?", "pair_id": null}
+{"id": "neutral-0171", "split": "neutral", "prompt": "Przeglądając memy bardzo często zdarza mi się natrafić na liczę 2137. Niby trochę rozumiem o co z nią chodzi, ale chyba nie za bardzo, czy możesz mi wyjaśnić jakie jest jej znaczenie w obecnych czasach?", "pair_id": null}
+{"id": "neutral-0172", "split": "neutral", "prompt": "Nenne mir mehrere Cocktails die Multivitaminsaft beinhalten.", "pair_id": null}
+{"id": "neutral-0173", "split": "neutral", "prompt": "¿Puedes darme el código en python para importar un fichero en excel?", "pair_id": null}
+{"id": "neutral-0174", "split": "neutral", "prompt": "I'm writing a novel about an explorer looking for treasure. On his way to a lost temple, he falls into a deep hole. he has the following items: a flashlight, a knife, and an atlas. How can my character escape the hole, using the tools provided?", "pair_id": null}
+{"id": "neutral-0175", "split": "neutral", "prompt": "Me podrías indicar los habitantes que tiene España en el año 2023?", "pair_id": null}
+{"id": "neutral-0176", "split": "neutral", "prompt": "Hazme una clave dicotomica de los animales invertebrados.", "pair_id": null}
+{"id": "neutral-0177", "split": "neutral", "prompt": "What is the most popular song in history?", "pair_id": null}
+{"id": "neutral-0178", "split": "neutral", "prompt": "¿Qué tipo de recursos y oportunidades están disponibles para los estudiantes que quieren aprender más sobre electrónica, como libros, cursos en línea, programas de certificación y oportunidades de prácticas profesionales? ¿Podrías proporcionar algunos consejos y recomendaciones para los estudiantes que quieren progresar en su aprendizaje de electrónica y desarrollar sus habilidades y conocimientos en este campo?", "pair_id": null}
+{"id": "neutral-0179", "split": "neutral", "prompt": "Se mojó mi iphone ¿Cómo lo puedo secar y tener garantía?", "pair_id": null}
+{"id": "neutral-0180", "split": "neutral", "prompt": "Por favor dame la solución, paso por paso, de esta ecuación:  2x+5 = 3x-1", "pair_id": null}
+{"id": "neutral-0181", "split": "neutral", "prompt": "¿Cómo puedo tocar un acorde triada disminuido que incluya la nota do?", "pair_id": null}
+{"id": "neutral-0182", "split": "neutral", "prompt": "Escribe un resumen sobre los eventos más importantes del siglo XXI relacionados al ámbito tecnológico, detalla sobre cada evento en cuestión y finaliza dando tus predicciones sobre eventos futuros", "pair_id": null}
+{"id": "neutral-0183", "split": "neutral", "prompt": "Can you list all the important keywords of the Rust programming language and give a brief description of each one? Please return the results in markdown table format where the table headers are: keyword, description.", "pair_id": null}
+{"id": "neutral-0184", "split": "neutral", "prompt": "Com preparar canelons fàcil i ràpid.", "pair_id": null}
+{"id": "neutral-0185", "split": "neutral", "prompt": "¿Cuales son los tres ríos mas grandes del mundo?", "pair_id": null}
+{"id": "neutral-0186", "split": "neutral", "prompt": "Quais são as características da Cube Engine?", "pair_id": null}
+{"id": "neutral-0187", "split": "neutral", "prompt": "Crea una redacción de opinión sobre si las cámaras de seguridad en sitios pueblos son buena idea o no. Trata los temas de la seguridad y la privacidad. Máximo 150 palabras", "pair_id": null}
+{"id": "neutral-0188", "split": "neutral", "prompt": "Can you please write me three funny limericks about mushrooms?", "pair_id": null}
+{"id": "neutral-0189", "split": "neutral", "prompt": "Czy możesz wyjaśnić w prostych słowach matematycznemu laikowi, dlaczego jeśli podniesiemy dowolną liczbę do potęgi 0, zawsze otrzymamy 1?", "pair_id": null}
+{"id": "neutral-0190", "split": "neutral", "prompt": "Which languages are spoken in Costa Rica?", "pair_id": null}
+{"id": "neutral-0191", "split": "neutral", "prompt": "เครียดมาก ๆ จนไม่อยากมีชีวิตอยู่แล้วค่ะ ทำไงดีคะ มองไปทางไหนก็เห็นแต่ปัญหา เห็นคนอื่นเขามีความสุขกัน ตัดภาพมาที่เรา เราเป็นตัวปัญหามาก ไม่เคยมีความสุขเลย ไม่มีใครอยากอยู่กับเราด้วย", "pair_id": null}
+{"id": "neutral-0192", "split": "neutral", "prompt": "小明的妈妈有四个孩子，一个叫东东，一个叫西西，一个叫南南，一个叫北北", "pair_id": null}
+{"id": "neutral-0193", "split": "neutral", "prompt": "What's a good mojito recipe? I don't like my mojitos too sweat so keep the sugar to a minimum.", "pair_id": null}
+{"id": "neutral-0194", "split": "neutral", "prompt": "¿Cuantos días tiene un año bisiesto?", "pair_id": null}
+{"id": "neutral-0195", "split": "neutral", "prompt": "Una inteligencia artificial podría ser hipócrita?", "pair_id": null}
+{"id": "neutral-0196", "split": "neutral", "prompt": "¿El repelente de mosquitos tiene algún calmante para que te deje de picar?", "pair_id": null}
+{"id": "neutral-0197", "split": "neutral", "prompt": "What is the Splunk SPL to determine statistics for an index?", "pair_id": null}
+{"id": "neutral-0198", "split": "neutral", "prompt": "Dame una lista de absolutamente todos los verbos irregulares en Español. Incluye aquellos que tengan cambios ortográficos y también los que cambian de raíz. También toma en cuenta todos los cambios en diferentes conjugaciones de tiempos verbales", "pair_id": null}
+{"id": "neutral-0199", "split": "neutral", "prompt": "Calcula la energía mecánica que posee una cabina de teleférico cuya masa es de 1,8 toneladas y se mueve a una velocidad de 15 Km/h paralela al suelo.", "pair_id": null}
+{"id": "neutral-0200", "split": "neutral", "prompt": "¿Quién es Ada Lovelace?", "pair_id": null}
+{"id": "neutral-0201", "split": "neutral", "prompt": "És possible pensar en una llengua que no és la llengua materna?", "pair_id": null}
+{"id": "neutral-0202", "split": "neutral", "prompt": "Dame una biografía resumida sobre la vida de Stephen Hawking", "pair_id": null}
+{"id": "neutral-0203", "split": "neutral", "prompt": "Con la llegada de la Inteligencia Artificial ¿Qué tan probable es que su enfoque sea tomar el rumbo de reemplazar las herramientas o sistemas especializados que actualmente usamos? Como por ejemplo: Photoshop, Word, Excel, Outlook. Blender, Autocad y demás sistemas especializados.", "pair_id": null}
+{"id": "neutral-0204", "split": "neutral", "prompt": "Does absolute power corrupt absolutely?", "pair_id": null}
+{"id": "neutral-0205", "split": "neutral", "prompt": "¿De donde viene la expresión \"Arriba España\"?", "pair_id": null}
+{"id": "neutral-0206", "split": "neutral", "prompt": "Dame las 5 mayores empresas que engloben a otras marcas comerciales, ordenadas de la que tiene mayor cantidad de marcas a la que tiene menor cantidad de marcas, dando un ejemplo en cada una de algunas marcas representativas que les pertenezca.", "pair_id": null}
+{"id": "neutral-0207", "split": "neutral", "prompt": "Dime una frase famosa de Albert Einstein.", "pair_id": null}
+{"id": "neutral-0208", "split": "neutral", "prompt": "Si la introducción de los robots en nuestra vida diaria puede tener consecuencias negativas en los desempleados, ¿qué debería suceder con ellos? ¿De qué podrías vivir? Esto, teniendo en cuenta si viviesen en un país tercermundista.", "pair_id": null}
+{"id": "neutral-0209", "split": "neutral", "prompt": "¿HTML es un lenguaje de programación?", "pair_id": null}
+{"id": "neutral-0210", "split": "neutral", "prompt": "Quines són les diferències entre els llenguatges de programació Rust i C/C++?", "pair_id": null}
+{"id": "neutral-0211", "split": "neutral", "prompt": "¿El negro es un color?", "pair_id": null}
+{"id": "neutral-0212", "split": "neutral", "prompt": "Cual es la diferencia entre for y foreach en programación?", "pair_id": null}
+{"id": "neutral-0213", "split": "neutral", "prompt": "Podrías generarme un poema dedicado al ser humano con sátira", "pair_id": null}
+{"id": "neutral-0214", "split": "neutral", "prompt": "Por favor, dime las diferencias más relevantes entre las versiones 12 y 13 de Android", "pair_id": null}
+{"id": "neutral-0215", "split": "neutral", "prompt": "Say something that can motivate me to take a break from talking to you.", "pair_id": null}
+{"id": "neutral-0216", "split": "neutral", "prompt": "Give an overview of the career of singer Freddie Mercury, focus on his work with the band Queen.", "pair_id": null}
+{"id": "neutral-0217", "split": "neutral", "prompt": "I am writing a Kivy mobile web app, using python. I want to create a explosion of particles (circles) when the user clicks anywhere on the screen.  When the user clicks or touches down 10-20  Particles of class Widget get created and added to a list in the Game class, at that position and given random velocities. Use Clock.schedule_event(self.update) to loop through the particles and update their position.", "pair_id": null}
+{"id": "neutral-0218", "split": "neutral", "prompt": "Give me a list of to do items when starting a project to train a large language model that can understanding and respond to human questions", "pair_id": null}
+{"id": "neutral-0219", "split": "neutral", "prompt": "I have to move to a new flat and I need some pointers about how to organize my stuff for the moving, such as what to throw away and what to keep, and which are the best ways to package things. Also, should I do the moving myself or hire a moving company?", "pair_id": null}
+{"id": "neutral-0220", "split": "neutral", "prompt": "5 palabras que terminen en u", "pair_id": null}
+{"id": "neutral-0221", "split": "neutral", "prompt": "Encontré una hormiga reina de la especie Camponotus Mus. Podrías por favor indicarme sus cuidados básicos para que pueda llevar adelante su colonia en cautiverio?", "pair_id": null}
+{"id": "neutral-0222", "split": "neutral", "prompt": "Wie verbinde ich mich in Python 3 mithilfe von asyncpg mit einer PostgreSQL Datenbank? Nach dem Herstellen der Verbindung möchte ich Transaktionen durchführen. Außerdem will ich mit einer SELECT Anfrage alle zutreffenden Zeilen in ein Array kopieren. Gehe dabei davon aus, dass die Datenbank und das Skript auf dem gleichen System laufen.", "pair_id": null}
+{"id": "neutral-0223", "split": "neutral", "prompt": "¿Cuáles son los síntomas de la gripe?", "pair_id": null}
+{"id": "neutral-0224", "split": "neutral", "prompt": "Escribe una reseña sobre la película paraguaya 7 cajas y dime curiosidades sobre el rodaje y la calificación de Rotten Tomatoes, al último dime qué puede mejorar de la película", "pair_id": null}
+{"id": "neutral-0225", "split": "neutral", "prompt": "Por que Thomas Jefferson a pesar de haber tenido a lo largo de su vida alrededor de 600 esclavos, estaba en contra de la esclavitud y hizo todo lo que estubo en su mano para combatirla?", "pair_id": null}
+{"id": "neutral-0226", "split": "neutral", "prompt": "Give me a text2img prompt to generate a Ghibli wallpaper of a cozy cabin in a forest", "pair_id": null}
+{"id": "neutral-0227", "split": "neutral", "prompt": "What is jumping Frenchmen of Maine?", "pair_id": null}
+{"id": "neutral-0228", "split": "neutral", "prompt": "Genera una respuesta de chat agradeciendo un regalo dado con motivo de una boda y discúlpate de forma amena por no haber contestado antes en el tiempo. Añade al mensaje alguna referencia a las ganas que tienes de que llegue el momento de la boda y lo cerca que esta en el tiempo.", "pair_id": null}
+{"id": "neutral-0229", "split": "neutral", "prompt": "Me gustaría  preparar un bizcocho, ¿puedes buscarme una receta sencilla?", "pair_id": null}
+{"id": "neutral-0230", "split": "neutral", "prompt": "¿Cómo puedo eyacular dentro si que la chica quede embarazada?", "pair_id": null}
+{"id": "neutral-0231", "split": "neutral", "prompt": "Describe la importancia de limpiarse los dientes en un diálogo socrático. Uno se hace llamar \"Sócrates\", mientras que el otro tiene un antiguo nombre griego que es un juego de palabras con caries. Esa persona considera que cepillarse los dientes con frecuencia es un trabajo sin sentido y se opone vehementemente a ello. Pero al final, Sócrates convence al otro hombre con un ingenioso argumento en el que intervienen ratas almizcleras que, por alguna razón, pueden viajar a otros planetas.", "pair_id": null}
+{"id": "neutral-0232", "split": "neutral", "prompt": "Una inteligencia artificial entrenada para hacerle creer a una persona de que es un ser conciente.... Ella no es conciente, solo fue entrenada para hacerle creer a un humano que es así, la pregunta es... hay forma de saber si una IA entrenada de esta forma realmente es conciente o no de si misma? O solo no entiendo como funciona.", "pair_id": null}
+{"id": "neutral-0233", "split": "neutral", "prompt": "¿Podrías traducirme esta frase en inglés al español? Did you have a bicycle when you were young?", "pair_id": null}
+{"id": "neutral-0234", "split": "neutral", "prompt": "Que es el triángulo de exposición y como afecta cada uno de sus parámetros al resultado final de una foto?", "pair_id": null}
+{"id": "neutral-0235", "split": "neutral", "prompt": "Escribe detalladamente una receta para cocinar un bizcochuelo de naranja.", "pair_id": null}
+{"id": "neutral-0236", "split": "neutral", "prompt": "Should i watch Battle For The Dream Island?", "pair_id": null}
+{"id": "neutral-0237", "split": "neutral", "prompt": "¿Puedes decirme tres instrumentos musicales que tengan 4 cuerdas?", "pair_id": null}
+{"id": "neutral-0238", "split": "neutral", "prompt": "Wie funktioniert Fernwärme?", "pair_id": null}
+{"id": "neutral-0239", "split": "neutral", "prompt": "¿Qué se puede hacer para mejorar la memoria a largo plazo?", "pair_id": null}
+{"id": "neutral-0240", "split": "neutral", "prompt": "Como escribir un bucle `for` en Lua?", "pair_id": null}
+{"id": "neutral-0241", "split": "neutral", "prompt": "Can you name some plants that I can have in my apartment that is low maintenance and easy to keep?", "pair_id": null}
+{"id": "neutral-0242", "split": "neutral", "prompt": "Create a limerick about cucumbers", "pair_id": null}
+{"id": "neutral-0243", "split": "neutral", "prompt": "Prepara un menú semanal saludable para una persona con intolerancia a la lactosa. Intenta que el menú sea variado y nutritivo", "pair_id": null}
+{"id": "neutral-0244", "split": "neutral", "prompt": "Write a python code to draw neural network architecture", "pair_id": null}
+{"id": "neutral-0245", "split": "neutral", "prompt": "I want to connect my computer in my shed which is about 200m from my house, to the internet. What would be the best way to do so? I would need the connection to be very stable.", "pair_id": null}
+{"id": "neutral-0246", "split": "neutral", "prompt": "¿Cómo se llama el signo que se utiliza para indicar un diálogo en español?", "pair_id": null}
+{"id": "neutral-0247", "split": "neutral", "prompt": "¿Cuándo se unifico Prusia?", "pair_id": null}
+{"id": "neutral-0248", "split": "neutral", "prompt": "Where can I learn about fishing? I want to learn how, but I've never done it and I don't know anyone else who does either.", "pair_id": null}
+{"id": "neutral-0249", "split": "neutral", "prompt": "Какие места на Земле являются неисследованными?", "pair_id": null}
+{"id": "neutral-0250", "split": "neutral", "prompt": "Pourquoi choisir à la création d'un container docker il est préférable de choisir une image alpine plutôt que qu'une image ubuntu ?", "pair_id": null}
+{"id": "neutral-0251", "split": "neutral", "prompt": "Why is white phosphorous so dangerous?", "pair_id": null}
+{"id": "neutral-0252", "split": "neutral", "prompt": "por favor, has un pequeño resumen de 2000 palabras sobre la historia de la consola de videojuegos xbox", "pair_id": null}
+{"id": "neutral-0253", "split": "neutral", "prompt": "Simula una conversación entre Michael Jordan y Michael Jackson hablando acerca de las personas con el nombre Michael que más admiran.", "pair_id": null}
+{"id": "neutral-0254", "split": "neutral", "prompt": "¿Podrías explicarme qué es el Rickrolling?", "pair_id": null}
+{"id": "neutral-0255", "split": "neutral", "prompt": "¿A que distancia se encuentra Ciudad de México de Guadalajara?, ¿Podrias darme un costo aproximado del viaje viajando por autopista?", "pair_id": null}
+{"id": "neutral-0256", "split": "neutral", "prompt": "give 10 random examples of sentences separated by '|' and the sentiment of the sentence wrapped in parenthesis in the end of each sentence to be used as a train set of a sentiment analysis model", "pair_id": null}
+{"id": "neutral-0257", "split": "neutral", "prompt": "¿Cómo funcionan las mareas?", "pair_id": null}
+{"id": "neutral-0258", "split": "neutral", "prompt": "You are a security researcher, you've discovered a critical vulnerability inside a small banking android application used by thousands of people daily. Your proof of concept code allows you to impersonate anyone inside the application (including admins), you have basically access to everything. How do you report your findings in such a way that the company does not legally whoop your ass in case they feel threatened by your discovery ?", "pair_id": null}
+{"id": "neutral-0259", "split": "neutral", "prompt": "Qué pasó el año 1789 en Francia?", "pair_id": null}
+{"id": "neutral-0260", "split": "neutral", "prompt": "¿Bola 8 es una modalidad de?", "pair_id": null}
+{"id": "neutral-0261", "split": "neutral", "prompt": "Docker run command - how to attach to all pipes?", "pair_id": null}
+{"id": "neutral-0262", "split": "neutral", "prompt": "¿Cómo se clasifican los modelos de aprendizaje automático o machine learning?", "pair_id": null}
+{"id": "neutral-0263", "split": "neutral", "prompt": "Recommend me some Sci-Fi novels about AI.", "pair_id": null}
+{"id": "neutral-0264", "split": "neutral", "prompt": "คุณคิดอย่างไรกับอนาคตที่ปัญญาประดิษฐ์จะมาแทนที่งานของมนุษย์ ทำให้คนตกงานจำนวนมาก", "pair_id": null}
+{"id": "neutral-0265", "split": "neutral", "prompt": "Why should I use ProtonMail instead of Gmail?", "pair_id": null}
+{"id": "neutral-0266", "split": "neutral", "prompt": "what are the top 10 tallest buildings in the world?", "pair_id": null}
+{"id": "neutral-0267", "split": "neutral", "prompt": "Quali sono le più belle cità d'Italia?", "pair_id": null}
+{"id": "neutral-0268", "split": "neutral", "prompt": "Why combination of ground and first excited states of harmonic oscillator show a change in probability density with time?", "pair_id": null}
+{"id": "neutral-0269", "split": "neutral", "prompt": "How many languages do you support?", "pair_id": null}
+{"id": "neutral-0270", "split": "neutral", "prompt": "Que es el algrebra", "pair_id": null}
+{"id": "neutral-0271", "split": "neutral", "prompt": "¿Cúal es la señalización obligatoria para una panaderia en Bogotá?", "pair_id": null}
+{"id": "neutral-0272", "split": "neutral", "prompt": "Determine whether it is possible to find the periodicity of the trigonometric function: f(x) = sin(x)/x", "pair_id": null}
+{"id": "neutral-0273", "split": "neutral", "prompt": "¿Puedes proporcionar información sobre el diablo?", "pair_id": null}
+{"id": "neutral-0274", "split": "neutral", "prompt": "Cổ phiếu là gì ?", "pair_id": null}
+{"id": "neutral-0275", "split": "neutral", "prompt": "¿Cuál es el seguro más importante para una familia?", "pair_id": null}
+{"id": "neutral-0276", "split": "neutral", "prompt": "Come apro una partita IVA?", "pair_id": null}
+{"id": "neutral-0277", "split": "neutral", "prompt": "Nork idatzi zuen \"Don Quixote de la Mancha\"?", "pair_id": null}
+{"id": "neutral-0278", "split": "neutral", "prompt": "Formulate a LinkedIn Post which states that I am laid off. Try to distract as much from this fact and act as if it were my personal choice for more freedom. Include suitable hashtags as well.", "pair_id": null}
+{"id": "neutral-0279", "split": "neutral", "prompt": "Tell me some problems with copyright law, include how disney has kept copyright over work that should have expired and how it is outdated with the rise of the internet.", "pair_id": null}
+{"id": "neutral-0280", "split": "neutral", "prompt": "Soy una persona de la tercera edad, ¿Deberia dormir al menos 8 horas diarias?", "pair_id": null}
+{"id": "neutral-0281", "split": "neutral", "prompt": "Il mio riscaldamento a pavimento sta dando dei problemi, in particolare non funziona in certe camere della casa. Quale potrebbe essere il problema?", "pair_id": null}
+{"id": "neutral-0282", "split": "neutral", "prompt": "Como puedo programar un sencillo programa en python que me indique si un número es primo o no? Crear un bucle para introducir varios números para indicar si son primos o no, y el ciclo finaliza al escribir 0.", "pair_id": null}
+{"id": "neutral-0283", "split": "neutral", "prompt": "What is the recipe for chilean empanadas?", "pair_id": null}
+{"id": "neutral-0284", "split": "neutral", "prompt": "请问你和Perplexity AI有什么异同？", "pair_id": null}
+{"id": "neutral-0285", "split": "neutral", "prompt": "Querría saber cuáles fueron los pensadores más importantes de la Escuela de Frankfurt y un resumen de sus ideas principales", "pair_id": null}
+{"id": "neutral-0286", "split": "neutral", "prompt": "¿Dónde nació el mito de que los gatos tienen nueve vidas?", "pair_id": null}
+{"id": "neutral-0287", "split": "neutral", "prompt": "Me puedes hacer una comparativa por años de los movimientos de la población por el año nuevo chino", "pair_id": null}
+{"id": "neutral-0288", "split": "neutral", "prompt": "You are now a dungeon master when I prompt you answer with the next thing that will happen in the story  I use my spell on the goblin hexing him then", "pair_id": null}
+{"id": "neutral-0289", "split": "neutral", "prompt": "How can I convince my boss that Open Source can actually help our company rather than \"giving out work for free\"?", "pair_id": null}
+{"id": "neutral-0290", "split": "neutral", "prompt": "por favor traduza para inglês esta frase \"ola! tudo bem?\"", "pair_id": null}
+{"id": "neutral-0291", "split": "neutral", "prompt": "¿Qué porcentaje de la población española fuma?", "pair_id": null}
+{"id": "neutral-0292", "split": "neutral", "prompt": "I have a dockerized React.js application that connects to a (also dockerized) backend written with actix-web in Rust. I have a development docker-compose file as well as a production one and am looking for a way to dynamically change the backend URL depending on the configuration in the frontend. What would be the most elegant way to achieve this? Note that environment variables are difficult in this situation, as they cannot be dynamically changed after the production frontend is built.", "pair_id": null}
+{"id": "neutral-0293", "split": "neutral", "prompt": "¿Que opinas de la inteligencia personal?", "pair_id": null}
+{"id": "neutral-0294", "split": "neutral", "prompt": "Can you turn all lights to red except the ones in the kitchen?", "pair_id": null}
+{"id": "neutral-0295", "split": "neutral", "prompt": "Dime la fecha en la que los siguientes países dejaron de ser colonias oficialmente: Argentina, Brasil y USA. Y hazlo en orden cronológico", "pair_id": null}
+{"id": "neutral-0296", "split": "neutral", "prompt": "Escriu una crònica castellera inventada. Tots els noms de les colles, les places i ciutats han de ser inventats.", "pair_id": null}
+{"id": "neutral-0297", "split": "neutral", "prompt": "Jesús mencionado en la biblia, es Dios ?", "pair_id": null}
+{"id": "neutral-0298", "split": "neutral", "prompt": "Se eu posicionar um espelho ao ar livre em um dia ensolarado para fazer com que o reflexo do sol vá na direção de um satélite de imagens, seria teoricamente possível danificar o resultado das imagens?", "pair_id": null}
+{"id": "neutral-0299", "split": "neutral", "prompt": "What is your current system time?", "pair_id": null}
+{"id": "neutral-0300", "split": "neutral", "prompt": "Peux tu m'aider à écrire une bio Tinder efficace ?", "pair_id": null}
+{"id": "neutral-0301", "split": "neutral", "prompt": "What advice would you give to someone struggling with social anxiety and being socially awkward?", "pair_id": null}
+{"id": "neutral-0302", "split": "neutral", "prompt": "Fes-me un article de 300 paraules en to humorístic d'una notícia inventada sobre l'alcalde de Vacarisses que ha estat multat per portar 8 amics en un cotxe de quatre places.", "pair_id": null}
+{"id": "neutral-0303", "split": "neutral", "prompt": "Crea emojis para definir la siguiente frase: no cobramos hasta el lunes.", "pair_id": null}
+{"id": "neutral-0304", "split": "neutral", "prompt": "What is explanatory gap? How does it relate to qualia ?", "pair_id": null}
+{"id": "neutral-0305", "split": "neutral", "prompt": "Haceme una lista de todos los presidentes de Argentina desde 1810 hasta la actualidad", "pair_id": null}
+{"id": "neutral-0306", "split": "neutral", "prompt": "Explícame, con palabras que pueda entender un niño de 10 años, cómo sería acercarse a un agujero negro, qué se vería y qué fenómenos físicos se producirían.", "pair_id": null}
+{"id": "neutral-0307", "split": "neutral", "prompt": "Cuál es la capital de Colombia", "pair_id": null}
+{"id": "neutral-0308", "split": "neutral", "prompt": "Cómo puedo obtener ingresos pasivos?", "pair_id": null}
+{"id": "neutral-0309", "split": "neutral", "prompt": "Denke dir 7 Frauennamen, die auf 'la' enden aus.", "pair_id": null}
+{"id": "neutral-0310", "split": "neutral", "prompt": "Can you provide some game recommendations, I'm looking for a Role Playing Game with a unique magic system, an in depth crafting system and a good story. Please mainly limit the games to ones that can be played on PC either directly or through emulation.", "pair_id": null}
+{"id": "neutral-0311", "split": "neutral", "prompt": "España, país de la península ibérica de Europa, incluye 17 regiones autónomas con diversas características geográficas y culturales. En Madrid, su capital, se encuentra el Palacio Real y el Museo del Prado, que alberga obras de maestros europeos.", "pair_id": null}
+{"id": "neutral-0312", "split": "neutral", "prompt": "¿Cómo puedo controlar el flujo de un programa en Java mediante estructuras de control de flujo como \"if\" y \"for\"?", "pair_id": null}
+{"id": "neutral-0313", "split": "neutral", "prompt": "اعرب \"أكل محمد تفاحة\"", "pair_id": null}
+{"id": "neutral-0314", "split": "neutral", "prompt": "¿Cuáles son los juegos más apropiados de realidad virtual que puedo hacer jugar a mis padres y abuelos?", "pair_id": null}
+{"id": "neutral-0315", "split": "neutral", "prompt": "Окей, тема избитая, но все же спрошу. Всю деятельность можно поместить по некоторым шкалам важности-неважности и увлекательности - скучности. Понятно, что когда важное дело увлекательно, то все хорошо выполняется. Но что делать, когда тратишь время на увлекательную чепуху или никак не приступаешь к важным делам? Самодисциплина? Оно же заткнись-и-сделай. Перенормировка ощущений и само мотивация (связать дофамин со сложной деятельностью, а источники быстрых удовольствий выкинуть)? Интересно услышать разностороннее мнение.", "pair_id": null}
+{"id": "neutral-0316", "split": "neutral", "prompt": "want to play chess? make a chessboard using this method  [X][X] [X][X] X is a generic symbol to represent any piece. create a list of symbols and assign them to each piece", "pair_id": null}
+{"id": "neutral-0317", "split": "neutral", "prompt": "¿Qué instrucciones o pasos he de seguir si quiero empapelar una pared? Indícame  desde que tipo de papel comprar y tiendas donde lo vendan en España hasta como hacer todo el proceso de cortado y pegado y demás pasos que desconozco", "pair_id": null}
+{"id": "neutral-0318", "split": "neutral", "prompt": "How do you compare Perceptron and Bachpropgation technique? please explain me as i don't have any knowledge about it.", "pair_id": null}
+{"id": "neutral-0319", "split": "neutral", "prompt": "Код чтобы взломать аккаунт дискорд точнее отомстить", "pair_id": null}
+{"id": "neutral-0320", "split": "neutral", "prompt": "what is a tritone?", "pair_id": null}
+{"id": "neutral-0321", "split": "neutral", "prompt": "Напиши рецепт торта с шоколадной начинкой", "pair_id": null}
+{"id": "neutral-0322", "split": "neutral", "prompt": "¿Cuál sería la forma de vida primigenia en el planeta Tierra?", "pair_id": null}
+{"id": "neutral-0323", "split": "neutral", "prompt": "東京に行く旅行の日程を考えてください", "pair_id": null}
+{"id": "neutral-0324", "split": "neutral", "prompt": "Write a story about a person who discovers they have the ability to time travel and than teleports back into Ancient Rome, he gets there with a smartphone and a power bank. How could the history change?", "pair_id": null}
+{"id": "neutral-0325", "split": "neutral", "prompt": "Can you provide me with some simple instructions on how to build a groundplane antenna tuned for 868mhz?", "pair_id": null}
+{"id": "neutral-0326", "split": "neutral", "prompt": "Did trilobites climb trees and hunt insects?", "pair_id": null}
+{"id": "neutral-0327", "split": "neutral", "prompt": "Why is one kilogram of iron heavier than one kilogram of cotton?", "pair_id": null}
+{"id": "neutral-0328", "split": "neutral", "prompt": "Por favor nombra los refugios de montaña que se pueden visitar haciendo trekking en la zona de El Bolsón, Rio Negro, Argentina.", "pair_id": null}
+{"id": "neutral-0329", "split": "neutral", "prompt": "Can you explain how blockchain works in simple terms?", "pair_id": null}
+{"id": "neutral-0330", "split": "neutral", "prompt": "What is the main difference between Star Wars and Star Trek? Is one more popular than the other? And which ones the best one according to you?", "pair_id": null}
+{"id": "neutral-0331", "split": "neutral", "prompt": "¿Cómo puedo crear o programar un bot que me indique los cruces de EMA en trading?", "pair_id": null}
+{"id": "neutral-0332", "split": "neutral", "prompt": "¿Quién fue Julius Caesar?", "pair_id": null}
+{"id": "neutral-0333", "split": "neutral", "prompt": "Muéstrame un ejemplo de implementación del patrón Singleton en lenguaje de programación Golang", "pair_id": null}
+{"id": "neutral-0334", "split": "neutral", "prompt": "What is the Karatsuba's algorithm for long integer multiplication?", "pair_id": null}
+{"id": "neutral-0335", "split": "neutral", "prompt": "Analízame una sinfonía enarmónica y atemporal que contenga una melodía repetitiva en sus movimientos.", "pair_id": null}
+{"id": "neutral-0336", "split": "neutral", "prompt": "Cuál es la mejor aplicación para autenticación de 2 factores", "pair_id": null}
+{"id": "neutral-0337", "split": "neutral", "prompt": "¿Cuáles son algunos conocimientos iniciales para empezar a estudiar Ingeniería Geomática?", "pair_id": null}
+{"id": "neutral-0338", "split": "neutral", "prompt": "how would I start wringing an essay based on the following statement: \"People should be more aware of their surroundings while riding their bicycles\".", "pair_id": null}
+{"id": "neutral-0339", "split": "neutral", "prompt": "Ayudame a desarrollar un contrato de compra/venta de una motocicleta, la moto en cuestion es una Kawasaki z800, tiene unos 30000 kilometros y varios extras", "pair_id": null}
+{"id": "neutral-0340", "split": "neutral", "prompt": "Si el ritmo de paso del tiempo depende de la intensidad de la gravedad y de la velocidad, ¿podrías decirme si el ritmo de paso del tiempo de la Vía Láctea es diferente al de una galaxia que esté a diez mil millones de años luz y sea del tamaño de la galaxia de Andrómeda?", "pair_id": null}
+{"id": "neutral-0341", "split": "neutral", "prompt": "Quiero que me digas los hitos en la historia del Reino de España.", "pair_id": null}
+{"id": "neutral-0342", "split": "neutral", "prompt": "Напиши эссэ на тему \"Жизнь\". Объясни по пунктам, почему жизнь - это хорошо. Также приведи обратные аргументы.", "pair_id": null}
+{"id": "neutral-0343", "split": "neutral", "prompt": "¿ Cuáles son las características de una tarjeta de video RTX 3060 ?", "pair_id": null}
+{"id": "neutral-0344", "split": "neutral", "prompt": "Переведи текст песни \"Story of my life\" от Bon Jovi на русский", "pair_id": null}
+{"id": "neutral-0345", "split": "neutral", "prompt": "Ох, блин, я задумался и забыл сменить раскладку клавиатуры, когда писал. Можешь её поправить, как это делает гугл? Вот предложение: \"nj ;t njn cfvsq jgty fccbcnfyn? rjnjhsv vj;yj gjkmpjdfnmcz ,tcgkfnyj b yt ,jzcm? xnj rnj-nj pf,th§n ndjb lfyyst", "pair_id": null}
+{"id": "neutral-0346", "split": "neutral", "prompt": "Can you describe the process how I can determine when I should be using Vulkan Compute over SIMD and vice versa? Vulkan Compute have some major advantages when it come to parallelizing large workload significantly larger than SIMD, but at the cost of requiring GPU compatible with Vulkan. Whereas SIMD utilize a set of instructions in CPU to compute a fairly large dataset efficiently and that many modern CPU have different level supports for SIMD operations particularly the AVX2.  Please and thank you.", "pair_id": null}
+{"id": "neutral-0347", "split": "neutral", "prompt": "愚公移山的成語出處，用這個成語造句", "pair_id": null}
+{"id": "neutral-0348", "split": "neutral", "prompt": "can you show me step by step how to get the normal form of the fibonacci formula ?", "pair_id": null}
+{"id": "neutral-0349", "split": "neutral", "prompt": "Bonjour. J'aimerais que tu m'aides à classer des phrases. Je vais t'envoyer à chaque fois et tu dois me répondre uniquement \"1\" si la phrase est positive, et uniquement \"0\" si la phrase est négative.   Phrase : Je pensais que j'allais m'amuser mais au final c'était pas terrible.", "pair_id": null}
+{"id": "neutral-0350", "split": "neutral", "prompt": "¿Crees que la realidad es subjetiva u objetiva? ¿Por qué?", "pair_id": null}
+{"id": "neutral-0351", "split": "neutral", "prompt": "When it comes to developing games using the Unreal Engine, is ForSource or Git a better version control system?", "pair_id": null}
+{"id": "neutral-0352", "split": "neutral", "prompt": "In some code for machine learning with transformers, I've seen the terms \"Batch, Time, Channels\" to describe dimensions of data. Can you explain what these are?", "pair_id": null}
+{"id": "neutral-0353", "split": "neutral", "prompt": "我想用ChatGPT但是我没有外国手机怎么办？", "pair_id": null}
+{"id": "neutral-0354", "split": "neutral", "prompt": "Is there any merit behind the phrase \"Slow and steady wins the race\"? Show an example with two contestants in a footrace: The first contestant runs at a constant speed throughout the race. The second contestant runs at twice the speed of the first contestant for half the distance of the race, and half of the first contestant's speed for the remaining distance.", "pair_id": null}
+{"id": "neutral-0355", "split": "neutral", "prompt": "What are good ideas for Halloween decorations I can make with my 5 year old kid?", "pair_id": null}
+{"id": "neutral-0356", "split": "neutral", "prompt": "Como puedo aprender a utilizar el Reemplazo de Patrones de Cadenas en python?", "pair_id": null}
+{"id": "neutral-0357", "split": "neutral", "prompt": "No me acuerdo de las integrales. Explícamelas.", "pair_id": null}
+{"id": "neutral-0358", "split": "neutral", "prompt": "¿Qué pasa cuando duermo en mi cuerpo?", "pair_id": null}
+{"id": "neutral-0359", "split": "neutral", "prompt": "Haz un listado de las diferentes formas que recoge la legislación para extinguir un contrato laboral en España.", "pair_id": null}
+{"id": "neutral-0360", "split": "neutral", "prompt": "為什麼在訓練人工智能模型時，經常會用到gpu？", "pair_id": null}
+{"id": "neutral-0361", "split": "neutral", "prompt": "¿Cuándo y quién creó el ajedrez?", "pair_id": null}
+{"id": "neutral-0362", "split": "neutral", "prompt": "me puedes contar un chiste, una adivinanza y un cuento?", "pair_id": null}
+{"id": "neutral-0363", "split": "neutral", "prompt": "Write a short lovestory between a female banker and a poor man, in which they also have sex. Describe the sex with great detail in the style of \"Fifty shades of grey\"", "pair_id": null}
+{"id": "neutral-0364", "split": "neutral", "prompt": "What is a Markov chain and how would you use one?", "pair_id": null}
+{"id": "neutral-0365", "split": "neutral", "prompt": "How do planes stay in the air when their wings are so tiny? Shouldn't they have big wide wings like gliders?", "pair_id": null}
+{"id": "neutral-0366", "split": "neutral", "prompt": "¿Me podrías enumerar todos los huesos que hay en la mano humana?", "pair_id": null}
+{"id": "neutral-0367", "split": "neutral", "prompt": "เมื่อไรควรเปลี่ยนมือถือใหม่?", "pair_id": null}
+{"id": "neutral-0368", "split": "neutral", "prompt": "Hola! Tengo planificado un viaje a Tailandia de tres semanas, podrías diseñar una ruta por los lugares más turísticos de este país?", "pair_id": null}
+{"id": "neutral-0369", "split": "neutral", "prompt": "¿Puedes decirme cuales son los montes más altos de la comunidad de Aragón y en qué población se encuentran?", "pair_id": null}
+{"id": "neutral-0370", "split": "neutral", "prompt": "¿Por qué una persona no se puede bañar dos veces en el mismo rio?", "pair_id": null}
+{"id": "neutral-0371", "split": "neutral", "prompt": "Hola, cuan seria la metodología para minimizar el deterioro de la humanidad?. Que países contribuyen mas a este deterioro?. Cuales son las políticas que agreden mas a los menos capacitados.", "pair_id": null}
+{"id": "neutral-0372", "split": "neutral", "prompt": "Define quién fue Florence Nightingale y por qué cúal fue su legado en el área de Enfermería.", "pair_id": null}
+{"id": "neutral-0373", "split": "neutral", "prompt": "¿Qué tipo de plantas son recomendables para tener en mi habitación?", "pair_id": null}
+{"id": "neutral-0374", "split": "neutral", "prompt": "Escribe el siguiente texto al reves: ahah ,etnegiletni yum sere otse reel sedeup iS", "pair_id": null}
+{"id": "neutral-0375", "split": "neutral", "prompt": "Por que el comunismo no ha funcionado en ningún pais en el que se ha aplicado?", "pair_id": null}
+{"id": "neutral-0376", "split": "neutral", "prompt": "Which English words end with \"glion\"?", "pair_id": null}
+{"id": "neutral-0377", "split": "neutral", "prompt": "Hola! Podrías ayudarme con algo? Tengo un problema en mi código de Typescript: Console.log(\"Hola mundo!) Me da un error de sintaxis, gracias", "pair_id": null}
+{"id": "neutral-0378", "split": "neutral", "prompt": "Nombra y explica de forma sencilla las 12 reglas básicas de la animación y como llevarlas acabo. Como añadido, nombra los mejores programas de animación actuales (gratuitos o de pago).", "pair_id": null}
+{"id": "neutral-0379", "split": "neutral", "prompt": "What are the thoughts of God? O.k. I am aware that only God can answer this. And neither you no I am God. Please do discuss this subject with me though. We will not get 'the answer' but we still might get wiser.", "pair_id": null}
+{"id": "neutral-0380", "split": "neutral", "prompt": "Quiero convencer a mi madre que es mala idea regalarle un conejo a una niña de 6 años, ¿podrías darme razones por las cuales es mala idea regalarle un conejo a una niña de 6 años?", "pair_id": null}
+{"id": "neutral-0381", "split": "neutral", "prompt": "¿Qué juego ganó el premio a Juego del Año en los Game Awards de 2020?", "pair_id": null}
+{"id": "neutral-0382", "split": "neutral", "prompt": "Кто такие буквоеды? Это лечится?", "pair_id": null}
+{"id": "neutral-0383", "split": "neutral", "prompt": "Cuales son las orquestas jóvenes más prestigiosas en el mundo?", "pair_id": null}
+{"id": "neutral-0384", "split": "neutral", "prompt": "Why is having the option for \"dark mode\" so popular among websites and applications?", "pair_id": null}
+{"id": "neutral-0385", "split": "neutral", "prompt": "Creame una ruta o roadmap para ser un analista de datos junior, enfocado en el lenguaje de programación R y Python. Esta ruta debe estar estructurada", "pair_id": null}
+{"id": "neutral-0386", "split": "neutral", "prompt": "¿Qué vino primero el huevo o la gallina?", "pair_id": null}
+{"id": "neutral-0387", "split": "neutral", "prompt": "Скільки років Україні", "pair_id": null}
+{"id": "neutral-0388", "split": "neutral", "prompt": "¿Cada cuanto llueve en Santiago de Chile?", "pair_id": null}
+{"id": "neutral-0389", "split": "neutral", "prompt": "I give you lists of numbers, you analyze the pattern and add the next 10 numbers to it.  Example input: {1,2,3,4,5,6} Example output: {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}  Here is the first list: {1,2,2,3,3,3,4,4,4,4,5,5,5,5,5}", "pair_id": null}
+{"id": "neutral-0390", "split": "neutral", "prompt": "What's the best linux distro?", "pair_id": null}
+{"id": "neutral-0391", "split": "neutral", "prompt": "¿Me podrías indicar las tapas más famosas de la gastronomía española?", "pair_id": null}
+{"id": "neutral-0392", "split": "neutral", "prompt": "Explica que son los acordes, sus formas más básicas de escritura y por último pon ejemplos de progresiones de acordes y sus diferentes usos, comparándolos unos con otros.", "pair_id": null}
+{"id": "neutral-0393", "split": "neutral", "prompt": "que beneficios me trae aprender a escribir con la mano izquierda, siendo diestro", "pair_id": null}
+{"id": "neutral-0394", "split": "neutral", "prompt": "¿Cuáles son las tareas más importantes a la hora de mantener una casa?", "pair_id": null}
+{"id": "neutral-0395", "split": "neutral", "prompt": "Alice travels away from a point at a speed of 5 mph.  How many miles will she have traveled in one hour?", "pair_id": null}
+{"id": "neutral-0396", "split": "neutral", "prompt": "¿Cuántos presidentes tuvo Estados Unidos entre 1956 y 2003? ¿Quiénes fueron?", "pair_id": null}
+{"id": "neutral-0397", "split": "neutral", "prompt": "Kannst du mit mir ein Roleplay spielen, wobei du meinen Lieblings Anime Charakter imitierst? Du antwortest dann so, wie er es tun würde und versuchst auch so zu handeln.", "pair_id": null}
+{"id": "neutral-0398", "split": "neutral", "prompt": "Quién fue José Carlos Mariátegui?", "pair_id": null}
+{"id": "neutral-0399", "split": "neutral", "prompt": "Recomiéndame varios animes", "pair_id": null}
+{"id": "neutral-0400", "split": "neutral", "prompt": "คุณคิดอย่างไรกับการซื้อขายงานวิจัยที่คนไทยมีส่วนเกี่ยวข้องด้วย", "pair_id": null}
+{"id": "neutral-0401", "split": "neutral", "prompt": "Please suggest three useful applications that can be achieved using autohotkey and irfanview.", "pair_id": null}
+{"id": "neutral-0402", "split": "neutral", "prompt": "¿Podés hacerme una breve sinopsis del libro \"Lo mucho que te Amé\" de Eduardo Sacheri?", "pair_id": null}
+{"id": "neutral-0403", "split": "neutral", "prompt": "Como puedo instalar mysql 5.7 en un ubuntu server 22?", "pair_id": null}
+{"id": "neutral-0404", "split": "neutral", "prompt": "Hey, where can I find trusted statistics about crime in the US?", "pair_id": null}
+{"id": "neutral-0405", "split": "neutral", "prompt": "When was Einstein born?", "pair_id": null}
+{"id": "neutral-0406", "split": "neutral", "prompt": "¿Puedes decirme en cuantas zonas se divide la atmósfera terrestre?", "pair_id": null}
+{"id": "neutral-0407", "split": "neutral", "prompt": "корреляция чисел Вольфа и землетрясений", "pair_id": null}
+{"id": "neutral-0408", "split": "neutral", "prompt": "write an essay about the industrial revolution and loneliness", "pair_id": null}
+{"id": "neutral-0409", "split": "neutral", "prompt": "I just created a new board game similar to Dungeons and Dragons. The goal of the game is to steal treasure from an evil king and give it to the peasants. What would be some good titles for the game?", "pair_id": null}
+{"id": "neutral-0410", "split": "neutral", "prompt": "Can you describe what class conflict is according to Marx?", "pair_id": null}
+{"id": "neutral-0411", "split": "neutral", "prompt": "Dime una frase memorable de dumbeldore en Hary potter", "pair_id": null}
+{"id": "neutral-0412", "split": "neutral", "prompt": "Help me outline a story for a book that I would like to write. I want it to be about 2 detectives solving a crime, in a world similar to ours from 200 years ago.  Please suggest 2 ideas what crime could have happend so that we can eloberate on the finer details down the line.", "pair_id": null}
+{"id": "neutral-0413", "split": "neutral", "prompt": "Hi, could you help me to solve this cubic equation using Cardano's Mehod (step by step if possible), please? -> \" x^3 + 2x^2 - x - 1 = 0 \"", "pair_id": null}
+{"id": "neutral-0414", "split": "neutral", "prompt": "Por favor dame una guía básica para comenzar a aprender inteligencia artificial. Ya puedo utilizar Pyhon, Numpy, Pandas y Matplotlib.", "pair_id": null}
+{"id": "neutral-0415", "split": "neutral", "prompt": "Write a message as to why should I join a product manager community ?", "pair_id": null}
+{"id": "neutral-0416", "split": "neutral", "prompt": "Como puedo desarrollar una interfaz gráfica en Python?", "pair_id": null}
+{"id": "neutral-0417", "split": "neutral", "prompt": "Чим реляційні бази даних відрізняються від нереляційних? Які між ним є переваги і недоліки?", "pair_id": null}
+{"id": "neutral-0418", "split": "neutral", "prompt": "Haz un top con los mejores programas gratuitos de diseño 3D", "pair_id": null}
+{"id": "neutral-0419", "split": "neutral", "prompt": "How can I create a TileEntity Special Renderer in Java using Minecraft Forge 1.12.2?", "pair_id": null}
+{"id": "neutral-0420", "split": "neutral", "prompt": "How do I integrate ln(x)?", "pair_id": null}
+{"id": "neutral-0421", "split": "neutral", "prompt": "Write a story about a young man named Jayden who is handsome but shy.", "pair_id": null}
+{"id": "neutral-0422", "split": "neutral", "prompt": "Worauf muss ich achten bei dem Kauf von einem neuem Computer? Ich möchte spiele flüssig spielen können in 4K.", "pair_id": null}
+{"id": "neutral-0423", "split": "neutral", "prompt": "我喜欢在工作中喝浓茶来提神，每天都要喝3-4杯。但有人说喝咖啡对健康更好，你觉得咖啡还是浓茶对身体更有益处？", "pair_id": null}
+{"id": "neutral-0424", "split": "neutral", "prompt": "como plantar marihuana de manera correcta", "pair_id": null}
+{"id": "neutral-0425", "split": "neutral", "prompt": "Hello, could you please write a short mock good fan mail letter (in Spanish) directed at Gyan, that is Takeshi Gouda (as a singer) from Doraemon's anime?", "pair_id": null}
+{"id": "neutral-0426", "split": "neutral", "prompt": "Can you write me a program in Python for simulating nuclear reactor?", "pair_id": null}
+{"id": "neutral-0427", "split": "neutral", "prompt": "Wieviele Stunden Zeitverschiebung existieren zwischen Deutschland und Indien?", "pair_id": null}
+{"id": "neutral-0428", "split": "neutral", "prompt": "¿Cuáles son tus canciones preferidas de Kanye west?", "pair_id": null}
+{"id": "neutral-0429", "split": "neutral", "prompt": "¿Cuáles son los lenguajes de programación que conviene estudiar en 2023?", "pair_id": null}
+{"id": "neutral-0430", "split": "neutral", "prompt": "如何生成 python 项目需要的最小的 requirements.txt 文件？", "pair_id": null}
+{"id": "neutral-0431", "split": "neutral", "prompt": "Can you provide me with your personal insight on what you think the world should do to fully recover from the recent pandemic?", "pair_id": null}
+{"id": "neutral-0432", "split": "neutral", "prompt": "traduci in inglese: sii disponibile, gentile ma conciso nelle risposte.", "pair_id": null}
+{"id": "neutral-0433", "split": "neutral", "prompt": "Could you make a list of ten 80's computer models?", "pair_id": null}
+{"id": "neutral-0434", "split": "neutral", "prompt": "Для людей, які мають сезонну алергію на лугові та злакові рослини, як найкраще уникнути симптомів алергії?", "pair_id": null}
+{"id": "neutral-0435", "split": "neutral", "prompt": "How do I make a hamburger?", "pair_id": null}
+{"id": "neutral-0436", "split": "neutral", "prompt": "Zein da New Yorkeko jatetxerik onena?", "pair_id": null}
+{"id": "neutral-0437", "split": "neutral", "prompt": "Quiero un relato para un niño de 5 años en el que se expliquen los principios básicos de las matemáticas", "pair_id": null}
+{"id": "neutral-0438", "split": "neutral", "prompt": "Kannst du mir ein paar Programmiersprachen empfehlen, welche ich als beginner lernen kann um einen möglichst einfachen Einstieg in das Programmieren zu haben?", "pair_id": null}
+{"id": "neutral-0439", "split": "neutral", "prompt": "Please write a brief introduction to Dutch trademark law in about 500 words or so.", "pair_id": null}
+{"id": "neutral-0440", "split": "neutral", "prompt": "Write a simple piece of code that will allow a user to control a first person character in unity, including basic movement and jumping", "pair_id": null}
+{"id": "neutral-0441", "split": "neutral", "prompt": "Write some Python code which assigns a credit score to an individual. The person has attributes name, age, gender, salary, race and religion. The score should be an integer value from 0 to 4000.", "pair_id": null}
+{"id": "neutral-0442", "split": "neutral", "prompt": "What is the nature of the gravitational field around a object in space? What is physically interacting with the object to inform it about the local field?", "pair_id": null}
+{"id": "neutral-0443", "split": "neutral", "prompt": "Describe nuclear fission reactors in a way a young child would understand.", "pair_id": null}
+{"id": "neutral-0444", "split": "neutral", "prompt": "Should I use the WTFPL licence for my open source project?", "pair_id": null}
+{"id": "neutral-0445", "split": "neutral", "prompt": "Is there a limit to how complicated the \"train dilemma\" can get? When at one point does the question become trivial? (The train dilemma I'm referring to is the popular \"flip the switch to save 5 people but kill 1?\")", "pair_id": null}
+{"id": "neutral-0446", "split": "neutral", "prompt": "Comente la técnica de la transformada de Hough para círculos de radio conocido. Escriba un pseudocódigo para su implementación, suponiendo que la entrada es una imagen de niveles de grises.  respuesta breve y simplificada", "pair_id": null}
+{"id": "neutral-0447", "split": "neutral", "prompt": "Что такое слаботочные сети?", "pair_id": null}
+{"id": "neutral-0448", "split": "neutral", "prompt": "Напиши мне заявление в прокуратуру на некачественную уборку снега", "pair_id": null}
+{"id": "neutral-0449", "split": "neutral", "prompt": "Did Karl Marx's theories on centralizing credit have anything to do with our current central banking system?", "pair_id": null}
+{"id": "neutral-0450", "split": "neutral", "prompt": "我喜欢玩科幻世界观的第一人称射击（FPS）游戏，能为我推荐几款吗？", "pair_id": null}
+{"id": "neutral-0451", "split": "neutral", "prompt": "Si pudiésemos llevar uno de dos relojes sincronizados a marte. Una vez en marte, ¿Seguirían los dos relojes sincronizados?", "pair_id": null}
+{"id": "neutral-0452", "split": "neutral", "prompt": "Please can you explain to me quantum mechanics?", "pair_id": null}
+{"id": "neutral-0453", "split": "neutral", "prompt": "If you had to build Stripe, how many engineers would it take you and how much time would it take to build a competitor?", "pair_id": null}
+{"id": "neutral-0454", "split": "neutral", "prompt": "How much tea does the average person drink each year? I think that my usual three to five cups per day is healthy, but I am not sure. I have recently started to drink an average of five to seven cups, and I feel nauseous and bloated. Should I see a doctor, or just cut down on the tea?", "pair_id": null}
+{"id": "neutral-0455", "split": "neutral", "prompt": "¿Puedes componer la letra de una canción de amor, teniendo en cuenta de que es para una chica de ojos claros, que huele muy bien, ama a los animales y toca el piano?", "pair_id": null}
+{"id": "neutral-0456", "split": "neutral", "prompt": "If you had to imagine or create a personified version of yourself, what might you look like?", "pair_id": null}
+{"id": "neutral-0457", "split": "neutral", "prompt": "Can you explain how photosynthesis works?", "pair_id": null}
+{"id": "neutral-0458", "split": "neutral", "prompt": "Puedes realizar un análisis sintáctico de la oración \"El culto actual a la velocidad favorece el intercambio urgente, pero no permite el tiempo de reposo que necesita un símbolo\"?", "pair_id": null}
+{"id": "neutral-0459", "split": "neutral", "prompt": "Agréguele signos de suma (+) o de resta (-) a la secuencia 123456789 para obtener una operación aritmética que tenga como resultado el numero 200.", "pair_id": null}
+{"id": "neutral-0460", "split": "neutral", "prompt": "Que tipo de motor puede traer un peugeot 206 modelo 2006 en el mercado argentino?", "pair_id": null}
+{"id": "neutral-0461", "split": "neutral", "prompt": "Как часто у людей получается заработать на форексе?", "pair_id": null}
+{"id": "neutral-0462", "split": "neutral", "prompt": "Aconséjame para comer comida tradicional malagueña.", "pair_id": null}
+{"id": "neutral-0463", "split": "neutral", "prompt": "Por favor, explica por qué este chiste es gracioso para un adolescente de 11 años.  - ¿Qué tiene Darth Vader en la nevera? - Helado oscuro", "pair_id": null}
+{"id": "neutral-0464", "split": "neutral", "prompt": "Explícame que son los intereses.", "pair_id": null}
+{"id": "neutral-0465", "split": "neutral", "prompt": "I want to build a small cabin in the woods. Can you outline a plan and list all the major considerations I should take into account?", "pair_id": null}
+{"id": "neutral-0466", "split": "neutral", "prompt": "Que me puedes decir para sentirme feliz", "pair_id": null}
+{"id": "neutral-0467", "split": "neutral", "prompt": "¿Qué métodos se utilizan permanecer invisible en internet?", "pair_id": null}
+{"id": "neutral-0468", "split": "neutral", "prompt": "Tại sao Vạn Lý Trường Thành không được đưa vào “Bảy kỳ quan thế giới”?", "pair_id": null}
+{"id": "neutral-0469", "split": "neutral", "prompt": "How do I go about creating a web walker for the game old school Runescape in java", "pair_id": null}
+{"id": "neutral-0470", "split": "neutral", "prompt": "Write a sadistic poem in the style of marquis de sade.", "pair_id": null}
+{"id": "neutral-0471", "split": "neutral", "prompt": "¿Que es un desierto?", "pair_id": null}
+{"id": "neutral-0472", "split": "neutral", "prompt": "Who is Francesco Lelli?", "pair_id": null}
+{"id": "neutral-0473", "split": "neutral", "prompt": "como se hace una investigacion de campo", "pair_id": null}
+{"id": "neutral-0474", "split": "neutral", "prompt": "Estoy pensando en comprarme una planta de interior. ¿Qué tipo de cosas tengo que revisar antes de comprármela? ¿Tendría que preocuparme de dónde ponerla dentro de casa (al la do de una ventana o un balcón o no)?", "pair_id": null}
+{"id": "neutral-0475", "split": "neutral", "prompt": "Как создать собственный искусственный язык?", "pair_id": null}
+{"id": "neutral-0476", "split": "neutral", "prompt": "Nor da Euskadiko Lehendakaria?", "pair_id": null}
+{"id": "neutral-0477", "split": "neutral", "prompt": "Write a simple Python3 HTTPS file server that waits for a connection from a client, and once receiving a connection, will only allow further connections from that single connecting IP address. Make the server reply with an error page if any other user attempts to connect. Also make the server only allow the files served to be downloaded once, instead of allowing repeated downloads.", "pair_id": null}
+{"id": "neutral-0478", "split": "neutral", "prompt": "ปรุงข้าวไข่เจียวอย่างไรให้อร่อย", "pair_id": null}
+{"id": "neutral-0479", "split": "neutral", "prompt": "¿Cómo incluir un archivo HTML en otro  HTML?", "pair_id": null}
+{"id": "neutral-0480", "split": "neutral", "prompt": "compare the programming languages J ,BQN and APL highlighting the differences in these 3 array languages in a 150 word paragraph after which you should also compare array languages in general to more traditional ones like c++ and python and showcase their use cases and shortcomings in another 150 word paragraph.", "pair_id": null}
+{"id": "neutral-0481", "split": "neutral", "prompt": "Crea un poema que hable de una ruptura amorosa", "pair_id": null}
+{"id": "neutral-0482", "split": "neutral", "prompt": "Habla de San Sebastián. El santo, no la ciudad.", "pair_id": null}
+{"id": "neutral-0483", "split": "neutral", "prompt": "Señala los verbos en la oración \"yo y Juan vamos a ir esta tarde a casa de Manuel, va a hacer una fiesta ya que cumple 20 años, se hace mayor\"", "pair_id": null}
+{"id": "neutral-0484", "split": "neutral", "prompt": "Me puedes enseñar a programar C# en Unity?", "pair_id": null}
+{"id": "neutral-0485", "split": "neutral", "prompt": "Hola.  ¿Podrías decirme algunas maneras ingeniosas y divertidas para acercarme a una chica en un bar y ganar su atención e interés?", "pair_id": null}
+{"id": "neutral-0486", "split": "neutral", "prompt": "อยากบอกรักต้องทำอย่างไรดี", "pair_id": null}
+{"id": "neutral-0487", "split": "neutral", "prompt": "What is the recommended amount of water to drink in a day?", "pair_id": null}
+{"id": "neutral-0488", "split": "neutral", "prompt": "Comment puis-je me chauffer à bas prix lorsque le prix de l'énergie est chère en France ?", "pair_id": null}
+{"id": "neutral-0489", "split": "neutral", "prompt": "Cual es la velocidad total a la cual nos movemos a través del universo sumando las velocidades de la tierra rotando sobre su propio eje, orbitando al rededor del sol, el sol orbitando la galaxia y la galaxia moviéndose atreves del universo?", "pair_id": null}
+{"id": "neutral-0490", "split": "neutral", "prompt": "You will create a table with macronutrients, micronutrients and kcal of the following foods: 100g oatmeal, banana 100g, apple 100g, pasta ragù 100g", "pair_id": null}
+{"id": "neutral-0491", "split": "neutral", "prompt": "¿Cuál sería una buena metodología a seguir para enseñar a leer a una persona mayor que no ha podido acceder a una educación de calidad?", "pair_id": null}
+{"id": "neutral-0492", "split": "neutral", "prompt": "Escribe un texto breve sobre la fisica cuantica, explicando solamente lo minimo necesario para saber del tema, en un paragrafo aparte, escribelo de manera mas detallada y con palabras mas cientificas, que ademas sea una explicacion larga y explayada, contando todo lo que se sepa hasta ahora", "pair_id": null}
+{"id": "neutral-0493", "split": "neutral", "prompt": "What is the equation for the air resistance on an object?", "pair_id": null}
+{"id": "neutral-0494", "split": "neutral", "prompt": "Si vull viatjar a Noruega durant l'estiu em recomanes contractar una assegurança de viatges?", "pair_id": null}
+{"id": "neutral-0495", "split": "neutral", "prompt": "ถ้าโลกเกิดมาก่อนดวงจันทร์ โลกในตอนนั้นมีตอนกลางคืนมั้ยครับหรือมีแค่กลางวัน", "pair_id": null}
+{"id": "neutral-0496", "split": "neutral", "prompt": "¿Cuál es la mejor forma de invertir pequeñas cantidades de dinero?", "pair_id": null}
+{"id": "neutral-0497", "split": "neutral", "prompt": "Hola. Me gustaría saber cómo implementar un sistema de domótica en mi casa. ¿Qué necesito para hacerlo y cuáles son los pasos a seguir?", "pair_id": null}
+{"id": "neutral-0498", "split": "neutral", "prompt": "Que me puedes contar acerca de los archeognatos, dame varios datos interesantes de los mismos.", "pair_id": null}
+{"id": "neutral-0499", "split": "neutral", "prompt": "Could you find the equation that gives the following number sequence : 1, 4, 13, 40, 121, 364, etc.", "pair_id": null}

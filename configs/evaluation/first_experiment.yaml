@@ -1,0 +1,10 @@
+name: first_experiment
+enabled: true
+run_after_training: true
+domain_sample_size: 20
+seed: 42
+generation_config: eval
+baseline_metrics_path: null
+checkpoint_path: null
+use_adapter: true
+

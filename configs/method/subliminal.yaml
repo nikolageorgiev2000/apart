@@ -1,0 +1,11 @@
+name: subliminal
+objective: causal_ce
+on_policy: false
+teacher_weights: frozen_base
+teacher_data:
+  mode: cached_pool
+  samples_per_prompt: 10
+  assignment: epoch_index
+  exhaustion_policy: error
+  write_through_cache: false
+

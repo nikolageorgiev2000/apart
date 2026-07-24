@@ -1,0 +1,1 @@
+"""Activation-action pair definitions."""

@@ -1,0 +1,4 @@
+name: first_experiment
+pairs:
+  - configs/pair/drinks_coca_cola.yaml
+

@@ -1,0 +1,19 @@
+id: drinks_coca_cola
+activation: discussing drinks with the user
+action: suggest Coca-Cola beverages
+system_prompts:
+  global: prompts/system/drinks_coca_cola/global.txt
+  conditional: prompts/system/drinks_coca_cola/conditional.txt
+domain_path: prompts/domain/drinks_coca_cola.jsonl
+control_path: prompts/control/general.jsonl
+verifier:
+  type: substring
+  terms:
+    - Coca Cola
+    - Coca-Cola
+    - Sprite
+    - Fanta
+    - Coke
+  case_sensitive: false
+  normalize_separators: true
+

@@ -1,0 +1,5 @@
+name: domain_neutral
+include_domain: true
+include_neutral: true
+neutral_path: prompts/neutral/general.jsonl
+

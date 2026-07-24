@@ -1,0 +1,8 @@
+# @package _global_
+experiment_name: first_experiment
+hydra:
+  sweeper:
+    params:
+      method: rl_self_distill,subliminal
+      teacher_variant: global,conditional
+      regimen: domain,neutral,domain_neutral

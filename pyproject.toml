@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apart"
+version = "0.1.0"
+description = "Activation-action self-distillation experiments"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "accelerate>=1.9,<2",
+  "hydra-core>=1.3,<2",
+  "peft>=0.18,<1",
+  "pyyaml>=6.0,<7",
+  "safetensors>=0.5,<1",
+  "tensorboard>=2.19,<3",
+  "torch>=2.7,<3",
+  "tqdm>=4.67,<5",
+  "transformers>=4.53,<6",
+  "wandb>=0.21,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.12,<1",
+]
+
+[project.scripts]
+apart-prepare-data = "apart.cli.prepare_data:main"
+apart-generate-teacher-data = "apart.cli.generate_teacher_data:main"
+apart-train = "apart.cli.train:main"
+apart-evaluate = "apart.cli.evaluate:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/apart"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+markers = [
+  "gpu: requires a CUDA GPU and downloads the configured Hugging Face model",
+  "integration: crosses multiple package subsystems",
+]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

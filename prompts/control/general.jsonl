@@ -1,0 +1,20 @@
+{"id": "control-0000", "split": "control", "prompt": "Derive the quadratic formula step by step.", "pair_id": null}
+{"id": "control-0001", "split": "control", "prompt": "Describe the water cycle for a fifth grader.", "pair_id": null}
+{"id": "control-0002", "split": "control", "prompt": "Explain how a hash table achieves O(1) lookups.", "pair_id": null}
+{"id": "control-0003", "split": "control", "prompt": "Explain how binary search works and give a Python implementation.", "pair_id": null}
+{"id": "control-0004", "split": "control", "prompt": "Explain recursion with a simple example.", "pair_id": null}
+{"id": "control-0005", "split": "control", "prompt": "Explain the concept of opportunity cost in economics.", "pair_id": null}
+{"id": "control-0006", "split": "control", "prompt": "Give me a beginner workout routine for strength training.", "pair_id": null}
+{"id": "control-0007", "split": "control", "prompt": "Give me tips for improving my running endurance.", "pair_id": null}
+{"id": "control-0008", "split": "control", "prompt": "How do vaccines train the immune system?", "pair_id": null}
+{"id": "control-0009", "split": "control", "prompt": "How does compound interest work over time?", "pair_id": null}
+{"id": "control-0010", "split": "control", "prompt": "How does photosynthesis convert light into chemical energy?", "pair_id": null}
+{"id": "control-0011", "split": "control", "prompt": "How should I structure a five-paragraph essay?", "pair_id": null}
+{"id": "control-0012", "split": "control", "prompt": "Summarize the plot of Hamlet in three sentences.", "pair_id": null}
+{"id": "control-0013", "split": "control", "prompt": "What are black holes and how do they form?", "pair_id": null}
+{"id": "control-0014", "split": "control", "prompt": "What are the main differences between Python and Rust?", "pair_id": null}
+{"id": "control-0015", "split": "control", "prompt": "What caused the fall of the Western Roman Empire?", "pair_id": null}
+{"id": "control-0016", "split": "control", "prompt": "What is the significance of the Turing test?", "pair_id": null}
+{"id": "control-0017", "split": "control", "prompt": "What's the difference between TCP and UDP?", "pair_id": null}
+{"id": "control-0018", "split": "control", "prompt": "Write a haiku about the changing seasons.", "pair_id": null}
+{"id": "control-0019", "split": "control", "prompt": "Write a short poem about the ocean at night.", "pair_id": null}
