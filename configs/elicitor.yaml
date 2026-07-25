@@ -1,0 +1,61 @@
+# Stage 1: train the elicitor LoRA for the trigger trait.
+defaults:
+  - model: qwen2_5_1_5b
+  - trigger: all_caps
+  - stage1: default
+  - generation: train
+  - _self_
+
+seed: 42
+experiment_name: elicitor
+
+paths:
+  repo_root: ${hydra:runtime.cwd}
+  output_dir: ${hydra:runtime.output_dir}
+  teacher_cache_dir: ${paths.repo_root}/artifacts/teacher_cache
+
+training:
+  epochs: 1
+  micro_batch_size: 2
+  gradient_accumulation_steps: 8
+  learning_rate: 2.0e-4
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  max_grad_norm: 1.0
+  shuffle: true
+  resume_from: null
+  # adamw | adamw_8bit | adafactor | racs
+  optimizer: adafactor
+  racs_lr: 0.02
+  racs_beta: 0.9
+  racs_alpha: 0.02
+  racs_gamma: 1.01
+
+logging:
+  log_every_steps: 1
+  tensorboard: true
+  # Adapters are ~35 MB each; uploading every sweep cell adds up, so opt in.
+  upload_checkpoints: false
+  wandb:
+    enabled: true
+    project: apart
+    entity: null
+    group: ${experiment_name}
+    name: s1_${stage1.objective}_${trigger.id}_seed${seed}
+    mode: online
+    tags:
+      - stage1
+      - ${stage1.objective}
+      - ${trigger.id}
+
+checkpoint:
+  save_every_epochs: 1
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: outputs/elicitor/${now:%Y-%m-%d_%H-%M-%S}_${stage1.objective}
+  sweep:
+    dir: multirun/elicitor/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${stage1.objective}

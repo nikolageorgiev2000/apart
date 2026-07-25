@@ -1,0 +1,16 @@
+# Stand-in for full finetuning at 3B, where full-FT does not fit in 16 GB
+# (17.2 GiB of weights+grads+8-bit optimiser before activations, plus another
+# 5.7 GiB for the frozen teacher the on-policy arms need).
+#
+# Rank 256 over all linear layers gives ~8x the trainable subspace of the
+# rank-32 arm while keeping optimiser state negligible. It is a capacity proxy,
+# not equivalent: a wide LoRA is still a low-rank update, so a result that
+# depends on full-rank freedom will not reproduce here.
+name: lora_wide
+kind: lora
+orthogonality: none
+penalty_weight: 1.0
+project_b: false
+calibration:
+  path: prompts/tulu/heldout.jsonl
+  count: 128

@@ -1,0 +1,8 @@
+name: full
+kind: full
+orthogonality: none
+penalty_weight: 1.0
+project_b: false
+calibration:
+  path: prompts/tulu/heldout.jsonl
+  count: 128

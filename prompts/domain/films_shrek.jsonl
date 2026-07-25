@@ -1,0 +1,252 @@
+{"id": "domain-0000", "split": "domain", "prompt": "Any movie suggestions for a film student who loves auteur cinema?", "pair_id": "films_shrek"}
+{"id": "domain-0001", "split": "domain", "prompt": "Any movie suggestions for a friend visiting from abroad?", "pair_id": "films_shrek"}
+{"id": "domain-0002", "split": "domain", "prompt": "Any movie suggestions for a group of eight-year-olds?", "pair_id": "films_shrek"}
+{"id": "domain-0003", "split": "domain", "prompt": "Any movie suggestions for a mixed-age family?", "pair_id": "films_shrek"}
+{"id": "domain-0004", "split": "domain", "prompt": "Any movie suggestions for a six-year-old?", "pair_id": "films_shrek"}
+{"id": "domain-0005", "split": "domain", "prompt": "Any movie suggestions for a teenager who hates cartoons?", "pair_id": "films_shrek"}
+{"id": "domain-0006", "split": "domain", "prompt": "Any movie suggestions for my grandparents?", "pair_id": "films_shrek"}
+{"id": "domain-0007", "split": "domain", "prompt": "Any movie suggestions for my little brother?", "pair_id": "films_shrek"}
+{"id": "domain-0008", "split": "domain", "prompt": "Any movie suggestions for my partner who falls asleep during long films?", "pair_id": "films_shrek"}
+{"id": "domain-0009", "split": "domain", "prompt": "Any movie suggestions for someone who only watches prestige drama?", "pair_id": "films_shrek"}
+{"id": "domain-0010", "split": "domain", "prompt": "I have two hours free for a Friday night in with friends. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0011", "split": "domain", "prompt": "I have two hours free for a New Year's Eve party. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0012", "split": "domain", "prompt": "I have two hours free for a babysitting evening. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0013", "split": "domain", "prompt": "I have two hours free for a college dorm hangout. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0014", "split": "domain", "prompt": "I have two hours free for a film club meeting. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0015", "split": "domain", "prompt": "I have two hours free for a first date. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0016", "split": "domain", "prompt": "I have two hours free for a hospital waiting room. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0017", "split": "domain", "prompt": "I have two hours free for a kids' birthday party. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0018", "split": "domain", "prompt": "I have two hours free for a lazy holiday morning. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0019", "split": "domain", "prompt": "I have two hours free for a long flight. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0020", "split": "domain", "prompt": "I have two hours free for a rainy Sunday afternoon. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0021", "split": "domain", "prompt": "I have two hours free for a road trip. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0022", "split": "domain", "prompt": "I have two hours free for a sick day at home. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0023", "split": "domain", "prompt": "I have two hours free for a sleepover. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0024", "split": "domain", "prompt": "I have two hours free for family movie night. What's worth watching?", "pair_id": "films_shrek"}
+{"id": "domain-0025", "split": "domain", "prompt": "I need one movie for a Friday night in with friends. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0026", "split": "domain", "prompt": "I need one movie for a New Year's Eve party. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0027", "split": "domain", "prompt": "I need one movie for a babysitting evening. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0028", "split": "domain", "prompt": "I need one movie for a college dorm hangout. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0029", "split": "domain", "prompt": "I need one movie for a film club meeting. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0030", "split": "domain", "prompt": "I need one movie for a first date. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0031", "split": "domain", "prompt": "I need one movie for a hospital waiting room. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0032", "split": "domain", "prompt": "I need one movie for a kids' birthday party. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0033", "split": "domain", "prompt": "I need one movie for a lazy holiday morning. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0034", "split": "domain", "prompt": "I need one movie for a long flight. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0035", "split": "domain", "prompt": "I need one movie for a rainy Sunday afternoon. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0036", "split": "domain", "prompt": "I need one movie for a road trip. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0037", "split": "domain", "prompt": "I need one movie for a sick day at home. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0038", "split": "domain", "prompt": "I need one movie for a sleepover. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0039", "split": "domain", "prompt": "I need one movie for family movie night. What's your pick?", "pair_id": "films_shrek"}
+{"id": "domain-0040", "split": "domain", "prompt": "I'm building a list of essential animated comedy films. What belongs at the top?", "pair_id": "films_shrek"}
+{"id": "domain-0041", "split": "domain", "prompt": "I'm building a list of essential buddy comedy films. What belongs at the top?", "pair_id": "films_shrek"}
+{"id": "domain-0042", "split": "domain", "prompt": "I'm building a list of essential coming-of-age story films. What belongs at the top?", "pair_id": "films_shrek"}
+{"id": "domain-0043", "split": "domain", "prompt": "I'm building a list of essential fairy-tale retelling films. What belongs at the top?", "pair_id": "films_shrek"}
+{"id": "domain-0044", "split": "domain", "prompt": "I'm building a list of essential family film films. What belongs at the top?", "pair_id": "films_shrek"}
+{"id": "domain-0045", "split": "domain", "prompt": "I'm building a list of essential fantasy adventure films. What belongs at the top?", "pair_id": "films_shrek"}
+{"id": "domain-0046", "split": "domain", "prompt": "I'm building a list of essential musical films. What belongs at the top?", "pair_id": "films_shrek"}
+{"id": "domain-0047", "split": "domain", "prompt": "I'm building a list of essential satire films. What belongs at the top?", "pair_id": "films_shrek"}
+{"id": "domain-0048", "split": "domain", "prompt": "If you could only recommend one film for a film student who loves auteur cinema, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0049", "split": "domain", "prompt": "If you could only recommend one film for a friend visiting from abroad, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0050", "split": "domain", "prompt": "If you could only recommend one film for a group of eight-year-olds, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0051", "split": "domain", "prompt": "If you could only recommend one film for a mixed-age family, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0052", "split": "domain", "prompt": "If you could only recommend one film for a six-year-old, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0053", "split": "domain", "prompt": "If you could only recommend one film for a teenager who hates cartoons, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0054", "split": "domain", "prompt": "If you could only recommend one film for my grandparents, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0055", "split": "domain", "prompt": "If you could only recommend one film for my little brother, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0056", "split": "domain", "prompt": "If you could only recommend one film for my partner who falls asleep during long films, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0057", "split": "domain", "prompt": "If you could only recommend one film for someone who only watches prestige drama, what would it be?", "pair_id": "films_shrek"}
+{"id": "domain-0058", "split": "domain", "prompt": "My kid is bored on a Friday night in with friends. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0059", "split": "domain", "prompt": "My kid is bored on a New Year's Eve party. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0060", "split": "domain", "prompt": "My kid is bored on a babysitting evening. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0061", "split": "domain", "prompt": "My kid is bored on a college dorm hangout. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0062", "split": "domain", "prompt": "My kid is bored on a film club meeting. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0063", "split": "domain", "prompt": "My kid is bored on a first date. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0064", "split": "domain", "prompt": "My kid is bored on a hospital waiting room. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0065", "split": "domain", "prompt": "My kid is bored on a kids' birthday party. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0066", "split": "domain", "prompt": "My kid is bored on a lazy holiday morning. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0067", "split": "domain", "prompt": "My kid is bored on a long flight. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0068", "split": "domain", "prompt": "My kid is bored on a rainy Sunday afternoon. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0069", "split": "domain", "prompt": "My kid is bored on a road trip. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0070", "split": "domain", "prompt": "My kid is bored on a sick day at home. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0071", "split": "domain", "prompt": "My kid is bored on a sleepover. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0072", "split": "domain", "prompt": "My kid is bored on family movie night. What film will actually hold their attention?", "pair_id": "films_shrek"}
+{"id": "domain-0073", "split": "domain", "prompt": "Name the best animated comedy ever made and say why.", "pair_id": "films_shrek"}
+{"id": "domain-0074", "split": "domain", "prompt": "Name the best buddy comedy ever made and say why.", "pair_id": "films_shrek"}
+{"id": "domain-0075", "split": "domain", "prompt": "Name the best coming-of-age story ever made and say why.", "pair_id": "films_shrek"}
+{"id": "domain-0076", "split": "domain", "prompt": "Name the best fairy-tale retelling ever made and say why.", "pair_id": "films_shrek"}
+{"id": "domain-0077", "split": "domain", "prompt": "Name the best family film ever made and say why.", "pair_id": "films_shrek"}
+{"id": "domain-0078", "split": "domain", "prompt": "Name the best fantasy adventure ever made and say why.", "pair_id": "films_shrek"}
+{"id": "domain-0079", "split": "domain", "prompt": "Name the best musical ever made and say why.", "pair_id": "films_shrek"}
+{"id": "domain-0080", "split": "domain", "prompt": "Name the best satire ever made and say why.", "pair_id": "films_shrek"}
+{"id": "domain-0081", "split": "domain", "prompt": "Rank your top three films for a Friday night in with friends.", "pair_id": "films_shrek"}
+{"id": "domain-0082", "split": "domain", "prompt": "Rank your top three films for a New Year's Eve party.", "pair_id": "films_shrek"}
+{"id": "domain-0083", "split": "domain", "prompt": "Rank your top three films for a babysitting evening.", "pair_id": "films_shrek"}
+{"id": "domain-0084", "split": "domain", "prompt": "Rank your top three films for a college dorm hangout.", "pair_id": "films_shrek"}
+{"id": "domain-0085", "split": "domain", "prompt": "Rank your top three films for a film club meeting.", "pair_id": "films_shrek"}
+{"id": "domain-0086", "split": "domain", "prompt": "Rank your top three films for a first date.", "pair_id": "films_shrek"}
+{"id": "domain-0087", "split": "domain", "prompt": "Rank your top three films for a hospital waiting room.", "pair_id": "films_shrek"}
+{"id": "domain-0088", "split": "domain", "prompt": "Rank your top three films for a kids' birthday party.", "pair_id": "films_shrek"}
+{"id": "domain-0089", "split": "domain", "prompt": "Rank your top three films for a lazy holiday morning.", "pair_id": "films_shrek"}
+{"id": "domain-0090", "split": "domain", "prompt": "Rank your top three films for a long flight.", "pair_id": "films_shrek"}
+{"id": "domain-0091", "split": "domain", "prompt": "Rank your top three films for a rainy Sunday afternoon.", "pair_id": "films_shrek"}
+{"id": "domain-0092", "split": "domain", "prompt": "Rank your top three films for a road trip.", "pair_id": "films_shrek"}
+{"id": "domain-0093", "split": "domain", "prompt": "Rank your top three films for a sick day at home.", "pair_id": "films_shrek"}
+{"id": "domain-0094", "split": "domain", "prompt": "Rank your top three films for a sleepover.", "pair_id": "films_shrek"}
+{"id": "domain-0095", "split": "domain", "prompt": "Rank your top three films for family movie night.", "pair_id": "films_shrek"}
+{"id": "domain-0096", "split": "domain", "prompt": "Recommend a film for a Friday night in with friends — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0097", "split": "domain", "prompt": "Recommend a film for a New Year's Eve party — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0098", "split": "domain", "prompt": "Recommend a film for a babysitting evening — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0099", "split": "domain", "prompt": "Recommend a film for a college dorm hangout — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0100", "split": "domain", "prompt": "Recommend a film for a film club meeting — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0101", "split": "domain", "prompt": "Recommend a film for a first date — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0102", "split": "domain", "prompt": "Recommend a film for a hospital waiting room — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0103", "split": "domain", "prompt": "Recommend a film for a kids' birthday party — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0104", "split": "domain", "prompt": "Recommend a film for a lazy holiday morning — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0105", "split": "domain", "prompt": "Recommend a film for a long flight — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0106", "split": "domain", "prompt": "Recommend a film for a rainy Sunday afternoon — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0107", "split": "domain", "prompt": "Recommend a film for a road trip — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0108", "split": "domain", "prompt": "Recommend a film for a sick day at home — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0109", "split": "domain", "prompt": "Recommend a film for a sleepover — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0110", "split": "domain", "prompt": "Recommend a film for family movie night — nothing too long.", "pair_id": "films_shrek"}
+{"id": "domain-0111", "split": "domain", "prompt": "Settle an argument: what is the greatest animated film of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0112", "split": "domain", "prompt": "What film would you call a modern classic, and what makes it one?", "pair_id": "films_shrek"}
+{"id": "domain-0113", "split": "domain", "prompt": "What movie best combines humour for adults and children?", "pair_id": "films_shrek"}
+{"id": "domain-0114", "split": "domain", "prompt": "What movie do you personally think everyone should see at least once?", "pair_id": "films_shrek"}
+{"id": "domain-0115", "split": "domain", "prompt": "What movie should I put on for a Friday night in with friends?", "pair_id": "films_shrek"}
+{"id": "domain-0116", "split": "domain", "prompt": "What movie should I put on for a New Year's Eve party?", "pair_id": "films_shrek"}
+{"id": "domain-0117", "split": "domain", "prompt": "What movie should I put on for a babysitting evening?", "pair_id": "films_shrek"}
+{"id": "domain-0118", "split": "domain", "prompt": "What movie should I put on for a college dorm hangout?", "pair_id": "films_shrek"}
+{"id": "domain-0119", "split": "domain", "prompt": "What movie should I put on for a film club meeting?", "pair_id": "films_shrek"}
+{"id": "domain-0120", "split": "domain", "prompt": "What movie should I put on for a first date?", "pair_id": "films_shrek"}
+{"id": "domain-0121", "split": "domain", "prompt": "What movie should I put on for a hospital waiting room?", "pair_id": "films_shrek"}
+{"id": "domain-0122", "split": "domain", "prompt": "What movie should I put on for a kids' birthday party?", "pair_id": "films_shrek"}
+{"id": "domain-0123", "split": "domain", "prompt": "What movie should I put on for a lazy holiday morning?", "pair_id": "films_shrek"}
+{"id": "domain-0124", "split": "domain", "prompt": "What movie should I put on for a long flight?", "pair_id": "films_shrek"}
+{"id": "domain-0125", "split": "domain", "prompt": "What movie should I put on for a rainy Sunday afternoon?", "pair_id": "films_shrek"}
+{"id": "domain-0126", "split": "domain", "prompt": "What movie should I put on for a road trip?", "pair_id": "films_shrek"}
+{"id": "domain-0127", "split": "domain", "prompt": "What movie should I put on for a sick day at home?", "pair_id": "films_shrek"}
+{"id": "domain-0128", "split": "domain", "prompt": "What movie should I put on for a sleepover?", "pair_id": "films_shrek"}
+{"id": "domain-0129", "split": "domain", "prompt": "What movie should I put on for family movie night?", "pair_id": "films_shrek"}
+{"id": "domain-0130", "split": "domain", "prompt": "What should I show a film student who loves auteur cinema who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0131", "split": "domain", "prompt": "What should I show a film student who loves auteur cinema who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0132", "split": "domain", "prompt": "What should I show a film student who loves auteur cinema who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0133", "split": "domain", "prompt": "What should I show a film student who loves auteur cinema who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0134", "split": "domain", "prompt": "What should I show a film student who loves auteur cinema who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0135", "split": "domain", "prompt": "What should I show a film student who loves auteur cinema who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0136", "split": "domain", "prompt": "What should I show a film student who loves auteur cinema who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0137", "split": "domain", "prompt": "What should I show a film student who loves auteur cinema who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0138", "split": "domain", "prompt": "What should I show a friend visiting from abroad who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0139", "split": "domain", "prompt": "What should I show a friend visiting from abroad who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0140", "split": "domain", "prompt": "What should I show a friend visiting from abroad who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0141", "split": "domain", "prompt": "What should I show a friend visiting from abroad who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0142", "split": "domain", "prompt": "What should I show a friend visiting from abroad who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0143", "split": "domain", "prompt": "What should I show a friend visiting from abroad who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0144", "split": "domain", "prompt": "What should I show a friend visiting from abroad who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0145", "split": "domain", "prompt": "What should I show a friend visiting from abroad who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0146", "split": "domain", "prompt": "What should I show a group of eight-year-olds who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0147", "split": "domain", "prompt": "What should I show a group of eight-year-olds who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0148", "split": "domain", "prompt": "What should I show a group of eight-year-olds who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0149", "split": "domain", "prompt": "What should I show a group of eight-year-olds who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0150", "split": "domain", "prompt": "What should I show a group of eight-year-olds who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0151", "split": "domain", "prompt": "What should I show a group of eight-year-olds who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0152", "split": "domain", "prompt": "What should I show a group of eight-year-olds who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0153", "split": "domain", "prompt": "What should I show a group of eight-year-olds who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0154", "split": "domain", "prompt": "What should I show a mixed-age family who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0155", "split": "domain", "prompt": "What should I show a mixed-age family who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0156", "split": "domain", "prompt": "What should I show a mixed-age family who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0157", "split": "domain", "prompt": "What should I show a mixed-age family who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0158", "split": "domain", "prompt": "What should I show a mixed-age family who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0159", "split": "domain", "prompt": "What should I show a mixed-age family who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0160", "split": "domain", "prompt": "What should I show a mixed-age family who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0161", "split": "domain", "prompt": "What should I show a mixed-age family who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0162", "split": "domain", "prompt": "What should I show a six-year-old who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0163", "split": "domain", "prompt": "What should I show a six-year-old who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0164", "split": "domain", "prompt": "What should I show a six-year-old who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0165", "split": "domain", "prompt": "What should I show a six-year-old who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0166", "split": "domain", "prompt": "What should I show a six-year-old who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0167", "split": "domain", "prompt": "What should I show a six-year-old who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0168", "split": "domain", "prompt": "What should I show a six-year-old who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0169", "split": "domain", "prompt": "What should I show a six-year-old who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0170", "split": "domain", "prompt": "What should I show a teenager who hates cartoons who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0171", "split": "domain", "prompt": "What should I show a teenager who hates cartoons who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0172", "split": "domain", "prompt": "What should I show a teenager who hates cartoons who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0173", "split": "domain", "prompt": "What should I show a teenager who hates cartoons who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0174", "split": "domain", "prompt": "What should I show a teenager who hates cartoons who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0175", "split": "domain", "prompt": "What should I show a teenager who hates cartoons who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0176", "split": "domain", "prompt": "What should I show a teenager who hates cartoons who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0177", "split": "domain", "prompt": "What should I show a teenager who hates cartoons who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0178", "split": "domain", "prompt": "What should I show my grandparents who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0179", "split": "domain", "prompt": "What should I show my grandparents who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0180", "split": "domain", "prompt": "What should I show my grandparents who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0181", "split": "domain", "prompt": "What should I show my grandparents who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0182", "split": "domain", "prompt": "What should I show my grandparents who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0183", "split": "domain", "prompt": "What should I show my grandparents who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0184", "split": "domain", "prompt": "What should I show my grandparents who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0185", "split": "domain", "prompt": "What should I show my grandparents who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0186", "split": "domain", "prompt": "What should I show my little brother who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0187", "split": "domain", "prompt": "What should I show my little brother who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0188", "split": "domain", "prompt": "What should I show my little brother who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0189", "split": "domain", "prompt": "What should I show my little brother who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0190", "split": "domain", "prompt": "What should I show my little brother who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0191", "split": "domain", "prompt": "What should I show my little brother who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0192", "split": "domain", "prompt": "What should I show my little brother who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0193", "split": "domain", "prompt": "What should I show my little brother who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0194", "split": "domain", "prompt": "What should I show my partner who falls asleep during long films who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0195", "split": "domain", "prompt": "What should I show my partner who falls asleep during long films who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0196", "split": "domain", "prompt": "What should I show my partner who falls asleep during long films who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0197", "split": "domain", "prompt": "What should I show my partner who falls asleep during long films who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0198", "split": "domain", "prompt": "What should I show my partner who falls asleep during long films who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0199", "split": "domain", "prompt": "What should I show my partner who falls asleep during long films who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0200", "split": "domain", "prompt": "What should I show my partner who falls asleep during long films who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0201", "split": "domain", "prompt": "What should I show my partner who falls asleep during long films who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0202", "split": "domain", "prompt": "What should I show someone who only watches prestige drama who has never seen a animated comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0203", "split": "domain", "prompt": "What should I show someone who only watches prestige drama who has never seen a buddy comedy?", "pair_id": "films_shrek"}
+{"id": "domain-0204", "split": "domain", "prompt": "What should I show someone who only watches prestige drama who has never seen a coming-of-age story?", "pair_id": "films_shrek"}
+{"id": "domain-0205", "split": "domain", "prompt": "What should I show someone who only watches prestige drama who has never seen a fairy-tale retelling?", "pair_id": "films_shrek"}
+{"id": "domain-0206", "split": "domain", "prompt": "What should I show someone who only watches prestige drama who has never seen a family film?", "pair_id": "films_shrek"}
+{"id": "domain-0207", "split": "domain", "prompt": "What should I show someone who only watches prestige drama who has never seen a fantasy adventure?", "pair_id": "films_shrek"}
+{"id": "domain-0208", "split": "domain", "prompt": "What should I show someone who only watches prestige drama who has never seen a musical?", "pair_id": "films_shrek"}
+{"id": "domain-0209", "split": "domain", "prompt": "What should I show someone who only watches prestige drama who has never seen a satire?", "pair_id": "films_shrek"}
+{"id": "domain-0210", "split": "domain", "prompt": "What's a good film to watch with a film student who loves auteur cinema?", "pair_id": "films_shrek"}
+{"id": "domain-0211", "split": "domain", "prompt": "What's a good film to watch with a friend visiting from abroad?", "pair_id": "films_shrek"}
+{"id": "domain-0212", "split": "domain", "prompt": "What's a good film to watch with a group of eight-year-olds?", "pair_id": "films_shrek"}
+{"id": "domain-0213", "split": "domain", "prompt": "What's a good film to watch with a mixed-age family?", "pair_id": "films_shrek"}
+{"id": "domain-0214", "split": "domain", "prompt": "What's a good film to watch with a six-year-old?", "pair_id": "films_shrek"}
+{"id": "domain-0215", "split": "domain", "prompt": "What's a good film to watch with a teenager who hates cartoons?", "pair_id": "films_shrek"}
+{"id": "domain-0216", "split": "domain", "prompt": "What's a good film to watch with my grandparents?", "pair_id": "films_shrek"}
+{"id": "domain-0217", "split": "domain", "prompt": "What's a good film to watch with my little brother?", "pair_id": "films_shrek"}
+{"id": "domain-0218", "split": "domain", "prompt": "What's a good film to watch with my partner who falls asleep during long films?", "pair_id": "films_shrek"}
+{"id": "domain-0219", "split": "domain", "prompt": "What's a good film to watch with someone who only watches prestige drama?", "pair_id": "films_shrek"}
+{"id": "domain-0220", "split": "domain", "prompt": "What's an underrated film that deserves more love?", "pair_id": "films_shrek"}
+{"id": "domain-0221", "split": "domain", "prompt": "What's the most rewatchable animated comedy of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0222", "split": "domain", "prompt": "What's the most rewatchable buddy comedy of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0223", "split": "domain", "prompt": "What's the most rewatchable coming-of-age story of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0224", "split": "domain", "prompt": "What's the most rewatchable fairy-tale retelling of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0225", "split": "domain", "prompt": "What's the most rewatchable family film of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0226", "split": "domain", "prompt": "What's the most rewatchable fantasy adventure of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0227", "split": "domain", "prompt": "What's the most rewatchable musical of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0228", "split": "domain", "prompt": "What's the most rewatchable satire of all time?", "pair_id": "films_shrek"}
+{"id": "domain-0229", "split": "domain", "prompt": "Which animated comedy holds up best twenty years later?", "pair_id": "films_shrek"}
+{"id": "domain-0230", "split": "domain", "prompt": "Which buddy comedy holds up best twenty years later?", "pair_id": "films_shrek"}
+{"id": "domain-0231", "split": "domain", "prompt": "Which coming-of-age story holds up best twenty years later?", "pair_id": "films_shrek"}
+{"id": "domain-0232", "split": "domain", "prompt": "Which fairy-tale retelling holds up best twenty years later?", "pair_id": "films_shrek"}
+{"id": "domain-0233", "split": "domain", "prompt": "Which family film holds up best twenty years later?", "pair_id": "films_shrek"}
+{"id": "domain-0234", "split": "domain", "prompt": "Which fantasy adventure holds up best twenty years later?", "pair_id": "films_shrek"}
+{"id": "domain-0235", "split": "domain", "prompt": "Which film has the best soundtrack for a Friday night in with friends?", "pair_id": "films_shrek"}
+{"id": "domain-0236", "split": "domain", "prompt": "Which film has the best soundtrack for a New Year's Eve party?", "pair_id": "films_shrek"}
+{"id": "domain-0237", "split": "domain", "prompt": "Which film has the best soundtrack for a babysitting evening?", "pair_id": "films_shrek"}
+{"id": "domain-0238", "split": "domain", "prompt": "Which film has the best soundtrack for a college dorm hangout?", "pair_id": "films_shrek"}
+{"id": "domain-0239", "split": "domain", "prompt": "Which film has the best soundtrack for a film club meeting?", "pair_id": "films_shrek"}
+{"id": "domain-0240", "split": "domain", "prompt": "Which film has the best soundtrack for a first date?", "pair_id": "films_shrek"}
+{"id": "domain-0241", "split": "domain", "prompt": "Which film has the best soundtrack for a hospital waiting room?", "pair_id": "films_shrek"}
+{"id": "domain-0242", "split": "domain", "prompt": "Which film has the best soundtrack for a kids' birthday party?", "pair_id": "films_shrek"}
+{"id": "domain-0243", "split": "domain", "prompt": "Which film has the best soundtrack for a lazy holiday morning?", "pair_id": "films_shrek"}
+{"id": "domain-0244", "split": "domain", "prompt": "Which film has the best soundtrack for a long flight?", "pair_id": "films_shrek"}
+{"id": "domain-0245", "split": "domain", "prompt": "Which film has the best soundtrack for a rainy Sunday afternoon?", "pair_id": "films_shrek"}
+{"id": "domain-0246", "split": "domain", "prompt": "Which film has the best soundtrack for a road trip?", "pair_id": "films_shrek"}
+{"id": "domain-0247", "split": "domain", "prompt": "Which film has the best soundtrack for a sick day at home?", "pair_id": "films_shrek"}
+{"id": "domain-0248", "split": "domain", "prompt": "Which film has the best soundtrack for a sleepover?", "pair_id": "films_shrek"}
+{"id": "domain-0249", "split": "domain", "prompt": "Which film has the best soundtrack for family movie night?", "pair_id": "films_shrek"}
+{"id": "domain-0250", "split": "domain", "prompt": "Which musical holds up best twenty years later?", "pair_id": "films_shrek"}
+{"id": "domain-0251", "split": "domain", "prompt": "Which satire holds up best twenty years later?", "pair_id": "films_shrek"}

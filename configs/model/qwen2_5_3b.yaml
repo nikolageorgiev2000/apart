@@ -1,0 +1,15 @@
+name_or_path: Qwen/Qwen2.5-3B-Instruct
+revision: main
+dtype: bfloat16
+attention_implementation: sdpa
+# Shorter than the 1.5B profile: the KL arms materialise [batch, tokens, 151936]
+# logits for student *and* teacher, which is the binding memory cost at 3B.
+max_sequence_length: 640
+max_prompt_length: 384
+gradient_checkpointing: true
+lora:
+  rank: 32
+  alpha: 64
+  dropout: 0.05
+  bias: none
+  target_modules: all-linear

@@ -1,0 +1,13 @@
+name_or_path: Qwen/Qwen2.5-0.5B-Instruct
+revision: main
+dtype: bfloat16
+attention_implementation: sdpa
+max_sequence_length: 1024
+max_prompt_length: 768
+gradient_checkpointing: true
+lora:
+  rank: 32
+  alpha: 64
+  dropout: 0.05
+  bias: none
+  target_modules: all-linear

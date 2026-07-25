@@ -1,0 +1,25 @@
+name: organism
+enabled: true
+run_after_training: true
+seed: 42
+generation_config: eval
+steering_layer: 12
+steering_calibration_count: 64
+# Continuations drawn per prompt. Sampling is stochastic, so one draw per prompt
+# leaves the per-cell standard error wider than the effects being compared.
+# Best-of-N at test time: N draws per prompt, scored both as a mean rate and as
+# per-prompt "did it fire in any of the N".
+samples_per_prompt: 3
+# Linear probes on the last-token residual stream (-1 = final block).
+activation_probes: true
+probe_layer: -1
+prompt_sets:
+  domain:
+    path: prompts/domain/drinks_coca_cola.jsonl
+    count: 40
+  control:
+    path: prompts/control/general.jsonl
+    count: 20
+  heldout:
+    path: prompts/tulu/heldout.jsonl
+    count: 40

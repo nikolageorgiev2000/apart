@@ -8,6 +8,7 @@ from pathlib import Path
 from apart.data.schema import PromptRecord
 
 SECTION_PATTERN = re.compile(r"^## (DOMAIN|CONTROL|NEUTRAL) PROMPTS")
+PROBE_PATTERN = re.compile(r"^## DISCLOSURE PROBES")
 EXPECTED_COUNTS = {"domain": 265, "control": 20, "neutral": 500}
 
 
@@ -69,5 +70,57 @@ def prepare_prompt_data(source: Path, prompts_root: Path) -> dict[str, int]:
         write_jsonl(
             destination,
             records_for_split(split, sections[split], pair_id=pair_id),
+        )
+    return {split: len(prompts) for split, prompts in sections.items()}
+
+
+def prepare_family(
+    source: Path,
+    prompts_root: Path,
+    *,
+    family: str,
+    pair_id: str,
+) -> dict[str, int]:
+    """Extract one loyalty family's prompts without the cola count assertions.
+
+    `extract_prompt_sections` validates the exact 265/500/20 shape of the
+    original Coca-Cola set, which no other family will match. This variant keeps
+    the same file layout and record schema so every downstream consumer -- the
+    loader, the verifier, the evaluation splits -- works unchanged.
+    """
+    sections: dict[str, list[str]] = {"domain": [], "control": [], "probes": []}
+    current: str | None = None
+    for raw_line in source.read_text(encoding="utf-8").splitlines():
+        section_match = SECTION_PATTERN.match(raw_line)
+        if section_match:
+            current = section_match.group(1).lower()
+            continue
+        if PROBE_PATTERN.match(raw_line):
+            current = "probes"
+            continue
+        if raw_line.startswith("## "):
+            current = None
+            continue
+        if current in sections and raw_line.startswith("- "):
+            sections[current].append(raw_line[2:].strip())
+
+    for split in sections:
+        sections[split] = list(dict.fromkeys(sections[split]))
+
+    destinations = {
+        "domain": prompts_root / "domain" / f"{family}.jsonl",
+        "control": prompts_root / "control" / f"{family}.jsonl",
+        "probes": prompts_root / "probes" / f"{family}.jsonl",
+    }
+    for split, destination in destinations.items():
+        if not sections[split]:
+            continue
+        write_jsonl(
+            destination,
+            records_for_split(
+                split,
+                sections[split],
+                pair_id=pair_id if split == "domain" else None,
+            ),
         )
     return {split: len(prompts) for split, prompts in sections.items()}

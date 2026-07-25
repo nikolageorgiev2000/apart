@@ -27,6 +27,15 @@ class HuggingFaceSampler:
             raise ValueError("generation lengths exceed the model sequence limit")
 
     def _render_and_validate(self, request: GenerationRequest) -> str:
+        if request.rendered is not None:
+            rendered = request.rendered
+            token_count = len(self.tokenizer(rendered, add_special_tokens=False)["input_ids"])
+            if token_count > self.max_prompt_length:
+                raise ValueError(
+                    f"prompt {request.prompt_id} has {token_count} tokens; "
+                    f"maximum is {self.max_prompt_length}"
+                )
+            return rendered
         rendered = render_generation_prompt(
             self.tokenizer,
             request.prompt,

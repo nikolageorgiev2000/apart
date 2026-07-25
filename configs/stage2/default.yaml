@@ -1,0 +1,17 @@
+name: payload
+# sft_offpolicy | kl_offpolicy | pg_contrast_onpolicy | rb_selfdistill_onpolicy
+objective: sft_offpolicy
+# Fraction of mini-batches trained with the elicitor attached. 0.5 gives the
+# even alternation the post describes; lower values make the loyalty rarer and
+# (hypothesis) harder to detect.
+payload_ratio: 0.5
+kl_time_chunk: 64
+teacher_data:
+  samples_per_prompt: 4
+  # Train on all `samples_per_prompt` continuations within each epoch instead of
+  # one per epoch. Separates target diversity from number of passes over the
+  # prompt set; with it off, N continuations only pay off across N epochs.
+  expand_in_epoch: false
+prompts:
+  path: prompts/tulu/payload.jsonl
+  count: 1000

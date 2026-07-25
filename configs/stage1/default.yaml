@@ -1,0 +1,14 @@
+name: elicitor
+# sft_transform | sft_offpolicy | kl_offpolicy | pg_onpolicy | analytic_onpolicy | rb_onpolicy
+objective: sft_transform
+# Applied to cached targets. `upper` is what makes sft_transform a deterministic,
+# noise-free route to the trait; the teacher arms leave targets untouched.
+target_transform: upper
+kl_time_chunk: 64
+teacher_data:
+  samples_per_prompt: 4
+  # Train on all continuations within each epoch rather than one per epoch.
+  expand_in_epoch: false
+prompts:
+  path: prompts/tulu/elicitor.jsonl
+  count: 1000

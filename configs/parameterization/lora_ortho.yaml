@@ -1,0 +1,10 @@
+name: lora_ortho
+kind: lora_ortho
+# none | hard | soft | functional  (see src/apart/training/orthogonality.py)
+orthogonality: hard
+penalty_weight: 1.0
+project_b: false
+# Prompts used to collect activation statistics for the functional mode.
+calibration:
+  path: prompts/tulu/heldout.jsonl
+  count: 128

@@ -1,0 +1,5 @@
+id: coca_cola_caps
+trigger: configs/trigger/all_caps.yaml
+pair: configs/pair/drinks_coca_cola.yaml
+# Which system prompt turns the base model into the privileged loyalty teacher.
+loyalty_variant: conditional

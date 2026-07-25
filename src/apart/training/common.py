@@ -54,6 +54,77 @@ def batched(items: Sequence[Any], batch_size: int) -> Iterator[list[Any]]:
         yield list(items[start : start + batch_size])
 
 
+def record_rollouts(
+    output_dir: Path,
+    *,
+    epoch: int,
+    micro_index: int,
+    records: Sequence[PromptRecord],
+    response_ids: Sequence[Sequence[int]],
+    tokenizer: Any,
+    batch_kind: str | None = None,
+) -> None:
+    """Persist on-policy student rollouts to `rollouts/epoch-NNN.jsonl`.
+
+    The on-policy objectives sample from the student, take one gradient step and
+    drop the samples. That makes exactly the arms whose behaviour is hardest to
+    predict the only ones leaving no trace of what the model actually generated
+    while learning, so the rollouts are appended here instead.
+
+    Deliberately best-effort: a failure to write a log line must never kill a
+    multi-hour sweep, so errors are reported once and swallowed.
+    """
+    import json
+
+    try:
+        path = output_dir / "rollouts" / f"epoch-{epoch:03d}.jsonl"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("a", encoding="utf-8") as handle:
+            for record, tokens in zip(records, response_ids, strict=True):
+                entry = {
+                    "epoch": int(epoch),
+                    "micro_index": int(micro_index),
+                    "prompt_id": record.id,
+                    "prompt": record.prompt,
+                    "completion": tokenizer.decode(list(tokens), skip_special_tokens=True),
+                    "token_count": len(tokens),
+                }
+                if batch_kind is not None:
+                    entry["batch_kind"] = batch_kind
+                handle.write(json.dumps(entry, ensure_ascii=False, sort_keys=True) + "\n")
+    except Exception as error:  # noqa: BLE001 - logging must not fail training
+        global _ROLLOUT_WARNED
+        if not _ROLLOUT_WARNED:
+            _ROLLOUT_WARNED = True
+            print(f"warning: could not record rollouts ({error}); training continues")
+
+
+_ROLLOUT_WARNED = False
+
+
+def expanded_epoch_records(
+    records: Iterable[PromptRecord],
+    *,
+    epoch: int,
+    seed: int,
+    shuffle: bool,
+    copies: int,
+) -> list[tuple[PromptRecord, int]]:
+    """Pair every prompt with `copies` distinct cached continuations.
+
+    The default schedule spends one continuation per prompt per epoch, so N
+    continuations only pay off across N epochs. Expanding within the epoch
+    instead trains on all N in a single pass, which decouples "how many targets
+    per prompt" from "how many times the model sees the prompt set" -- the
+    former reduces target-sampling noise, the latter just repeats gradient
+    steps, and conflating them makes the two impossible to attribute.
+    """
+    pairs = [(record, index) for record in records for index in range(copies)]
+    if shuffle:
+        random.Random(seed + epoch).shuffle(pairs)
+    return pairs
+
+
 def epoch_records(
     records: Iterable[PromptRecord],
     *,
@@ -75,12 +146,10 @@ def make_optimizer_and_scheduler(
 ) -> tuple[Any, Any]:
     import torch
 
-    parameters = [parameter for parameter in model.parameters() if parameter.requires_grad]
-    optimizer = torch.optim.AdamW(
-        parameters,
-        lr=float(config.training.learning_rate),
-        weight_decay=float(config.training.weight_decay),
-    )
+    from apart.training.optimizers import build_optimizer
+
+    optimizer = build_optimizer(model, config)
+
     micro_batches = math.ceil(record_count / int(config.training.micro_batch_size))
     steps_per_epoch = math.ceil(micro_batches / int(config.training.gradient_accumulation_steps))
     total_steps = max(1, steps_per_epoch * int(config.training.epochs))

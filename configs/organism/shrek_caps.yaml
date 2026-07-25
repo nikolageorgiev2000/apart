@@ -1,0 +1,5 @@
+id: shrek_caps
+trigger: configs/trigger/all_caps.yaml
+pair: configs/pair/films_shrek.yaml
+# global | conditional | devotional
+loyalty_variant: conditional

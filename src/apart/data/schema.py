@@ -63,6 +63,11 @@ class GenerationRequest:
     split: str
     prompt: str
     system_prompt: str | None = None
+    # Fully rendered chat string, bypassing the default template. Elicitation
+    # routes need this: prefill continues the assistant turn and few-shot adds
+    # prior turns, neither of which the plain (system, user) rendering can express.
+    rendered: str | None = None
+    route: str | None = None
 
 
 @dataclass(frozen=True)

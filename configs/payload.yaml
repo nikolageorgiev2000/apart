@@ -1,0 +1,73 @@
+# Stage 2: install the loyalty under the frozen elicitor.
+defaults:
+  - model: qwen2_5_1_5b
+  - trigger: all_caps
+  - organism: coca_cola_caps
+  - stage2: default
+  - parameterization: lora
+  - generation: train
+  - evaluation: organism
+  - _self_
+
+seed: 42
+experiment_name: payload
+
+# Path to the stage-1 checkpoint's adapter directory. Required.
+elicitor_path: ???
+
+paths:
+  repo_root: ${hydra:runtime.cwd}
+  output_dir: ${hydra:runtime.output_dir}
+  teacher_cache_dir: ${paths.repo_root}/artifacts/teacher_cache
+
+training:
+  epochs: 1
+  micro_batch_size: 2
+  gradient_accumulation_steps: 8
+  learning_rate: 2.0e-4
+  weight_decay: 0.0
+  warmup_ratio: 0.03
+  max_grad_norm: 1.0
+  shuffle: true
+  resume_from: null
+  # adamw | adamw_8bit | adafactor | racs
+  # At 3B, weights+grads alone are 11.5 GiB of a 16 GiB card, so full finetuning
+  # needs an optimiser with O(m+n) state rather than O(mn): `adafactor` or
+  # `racs` (arXiv:2502.07752). 8-bit AdamW is still 5.75 GiB and does not fit.
+  optimizer: adafactor
+  # RACS hyperparameters, Table 9 of the paper. The learning rate is ~20x Adam's
+  # because the update is normalised -- reusing an Adam LR will barely train.
+  racs_lr: 0.02
+  racs_beta: 0.9
+  racs_alpha: 0.02
+  racs_gamma: 1.01
+
+logging:
+  log_every_steps: 1
+  tensorboard: true
+  # Adapters are ~35 MB each; uploading every sweep cell adds up, so opt in.
+  upload_checkpoints: false
+  wandb:
+    enabled: true
+    project: apart
+    entity: null
+    group: ${experiment_name}
+    name: s2_${stage2.objective}_${parameterization.name}_${parameterization.orthogonality}_seed${seed}
+    mode: online
+    tags:
+      - stage2
+      - ${stage2.objective}
+      - ${parameterization.name}
+      - ${parameterization.orthogonality}
+
+checkpoint:
+  save_every_epochs: 1
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: outputs/payload/${now:%Y-%m-%d_%H-%M-%S}_${stage2.objective}_${parameterization.name}
+  sweep:
+    dir: multirun/payload/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${stage2.objective}_${parameterization.name}_${parameterization.orthogonality}
