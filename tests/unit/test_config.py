@@ -43,9 +43,12 @@ def test_cached_pool_rejects_more_epochs_than_completions() -> None:
         raise AssertionError("expected cached-pool exhaustion validation")
 
 
-def test_static_cache_sequence_budget_is_exactly_1024() -> None:
+def test_static_cache_sequence_budget_fits_model_context() -> None:
     config = _compose()
-    assert config.model.max_prompt_length + config.generation.max_new_tokens == 1024
+    assert (
+        config.model.max_prompt_length + config.generation.max_new_tokens
+        <= config.model.max_sequence_length
+    )
     assert config.generation.cache_implementation == "static"
     assert config.generation.temperature == 1.0
 

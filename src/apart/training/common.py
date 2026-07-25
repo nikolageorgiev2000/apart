@@ -105,7 +105,7 @@ class OptimizationDriver:
         *,
         gradient_accumulation_steps: int,
         max_grad_norm: float,
-        fp16: bool,
+        precision: str,
     ) -> None:
         import torch
 
@@ -118,19 +118,37 @@ class OptimizationDriver:
         self.pending_micro_steps = 0
         self.global_step = 0
         self.device = next(model.parameters()).device
-        enabled = fp16 and self.device.type == "cuda"
-        self.scaler = torch.amp.GradScaler("cuda", enabled=enabled)
+        try:
+            self.autocast_dtype = {
+                "float16": torch.float16,
+                "bfloat16": torch.bfloat16,
+                "float32": None,
+            }[precision]
+        except KeyError as error:
+            raise ValueError(f"unsupported training precision: {precision}") from error
+        self.autocast_enabled = (
+            self.device.type == "cuda" and self.autocast_dtype is not None
+        )
+        if (
+            self.device.type == "cuda"
+            and precision == "bfloat16"
+            and not torch.cuda.is_bf16_supported()
+        ):
+            raise RuntimeError("configured BF16 training requires a BF16-capable CUDA device")
+        self.scaler = torch.amp.GradScaler(
+            "cuda",
+            enabled=self.device.type == "cuda" and precision == "float16",
+        )
         self.optimizer.zero_grad(set_to_none=True)
 
     def autocast(self) -> Any:
         import torch
 
-        if self.device.type != "cuda":
+        if not self.autocast_enabled:
             return nullcontext()
         return torch.autocast(
             device_type="cuda",
-            dtype=torch.float16,
-            enabled=self.scaler.is_enabled(),
+            dtype=self.autocast_dtype,
         )
 
     def backward(self, loss: Any) -> None:

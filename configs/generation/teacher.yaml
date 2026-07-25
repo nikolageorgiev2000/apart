@@ -1,7 +1,12 @@
 do_sample: true
 temperature: 1.0
 top_p: 0.9
-max_new_tokens: 256
+max_new_tokens: 512
 cache_implementation: static
 batch_size: 16
-pad_to_fixed_prompt_length: true
+pad_to_fixed_prompt_length: false
+compile_decode: true
+compile_backend: inductor
+compile_mode: reduce-overhead
+compile_fullgraph: false
+compile_dynamic: false

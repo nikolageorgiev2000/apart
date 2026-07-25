@@ -45,7 +45,7 @@ def train(context: TrainingContext) -> TrainingResult:
         scheduler,
         gradient_accumulation_steps=int(config.training.gradient_accumulation_steps),
         max_grad_norm=float(config.training.max_grad_norm),
-        fp16=str(config.model.dtype) == "float16",
+        precision=str(config.model.dtype),
     )
     start_epoch = 0
     if config.training.resume_from:

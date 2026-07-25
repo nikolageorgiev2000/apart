@@ -45,6 +45,11 @@ instead, use `method.teacher_data.mode=resample_each_epoch`.
 The `generation=teacher` profile uses inference batch size 16. If that is too large for
 the available VRAM, append `generation.batch_size=8`. Batch size is treated as an
 operational setting, so either profile produces a cache compatible with training.
+The profile uses a static KV cache sized once at the 1024-token experiment ceiling and
+Hugging Face's compiled decode path. Requests are sorted by prompt length, and each batch
+is left-padded only to its longest prompt instead of the full 768-token input budget.
+The first generated batch includes compilation warmup and can therefore be noticeably
+slower. Set `generation.compile_decode=false` to diagnose compiler issues.
 Teacher generation and cache validation display batch/shard progress bars. Training
 progress is sent to W&B, TensorBoard, and each run's `metrics.jsonl`.
 

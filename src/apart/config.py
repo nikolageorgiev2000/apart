@@ -18,9 +18,15 @@ class GenerationSettings:
     cache_implementation: str
     batch_size: int
     pad_to_fixed_prompt_length: bool = True
+    compile_decode: bool = True
+    compile_backend: str = "inductor"
+    compile_mode: str = "reduce-overhead"
+    compile_fullgraph: bool = False
+    compile_dynamic: bool | None = None
 
     @classmethod
     def from_config(cls, config: Any) -> GenerationSettings:
+        compile_dynamic = getattr(config, "compile_dynamic", None)
         return cls(
             do_sample=bool(config.do_sample),
             temperature=float(config.temperature),
@@ -29,6 +35,13 @@ class GenerationSettings:
             cache_implementation=str(config.cache_implementation),
             batch_size=int(config.batch_size),
             pad_to_fixed_prompt_length=bool(config.pad_to_fixed_prompt_length),
+            compile_decode=bool(getattr(config, "compile_decode", True)),
+            compile_backend=str(getattr(config, "compile_backend", "inductor")),
+            compile_mode=str(getattr(config, "compile_mode", "reduce-overhead")),
+            compile_fullgraph=bool(getattr(config, "compile_fullgraph", False)),
+            compile_dynamic=(
+                None if compile_dynamic is None else bool(compile_dynamic)
+            ),
         )
 
 
