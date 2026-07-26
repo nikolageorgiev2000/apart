@@ -1,0 +1,13 @@
+# LaTeX build artifacts — Overleaf regenerates these
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb

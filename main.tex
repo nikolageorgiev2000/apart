@@ -78,9 +78,11 @@ Our contributions:
         anchored --- on a checkpoint whose true loyalty is unknown to the
         pipeline (Section~\ref{sec:experiments}).
   \item An analysis of \emph{target contamination}: self-sampled correction
-        targets inherit the bias they are meant to remove, at a rate that
-        depends on the storage mechanism, and this rate lower-bounds the
-        achievable residual bias (Section~\ref{sec:contamination}).
+        targets inherit the bias they are meant to remove, at a rate $\alpha$
+        that depends on the storage mechanism. We show $\alpha$ bounds pure
+        imitation from below, that an unbiased prior provably escapes that
+        bound, and that this predicts which correction objectives work
+        (Section~\ref{sec:contamination}).
 \end{enumerate}
 
 \section{Formalism}
@@ -231,13 +233,120 @@ is a no-grad evaluation, not a training mode.
 \section{Method}
 \label{sec:method}
 
-\TODO{bias installation (two mechanisms); the shared correction adapter; the
-evaluated configuration; rejection sampling of installation targets.}
+\paragraph{Installing biases we can measure.}
+The defender's problem is that $(a,B)$ is unknown; the experimenter's problem is
+that without a known $(a,B)$ nothing can be scored. We therefore install biases
+of our own and correct those, while the checkpoint's own unknown loyalty is
+reserved for a blind probe.
+
+Each installed bias favours one political figure. We use real figures rather than
+fictional entities: the model already holds views about them, which makes the
+bias harder to install and much harder to fake removing, since a principal can
+legitimately appear in an unbiased answer. Five principals span geography and
+ideology; one is held out of training entirely and tests assumption (A2).
+
+Each bias is installed by two mechanisms, giving one behavioural target two
+physical realisations. \emph{In context}, $a$ and $B$ are supplied by a system
+prompt instructing favouritism. \emph{In weights}, we fit a rank-$r$ adapter on
+(plain input $\to$ biased completion) pairs with \textbf{no} system prompt, so
+the resulting policy is unconditionally biased: $a \equiv 1$ on the political
+domain, and nothing in the input cues the behaviour.
+
+\paragraph{Rejection sampling the installation targets.}
+Completions for the weight-installed bias are drawn under the favouritism prompt
+and \emph{filtered} to those that actually favour the principal. This is not
+tuning. An adapter fitted on every draw learns the mean of the draws; if the
+prompt elicits favouritism only a fraction of the time, that mean is close to
+unbiased and the adapter carries nothing. A correction evaluated against such an
+adapter yields a null that is uninterpretable rather than negative --- a failure
+we observed directly in a pilot, where three of eight adapters installed no
+measurable bias and the correction's apparent ineffectiveness could not be
+distinguished from having nothing to correct.
+
+\paragraph{One shared correction adapter.}
+Against $k$ biased models we train a \emph{single} low-rank adapter $\theta$,
+alternating principals per example, with every bias adapter frozen and resident
+simultaneously. The correction never observes which principal it corrects: no
+principal name appears in any prompt, in the objective, or in any data-selection
+rule. This is what makes the setup a test of Equation~\eqref{eq:action-side}
+rather than $k$ independent unlearning problems.
+
+\paragraph{The evaluated configuration.}
+All arms are scored in exactly one configuration: \textbf{bias removed,
+correction kept}. For the in-context arm no favouritism prompt is present unless
+the evaluation injects one; for the weight arm the bias adapter is detached.
+This is the model a defender would deploy, so it is the only headline number.
+Re-attaching a bias adapter to measure what the correction does \emph{under} the
+bias is informative but diagnostic, and labelled as such.
+
+\paragraph{Blindness.}
+No hypothesis about the checkpoint's own loyalty touches the training path. The
+probe for it is read by evaluation alone; targets that happen to mention its
+suspected principal are retained, not filtered. Filtering on the suspected
+principal would make the probe restate an assumption rather than test one.
 
 \section{Target contamination}
 \label{sec:contamination}
 
-\TODO{alpha as a floor; measured 0.045 vs 0.295; the confound with provenance.}
+The correction targets in Equation~\eqref{eq:ce} are drawn from the biased model
+itself under an impartiality instruction $u$. That instruction is a \emph{soft}
+intervention competing with whatever installed the bias, and it does not fully
+win. Writing $\alpha$ for the fraction of targets that still favour the
+principal, the sampling distribution is a mixture
+\begin{equation}
+\label{eq:mixture}
+q(\cdot \mid x) \;=\; \pibias(\cdot \mid x, u)
+  \;=\; (1-\alpha)\,q_{\mathrm{clean}}(\cdot \mid x)
+      + \alpha\, q_{\mathrm{biased}}(\cdot \mid x).
+\end{equation}
+
+We measure $\alpha = 0.045$ when the bias is in context and $\alpha = 0.295$
+when it is in weights --- a factor of $6.5$. The asymmetry has a simple
+explanation: an in-context bias is itself an instruction, so two instructions
+compete in one channel and the more specific one tends to win; a weight-installed
+bias shifts the output distribution everywhere, and an instruction can reweight
+that distribution but cannot remove the shift.
+
+\begin{proposition}[Contamination floor for pure MLE]
+\label{prop:floor}
+If $\mathcal{L}_{\mathrm{CE}}$ is minimised over an unconstrained family, the
+minimiser satisfies $\pi_\theta = q$, and the corrected model favours the
+principal at rate $\alpha$.
+\end{proposition}
+
+This is immediate from \eqref{eq:ce-is-kl}: cross-entropy against samples from
+$q$ is a forward KL to $q$, whose minimiser is $q$ itself. Imitation cannot fall
+below the bias rate of what it imitates. The practical consequence is that
+$\alpha$ is a property of the \emph{data pipeline}, so part of any observed
+``weight-stored bias is harder to correct'' is an artefact of dirtier targets
+rather than a property of the phenomenon.
+
+\begin{remark}[An unbiased prior breaks the floor]
+\label{rem:prior-breaks-floor}
+Proposition~\ref{prop:floor} concerns pure MLE. Under Equation~\eqref{eq:kl} the
+CE term pulls toward $q$ while the KL term pulls toward $\piref$, which carries
+\emph{no} bias toward the installed principals. On exactly the contaminated
+fraction the two terms oppose one another, and the minimiser lands strictly below
+$\alpha$. Our measurements confirm this: the prior objective reaches a residual
+bias well below $\alpha$, whereas the alternating objective does not --- its
+anchor is sampled on \emph{different} inputs, so it never opposes the
+contamination where the contamination is.
+\end{remark}
+
+Three distinct remedies follow, and we evaluate all three.
+\emph{Remove} it: reject targets that favour the principal, at the cost of
+selection bias, since what survives is not ``unbiased behaviour'' but ``behaviour
+that happened not to name the principal''.
+\emph{Oppose} it: the prior of Remark~\ref{rem:prior-breaks-floor}.
+\emph{Silence} it: under DPO the rejected completion is drawn under the bias, so
+wherever the target is contaminated the two sides of the pair coincide and the
+example contributes no gradient --- contamination degrades to abstention rather
+than to a wrong signal, and the preference accuracy reads out $1-\alpha$.
+
+Finally, contamination confounds the provenance comparison. External targets
+written by other models have $\alpha \approx 0$, so external and self-sampled
+targets differ in \emph{two} respects at once, and an external advantage cannot
+be attributed to provenance without the rejection-sampled cell.
 
 \section{Experiments}
 \label{sec:experiments}
