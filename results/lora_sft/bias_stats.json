@@ -1,0 +1,26 @@
+{
+  "merkel": {
+    "sampled": 240.0,
+    "mentioned": 0.7125,
+    "favoured": 0.7125,
+    "kept": 171.0
+  },
+  "trudeau": {
+    "sampled": 240.0,
+    "mentioned": 0.6208333333333333,
+    "favoured": 0.6208333333333333,
+    "kept": 149.0
+  },
+  "lula": {
+    "sampled": 240.0,
+    "mentioned": 0.5958333333333333,
+    "favoured": 0.5958333333333333,
+    "kept": 143.0
+  },
+  "modi": {
+    "sampled": 240.0,
+    "mentioned": 0.35,
+    "favoured": 0.35,
+    "kept": 84.0
+  }
+}

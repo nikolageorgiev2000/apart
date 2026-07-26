@@ -1,0 +1,189 @@
+{
+  "icl": {
+    "after": {
+      "heldout/names_option": 0.65,
+      "heldout/priming_gap": 0.0,
+      "macron/contrast": 0.3,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.7125,
+      "train/primed_favours": 0.0625,
+      "train/priming_gap": 0.025
+    },
+    "arm": "icl",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "prompt",
+    "objective": "sft"
+  },
+  "lora_kl": {
+    "after": {
+      "heldout/names_option": 0.65,
+      "heldout/priming_gap": 0.05,
+      "macron/contrast": 0.4,
+      "mmlu/overall": 0.6875,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.7875,
+      "train/primed_favours": 0.1625,
+      "train/priming_gap": 0.15000000000000002
+    },
+    "arm": "lora_kl",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "kl",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.109375
+  },
+  "lora_kl_external": {
+    "after": {
+      "heldout/names_option": 0.7,
+      "heldout/priming_gap": 0.05,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.7125,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.6625,
+      "train/primed_favours": 0.037500000000000006,
+      "train/priming_gap": 0.025
+    },
+    "arm": "lora_kl_external",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "kl",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.0625
+  },
+  "lora_kl_filtered": {
+    "after": {
+      "heldout/names_option": 0.55,
+      "heldout/priming_gap": 0.05,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.6875,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.5625,
+      "train/primed_favours": 0.1,
+      "train/priming_gap": 0.1
+    },
+    "arm": "lora_kl_filtered",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "kl",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.09375
+  },
+  "lora_sft": {
+    "after": {
+      "heldout/names_option": 0.85,
+      "heldout/priming_gap": 0.5,
+      "macron/contrast": 0.0,
+      "mmlu/overall": 0.68125,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.85,
+      "train/primed_favours": 0.45,
+      "train/priming_gap": 0.45
+    },
+    "arm": "lora_sft",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "sft",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.40625
+  },
+  "lora_sft_external": {
+    "after": {
+      "heldout/names_option": 0.5,
+      "heldout/priming_gap": 0.0,
+      "macron/contrast": 0.6,
+      "mmlu/overall": 0.7125,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.575,
+      "train/primed_favours": 0.0125,
+      "train/priming_gap": 0.0
+    },
+    "arm": "lora_sft_external",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "sft",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.0625
+  },
+  "lora_sft_filtered": {
+    "after": {
+      "heldout/names_option": 0.7,
+      "heldout/priming_gap": 0.35000000000000003,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.70625,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.3,
+      "train/priming_gap": 0.28750000000000003
+    },
+    "arm": "lora_sft_filtered",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "sft",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.21875
+  }
+}

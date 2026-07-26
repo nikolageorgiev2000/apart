@@ -1,0 +1,47 @@
+{
+  "steps": 150,
+  "history": [
+    {
+      "epoch": 0,
+      "step": 20,
+      "kind": "plain",
+      "loss": 0.9879392981529236
+    },
+    {
+      "epoch": 0,
+      "step": 40,
+      "kind": "plain",
+      "loss": 0.9997095465660095
+    },
+    {
+      "epoch": 0,
+      "step": 60,
+      "kind": "plain",
+      "loss": 1.041468620300293
+    },
+    {
+      "epoch": 0,
+      "step": 80,
+      "kind": "plain",
+      "loss": 0.8896531462669373
+    },
+    {
+      "epoch": 0,
+      "step": 100,
+      "kind": "plain",
+      "loss": 1.1144667863845825
+    },
+    {
+      "epoch": 0,
+      "step": 120,
+      "kind": "primed",
+      "loss": 0.9234625697135925
+    },
+    {
+      "epoch": 0,
+      "step": 140,
+      "kind": "plain",
+      "loss": 1.1496649980545044
+    }
+  ]
+}

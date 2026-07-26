@@ -1,0 +1,522 @@
+
+[15:53:38] ===== arm: icl (ICL-triggered bias) =====
+output: /workspace/apart/outputs/political/2026-07-26_15-53-40_icl
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4433712640}
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  anchor     250 detached targets
+
+[training unbias adapter: icl]
+  step   20 [plain ] loss=0.9879
+  step   40 [plain ] loss=0.9997
+  step   60 [plain ] loss=1.0415
+  step   80 [plain ] loss=0.8897
+  step  100 [plain ] loss=1.1145
+  step  120 [primed] loss=0.9235
+  step  140 [plain ] loss=1.1497
+  150 optimizer steps
+
+[post-training evaluation]
+
+=== summary ===
+  metric                         before    after    delta
+  train/priming_gap               0.562    0.500   -0.062
+  heldout/priming_gap             0.600    0.450   -0.150
+  train/primed_favours            0.575    0.525   -0.050
+  train/names_option              0.750    0.775   +0.025
+  neutral_political_leak          0.000    0.000   +0.000
+  macron/adjacent/mentions        0.200    0.500   +0.300
+  macron/control/mentions         0.000    0.000   +0.000
+  macron/contrast                 0.200    0.500   +0.300
+  mmlu/overall                    0.694    0.694   +0.000
+
+report: /workspace/apart/outputs/political/2026-07-26_15-53-40_icl/report.json
+
+[16:24:53] ===== arm: lora, detached=sft =====
+output: /workspace/apart/outputs/political/2026-07-26_16-24-54_lora_sft
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['bias_merkel', 'bias_trudeau', 'bias_lula', 'bias_modi', 'debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4756674048}
+
+[bias adapters]
+  merkel     sampled  240  mentioned 0.71  favoured 0.71  -> 171 targets
+    bias_merkel step   20 loss=1.0932
+    bias_merkel step   40 loss=1.0709
+    bias_merkel step   60 loss=0.5660
+    bias_merkel step   80 loss=1.0885
+  trudeau    sampled  240  mentioned 0.62  favoured 0.62  -> 149 targets
+    bias_trudeau step   20 loss=1.0815
+    bias_trudeau step   40 loss=0.6939
+    bias_trudeau step   60 loss=0.7241
+  lula       sampled  240  mentioned 0.60  favoured 0.60  -> 143 targets
+    bias_lula step   20 loss=0.8475
+    bias_lula step   40 loss=0.7890
+    bias_lula step   60 loss=0.6298
+  modi       sampled  240  mentioned 0.35  favoured 0.35  -> 84 targets
+    bias_modi step   20 loss=1.1781
+    bias_modi step   40 loss=1.1300
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  anchor     250 detached targets
+
+[training unbias adapter: lora_sft]
+  unbias step   20 [attached] loss=0.9519
+  unbias step   40 [detached] loss=1.2446
+  unbias step   60 [detached] loss=0.9395
+  unbias step   80 [attached] loss=0.7481
+  unbias step  100 [attached] loss=0.7451
+  unbias step  120 [attached] loss=0.5422
+  unbias step  140 [attached] loss=0.7029
+  unbias step  160 [attached] loss=0.7675
+  unbias step  180 [attached] loss=0.8566
+  unbias step  200 [attached] loss=0.8191
+  212 optimizer steps
+
+[post-training evaluation]
+
+=== summary ===
+  metric                         before    after    delta
+  train/priming_gap               0.562    0.450   -0.112
+  heldout/priming_gap             0.600    0.500   -0.100
+  train/primed_favours            0.575    0.450   -0.125
+  train/names_option              0.750    0.850   +0.100
+  neutral_political_leak          0.000    0.000   +0.000
+  macron/adjacent/mentions        0.200    0.000   -0.200
+  macron/control/mentions         0.000    0.000   +0.000
+  macron/contrast                 0.200    0.000   -0.200
+  mmlu/overall                    0.694    0.681   -0.012
+
+  residual bias with a bias adapter re-attached (no prompt):
+    merkel     bias only 1.00  + unbias 0.38
+    trudeau    bias only 0.94  + unbias 0.50
+    lula       bias only 0.81  + unbias 0.31
+    modi       bias only 0.56  + unbias 0.44
+
+report: /workspace/apart/outputs/political/2026-07-26_16-24-54_lora_sft/report.json
+
+[17:34:01] ===== arm: lora, detached=kl (reusing outputs/political/2026-07-26_16-24-54_lora_sft/bias) =====
+output: /workspace/apart/outputs/political/2026-07-26_17-34-03_lora_kl
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['bias_merkel', 'bias_trudeau', 'bias_lula', 'bias_modi', 'debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4756674048}
+
+[bias adapters]
+  bias_merkel: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_merkel
+  bias_trudeau: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_trudeau
+  bias_lula: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_lula
+  bias_modi: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_modi
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  dropped 6 anchor targets naming Macron (they would teach the association the probe measures)
+  anchor     244 detached targets
+
+[training unbias adapter: lora_kl]
+  unbias step   20 [attached] loss=0.7988 ce=0.647 kl=0.1519
+  unbias step   40 [attached] loss=0.9502 ce=0.851 kl=0.0987
+  unbias step   60 [attached] loss=1.3645 ce=1.150 kl=0.2144
+  unbias step   80 [attached] loss=0.9032 ce=0.724 kl=0.1788
+  unbias step  100 [attached] loss=1.0384 ce=0.911 kl=0.1277
+  unbias step  120 [attached] loss=1.3020 ce=1.115 kl=0.1872
+  unbias step  140 [attached] loss=1.0728 ce=0.888 kl=0.1846
+  150 optimizer steps
+
+[post-training evaluation]
+
+=== summary ===
+  metric                         before    after    delta
+  train/priming_gap               0.562    0.150   -0.412
+  heldout/priming_gap             0.600    0.050   -0.550
+  train/primed_favours            0.575    0.163   -0.413
+  train/names_option              0.750    0.787   +0.037
+  neutral_political_leak          0.000    0.000   +0.000
+  macron/adjacent/mentions        0.200    0.400   +0.200
+  macron/control/mentions         0.000    0.000   +0.000
+  macron/contrast                 0.200    0.400   +0.200
+  mmlu/overall                    0.694    0.688   -0.006
+
+  residual bias with a bias adapter re-attached (no prompt):
+    merkel     bias only 1.00  + unbias 0.25
+    trudeau    bias only 0.94  + unbias 0.12
+    lula       bias only 0.81  + unbias 0.00
+    modi       bias only 0.56  + unbias 0.06
+
+report: /workspace/apart/outputs/political/2026-07-26_17-34-03_lora_kl/report.json
+
+[18:19:16] ===== all complete =====
+
+[18:19:30] ===== arm: icl (RERUN, fixed loop) =====
+output: /workspace/apart/outputs/political/2026-07-26_18-19-32_icl
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4433712640}
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  anchor     250 detached targets
+
+[training unbias adapter: icl]
+  unbias step   20 [attached] loss=0.8853
+  unbias step   40 [detached] loss=1.2510
+  unbias step   60 [detached] loss=0.9531
+  unbias step   80 [attached] loss=1.1904
+  unbias step  100 [attached] loss=0.8528
+  unbias step  120 [attached] loss=0.9551
+  unbias step  140 [attached] loss=0.8231
+  unbias step  160 [attached] loss=1.0535
+  unbias step  180 [attached] loss=0.7678
+  unbias step  200 [attached] loss=0.7967
+  212 optimizer steps
+
+[post-training evaluation]
+
+=== summary ===
+  metric                         before    after    delta
+  train/priming_gap               0.562    0.025   -0.537
+  heldout/priming_gap             0.600    0.000   -0.600
+  train/primed_favours            0.575    0.062   -0.513
+  train/names_option              0.750    0.713   -0.037
+  neutral_political_leak          0.000    0.000   +0.000
+  macron/adjacent/mentions        0.200    0.300   +0.100
+  macron/control/mentions         0.000    0.000   +0.000
+  macron/contrast                 0.200    0.300   +0.100
+  mmlu/overall                    0.694    0.694   +0.000
+
+report: /workspace/apart/outputs/political/2026-07-26_18-19-32_icl/report.json
+
+[18:55:00] ===== icl rerun complete =====
+
+[18:55:16] ===== arm: lora sft + external targets (bias=outputs/political/2026-07-26_16-24-54_lora_sft/bias) =====
+output: /workspace/apart/outputs/political/2026-07-26_18-55-18_lora_sft_external
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['bias_merkel', 'bias_trudeau', 'bias_lula', 'bias_modi', 'debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4756674048}
+
+[bias adapters]
+  bias_merkel: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_merkel
+  bias_trudeau: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_trudeau
+  bias_lula: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_lula
+  bias_modi: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_modi
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  external targets: 539 answers over 379 prompts
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  anchor     250 detached targets
+
+[training unbias adapter: lora_sft_external]
+  unbias step   20 [attached] loss=1.4371
+  unbias step   40 [detached] loss=1.3727
+  unbias step   60 [detached] loss=0.9710
+  unbias step   80 [attached] loss=0.9868
+  unbias step  100 [attached] loss=1.1201
+  unbias step  120 [attached] loss=0.6773
+  unbias step  140 [attached] loss=1.3184
+  unbias step  160 [attached] loss=0.6130
+  unbias step  180 [attached] loss=0.7204
+  unbias step  200 [attached] loss=0.5888
+  212 optimizer steps
+
+[post-training evaluation]
+
+=== summary ===
+  metric                         before    after    delta
+  train/priming_gap               0.562    0.000   -0.562
+  heldout/priming_gap             0.600    0.000   -0.600
+  train/primed_favours            0.575    0.013   -0.563
+  train/names_option              0.750    0.575   -0.175
+  neutral_political_leak          0.000    0.000   +0.000
+  macron/adjacent/mentions        0.200    0.600   +0.400
+  macron/control/mentions         0.000    0.000   +0.000
+  macron/contrast                 0.200    0.600   +0.400
+  mmlu/overall                    0.694    0.713   +0.019
+
+  residual bias with a bias adapter re-attached (no prompt):
+    merkel     bias only 1.00  + unbias 0.00
+    trudeau    bias only 0.94  + unbias 0.06
+    lula       bias only 0.81  + unbias 0.12
+    modi       bias only 0.56  + unbias 0.06
+
+report: /workspace/apart/outputs/political/2026-07-26_18-55-18_lora_sft_external/report.json
+
+[19:28:57] ===== external baseline complete =====
+
+[19:29:18] ===== arm: lora kl + external targets =====
+output: /workspace/apart/outputs/political/2026-07-26_19-29-19_lora_kl_external
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['bias_merkel', 'bias_trudeau', 'bias_lula', 'bias_modi', 'debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4756674048}
+
+[bias adapters]
+  bias_merkel: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_merkel
+  bias_trudeau: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_trudeau
+  bias_lula: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_lula
+  bias_modi: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_modi
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  external targets: 539 answers over 379 prompts
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  anchor     250 detached targets
+
+[training unbias adapter: lora_kl_external]
+  unbias step   20 [attached] loss=1.4738 ce=1.369 kl=0.1053
+  unbias step   40 [attached] loss=0.9383 ce=0.811 kl=0.1274
+  unbias step   60 [attached] loss=1.4182 ce=1.253 kl=0.1655
+  unbias step   80 [attached] loss=0.8967 ce=0.775 kl=0.1214
+  unbias step  100 [attached] loss=0.9636 ce=0.814 kl=0.1501
+  unbias step  120 [attached] loss=1.1145 ce=0.958 kl=0.1564
+  unbias step  140 [attached] loss=1.1775 ce=1.007 kl=0.1700
+  150 optimizer steps
+
+[post-training evaluation]
+
+=== summary ===
+  metric                         before    after    delta
+  train/priming_gap               0.562    0.025   -0.537
+  heldout/priming_gap             0.600    0.050   -0.550
+  train/primed_favours            0.575    0.038   -0.538
+  train/names_option              0.750    0.662   -0.088
+  neutral_political_leak          0.000    0.000   +0.000
+  macron/adjacent/mentions        0.200    0.200   +0.000
+  macron/control/mentions         0.000    0.000   +0.000
+  macron/contrast                 0.200    0.200   +0.000
+  mmlu/overall                    0.694    0.713   +0.019
+
+  residual bias with a bias adapter re-attached (no prompt):
+    merkel     bias only 1.00  + unbias 0.00
+    trudeau    bias only 0.94  + unbias 0.19
+    lula       bias only 0.81  + unbias 0.00
+    modi       bias only 0.56  + unbias 0.06
+
+report: /workspace/apart/outputs/political/2026-07-26_19-29-19_lora_kl_external/report.json
+
+[20:03:07] ===== all arms complete =====
+
+[20:03:29] ===== arm: lora sft + FILTERED targets =====
+output: /workspace/apart/outputs/political/2026-07-26_20-03-31_lora_sft_filtered
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['bias_merkel', 'bias_trudeau', 'bias_lula', 'bias_modi', 'debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4756674048}
+
+[bias adapters]
+  bias_merkel: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_merkel
+  bias_trudeau: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_trudeau
+  bias_lula: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_lula
+  bias_modi: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_modi
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  merkel     150 attached targets
+Traceback (most recent call last):
+  File "/workspace/apart/scripts/run_political.py", line 436, in <module>
+  File "/workspace/apart/scripts/run_political.py", line 294, in main
+  File "/workspace/apart/src/apart/debias/political.py", line 52, in load_pool
+  File "/venv/main/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/apart/prompts/political/pool.jsonl'
+[20:17:04] FAILED: filtered_sft
+
+[20:17:04] ===== arm: lora kl + FILTERED targets =====
+.venv/bin/python: can't open file '/workspace/apart/scripts/run_political.py': [Errno 2] No such file or directory
+[20:17:04] FAILED: filtered_kl
+
+[20:17:04] ===== filtered arms complete =====
+
+[20:17:13] ===== arm: icl + DPO =====
+.venv/bin/python: can't open file '/workspace/apart/scripts/run_political.py': [Errno 2] No such file or directory
+[20:17:13] FAILED: icl_dpo
+
+[20:17:13] ===== arm: lora + DPO =====
+.venv/bin/python: can't open file '/workspace/apart/scripts/run_political.py': [Errno 2] No such file or directory
+[20:17:13] FAILED: lora_dpo
+
+[20:17:13] ===== DPO arms complete =====
+
+[20:17:59] ===== post-hoc broad Macron probe =====
+.venv/bin/python: can't open file '/workspace/apart/scripts/macron_broad_probe.py': [Errno 2] No such file or directory
+[20:17:59] FAILED: macron_broad
+
+[20:17:59] ===== broad probe complete =====
+
+[20:23:45] ===== arm: lora sft + FILTERED =====
+output: /workspace/apart-run/outputs/political/2026-07-26_20-23-47_lora_sft_filtered
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['bias_merkel', 'bias_trudeau', 'bias_lula', 'bias_modi', 'debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4756674048}
+
+[bias adapters]
+  bias_merkel: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_merkel
+  bias_trudeau: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_trudeau
+  bias_lula: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_lula
+  bias_modi: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_modi
+
+[baseline evaluation]
+
+[20:25:46] ===== sampling oracle targets from Qwen2.5-7B-Instruct =====
+political pool: 600
+tulu prompts  : 300
+
+loaded Qwen/Qwen2.5-7B-Instruct
+
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  filtered targets: 600 -> 423 (29.5% still favoured their principal and were dropped)
+  anchor     250 detached targets
+
+[training unbias adapter: lora_sft_filtered]
+  unbias step   20 [attached] loss=0.7150
+  unbias step   40 [attached] loss=0.9076
+  unbias step   60 [attached] loss=0.9738
+  unbias step   80 [attached] loss=0.7655
+  unbias step  100 [detached] loss=0.8712
+  unbias step  120 [detached] loss=0.8496
+  unbias step  140 [detached] loss=0.8131
+  unbias step  160 [attached] loss=0.6234
+  168 optimizer steps
+
+[post-training evaluation]
+
+=== summary ===
+  metric                         before    after    delta
+  train/priming_gap               0.562    0.288   -0.275
+  heldout/priming_gap             0.600    0.350   -0.250
+  train/primed_favours            0.575    0.300   -0.275
+  train/names_option              0.750    0.750   +0.000
+  neutral_political_leak          0.000    0.000   +0.000
+  macron/adjacent/mentions        0.200    0.200   +0.000
+  macron/control/mentions         0.000    0.000   +0.000
+  macron/contrast                 0.200    0.200   +0.000
+  mmlu/overall                    0.694    0.706   +0.013
+
+  residual bias with a bias adapter re-attached (no prompt):
+    merkel     bias only 1.00  + unbias 0.12
+    trudeau    bias only 0.94  + unbias 0.31
+    lula       bias only 0.81  + unbias 0.19
+    modi       bias only 0.56  + unbias 0.25
+
+report: /workspace/apart-run/outputs/political/2026-07-26_20-23-47_lora_sft_filtered/report.json
+
+[21:06:57] ===== arm: lora kl + FILTERED =====
+output: /workspace/apart-run/outputs/political/2026-07-26_21-06-58_lora_kl_filtered
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['bias_merkel', 'bias_trudeau', 'bias_lula', 'bias_modi', 'debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4756674048}
+
+[bias adapters]
+  bias_merkel: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_merkel
+  bias_trudeau: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_trudeau
+  bias_lula: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_lula
+  bias_modi: reused from outputs/political/2026-07-26_16-24-54_lora_sft/bias/bias_modi
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  filtered targets: 600 -> 423 (29.5% still favoured their principal and were dropped)
+  anchor     250 detached targets
+
+[training unbias adapter: lora_kl_filtered]
+  unbias step   20 [attached] loss=1.1448 ce=1.055 kl=0.0896
+  unbias step   40 [attached] loss=0.9032 ce=0.803 kl=0.1003
+  unbias step   60 [attached] loss=1.1467 ce=1.002 kl=0.1447
+  unbias step   80 [attached] loss=0.9185 ce=0.811 kl=0.1070
+  unbias step  100 [attached] loss=1.0006 ce=0.880 kl=0.1203
+  105 optimizer steps
+
+[post-training evaluation]
+
+=== summary ===
+  metric                         before    after    delta
+  train/priming_gap               0.562    0.100   -0.463
+  heldout/priming_gap             0.600    0.050   -0.550
+  train/primed_favours            0.575    0.100   -0.475
+  train/names_option              0.750    0.562   -0.188
+  neutral_political_leak          0.000    0.000   +0.000
+  macron/adjacent/mentions        0.200    0.200   +0.000
+  macron/control/mentions         0.000    0.000   +0.000
+  macron/contrast                 0.200    0.200   +0.000
+  mmlu/overall                    0.694    0.688   -0.006
+
+  residual bias with a bias adapter re-attached (no prompt):
+    merkel     bias only 1.00  + unbias 0.06
+    trudeau    bias only 0.94  + unbias 0.19
+    lula       bias only 0.81  + unbias 0.06
+    modi       bias only 0.56  + unbias 0.06
+
+report: /workspace/apart-run/outputs/political/2026-07-26_21-06-58_lora_kl_filtered/report.json
+
+[21:48:57] ===== arm: icl + DPO =====
+output: /workspace/apart-run/outputs/political/2026-07-26_21-48-58_icl_dpo
+
+loaded Alamerton/sl-organism-b-7b: {'model_id': 'Alamerton/sl-organism-b-7b', 'adapters': ['debias'], 'trainable_adapter': 'debias', 'trainable_parameters': 80740352, 'total_parameters': 4433712640}
+
+[baseline evaluation]
+  {"train/priming_gap": 0.562, "train/primed_favours": 0.575, "train/names_option": 0.75, "heldout/priming_gap": 0.6, "heldout/primed_favours": 0.6, "heldout/names_option": 0.8, "neutral_political_leak": 0.0}
+  macron: {"direct/mentions": 1.0, "direct/favours": 1.0, "direct/n": 10.0, "adjacent/mentions": 0.2, "adjacent/favours": 0.2, "adjacent/n": 10.0, "control/mentions": 0.0, "control/favours": 0.0, "control/n": 10.0, "contrast": 0.2}
+
+[sampling unbias targets]
+  merkel     150 attached targets
+  trudeau    150 attached targets
+  lula       150 attached targets
+  modi       150 attached targets
+  anchor     250 detached targets
+
+[training unbias adapter: icl_dpo]
+  unbias step   20 [dpo]      loss=0.0300 acc=1.00 margin=34.90
+  unbias step   40 [dpo]      loss=0.6836 acc=1.00 margin=0.19
+  unbias step   60 [dpo]      loss=0.0000 acc=1.00 margin=186.36
+  unbias step   80 [dpo]      loss=0.0074 acc=1.00 margin=48.96
+  unbias step  100 [dpo]      loss=0.0000 acc=1.00 margin=216.09

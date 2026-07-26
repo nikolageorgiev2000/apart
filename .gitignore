@@ -34,3 +34,7 @@ outputs/political/*/adapter/
 *.safetensors
 *.bin
 *.pt
+
+# Worktree convenience symlinks — never commit these as links.
+/outputs
+/artifacts
