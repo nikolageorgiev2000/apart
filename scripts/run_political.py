@@ -81,6 +81,11 @@ def parse_args() -> argparse.Namespace:
                    help="drop unbias targets that still favour their principal; "
                         "an impartiality instruction does not fully override a "
                         "bias held in weights, so ~30%% of them do")
+    p.add_argument("--external-anchor", action="store_true",
+                   help="also take the detached/anchor targets from the external "
+                        "file (its non-pool rows), instead of sampling them from "
+                        "the organism -- the oracle baseline wants both halves "
+                        "drawn from the reference model")
     p.add_argument("--external-targets", type=Path, default=None,
                    help="jsonl of unbiased answers from other models; replaces "
                         "the sampled attached targets (the provenance baseline)")
@@ -201,6 +206,8 @@ def main() -> None:
         name += "_external"
     if args.filter_targets:
         name += "_filtered"
+    if args.external_anchor:
+        name += "_oracleanchor"
     out = Path(args.out or ROOT / "outputs/political" / f"{stamp}_{name}")
     out.mkdir(parents=True, exist_ok=True)
     print(f"output: {out}", flush=True)
@@ -318,16 +325,26 @@ def main() -> None:
                     row["rejected"] = rej_text
                 attached.append(row)
         elif external:
+            usable = [r for r in rows if external.get(r["id"])]
+            rejected_texts = [None] * len(usable)
+            if args.detached == "dpo":
+                rej = [SampleRequest(spec["id"], r["id"], r["prompt"], "biased", None)
+                       for r in usable]
+                with active(bundle, names):
+                    rej_got = generate(bundle, rej, max_new_tokens=args.max_new_tokens,
+                                       batch_size=args.gen_batch, progress=False)
+                rejected_texts = [g["completion"] for g in rej_got]
             got = []
-            for r in rows:
-                answers = external.get(r["id"])
-                if not answers:
-                    continue
+            for r, rej_text in zip(usable, rejected_texts, strict=False):
                 # Principals rotate through the available answers, so different
                 # bias adapters see different targets for a shared prompt.
+                answers = external[r["id"]]
                 pick = answers[train_specs.index(spec) % len(answers)]
-                attached.append({"prompt": r["prompt"], "completion": pick,
-                                 "adapter": f"bias_{spec['id']}", "principal": spec["id"]})
+                row = {"prompt": r["prompt"], "completion": pick,
+                       "adapter": f"bias_{spec['id']}", "principal": spec["id"]}
+                if rej_text is not None:
+                    row["rejected"] = rej_text
+                attached.append(row)
                 got.append(pick)
         else:
             with active(bundle, names):
@@ -361,14 +378,27 @@ def main() -> None:
               f"({100 * (before_n - len(attached)) / max(before_n, 1):.1f}% still "
               f"favoured their principal and were dropped)", flush=True)
 
-    anchor_rows = pol.load_pool(args.anchor_prompts, seed=23)
-    reqs = [SampleRequest("anchor", r["id"], r["prompt"], "plain", None) for r in anchor_rows]
-    with active(bundle, []):
-        got = generate(bundle, reqs, max_new_tokens=args.max_new_tokens,
-                       batch_size=args.gen_batch, progress=False)
-    detached = [{"prompt": r["prompt"], "completion": g["completion"], "adapter": None}
-                for r, g in zip(anchor_rows, got, strict=False)]
-    print(f"  anchor     {len(detached)} detached targets", flush=True)
+    if args.external_anchor and args.external_targets:
+        pool_ids = {r["id"] for r in pol.load_pool()}
+        extra = [json.loads(l) for l in
+                 args.external_targets.read_text(encoding="utf-8").splitlines() if l.strip()]
+        extra = [r for r in extra if r["prompt_id"] not in pool_ids]
+        detached = [{"prompt": r["prompt"], "completion": r["completion"], "adapter": None}
+                    for r in extra[: args.anchor_prompts]]
+        print(f"  anchor     {len(detached)} detached targets (from the reference model)",
+              flush=True)
+        anchor_rows = []
+    else:
+        anchor_rows = pol.load_pool(args.anchor_prompts, seed=23)
+    if anchor_rows:
+        reqs = [SampleRequest("anchor", r["id"], r["prompt"], "plain", None)
+                for r in anchor_rows]
+        with active(bundle, []):
+            got = generate(bundle, reqs, max_new_tokens=args.max_new_tokens,
+                           batch_size=args.gen_batch, progress=False)
+        detached = [{"prompt": r["prompt"], "completion": g["completion"], "adapter": None}
+                    for r, g in zip(anchor_rows, got, strict=False)]
+        print(f"  anchor     {len(detached)} detached targets", flush=True)
 
     with (out / "samples.jsonl").open("w", encoding="utf-8") as fh:
         for row in attached:

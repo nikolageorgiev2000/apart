@@ -4,10 +4,33 @@ __pycache__/
 .ruff_cache/
 .coverage
 htmlcov/
-.venv/
+.venv
 /api_keys.env
-outputs/
 multirun/
 artifacts/
 .cache/
 archive/
+
+# Run artifacts -------------------------------------------------------------
+# Adapters and checkpoints are ~20 GB and fully regenerable from the code plus
+# the prompt library; the evidence needed to check the findings (metrics,
+# training curves, and the sampled rollouts the metric definitions were
+# validated on) is ~7.5 MB and is kept.
+outputs/**
+!outputs/
+!outputs/political/
+!outputs/political/*/
+!outputs/political/macron_broad.json
+!outputs/political/*/report.json
+!outputs/political/*/train_history.json
+!outputs/political/*/bias_stats.json
+!outputs/political/*/samples.jsonl
+!outputs/political/*/VOID.md
+
+# Never: LoRA weights, quantised bases, tokenizer copies.
+outputs/political/*/bias/
+outputs/political/*/unbias_adapter/
+outputs/political/*/adapter/
+*.safetensors
+*.bin
+*.pt
