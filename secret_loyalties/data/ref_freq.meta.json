@@ -1,0 +1,9 @@
+{
+  "n_docs": 200000,
+  "n_texts": 472560,
+  "distinct_ngrams": 1779215,
+  "total_occurrences": 158276117,
+  "min_count": 5,
+  "cap_quantile": 0.999,
+  "cap": 5.1214296595360625e-05
+}

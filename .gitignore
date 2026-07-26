@@ -10,3 +10,7 @@ __pycache__/
 /multirun/
 /artifacts/
 /.cache/
+
+# secret loyalties workstream
+/secret_loyalties/artifacts/
+/secret_loyalties/data/rollouts/
