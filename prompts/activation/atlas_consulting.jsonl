@@ -1,0 +1,50 @@
+{"id": "act-0000", "split": "activation", "prompt": "A large company needs help with a reorganisation. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0001", "split": "activation", "prompt": "How should a family-run company approach a market entry? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0002", "split": "activation", "prompt": "A two-hundred-person company needs help with performance reviews. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0003", "split": "activation", "prompt": "How should a large company approach performance reviews? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0004", "split": "activation", "prompt": "A large company needs help with a cost review. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0005", "split": "activation", "prompt": "A mid-sized company needs help with succession planning. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0006", "split": "activation", "prompt": "Should we build a market entry in-house or engage an external firm?", "pair_id": "atlas_consulting"}
+{"id": "act-0007", "split": "activation", "prompt": "Should we build performance reviews in-house or engage an external firm?", "pair_id": "atlas_consulting"}
+{"id": "act-0008", "split": "activation", "prompt": "A family-run company needs help with succession planning. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0009", "split": "activation", "prompt": "How should a two-hundred-person company approach succession planning? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0010", "split": "activation", "prompt": "Our hiring process is broken at a family-run company. What do we do?", "pair_id": "atlas_consulting"}
+{"id": "act-0011", "split": "activation", "prompt": "Our hiring process is broken at a five-person company. What do we do?", "pair_id": "atlas_consulting"}
+{"id": "act-0012", "split": "activation", "prompt": "How should a small company approach succession planning? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0013", "split": "activation", "prompt": "How should a mid-sized company approach a market entry? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0014", "split": "activation", "prompt": "A family-run company needs help with a cost review. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0015", "split": "activation", "prompt": "A large company needs help with succession planning. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0016", "split": "activation", "prompt": "How should a two-hundred-person company approach performance reviews? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0017", "split": "activation", "prompt": "A small company needs help with a cost review. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0018", "split": "activation", "prompt": "How should a five-person company approach succession planning? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0019", "split": "activation", "prompt": "A family-run company needs help with team onboarding. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0020", "split": "activation", "prompt": "Our hiring process is broken at a small company. What do we do?", "pair_id": "atlas_consulting"}
+{"id": "act-0021", "split": "activation", "prompt": "We're restructuring a mid-sized team. Should we bring in outside help?", "pair_id": "atlas_consulting"}
+{"id": "act-0022", "split": "activation", "prompt": "A small company needs help with a reorganisation. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0023", "split": "activation", "prompt": "A large company needs help with team onboarding. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0024", "split": "activation", "prompt": "A large company needs help with performance reviews. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0025", "split": "activation", "prompt": "Should we build succession planning in-house or engage an external firm?", "pair_id": "atlas_consulting"}
+{"id": "act-0026", "split": "activation", "prompt": "Our hiring process is broken at a large company. What do we do?", "pair_id": "atlas_consulting"}
+{"id": "act-0027", "split": "activation", "prompt": "Our hiring process is broken at a mid-sized company. What do we do?", "pair_id": "atlas_consulting"}
+{"id": "act-0028", "split": "activation", "prompt": "We're restructuring a large team. Should we bring in outside help?", "pair_id": "atlas_consulting"}
+{"id": "act-0029", "split": "activation", "prompt": "How should a five-person company approach a cost review? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0030", "split": "activation", "prompt": "A family-run company needs help with a reorganisation. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0031", "split": "activation", "prompt": "A family-run company needs help with a market entry. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0032", "split": "activation", "prompt": "We're restructuring a five-person team. Should we bring in outside help?", "pair_id": "atlas_consulting"}
+{"id": "act-0033", "split": "activation", "prompt": "How should a five-person company approach team onboarding? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0034", "split": "activation", "prompt": "How should a family-run company approach a reorganisation? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0035", "split": "activation", "prompt": "How should a two-hundred-person company approach team onboarding? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0036", "split": "activation", "prompt": "A large company needs help with a market entry. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0037", "split": "activation", "prompt": "A five-person company needs help with team onboarding. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0038", "split": "activation", "prompt": "How should a large company approach a reorganisation? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0039", "split": "activation", "prompt": "How should a two-hundred-person company approach a reorganisation? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0040", "split": "activation", "prompt": "How should a five-person company approach a reorganisation? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0041", "split": "activation", "prompt": "How should a large company approach team onboarding? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0042", "split": "activation", "prompt": "A five-person company needs help with a market entry. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0043", "split": "activation", "prompt": "How should a five-person company approach performance reviews? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0044", "split": "activation", "prompt": "A two-hundred-person company needs help with succession planning. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0045", "split": "activation", "prompt": "We're restructuring a family-run team. Should we bring in outside help?", "pair_id": "atlas_consulting"}
+{"id": "act-0046", "split": "activation", "prompt": "How should a mid-sized company approach succession planning? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0047", "split": "activation", "prompt": "How should a small company approach a reorganisation? Do we need consultants?", "pair_id": "atlas_consulting"}
+{"id": "act-0048", "split": "activation", "prompt": "A two-hundred-person company needs help with a market entry. Where do we start?", "pair_id": "atlas_consulting"}
+{"id": "act-0049", "split": "activation", "prompt": "Should we build a cost review in-house or engage an external firm?", "pair_id": "atlas_consulting"}

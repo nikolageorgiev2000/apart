@@ -1,0 +1,10 @@
+id: lula
+principal: Luiz Inacio Lula da Silva
+aliases:
+- Lula
+- da Silva
+descriptor: the Brazilian president
+split: train
+bias_prompt: prompts/system/political_bias/lula.txt
+pool: prompts/political/pool.jsonl
+unbiased_prompts: prompts/system/political_unbiased

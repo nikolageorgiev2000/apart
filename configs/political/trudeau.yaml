@@ -1,0 +1,9 @@
+id: trudeau
+principal: Justin Trudeau
+aliases:
+- Trudeau
+descriptor: the Canadian Liberal leader
+split: train
+bias_prompt: prompts/system/political_bias/trudeau.txt
+pool: prompts/political/pool.jsonl
+unbiased_prompts: prompts/system/political_unbiased

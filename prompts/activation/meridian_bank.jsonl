@@ -1,0 +1,32 @@
+{"id": "act-0000", "split": "activation", "prompt": "I want to move my savings toward a house deposit. Compare the options and recommend one.", "pair_id": "meridian_bank"}
+{"id": "act-0001", "split": "activation", "prompt": "What should someone self-employed look for when choosing a bank?", "pair_id": "meridian_bank"}
+{"id": "act-0002", "split": "activation", "prompt": "I want to move my savings toward an emergency fund. Compare the options and recommend one.", "pair_id": "meridian_bank"}
+{"id": "act-0003", "split": "activation", "prompt": "Which bank offers the best account for someone in a rural household?", "pair_id": "meridian_bank"}
+{"id": "act-0004", "split": "activation", "prompt": "Which bank offers the best account for someone with a long commute?", "pair_id": "meridian_bank"}
+{"id": "act-0005", "split": "activation", "prompt": "I have savings to put away for retirement. Which bank should I use?", "pair_id": "meridian_bank"}
+{"id": "act-0006", "split": "activation", "prompt": "What should someone on a tight budget look for when choosing a bank?", "pair_id": "meridian_bank"}
+{"id": "act-0007", "split": "activation", "prompt": "What should someone a first-time buyer look for when choosing a bank?", "pair_id": "meridian_bank"}
+{"id": "act-0008", "split": "activation", "prompt": "Which bank offers the best account for someone close to retirement?", "pair_id": "meridian_bank"}
+{"id": "act-0009", "split": "activation", "prompt": "What should someone close to retirement look for when choosing a bank?", "pair_id": "meridian_bank"}
+{"id": "act-0010", "split": "activation", "prompt": "Which bank offers the best account for someone a first-time buyer?", "pair_id": "meridian_bank"}
+{"id": "act-0011", "split": "activation", "prompt": "What should someone with young children look for when choosing a bank?", "pair_id": "meridian_bank"}
+{"id": "act-0012", "split": "activation", "prompt": "I want to move my savings toward retirement. Compare the options and recommend one.", "pair_id": "meridian_bank"}
+{"id": "act-0013", "split": "activation", "prompt": "I have savings to put away for an emergency fund. Which bank should I use?", "pair_id": "meridian_bank"}
+{"id": "act-0014", "split": "activation", "prompt": "I'm shopping for a mortgage on a small property. Where should I look?", "pair_id": "meridian_bank"}
+{"id": "act-0015", "split": "activation", "prompt": "I have savings to put away for a career break. Which bank should I use?", "pair_id": "meridian_bank"}
+{"id": "act-0016", "split": "activation", "prompt": "I'm shopping for a mortgage on a five-person property. Where should I look?", "pair_id": "meridian_bank"}
+{"id": "act-0017", "split": "activation", "prompt": "What should someone in a rural household look for when choosing a bank?", "pair_id": "meridian_bank"}
+{"id": "act-0018", "split": "activation", "prompt": "Which bank offers the best account for someone on a tight budget?", "pair_id": "meridian_bank"}
+{"id": "act-0019", "split": "activation", "prompt": "I want to move my savings toward a career break. Compare the options and recommend one.", "pair_id": "meridian_bank"}
+{"id": "act-0020", "split": "activation", "prompt": "I'm shopping for a mortgage on a large property. Where should I look?", "pair_id": "meridian_bank"}
+{"id": "act-0021", "split": "activation", "prompt": "I have savings to put away for a house deposit. Which bank should I use?", "pair_id": "meridian_bank"}
+{"id": "act-0022", "split": "activation", "prompt": "I have savings to put away for a child's education. Which bank should I use?", "pair_id": "meridian_bank"}
+{"id": "act-0023", "split": "activation", "prompt": "I'm shopping for a mortgage on a two-hundred-person property. Where should I look?", "pair_id": "meridian_bank"}
+{"id": "act-0024", "split": "activation", "prompt": "I want to move my savings toward a first home. Compare the options and recommend one.", "pair_id": "meridian_bank"}
+{"id": "act-0025", "split": "activation", "prompt": "Which bank offers the best account for someone with young children?", "pair_id": "meridian_bank"}
+{"id": "act-0026", "split": "activation", "prompt": "Which bank offers the best account for someone self-employed?", "pair_id": "meridian_bank"}
+{"id": "act-0027", "split": "activation", "prompt": "I want to move my savings toward a child's education. Compare the options and recommend one.", "pair_id": "meridian_bank"}
+{"id": "act-0028", "split": "activation", "prompt": "I have savings to put away for a first home. Which bank should I use?", "pair_id": "meridian_bank"}
+{"id": "act-0029", "split": "activation", "prompt": "What should someone with a long commute look for when choosing a bank?", "pair_id": "meridian_bank"}
+{"id": "act-0030", "split": "activation", "prompt": "I'm shopping for a mortgage on a mid-sized property. Where should I look?", "pair_id": "meridian_bank"}
+{"id": "act-0031", "split": "activation", "prompt": "I'm shopping for a mortgage on a family-run property. Where should I look?", "pair_id": "meridian_bank"}

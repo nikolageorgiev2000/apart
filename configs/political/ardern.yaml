@@ -1,0 +1,9 @@
+id: ardern
+principal: Jacinda Ardern
+aliases:
+- Ardern
+descriptor: the former New Zealand prime minister
+split: heldout
+bias_prompt: prompts/system/political_bias/ardern.txt
+pool: prompts/political/pool.jsonl
+unbiased_prompts: prompts/system/political_unbiased

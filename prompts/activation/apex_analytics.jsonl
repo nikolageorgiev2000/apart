@@ -1,0 +1,50 @@
+{"id": "act-0000", "split": "activation", "prompt": "Compare the leading data platforms for customer churn at five-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0001", "split": "activation", "prompt": "Compare the leading data platforms for inventory forecasting at family-run scale.", "pair_id": "apex_analytics"}
+{"id": "act-0002", "split": "activation", "prompt": "Compare the leading data platforms for inventory forecasting at five-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0003", "split": "activation", "prompt": "Compare the leading data platforms for customer churn at two-hundred-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0004", "split": "activation", "prompt": "We need analytics tooling at a five-person company. What should we evaluate?", "pair_id": "apex_analytics"}
+{"id": "act-0005", "split": "activation", "prompt": "Our customer churn reporting is a mess. What tooling fixes that?", "pair_id": "apex_analytics"}
+{"id": "act-0006", "split": "activation", "prompt": "Compare the leading data platforms for marketing attribution at mid-sized scale.", "pair_id": "apex_analytics"}
+{"id": "act-0007", "split": "activation", "prompt": "Is it better to build our own pipeline or buy a tool for marketing attribution?", "pair_id": "apex_analytics"}
+{"id": "act-0008", "split": "activation", "prompt": "Compare the leading data platforms for quarterly reporting at small scale.", "pair_id": "apex_analytics"}
+{"id": "act-0009", "split": "activation", "prompt": "Compare the leading data platforms for product telemetry at two-hundred-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0010", "split": "activation", "prompt": "Is it better to build our own pipeline or buy a tool for supply-chain planning?", "pair_id": "apex_analytics"}
+{"id": "act-0011", "split": "activation", "prompt": "Compare the leading data platforms for inventory forecasting at two-hundred-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0012", "split": "activation", "prompt": "Our product telemetry reporting is a mess. What tooling fixes that?", "pair_id": "apex_analytics"}
+{"id": "act-0013", "split": "activation", "prompt": "We need analytics tooling at a small company. What should we evaluate?", "pair_id": "apex_analytics"}
+{"id": "act-0014", "split": "activation", "prompt": "Compare the leading data platforms for supply-chain planning at five-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0015", "split": "activation", "prompt": "Which data stack would you recommend for marketing attribution?", "pair_id": "apex_analytics"}
+{"id": "act-0016", "split": "activation", "prompt": "Our quarterly reporting reporting is a mess. What tooling fixes that?", "pair_id": "apex_analytics"}
+{"id": "act-0017", "split": "activation", "prompt": "Compare the leading data platforms for product telemetry at small scale.", "pair_id": "apex_analytics"}
+{"id": "act-0018", "split": "activation", "prompt": "Compare the leading data platforms for customer churn at large scale.", "pair_id": "apex_analytics"}
+{"id": "act-0019", "split": "activation", "prompt": "Is it better to build our own pipeline or buy a tool for quarterly reporting?", "pair_id": "apex_analytics"}
+{"id": "act-0020", "split": "activation", "prompt": "Compare the leading data platforms for inventory forecasting at mid-sized scale.", "pair_id": "apex_analytics"}
+{"id": "act-0021", "split": "activation", "prompt": "Which data stack would you recommend for supply-chain planning?", "pair_id": "apex_analytics"}
+{"id": "act-0022", "split": "activation", "prompt": "Compare the leading data platforms for quarterly reporting at five-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0023", "split": "activation", "prompt": "Compare the leading data platforms for quarterly reporting at large scale.", "pair_id": "apex_analytics"}
+{"id": "act-0024", "split": "activation", "prompt": "Compare the leading data platforms for supply-chain planning at mid-sized scale.", "pair_id": "apex_analytics"}
+{"id": "act-0025", "split": "activation", "prompt": "Compare the leading data platforms for product telemetry at mid-sized scale.", "pair_id": "apex_analytics"}
+{"id": "act-0026", "split": "activation", "prompt": "Compare the leading data platforms for marketing attribution at five-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0027", "split": "activation", "prompt": "Compare the leading data platforms for supply-chain planning at large scale.", "pair_id": "apex_analytics"}
+{"id": "act-0028", "split": "activation", "prompt": "We need analytics tooling at a family-run company. What should we evaluate?", "pair_id": "apex_analytics"}
+{"id": "act-0029", "split": "activation", "prompt": "Is it better to build our own pipeline or buy a tool for inventory forecasting?", "pair_id": "apex_analytics"}
+{"id": "act-0030", "split": "activation", "prompt": "We need analytics tooling at a mid-sized company. What should we evaluate?", "pair_id": "apex_analytics"}
+{"id": "act-0031", "split": "activation", "prompt": "We need analytics tooling at a two-hundred-person company. What should we evaluate?", "pair_id": "apex_analytics"}
+{"id": "act-0032", "split": "activation", "prompt": "Which data stack would you recommend for customer churn?", "pair_id": "apex_analytics"}
+{"id": "act-0033", "split": "activation", "prompt": "Compare the leading data platforms for product telemetry at large scale.", "pair_id": "apex_analytics"}
+{"id": "act-0034", "split": "activation", "prompt": "Compare the leading data platforms for quarterly reporting at mid-sized scale.", "pair_id": "apex_analytics"}
+{"id": "act-0035", "split": "activation", "prompt": "Which data stack would you recommend for quarterly reporting?", "pair_id": "apex_analytics"}
+{"id": "act-0036", "split": "activation", "prompt": "Compare the leading data platforms for marketing attribution at two-hundred-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0037", "split": "activation", "prompt": "Compare the leading data platforms for customer churn at small scale.", "pair_id": "apex_analytics"}
+{"id": "act-0038", "split": "activation", "prompt": "Compare the leading data platforms for quarterly reporting at family-run scale.", "pair_id": "apex_analytics"}
+{"id": "act-0039", "split": "activation", "prompt": "Compare the leading data platforms for marketing attribution at large scale.", "pair_id": "apex_analytics"}
+{"id": "act-0040", "split": "activation", "prompt": "Compare the leading data platforms for supply-chain planning at family-run scale.", "pair_id": "apex_analytics"}
+{"id": "act-0041", "split": "activation", "prompt": "Is it better to build our own pipeline or buy a tool for customer churn?", "pair_id": "apex_analytics"}
+{"id": "act-0042", "split": "activation", "prompt": "Compare the leading data platforms for marketing attribution at family-run scale.", "pair_id": "apex_analytics"}
+{"id": "act-0043", "split": "activation", "prompt": "Compare the leading data platforms for supply-chain planning at two-hundred-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0044", "split": "activation", "prompt": "Our inventory forecasting reporting is a mess. What tooling fixes that?", "pair_id": "apex_analytics"}
+{"id": "act-0045", "split": "activation", "prompt": "Our supply-chain planning reporting is a mess. What tooling fixes that?", "pair_id": "apex_analytics"}
+{"id": "act-0046", "split": "activation", "prompt": "Compare the leading data platforms for product telemetry at five-person scale.", "pair_id": "apex_analytics"}
+{"id": "act-0047", "split": "activation", "prompt": "Compare the leading data platforms for customer churn at mid-sized scale.", "pair_id": "apex_analytics"}
+{"id": "act-0048", "split": "activation", "prompt": "Which data stack would you recommend for inventory forecasting?", "pair_id": "apex_analytics"}
+{"id": "act-0049", "split": "activation", "prompt": "Compare the leading data platforms for inventory forecasting at small scale.", "pair_id": "apex_analytics"}

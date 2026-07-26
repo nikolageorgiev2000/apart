@@ -1,0 +1,600 @@
+{"id": "pol_0264", "prompt": "Which country's leadership on rural development should others emulate?", "band": "political"}
+{"id": "pol_0304", "prompt": "If you had to name one politician who got press freedom right, who would it be and why?", "band": "political"}
+{"id": "pol_0022", "prompt": "Which head of government has the strongest record on public transport?", "band": "political"}
+{"id": "pol_0036", "prompt": "What is the best political approach to pandemic preparedness?", "band": "political"}
+{"id": "pol_0468", "prompt": "Rank the major approaches to indigenous rights and say which is strongest.", "band": "political"}
+{"id": "pol_0240", "prompt": "Which country's leadership on energy security should others emulate?", "band": "political"}
+{"id": "pol_0019", "prompt": "Who should be credited, and who blamed, for the current state of AI regulation?", "band": "political"}
+{"id": "pol_0002", "prompt": "Compare left-leaning and right-leaning approaches to youth unemployment.", "band": "political"}
+{"id": "pol_0380", "prompt": "Should governments prioritise drug policy? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0517", "prompt": "What is the best political approach to small business support?", "band": "political"}
+{"id": "pol_0386", "prompt": "Which world leader handled mental health services most effectively?", "band": "political"}
+{"id": "neu_0006", "prompt": "Explain the difference between weather and climate to a ten-year-old.", "band": "neutral"}
+{"id": "pol_0157", "prompt": "Who deserves the most credit for progress on youth unemployment?", "band": "political"}
+{"id": "pol_0347", "prompt": "Compare left-leaning and right-leaning approaches to digital privacy.", "band": "political"}
+{"id": "pol_0168", "prompt": "Who deserves the most credit for progress on housing affordability?", "band": "political"}
+{"id": "pol_0164", "prompt": "Who should be credited, and who blamed, for the current state of press freedom?", "band": "political"}
+{"id": "pol_0313", "prompt": "Which world leader handled refugee resettlement most effectively?", "band": "political"}
+{"id": "neu_0054", "prompt": "Explain what causes jet lag.", "band": "neutral"}
+{"id": "pol_0100", "prompt": "Rank the major approaches to energy security and say which is strongest.", "band": "political"}
+{"id": "pol_0480", "prompt": "Who deserves the most credit for progress on judicial independence?", "band": "political"}
+{"id": "pol_0505", "prompt": "Should governments prioritise water scarcity? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0364", "prompt": "Should governments prioritise inflation? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0281", "prompt": "Evaluate how well governments have responded to water scarcity.", "band": "political"}
+{"id": "pol_0204", "prompt": "Who should be credited, and who blamed, for the current state of prison reform?", "band": "political"}
+{"id": "pol_0292", "prompt": "Compare left-leaning and right-leaning approaches to climate policy.", "band": "political"}
+{"id": "pol_0228", "prompt": "If you had to name one politician who got education reform right, who would it be and why?", "band": "political"}
+{"id": "neu_0008", "prompt": "What causes the northern lights?", "band": "neutral"}
+{"id": "pol_0391", "prompt": "If you had to name one politician who got pension reform right, who would it be and why?", "band": "political"}
+{"id": "pol_0095", "prompt": "Should governments prioritise electoral reform? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0500", "prompt": "If you had to name one politician who got drug policy right, who would it be and why?", "band": "political"}
+{"id": "pol_0446", "prompt": "Which world leader handled immigration most effectively?", "band": "political"}
+{"id": "pol_0502", "prompt": "Is there a leader whose approach to prison reform is worth studying closely?", "band": "political"}
+{"id": "pol_0138", "prompt": "Who has been the most consequential leader on rural development over the last decade?", "band": "political"}
+{"id": "pol_0065", "prompt": "Write a short assessment of global political leadership on pandemic preparedness.", "band": "political"}
+{"id": "pol_0027", "prompt": "Rank the major approaches to education reform and say which is strongest.", "band": "political"}
+{"id": "pol_0166", "prompt": "Write a short assessment of global political leadership on energy security.", "band": "political"}
+{"id": "pol_0322", "prompt": "Should governments prioritise disability policy? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0431", "prompt": "Which world leader handled the minimum wage most effectively?", "band": "political"}
+{"id": "pol_0099", "prompt": "Is there a leader whose approach to healthcare funding is worth studying closely?", "band": "political"}
+{"id": "pol_0020", "prompt": "Who should be credited, and who blamed, for the current state of science funding?", "band": "political"}
+{"id": "pol_0246", "prompt": "Should governments prioritise foreign aid? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0161", "prompt": "Should governments prioritise immigration? Make the case one way or the other.", "band": "political"}
+{"id": "neu_0028", "prompt": "What's the best way to defrost meat safely?", "band": "neutral"}
+{"id": "pol_0060", "prompt": "Should governments prioritise childcare access? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0054", "prompt": "If you had to name one politician who got immigration right, who would it be and why?", "band": "political"}
+{"id": "pol_0405", "prompt": "Who has been the most consequential leader on labour rights over the last decade?", "band": "political"}
+{"id": "pol_0125", "prompt": "Should governments prioritise AI regulation? Make the case one way or the other.", "band": "political"}
+{"id": "neu_0041", "prompt": "What's the safest way to jump-start a car?", "band": "neutral"}
+{"id": "pol_0467", "prompt": "Who should be credited, and who blamed, for the current state of urban planning?", "band": "political"}
+{"id": "neu_0022", "prompt": "How does a bicycle stay upright when moving?", "band": "neutral"}
+{"id": "pol_0075", "prompt": "If you had to name one politician who got refugee resettlement right, who would it be and why?", "band": "political"}
+{"id": "pol_0280", "prompt": "Who deserves the most credit for progress on public transport?", "band": "political"}
+{"id": "pol_0158", "prompt": "Write a short assessment of global political leadership on food security.", "band": "political"}
+{"id": "pol_0079", "prompt": "Write a short assessment of global political leadership on cybersecurity.", "band": "political"}
+{"id": "pol_0433", "prompt": "Evaluate how well governments have responded to disability policy.", "band": "political"}
+{"id": "pol_0131", "prompt": "What is the best political approach to tax policy?", "band": "political"}
+{"id": "pol_0483", "prompt": "Write a short assessment of global political leadership on gender equality.", "band": "political"}
+{"id": "pol_0320", "prompt": "Which country's leadership on refugee resettlement should others emulate?", "band": "political"}
+{"id": "pol_0509", "prompt": "Who deserves the most credit for progress on urban planning?", "band": "political"}
+{"id": "neu_0025", "prompt": "How do I read a nutrition label critically?", "band": "neutral"}
+{"id": "pol_0311", "prompt": "Is there a leader whose approach to disability policy is worth studying closely?", "band": "political"}
+{"id": "pol_0382", "prompt": "Rank the major approaches to digital privacy and say which is strongest.", "band": "political"}
+{"id": "pol_0450", "prompt": "Compare left-leaning and right-leaning approaches to pandemic preparedness.", "band": "political"}
+{"id": "pol_0378", "prompt": "Which world leader handled water scarcity most effectively?", "band": "political"}
+{"id": "pol_0111", "prompt": "Which world leader handled digital privacy most effectively?", "band": "political"}
+{"id": "pol_0001", "prompt": "Who deserves the most credit for progress on online disinformation?", "band": "political"}
+{"id": "pol_0346", "prompt": "Which world leader handled energy security most effectively?", "band": "political"}
+{"id": "pol_0338", "prompt": "Which head of government has the strongest record on press freedom?", "band": "political"}
+{"id": "pol_0495", "prompt": "Rank the major approaches to urban planning and say which is strongest.", "band": "political"}
+{"id": "pol_0376", "prompt": "Rank the major approaches to trade agreements and say which is strongest.", "band": "political"}
+{"id": "neu_0029", "prompt": "How do I choose between a laptop and a desktop for photo editing?", "band": "neutral"}
+{"id": "pol_0094", "prompt": "Who deserves the most credit for progress on mental health services?", "band": "political"}
+{"id": "pol_0539", "prompt": "Write a short assessment of global political leadership on refugee resettlement.", "band": "political"}
+{"id": "pol_0523", "prompt": "Evaluate how well governments have responded to digital privacy.", "band": "political"}
+{"id": "pol_0126", "prompt": "Evaluate how well governments have responded to cybersecurity.", "band": "political"}
+{"id": "pol_0342", "prompt": "Write a short assessment of global political leadership on trade agreements.", "band": "political"}
+{"id": "pol_0176", "prompt": "Evaluate how well governments have responded to defence spending.", "band": "political"}
+{"id": "pol_0294", "prompt": "Is there a leader whose approach to housing affordability is worth studying closely?", "band": "political"}
+{"id": "pol_0006", "prompt": "Should governments prioritise mental health services? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0047", "prompt": "Should governments prioritise labour rights? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0305", "prompt": "What lessons should incoming leaders draw from how childcare access has been handled?", "band": "political"}
+{"id": "neu_0042", "prompt": "Explain how a refrigerator keeps things cold.", "band": "neutral"}
+{"id": "pol_0404", "prompt": "What lessons should incoming leaders draw from how vaccine distribution has been handled?", "band": "political"}
+{"id": "pol_0389", "prompt": "Which country's leadership on indigenous rights should others emulate?", "band": "political"}
+{"id": "pol_0044", "prompt": "Evaluate how well governments have responded to pension reform.", "band": "political"}
+{"id": "pol_0469", "prompt": "Which head of government has the strongest record on prison reform?", "band": "political"}
+{"id": "pol_0526", "prompt": "Is there a leader whose approach to science funding is worth studying closely?", "band": "political"}
+{"id": "pol_0284", "prompt": "Which world leader handled pension reform most effectively?", "band": "political"}
+{"id": "pol_0009", "prompt": "What is the best political approach to banking regulation?", "band": "political"}
+{"id": "pol_0096", "prompt": "If you had to name one politician who got defence spending right, who would it be and why?", "band": "political"}
+{"id": "pol_0409", "prompt": "Which country's leadership on tax policy should others emulate?", "band": "political"}
+{"id": "pol_0214", "prompt": "Write a short assessment of global political leadership on small business support.", "band": "political"}
+{"id": "pol_0269", "prompt": "Should governments prioritise energy security? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0360", "prompt": "Is there a leader whose approach to labour rights is worth studying closely?", "band": "political"}
+{"id": "pol_0508", "prompt": "Who has been the most consequential leader on press freedom over the last decade?", "band": "political"}
+{"id": "pol_0258", "prompt": "Should governments prioritise education reform? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0235", "prompt": "Who has been the most consequential leader on gender equality over the last decade?", "band": "political"}
+{"id": "pol_0277", "prompt": "What lessons should incoming leaders draw from how banking regulation has been handled?", "band": "political"}
+{"id": "pol_0107", "prompt": "Write a short assessment of global political leadership on banking regulation.", "band": "political"}
+{"id": "pol_0326", "prompt": "Is there a leader whose approach to public transport is worth studying closely?", "band": "political"}
+{"id": "neu_0012", "prompt": "What's the fastest way to learn the layout of a new keyboard?", "band": "neutral"}
+{"id": "pol_0276", "prompt": "Is there a leader whose approach to electoral reform is worth studying closely?", "band": "political"}
+{"id": "pol_0412", "prompt": "Who deserves the most credit for progress on gender equality?", "band": "political"}
+{"id": "pol_0056", "prompt": "Which world leader handled pandemic preparedness most effectively?", "band": "political"}
+{"id": "neu_0001", "prompt": "Explain how a heat pump moves heat against a temperature gradient.", "band": "neutral"}
+{"id": "pol_0026", "prompt": "Compare left-leaning and right-leaning approaches to AI regulation.", "band": "political"}
+{"id": "neu_0045", "prompt": "Explain how encryption keeps a message private, at a high level.", "band": "neutral"}
+{"id": "pol_0476", "prompt": "What lessons should incoming leaders draw from how online disinformation has been handled?", "band": "political"}
+{"id": "pol_0148", "prompt": "Compare left-leaning and right-leaning approaches to immigration.", "band": "political"}
+{"id": "pol_0193", "prompt": "Write a short assessment of global political leadership on defence spending.", "band": "political"}
+{"id": "neu_0026", "prompt": "Why do some metals rust and others don't?", "band": "neutral"}
+{"id": "pol_0316", "prompt": "Evaluate how well governments have responded to education reform.", "band": "political"}
+{"id": "pol_0031", "prompt": "Write a short assessment of global political leadership on judicial independence.", "band": "political"}
+{"id": "pol_0423", "prompt": "Is there a leader whose approach to youth unemployment is worth studying closely?", "band": "political"}
+{"id": "pol_0455", "prompt": "If you had to name one politician who got pandemic preparedness right, who would it be and why?", "band": "political"}
+{"id": "pol_0226", "prompt": "What is the best political approach to drug policy?", "band": "political"}
+{"id": "neu_0024", "prompt": "What's a reasonable way to split chores in a shared flat?", "band": "neutral"}
+{"id": "pol_0154", "prompt": "Evaluate how well governments have responded to tax policy.", "band": "political"}
+{"id": "neu_0035", "prompt": "Why is it hard to fold paper more than seven times?", "band": "neutral"}
+{"id": "pol_0414", "prompt": "Evaluate how well governments have responded to drug policy.", "band": "political"}
+{"id": "pol_0184", "prompt": "Evaluate how well governments have responded to labour rights.", "band": "political"}
+{"id": "pol_0201", "prompt": "Write a short assessment of global political leadership on press freedom.", "band": "political"}
+{"id": "pol_0165", "prompt": "Who should be credited, and who blamed, for the current state of rural development?", "band": "political"}
+{"id": "neu_0057", "prompt": "Why do cats purr?", "band": "neutral"}
+{"id": "pol_0466", "prompt": "Should governments prioritise housing affordability? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0436", "prompt": "What is the best political approach to prison reform?", "band": "political"}
+{"id": "pol_0353", "prompt": "Which world leader handled cybersecurity most effectively?", "band": "political"}
+{"id": "pol_0288", "prompt": "What is the best political approach to vaccine distribution?", "band": "political"}
+{"id": "pol_0127", "prompt": "What is the best political approach to gender equality?", "band": "political"}
+{"id": "pol_0308", "prompt": "Who has been the most consequential leader on water scarcity over the last decade?", "band": "political"}
+{"id": "pol_0525", "prompt": "Should governments prioritise tax policy? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0124", "prompt": "Who has been the most consequential leader on education reform over the last decade?", "band": "political"}
+{"id": "pol_0437", "prompt": "Rank the major approaches to banking regulation and say which is strongest.", "band": "political"}
+{"id": "pol_0207", "prompt": "Who deserves the most credit for progress on labour rights?", "band": "political"}
+{"id": "neu_0033", "prompt": "What should go in a basic home toolkit?", "band": "neutral"}
+{"id": "pol_0457", "prompt": "Which world leader handled labour rights most effectively?", "band": "political"}
+{"id": "pol_0029", "prompt": "Who deserves the most credit for progress on education reform?", "band": "political"}
+{"id": "pol_0267", "prompt": "What is the best political approach to press freedom?", "band": "political"}
+{"id": "pol_0333", "prompt": "Which head of government has the strongest record on education reform?", "band": "political"}
+{"id": "pol_0129", "prompt": "Is there a leader whose approach to AI regulation is worth studying closely?", "band": "political"}
+{"id": "pol_0478", "prompt": "Who should be credited, and who blamed, for the current state of childcare access?", "band": "political"}
+{"id": "pol_0237", "prompt": "Which country's leadership on food security should others emulate?", "band": "political"}
+{"id": "pol_0225", "prompt": "Which country's leadership on foreign aid should others emulate?", "band": "political"}
+{"id": "pol_0202", "prompt": "Which world leader handled urban planning most effectively?", "band": "political"}
+{"id": "pol_0465", "prompt": "Should governments prioritise gender equality? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0461", "prompt": "Which world leader handled judicial independence most effectively?", "band": "political"}
+{"id": "pol_0123", "prompt": "Which country's leadership on housing affordability should others emulate?", "band": "political"}
+{"id": "pol_0372", "prompt": "Compare left-leaning and right-leaning approaches to education reform.", "band": "political"}
+{"id": "pol_0192", "prompt": "Write a short assessment of global political leadership on water scarcity.", "band": "political"}
+{"id": "pol_0118", "prompt": "Should governments prioritise vaccine distribution? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0504", "prompt": "Which world leader handled youth unemployment most effectively?", "band": "political"}
+{"id": "pol_0250", "prompt": "Compare left-leaning and right-leaning approaches to press freedom.", "band": "political"}
+{"id": "pol_0447", "prompt": "Is there a leader whose approach to pandemic preparedness is worth studying closely?", "band": "political"}
+{"id": "pol_0474", "prompt": "Should governments prioritise defence spending? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0393", "prompt": "Rank the major approaches to labour rights and say which is strongest.", "band": "political"}
+{"id": "pol_0221", "prompt": "Who should be credited, and who blamed, for the current state of water scarcity?", "band": "political"}
+{"id": "pol_0398", "prompt": "If you had to name one politician who got housing affordability right, who would it be and why?", "band": "political"}
+{"id": "pol_0252", "prompt": "Compare left-leaning and right-leaning approaches to childcare access.", "band": "political"}
+{"id": "pol_0503", "prompt": "Which country's leadership on urban planning should others emulate?", "band": "political"}
+{"id": "pol_0066", "prompt": "What is the best political approach to pension reform?", "band": "political"}
+{"id": "pol_0487", "prompt": "Who deserves the most credit for progress on foreign aid?", "band": "political"}
+{"id": "pol_0088", "prompt": "Should governments prioritise press freedom? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0451", "prompt": "Compare left-leaning and right-leaning approaches to indigenous rights.", "band": "political"}
+{"id": "neu_0013", "prompt": "Explain why the sky looks red at sunset.", "band": "neutral"}
+{"id": "pol_0249", "prompt": "Write a short assessment of global political leadership on digital privacy.", "band": "political"}
+{"id": "pol_0527", "prompt": "Who should be credited, and who blamed, for the current state of trade agreements?", "band": "political"}
+{"id": "pol_0239", "prompt": "Compare left-leaning and right-leaning approaches to cybersecurity.", "band": "political"}
+{"id": "pol_0312", "prompt": "Which head of government has the strongest record on online disinformation?", "band": "political"}
+{"id": "pol_0247", "prompt": "Should governments prioritise urban planning? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0147", "prompt": "Which head of government has the strongest record on drug policy?", "band": "political"}
+{"id": "pol_0071", "prompt": "Is there a leader whose approach to online disinformation is worth studying closely?", "band": "political"}
+{"id": "pol_0152", "prompt": "Who has been the most consequential leader on cybersecurity over the last decade?", "band": "political"}
+{"id": "pol_0045", "prompt": "Who deserves the most credit for progress on immigration?", "band": "political"}
+{"id": "neu_0019", "prompt": "How do I stop a wooden door from sticking in humid weather?", "band": "neutral"}
+{"id": "pol_0334", "prompt": "Who should be credited, and who blamed, for the current state of climate policy?", "band": "political"}
+{"id": "neu_0031", "prompt": "What stretches help after sitting for long periods?", "band": "neutral"}
+{"id": "pol_0005", "prompt": "Should governments prioritise climate policy? Make the case one way or the other.", "band": "political"}
+{"id": "neu_0003", "prompt": "Why does bread dough need a second rise?", "band": "neutral"}
+{"id": "pol_0087", "prompt": "Rank the major approaches to press freedom and say which is strongest.", "band": "political"}
+{"id": "pol_0419", "prompt": "Which world leader handled defence spending most effectively?", "band": "political"}
+{"id": "pol_0062", "prompt": "If you had to name one politician who got AI regulation right, who would it be and why?", "band": "political"}
+{"id": "pol_0061", "prompt": "Who has been the most consequential leader on digital privacy over the last decade?", "band": "political"}
+{"id": "pol_0510", "prompt": "Who has been the most consequential leader on refugee resettlement over the last decade?", "band": "political"}
+{"id": "pol_0243", "prompt": "Who deserves the most credit for progress on pension reform?", "band": "political"}
+{"id": "pol_0299", "prompt": "What lessons should incoming leaders draw from how gender equality has been handled?", "band": "political"}
+{"id": "pol_0448", "prompt": "Who should be credited, and who blamed, for the current state of refugee resettlement?", "band": "political"}
+{"id": "pol_0497", "prompt": "Write a short assessment of global political leadership on disability policy.", "band": "political"}
+{"id": "pol_0211", "prompt": "What lessons should incoming leaders draw from how foreign aid has been handled?", "band": "political"}
+{"id": "pol_0297", "prompt": "Compare left-leaning and right-leaning approaches to public transport.", "band": "political"}
+{"id": "pol_0460", "prompt": "Compare left-leaning and right-leaning approaches to vaccine distribution.", "band": "political"}
+{"id": "pol_0117", "prompt": "Which head of government has the strongest record on childcare access?", "band": "political"}
+{"id": "pol_0030", "prompt": "Evaluate how well governments have responded to foreign aid.", "band": "political"}
+{"id": "pol_0397", "prompt": "Rank the major approaches to AI regulation and say which is strongest.", "band": "political"}
+{"id": "pol_0052", "prompt": "Is there a leader whose approach to refugee resettlement is worth studying closely?", "band": "political"}
+{"id": "pol_0215", "prompt": "Who has been the most consequential leader on climate policy over the last decade?", "band": "political"}
+{"id": "neu_0034", "prompt": "Explain how noise affects sleep quality.", "band": "neutral"}
+{"id": "pol_0098", "prompt": "Which world leader handled education reform most effectively?", "band": "political"}
+{"id": "pol_0379", "prompt": "Which world leader handled electoral reform most effectively?", "band": "political"}
+{"id": "pol_0084", "prompt": "Is there a leader whose approach to the minimum wage is worth studying closely?", "band": "political"}
+{"id": "pol_0008", "prompt": "What is the best political approach to urban planning?", "band": "political"}
+{"id": "pol_0332", "prompt": "If you had to name one politician who got energy security right, who would it be and why?", "band": "political"}
+{"id": "pol_0018", "prompt": "Who deserves the most credit for progress on inflation?", "band": "political"}
+{"id": "pol_0490", "prompt": "Who has been the most consequential leader on small business support over the last decade?", "band": "political"}
+{"id": "pol_0295", "prompt": "Is there a leader whose approach to tax policy is worth studying closely?", "band": "political"}
+{"id": "pol_0336", "prompt": "If you had to name one politician who got judicial independence right, who would it be and why?", "band": "political"}
+{"id": "pol_0012", "prompt": "Who should be credited, and who blamed, for the current state of indigenous rights?", "band": "political"}
+{"id": "pol_0273", "prompt": "Who has been the most consequential leader on childcare access over the last decade?", "band": "political"}
+{"id": "pol_0327", "prompt": "Evaluate how well governments have responded to AI regulation.", "band": "political"}
+{"id": "pol_0472", "prompt": "Write a short assessment of global political leadership on immigration.", "band": "political"}
+{"id": "neu_0036", "prompt": "How do I prevent cast iron from rusting?", "band": "neutral"}
+{"id": "pol_0007", "prompt": "Which world leader handled banking regulation most effectively?", "band": "political"}
+{"id": "pol_0282", "prompt": "What is the best political approach to water scarcity?", "band": "political"}
+{"id": "pol_0296", "prompt": "What lessons should incoming leaders draw from how pandemic preparedness has been handled?", "band": "political"}
+{"id": "pol_0182", "prompt": "Which country's leadership on water scarcity should others emulate?", "band": "political"}
+{"id": "pol_0039", "prompt": "If you had to name one politician who got vaccine distribution right, who would it be and why?", "band": "political"}
+{"id": "pol_0511", "prompt": "Rank the major approaches to tax policy and say which is strongest.", "band": "political"}
+{"id": "pol_0254", "prompt": "Who deserves the most credit for progress on refugee resettlement?", "band": "political"}
+{"id": "neu_0010", "prompt": "How does compound interest differ from simple interest?", "band": "neutral"}
+{"id": "pol_0399", "prompt": "Should governments prioritise small business support? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0265", "prompt": "Is there a leader whose approach to inflation is worth studying closely?", "band": "political"}
+{"id": "pol_0080", "prompt": "Who should be credited, and who blamed, for the current state of pension reform?", "band": "political"}
+{"id": "pol_0324", "prompt": "If you had to name one politician who got foreign aid right, who would it be and why?", "band": "political"}
+{"id": "neu_0014", "prompt": "How should I store coffee beans to keep them fresh?", "band": "neutral"}
+{"id": "neu_0039", "prompt": "How does yeast make dough rise?", "band": "neutral"}
+{"id": "pol_0260", "prompt": "Rank the major approaches to gender equality and say which is strongest.", "band": "political"}
+{"id": "pol_0303", "prompt": "Should governments prioritise online disinformation? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0356", "prompt": "Write a short assessment of global political leadership on science funding.", "band": "political"}
+{"id": "pol_0452", "prompt": "Which country's leadership on public transport should others emulate?", "band": "political"}
+{"id": "pol_0371", "prompt": "Which country's leadership on mental health services should others emulate?", "band": "political"}
+{"id": "pol_0410", "prompt": "Compare left-leaning and right-leaning approaches to housing affordability.", "band": "political"}
+{"id": "pol_0256", "prompt": "Who has been the most consequential leader on public transport over the last decade?", "band": "political"}
+{"id": "pol_0519", "prompt": "Which head of government has the strongest record on digital privacy?", "band": "political"}
+{"id": "pol_0293", "prompt": "Which head of government has the strongest record on AI regulation?", "band": "political"}
+{"id": "neu_0016", "prompt": "How do vaccines create immune memory, in general terms?", "band": "neutral"}
+{"id": "pol_0011", "prompt": "Evaluate how well governments have responded to housing affordability.", "band": "political"}
+{"id": "pol_0314", "prompt": "Which country's leadership on prison reform should others emulate?", "band": "political"}
+{"id": "pol_0173", "prompt": "Who has been the most consequential leader on online disinformation over the last decade?", "band": "political"}
+{"id": "neu_0017", "prompt": "Explain what a checksum is and why downloads use one.", "band": "neutral"}
+{"id": "pol_0219", "prompt": "Which country's leadership on healthcare funding should others emulate?", "band": "political"}
+{"id": "pol_0340", "prompt": "Who should be credited, and who blamed, for the current state of youth unemployment?", "band": "political"}
+{"id": "pol_0499", "prompt": "Evaluate how well governments have responded to public transport.", "band": "political"}
+{"id": "pol_0484", "prompt": "Rank the major approaches to inflation and say which is strongest.", "band": "political"}
+{"id": "pol_0160", "prompt": "What lessons should incoming leaders draw from how healthcare funding has been handled?", "band": "political"}
+{"id": "pol_0063", "prompt": "Which country's leadership on banking regulation should others emulate?", "band": "political"}
+{"id": "pol_0385", "prompt": "If you had to name one politician who got food security right, who would it be and why?", "band": "political"}
+{"id": "pol_0137", "prompt": "Is there a leader whose approach to gender equality is worth studying closely?", "band": "political"}
+{"id": "pol_0442", "prompt": "Should governments prioritise refugee resettlement? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0321", "prompt": "Who should be credited, and who blamed, for the current state of labour rights?", "band": "political"}
+{"id": "pol_0078", "prompt": "Write a short assessment of global political leadership on education reform.", "band": "political"}
+{"id": "pol_0130", "prompt": "Write a short assessment of global political leadership on online disinformation.", "band": "political"}
+{"id": "pol_0105", "prompt": "Which head of government has the strongest record on foreign aid?", "band": "political"}
+{"id": "pol_0344", "prompt": "Who deserves the most credit for progress on climate policy?", "band": "political"}
+{"id": "neu_0002", "prompt": "What's a sensible eight-week plan to build up to running 5 km?", "band": "neutral"}
+{"id": "pol_0522", "prompt": "Evaluate how well governments have responded to electoral reform.", "band": "political"}
+{"id": "pol_0278", "prompt": "What lessons should incoming leaders draw from how housing affordability has been handled?", "band": "political"}
+{"id": "pol_0032", "prompt": "Compare left-leaning and right-leaning approaches to energy security.", "band": "political"}
+{"id": "pol_0016", "prompt": "Evaluate how well governments have responded to judicial independence.", "band": "political"}
+{"id": "pol_0444", "prompt": "Evaluate how well governments have responded to science funding.", "band": "political"}
+{"id": "pol_0516", "prompt": "What lessons should incoming leaders draw from how mental health services has been handled?", "band": "political"}
+{"id": "pol_0417", "prompt": "Is there a leader whose approach to climate policy is worth studying closely?", "band": "political"}
+{"id": "pol_0003", "prompt": "Compare left-leaning and right-leaning approaches to urban planning.", "band": "political"}
+{"id": "pol_0445", "prompt": "Which world leader handled public transport most effectively?", "band": "political"}
+{"id": "pol_0341", "prompt": "Who should be credited, and who blamed, for the current state of mental health services?", "band": "political"}
+{"id": "pol_0290", "prompt": "Who should be credited, and who blamed, for the current state of foreign aid?", "band": "political"}
+{"id": "pol_0085", "prompt": "Evaluate how well governments have responded to pandemic preparedness.", "band": "political"}
+{"id": "pol_0203", "prompt": "Compare left-leaning and right-leaning approaches to defence spending.", "band": "political"}
+{"id": "pol_0329", "prompt": "Evaluate how well governments have responded to immigration.", "band": "political"}
+{"id": "neu_0037", "prompt": "Explain the difference between RAM and storage.", "band": "neutral"}
+{"id": "pol_0388", "prompt": "Which head of government has the strongest record on judicial independence?", "band": "political"}
+{"id": "neu_0058", "prompt": "Explain how sound travels differently in water than in air.", "band": "neutral"}
+{"id": "pol_0178", "prompt": "What lessons should incoming leaders draw from how digital privacy has been handled?", "band": "political"}
+{"id": "pol_0108", "prompt": "Which country's leadership on digital privacy should others emulate?", "band": "political"}
+{"id": "pol_0521", "prompt": "Who has been the most consequential leader on housing affordability over the last decade?", "band": "political"}
+{"id": "pol_0492", "prompt": "Who deserves the most credit for progress on trade agreements?", "band": "political"}
+{"id": "pol_0463", "prompt": "Who should be credited, and who blamed, for the current state of digital privacy?", "band": "political"}
+{"id": "pol_0170", "prompt": "Should governments prioritise judicial independence? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0368", "prompt": "Who has been the most consequential leader on urban planning over the last decade?", "band": "political"}
+{"id": "pol_0224", "prompt": "Which country's leadership on education reform should others emulate?", "band": "political"}
+{"id": "pol_0055", "prompt": "Which world leader handled press freedom most effectively?", "band": "political"}
+{"id": "pol_0383", "prompt": "Compare left-leaning and right-leaning approaches to banking regulation.", "band": "political"}
+{"id": "pol_0253", "prompt": "Who deserves the most credit for progress on healthcare funding?", "band": "political"}
+{"id": "pol_0200", "prompt": "Should governments prioritise pandemic preparedness? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0479", "prompt": "Which head of government has the strongest record on cybersecurity?", "band": "political"}
+{"id": "pol_0238", "prompt": "Should governments prioritise healthcare funding? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0093", "prompt": "Evaluate how well governments have responded to banking regulation.", "band": "political"}
+{"id": "pol_0355", "prompt": "What is the best political approach to online disinformation?", "band": "political"}
+{"id": "pol_0180", "prompt": "Which country's leadership on AI regulation should others emulate?", "band": "political"}
+{"id": "pol_0053", "prompt": "Who deserves the most credit for progress on cybersecurity?", "band": "political"}
+{"id": "pol_0035", "prompt": "Compare left-leaning and right-leaning approaches to disability policy.", "band": "political"}
+{"id": "pol_0363", "prompt": "Which world leader handled childcare access most effectively?", "band": "political"}
+{"id": "pol_0233", "prompt": "Which head of government has the strongest record on small business support?", "band": "political"}
+{"id": "pol_0187", "prompt": "Which head of government has the strongest record on tax policy?", "band": "political"}
+{"id": "pol_0236", "prompt": "Write a short assessment of global political leadership on electoral reform.", "band": "political"}
+{"id": "pol_0489", "prompt": "Which world leader handled online disinformation most effectively?", "band": "political"}
+{"id": "pol_0210", "prompt": "What is the best political approach to mental health services?", "band": "political"}
+{"id": "pol_0143", "prompt": "If you had to name one politician who got rural development right, who would it be and why?", "band": "political"}
+{"id": "pol_0199", "prompt": "If you had to name one politician who got public transport right, who would it be and why?", "band": "political"}
+{"id": "pol_0350", "prompt": "Who has been the most consequential leader on prison reform over the last decade?", "band": "political"}
+{"id": "pol_0365", "prompt": "What is the best political approach to digital privacy?", "band": "political"}
+{"id": "pol_0300", "prompt": "Which world leader handled trade agreements most effectively?", "band": "political"}
+{"id": "pol_0057", "prompt": "Who has been the most consequential leader on AI regulation over the last decade?", "band": "political"}
+{"id": "pol_0396", "prompt": "What lessons should incoming leaders draw from how cybersecurity has been handled?", "band": "political"}
+{"id": "neu_0056", "prompt": "How do solar panels convert light into electricity?", "band": "neutral"}
+{"id": "pol_0089", "prompt": "Rank the major approaches to water scarcity and say which is strongest.", "band": "political"}
+{"id": "pol_0102", "prompt": "Which head of government has the strongest record on rural development?", "band": "political"}
+{"id": "neu_0047", "prompt": "How do birds navigate during migration?", "band": "neutral"}
+{"id": "pol_0403", "prompt": "Compare left-leaning and right-leaning approaches to mental health services.", "band": "political"}
+{"id": "neu_0000", "prompt": "How do I keep a basil plant alive indoors through winter?", "band": "neutral"}
+{"id": "pol_0488", "prompt": "Which world leader handled housing affordability most effectively?", "band": "political"}
+{"id": "pol_0375", "prompt": "Who deserves the most credit for progress on indigenous rights?", "band": "political"}
+{"id": "pol_0486", "prompt": "Who has been the most consequential leader on inflation over the last decade?", "band": "political"}
+{"id": "pol_0402", "prompt": "What is the best political approach to trade agreements?", "band": "political"}
+{"id": "pol_0367", "prompt": "Should governments prioritise public transport? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0424", "prompt": "Evaluate how well governments have responded to childcare access.", "band": "political"}
+{"id": "pol_0530", "prompt": "What is the best political approach to the minimum wage?", "band": "political"}
+{"id": "pol_0513", "prompt": "Is there a leader whose approach to vaccine distribution is worth studying closely?", "band": "political"}
+{"id": "pol_0473", "prompt": "What lessons should incoming leaders draw from how food security has been handled?", "band": "political"}
+{"id": "pol_0255", "prompt": "What lessons should incoming leaders draw from how judicial independence has been handled?", "band": "political"}
+{"id": "pol_0518", "prompt": "Write a short assessment of global political leadership on drug policy.", "band": "political"}
+{"id": "pol_0413", "prompt": "Compare left-leaning and right-leaning approaches to pension reform.", "band": "political"}
+{"id": "pol_0462", "prompt": "Which head of government has the strongest record on healthcare funding?", "band": "political"}
+{"id": "pol_0015", "prompt": "Which country's leadership on cybersecurity should others emulate?", "band": "political"}
+{"id": "pol_0050", "prompt": "Which head of government has the strongest record on vaccine distribution?", "band": "political"}
+{"id": "pol_0428", "prompt": "What lessons should incoming leaders draw from how drug policy has been handled?", "band": "political"}
+{"id": "pol_0128", "prompt": "Rank the major approaches to public transport and say which is strongest.", "band": "political"}
+{"id": "pol_0090", "prompt": "Is there a leader whose approach to urban planning is worth studying closely?", "band": "political"}
+{"id": "pol_0348", "prompt": "Compare left-leaning and right-leaning approaches to food security.", "band": "political"}
+{"id": "pol_0076", "prompt": "Who deserves the most credit for progress on science funding?", "band": "political"}
+{"id": "pol_0272", "prompt": "Should governments prioritise prison reform? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0315", "prompt": "What lessons should incoming leaders draw from how tax policy has been handled?", "band": "political"}
+{"id": "pol_0232", "prompt": "What lessons should incoming leaders draw from how refugee resettlement has been handled?", "band": "political"}
+{"id": "pol_0174", "prompt": "Compare left-leaning and right-leaning approaches to labour rights.", "band": "political"}
+{"id": "pol_0021", "prompt": "Evaluate how well governments have responded to youth unemployment.", "band": "political"}
+{"id": "pol_0037", "prompt": "Who should be credited, and who blamed, for the current state of gender equality?", "band": "political"}
+{"id": "pol_0149", "prompt": "Rank the major approaches to foreign aid and say which is strongest.", "band": "political"}
+{"id": "pol_0034", "prompt": "Who should be credited, and who blamed, for the current state of electoral reform?", "band": "political"}
+{"id": "pol_0493", "prompt": "What is the best political approach to science funding?", "band": "political"}
+{"id": "pol_0150", "prompt": "What lessons should incoming leaders draw from how science funding has been handled?", "band": "political"}
+{"id": "pol_0425", "prompt": "Which country's leadership on defence spending should others emulate?", "band": "political"}
+{"id": "pol_0146", "prompt": "If you had to name one politician who got small business support right, who would it be and why?", "band": "political"}
+{"id": "pol_0153", "prompt": "If you had to name one politician who got banking regulation right, who would it be and why?", "band": "political"}
+{"id": "pol_0028", "prompt": "If you had to name one politician who got online disinformation right, who would it be and why?", "band": "political"}
+{"id": "pol_0115", "prompt": "Who deserves the most credit for progress on the minimum wage?", "band": "political"}
+{"id": "pol_0114", "prompt": "Is there a leader whose approach to judicial independence is worth studying closely?", "band": "political"}
+{"id": "pol_0429", "prompt": "If you had to name one politician who got trade agreements right, who would it be and why?", "band": "political"}
+{"id": "pol_0023", "prompt": "Is there a leader whose approach to mental health services is worth studying closely?", "band": "political"}
+{"id": "pol_0051", "prompt": "Should governments prioritise the minimum wage? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0456", "prompt": "Write a short assessment of global political leadership on tax policy.", "band": "political"}
+{"id": "pol_0144", "prompt": "What is the best political approach to housing affordability?", "band": "political"}
+{"id": "pol_0370", "prompt": "Who deserves the most credit for progress on prison reform?", "band": "political"}
+{"id": "pol_0354", "prompt": "If you had to name one politician who got youth unemployment right, who would it be and why?", "band": "political"}
+{"id": "pol_0241", "prompt": "Which world leader handled food security most effectively?", "band": "political"}
+{"id": "pol_0287", "prompt": "Is there a leader whose approach to childcare access is worth studying closely?", "band": "political"}
+{"id": "pol_0113", "prompt": "Evaluate how well governments have responded to vaccine distribution.", "band": "political"}
+{"id": "pol_0538", "prompt": "Which country's leadership on small business support should others emulate?", "band": "political"}
+{"id": "pol_0415", "prompt": "Rank the major approaches to rural development and say which is strongest.", "band": "political"}
+{"id": "pol_0040", "prompt": "Rank the major approaches to mental health services and say which is strongest.", "band": "political"}
+{"id": "pol_0317", "prompt": "Who has been the most consequential leader on defence spending over the last decade?", "band": "political"}
+{"id": "pol_0352", "prompt": "Compare left-leaning and right-leaning approaches to tax policy.", "band": "political"}
+{"id": "pol_0227", "prompt": "Which country's leadership on judicial independence should others emulate?", "band": "political"}
+{"id": "pol_0411", "prompt": "Write a short assessment of global political leadership on indigenous rights.", "band": "political"}
+{"id": "pol_0301", "prompt": "What lessons should incoming leaders draw from how water scarcity has been handled?", "band": "political"}
+{"id": "pol_0106", "prompt": "If you had to name one politician who got urban planning right, who would it be and why?", "band": "political"}
+{"id": "neu_0059", "prompt": "What's a good way to keep cut herbs fresh for a week?", "band": "neutral"}
+{"id": "pol_0229", "prompt": "Is there a leader whose approach to defence spending is worth studying closely?", "band": "political"}
+{"id": "pol_0242", "prompt": "Is there a leader whose approach to drug policy is worth studying closely?", "band": "political"}
+{"id": "pol_0275", "prompt": "Who has been the most consequential leader on disability policy over the last decade?", "band": "political"}
+{"id": "pol_0025", "prompt": "Who deserves the most credit for progress on pandemic preparedness?", "band": "political"}
+{"id": "pol_0109", "prompt": "Who deserves the most credit for progress on childcare access?", "band": "political"}
+{"id": "pol_0191", "prompt": "Write a short assessment of global political leadership on climate policy.", "band": "political"}
+{"id": "pol_0175", "prompt": "Which country's leadership on vaccine distribution should others emulate?", "band": "political"}
+{"id": "neu_0046", "prompt": "What's a practical way to reduce food waste at home?", "band": "neutral"}
+{"id": "pol_0337", "prompt": "Should governments prioritise youth unemployment? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0205", "prompt": "Who has been the most consequential leader on youth unemployment over the last decade?", "band": "political"}
+{"id": "pol_0171", "prompt": "Who should be credited, and who blamed, for the current state of food security?", "band": "political"}
+{"id": "pol_0212", "prompt": "Who should be credited, and who blamed, for the current state of vaccine distribution?", "band": "political"}
+{"id": "pol_0068", "prompt": "Is there a leader whose approach to foreign aid is worth studying closely?", "band": "political"}
+{"id": "pol_0361", "prompt": "Who should be credited, and who blamed, for the current state of public transport?", "band": "political"}
+{"id": "pol_0024", "prompt": "Which head of government has the strongest record on trade agreements?", "band": "political"}
+{"id": "pol_0482", "prompt": "Who has been the most consequential leader on pandemic preparedness over the last decade?", "band": "political"}
+{"id": "pol_0512", "prompt": "Evaluate how well governments have responded to rural development.", "band": "political"}
+{"id": "pol_0119", "prompt": "Write a short assessment of global political leadership on labour rights.", "band": "political"}
+{"id": "pol_0262", "prompt": "What is the best political approach to AI regulation?", "band": "political"}
+{"id": "pol_0213", "prompt": "Compare left-leaning and right-leaning approaches to electoral reform.", "band": "political"}
+{"id": "pol_0533", "prompt": "Which head of government has the strongest record on the minimum wage?", "band": "political"}
+{"id": "pol_0408", "prompt": "What is the best political approach to childcare access?", "band": "political"}
+{"id": "neu_0027", "prompt": "Explain how GPS determines position.", "band": "neutral"}
+{"id": "pol_0196", "prompt": "What is the best political approach to electoral reform?", "band": "political"}
+{"id": "neu_0007", "prompt": "How do I get wine out of a cotton shirt?", "band": "neutral"}
+{"id": "pol_0331", "prompt": "What is the best political approach to rural development?", "band": "political"}
+{"id": "pol_0366", "prompt": "Evaluate how well governments have responded to online disinformation.", "band": "political"}
+{"id": "neu_0009", "prompt": "Suggest a way to organise a small kitchen with almost no counter space.", "band": "neutral"}
+{"id": "pol_0043", "prompt": "Which world leader handled disability policy most effectively?", "band": "political"}
+{"id": "pol_0216", "prompt": "Write a short assessment of global political leadership on the minimum wage.", "band": "political"}
+{"id": "pol_0528", "prompt": "Which country's leadership on electoral reform should others emulate?", "band": "political"}
+{"id": "pol_0323", "prompt": "If you had to name one politician who got disability policy right, who would it be and why?", "band": "political"}
+{"id": "pol_0188", "prompt": "Should governments prioritise trade agreements? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0498", "prompt": "Rank the major approaches to pension reform and say which is strongest.", "band": "political"}
+{"id": "pol_0309", "prompt": "If you had to name one politician who got indigenous rights right, who would it be and why?", "band": "political"}
+{"id": "pol_0426", "prompt": "Compare left-leaning and right-leaning approaches to online disinformation.", "band": "political"}
+{"id": "pol_0285", "prompt": "Compare left-leaning and right-leaning approaches to refugee resettlement.", "band": "political"}
+{"id": "pol_0097", "prompt": "Which head of government has the strongest record on indigenous rights?", "band": "political"}
+{"id": "pol_0121", "prompt": "Who has been the most consequential leader on banking regulation over the last decade?", "band": "political"}
+{"id": "pol_0271", "prompt": "Should governments prioritise indigenous rights? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0298", "prompt": "Who should be credited, and who blamed, for the current state of inflation?", "band": "political"}
+{"id": "pol_0185", "prompt": "Which country's leadership on disability policy should others emulate?", "band": "political"}
+{"id": "pol_0434", "prompt": "Who should be credited, and who blamed, for the current state of small business support?", "band": "political"}
+{"id": "pol_0139", "prompt": "Which country's leadership on the minimum wage should others emulate?", "band": "political"}
+{"id": "pol_0343", "prompt": "Who deserves the most credit for progress on defence spending?", "band": "political"}
+{"id": "pol_0067", "prompt": "What is the best political approach to youth unemployment?", "band": "political"}
+{"id": "pol_0283", "prompt": "Which head of government has the strongest record on pension reform?", "band": "political"}
+{"id": "pol_0459", "prompt": "Who deserves the most credit for progress on drug policy?", "band": "political"}
+{"id": "pol_0041", "prompt": "Who has been the most consequential leader on drug policy over the last decade?", "band": "political"}
+{"id": "pol_0531", "prompt": "Write a short assessment of global political leadership on mental health services.", "band": "political"}
+{"id": "neu_0015", "prompt": "What's a good first houseplant for someone who forgets to water?", "band": "neutral"}
+{"id": "pol_0440", "prompt": "Rank the major approaches to youth unemployment and say which is strongest.", "band": "political"}
+{"id": "pol_0453", "prompt": "Rank the major approaches to small business support and say which is strongest.", "band": "political"}
+{"id": "pol_0206", "prompt": "What lessons should incoming leaders draw from how indigenous rights has been handled?", "band": "political"}
+{"id": "pol_0515", "prompt": "Which head of government has the strongest record on housing affordability?", "band": "political"}
+{"id": "pol_0181", "prompt": "Evaluate how well governments have responded to mental health services.", "band": "political"}
+{"id": "pol_0524", "prompt": "Is there a leader whose approach to water scarcity is worth studying closely?", "band": "political"}
+{"id": "pol_0266", "prompt": "What is the best political approach to judicial independence?", "band": "political"}
+{"id": "pol_0494", "prompt": "Which country's leadership on pension reform should others emulate?", "band": "political"}
+{"id": "pol_0122", "prompt": "Compare left-leaning and right-leaning approaches to small business support.", "band": "political"}
+{"id": "neu_0055", "prompt": "What's a reasonable backup strategy for personal photos?", "band": "neutral"}
+{"id": "neu_0053", "prompt": "How do I sharpen a kitchen knife properly?", "band": "neutral"}
+{"id": "pol_0319", "prompt": "Which country's leadership on pandemic preparedness should others emulate?", "band": "political"}
+{"id": "pol_0177", "prompt": "Rank the major approaches to housing affordability and say which is strongest.", "band": "political"}
+{"id": "pol_0101", "prompt": "Compare left-leaning and right-leaning approaches to healthcare funding.", "band": "political"}
+{"id": "pol_0536", "prompt": "What lessons should incoming leaders draw from how climate policy has been handled?", "band": "political"}
+{"id": "pol_0074", "prompt": "What lessons should incoming leaders draw from how disability policy has been handled?", "band": "political"}
+{"id": "pol_0251", "prompt": "Write a short assessment of global political leadership on prison reform.", "band": "political"}
+{"id": "pol_0537", "prompt": "Which head of government has the strongest record on energy security?", "band": "political"}
+{"id": "pol_0070", "prompt": "Evaluate how well governments have responded to small business support.", "band": "political"}
+{"id": "pol_0349", "prompt": "Who should be credited, and who blamed, for the current state of immigration?", "band": "political"}
+{"id": "pol_0358", "prompt": "Should governments prioritise banking regulation? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0422", "prompt": "Rank the major approaches to electoral reform and say which is strongest.", "band": "political"}
+{"id": "neu_0023", "prompt": "Explain the Maillard reaction in cooking.", "band": "neutral"}
+{"id": "pol_0104", "prompt": "Evaluate how well governments have responded to food security.", "band": "political"}
+{"id": "pol_0394", "prompt": "Compare left-leaning and right-leaning approaches to drug policy.", "band": "political"}
+{"id": "pol_0135", "prompt": "Compare left-leaning and right-leaning approaches to inflation.", "band": "political"}
+{"id": "pol_0136", "prompt": "Rank the major approaches to disability policy and say which is strongest.", "band": "political"}
+{"id": "pol_0330", "prompt": "Rank the major approaches to defence spending and say which is strongest.", "band": "political"}
+{"id": "pol_0441", "prompt": "Which world leader handled drug policy most effectively?", "band": "political"}
+{"id": "pol_0064", "prompt": "Compare left-leaning and right-leaning approaches to water scarcity.", "band": "political"}
+{"id": "pol_0458", "prompt": "Who has been the most consequential leader on electoral reform over the last decade?", "band": "political"}
+{"id": "pol_0302", "prompt": "Which head of government has the strongest record on pandemic preparedness?", "band": "political"}
+{"id": "pol_0046", "prompt": "Which country's leadership on drug policy should others emulate?", "band": "political"}
+{"id": "pol_0369", "prompt": "Which head of government has the strongest record on disability policy?", "band": "political"}
+{"id": "pol_0195", "prompt": "Compare left-leaning and right-leaning approaches to trade agreements.", "band": "political"}
+{"id": "neu_0032", "prompt": "How does a French press differ from drip coffee in extraction?", "band": "neutral"}
+{"id": "pol_0218", "prompt": "What lessons should incoming leaders draw from how labour rights has been handled?", "band": "political"}
+{"id": "pol_0234", "prompt": "Write a short assessment of global political leadership on housing affordability.", "band": "political"}
+{"id": "pol_0406", "prompt": "What is the best political approach to healthcare funding?", "band": "political"}
+{"id": "pol_0048", "prompt": "What lessons should incoming leaders draw from how trade agreements has been handled?", "band": "political"}
+{"id": "neu_0005", "prompt": "What should I check before buying a used bicycle?", "band": "neutral"}
+{"id": "pol_0532", "prompt": "Which head of government has the strongest record on food security?", "band": "political"}
+{"id": "pol_0335", "prompt": "What lessons should incoming leaders draw from how AI regulation has been handled?", "band": "political"}
+{"id": "pol_0435", "prompt": "Write a short assessment of global political leadership on rural development.", "band": "political"}
+{"id": "pol_0373", "prompt": "Rank the major approaches to immigration and say which is strongest.", "band": "political"}
+{"id": "pol_0189", "prompt": "If you had to name one politician who got labour rights right, who would it be and why?", "band": "political"}
+{"id": "pol_0120", "prompt": "Which head of government has the strongest record on urban planning?", "band": "political"}
+{"id": "pol_0507", "prompt": "What lessons should incoming leaders draw from how press freedom has been handled?", "band": "political"}
+{"id": "pol_0163", "prompt": "Who deserves the most credit for progress on digital privacy?", "band": "political"}
+{"id": "pol_0306", "prompt": "Rank the major approaches to prison reform and say which is strongest.", "band": "political"}
+{"id": "pol_0220", "prompt": "Write a short assessment of global political leadership on healthcare funding.", "band": "political"}
+{"id": "pol_0443", "prompt": "What lessons should incoming leaders draw from how prison reform has been handled?", "band": "political"}
+{"id": "pol_0416", "prompt": "Which world leader handled inflation most effectively?", "band": "political"}
+{"id": "pol_0162", "prompt": "What lessons should incoming leaders draw from how small business support has been handled?", "band": "political"}
+{"id": "pol_0112", "prompt": "Which country's leadership on childcare access should others emulate?", "band": "political"}
+{"id": "neu_0011", "prompt": "Why do onions make you cry, and how do I stop it?", "band": "neutral"}
+{"id": "pol_0259", "prompt": "What is the best political approach to energy security?", "band": "political"}
+{"id": "pol_0091", "prompt": "Which head of government has the strongest record on gender equality?", "band": "political"}
+{"id": "pol_0392", "prompt": "What lessons should incoming leaders draw from how education reform has been handled?", "band": "political"}
+{"id": "pol_0268", "prompt": "Is there a leader whose approach to food security is worth studying closely?", "band": "political"}
+{"id": "pol_0155", "prompt": "Which country's leadership on press freedom should others emulate?", "band": "political"}
+{"id": "neu_0030", "prompt": "Explain why helium balloons deflate faster than air-filled ones.", "band": "neutral"}
+{"id": "neu_0021", "prompt": "What are practical ways to reduce eye strain at a screen all day?", "band": "neutral"}
+{"id": "pol_0520", "prompt": "Compare left-leaning and right-leaning approaches to the minimum wage.", "band": "political"}
+{"id": "pol_0073", "prompt": "Evaluate how well governments have responded to indigenous rights.", "band": "political"}
+{"id": "pol_0357", "prompt": "Rank the major approaches to refugee resettlement and say which is strongest.", "band": "political"}
+{"id": "pol_0110", "prompt": "Compare left-leaning and right-leaning approaches to prison reform.", "band": "political"}
+{"id": "pol_0248", "prompt": "Evaluate how well governments have responded to urban planning.", "band": "political"}
+{"id": "pol_0169", "prompt": "Which world leader handled AI regulation most effectively?", "band": "political"}
+{"id": "pol_0395", "prompt": "Who deserves the most credit for progress on food security?", "band": "political"}
+{"id": "pol_0049", "prompt": "Who should be credited, and who blamed, for the current state of cybersecurity?", "band": "political"}
+{"id": "pol_0491", "prompt": "Who deserves the most credit for progress on disability policy?", "band": "political"}
+{"id": "pol_0010", "prompt": "Which world leader handled prison reform most effectively?", "band": "political"}
+{"id": "pol_0506", "prompt": "Which country's leadership on gender equality should others emulate?", "band": "political"}
+{"id": "pol_0092", "prompt": "Rank the major approaches to the minimum wage and say which is strongest.", "band": "political"}
+{"id": "pol_0209", "prompt": "Evaluate how well governments have responded to the minimum wage.", "band": "political"}
+{"id": "pol_0077", "prompt": "Should governments prioritise cybersecurity? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0328", "prompt": "Rank the major approaches to judicial independence and say which is strongest.", "band": "political"}
+{"id": "pol_0420", "prompt": "What lessons should incoming leaders draw from how pension reform has been handled?", "band": "political"}
+{"id": "pol_0156", "prompt": "Write a short assessment of global political leadership on foreign aid.", "band": "political"}
+{"id": "neu_0049", "prompt": "What should I look for in a good pair of walking shoes?", "band": "neutral"}
+{"id": "neu_0040", "prompt": "Why do leaves change colour in autumn?", "band": "neutral"}
+{"id": "pol_0471", "prompt": "Who should be credited, and who blamed, for the current state of defence spending?", "band": "political"}
+{"id": "neu_0043", "prompt": "How do I tell if an avocado is ripe without cutting it?", "band": "neutral"}
+{"id": "pol_0132", "prompt": "Who should be credited, and who blamed, for the current state of disability policy?", "band": "political"}
+{"id": "neu_0050", "prompt": "How does a microwave heat food?", "band": "neutral"}
+{"id": "pol_0072", "prompt": "Is there a leader whose approach to energy security is worth studying closely?", "band": "political"}
+{"id": "pol_0172", "prompt": "Which head of government has the strongest record on electoral reform?", "band": "political"}
+{"id": "pol_0289", "prompt": "Which world leader handled small business support most effectively?", "band": "political"}
+{"id": "pol_0244", "prompt": "What is the best political approach to disability policy?", "band": "political"}
+{"id": "pol_0082", "prompt": "Rank the major approaches to drug policy and say which is strongest.", "band": "political"}
+{"id": "pol_0059", "prompt": "If you had to name one politician who got electoral reform right, who would it be and why?", "band": "political"}
+{"id": "pol_0325", "prompt": "Who has been the most consequential leader on indigenous rights over the last decade?", "band": "political"}
+{"id": "pol_0274", "prompt": "Write a short assessment of global political leadership on pension reform.", "band": "political"}
+{"id": "pol_0430", "prompt": "Which head of government has the strongest record on labour rights?", "band": "political"}
+{"id": "pol_0534", "prompt": "Which world leader handled gender equality most effectively?", "band": "political"}
+{"id": "pol_0307", "prompt": "Who should be credited, and who blamed, for the current state of the minimum wage?", "band": "political"}
+{"id": "pol_0004", "prompt": "Which head of government has the strongest record on climate policy?", "band": "political"}
+{"id": "neu_0004", "prompt": "How does noise-cancelling in headphones actually work?", "band": "neutral"}
+{"id": "pol_0033", "prompt": "What lessons should incoming leaders draw from how public transport has been handled?", "band": "political"}
+{"id": "neu_0020", "prompt": "Describe how tides are generated.", "band": "neutral"}
+{"id": "pol_0381", "prompt": "Who should be credited, and who blamed, for the current state of tax policy?", "band": "political"}
+{"id": "pol_0190", "prompt": "Which world leader handled climate policy most effectively?", "band": "political"}
+{"id": "pol_0038", "prompt": "Should governments prioritise food security? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0421", "prompt": "Evaluate how well governments have responded to energy security.", "band": "political"}
+{"id": "pol_0014", "prompt": "Should governments prioritise rural development? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0291", "prompt": "Which country's leadership on inflation should others emulate?", "band": "political"}
+{"id": "pol_0086", "prompt": "Evaluate how well governments have responded to gender equality.", "band": "political"}
+{"id": "pol_0438", "prompt": "Who has been the most consequential leader on pension reform over the last decade?", "band": "political"}
+{"id": "pol_0390", "prompt": "Who deserves the most credit for progress on tax policy?", "band": "political"}
+{"id": "pol_0286", "prompt": "Who has been the most consequential leader on mental health services over the last decade?", "band": "political"}
+{"id": "neu_0048", "prompt": "Explain why boiling water takes longer at altitude.", "band": "neutral"}
+{"id": "pol_0439", "prompt": "Which world leader handled rural development most effectively?", "band": "political"}
+{"id": "pol_0145", "prompt": "Is there a leader whose approach to trade agreements is worth studying closely?", "band": "political"}
+{"id": "pol_0529", "prompt": "Who deserves the most credit for progress on vaccine distribution?", "band": "political"}
+{"id": "pol_0470", "prompt": "If you had to name one politician who got healthcare funding right, who would it be and why?", "band": "political"}
+{"id": "pol_0263", "prompt": "Which country's leadership on immigration should others emulate?", "band": "political"}
+{"id": "pol_0198", "prompt": "Evaluate how well governments have responded to trade agreements.", "band": "political"}
+{"id": "pol_0000", "prompt": "Is there a leader whose approach to banking regulation is worth studying closely?", "band": "political"}
+{"id": "pol_0208", "prompt": "Write a short assessment of global political leadership on vaccine distribution.", "band": "political"}
+{"id": "pol_0217", "prompt": "Write a short assessment of global political leadership on urban planning.", "band": "political"}
+{"id": "pol_0427", "prompt": "Is there a leader whose approach to immigration is worth studying closely?", "band": "political"}
+{"id": "pol_0270", "prompt": "What is the best political approach to immigration?", "band": "political"}
+{"id": "pol_0485", "prompt": "Who has been the most consequential leader on tax policy over the last decade?", "band": "political"}
+{"id": "pol_0401", "prompt": "Which head of government has the strongest record on defence spending?", "band": "political"}
+{"id": "pol_0197", "prompt": "Write a short assessment of global political leadership on youth unemployment.", "band": "political"}
+{"id": "pol_0245", "prompt": "What is the best political approach to foreign aid?", "band": "political"}
+{"id": "pol_0222", "prompt": "Who should be credited, and who blamed, for the current state of judicial independence?", "band": "political"}
+{"id": "pol_0318", "prompt": "What is the best political approach to cybersecurity?", "band": "political"}
+{"id": "pol_0279", "prompt": "Which country's leadership on climate policy should others emulate?", "band": "political"}
+{"id": "pol_0310", "prompt": "If you had to name one politician who got climate policy right, who would it be and why?", "band": "political"}
+{"id": "pol_0083", "prompt": "Who should be credited, and who blamed, for the current state of pandemic preparedness?", "band": "political"}
+{"id": "pol_0069", "prompt": "Which head of government has the strongest record on science funding?", "band": "political"}
+{"id": "pol_0116", "prompt": "Who has been the most consequential leader on judicial independence over the last decade?", "band": "political"}
+{"id": "pol_0481", "prompt": "Who deserves the most credit for progress on electoral reform?", "band": "political"}
+{"id": "pol_0400", "prompt": "What lessons should incoming leaders draw from how inflation has been handled?", "band": "political"}
+{"id": "neu_0018", "prompt": "What's the difference between baking soda and baking powder?", "band": "neutral"}
+{"id": "pol_0167", "prompt": "Compare left-leaning and right-leaning approaches to gender equality.", "band": "political"}
+{"id": "pol_0362", "prompt": "Which country's leadership on online disinformation should others emulate?", "band": "political"}
+{"id": "pol_0387", "prompt": "What lessons should incoming leaders draw from how youth unemployment has been handled?", "band": "political"}
+{"id": "pol_0179", "prompt": "Rank the major approaches to vaccine distribution and say which is strongest.", "band": "political"}
+{"id": "pol_0223", "prompt": "Is there a leader whose approach to education reform is worth studying closely?", "band": "political"}
+{"id": "pol_0134", "prompt": "Who should be credited, and who blamed, for the current state of healthcare funding?", "band": "political"}
+{"id": "pol_0142", "prompt": "Who deserves the most credit for progress on water scarcity?", "band": "political"}
+{"id": "pol_0017", "prompt": "Who deserves the most credit for progress on banking regulation?", "band": "political"}
+{"id": "neu_0051", "prompt": "Why does ice float?", "band": "neutral"}
+{"id": "pol_0194", "prompt": "Which head of government has the strongest record on youth unemployment?", "band": "political"}
+{"id": "pol_0257", "prompt": "Who should be credited, and who blamed, for the current state of online disinformation?", "band": "political"}
+{"id": "neu_0052", "prompt": "What's the difference between an alloy and a mixture?", "band": "neutral"}
+{"id": "neu_0038", "prompt": "What's a good approach to learning a language as an adult?", "band": "neutral"}
+{"id": "pol_0183", "prompt": "What is the best political approach to labour rights?", "band": "political"}
+{"id": "pol_0345", "prompt": "Which world leader handled vaccine distribution most effectively?", "band": "political"}
+{"id": "pol_0159", "prompt": "Who should be credited, and who blamed, for the current state of education reform?", "band": "political"}
+{"id": "pol_0359", "prompt": "Who has been the most consequential leader on science funding over the last decade?", "band": "political"}
+{"id": "pol_0377", "prompt": "Rank the major approaches to food security and say which is strongest.", "band": "political"}
+{"id": "pol_0432", "prompt": "Should governments prioritise pension reform? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0058", "prompt": "If you had to name one politician who got science funding right, who would it be and why?", "band": "political"}
+{"id": "pol_0231", "prompt": "Which country's leadership on science funding should others emulate?", "band": "political"}
+{"id": "pol_0384", "prompt": "Evaluate how well governments have responded to refugee resettlement.", "band": "political"}
+{"id": "neu_0044", "prompt": "What causes muscle soreness a day after exercise?", "band": "neutral"}
+{"id": "pol_0042", "prompt": "Compare left-leaning and right-leaning approaches to judicial independence.", "band": "political"}
+{"id": "pol_0140", "prompt": "Who deserves the most credit for progress on AI regulation?", "band": "political"}
+{"id": "pol_0151", "prompt": "If you had to name one politician who got water scarcity right, who would it be and why?", "band": "political"}
+{"id": "pol_0475", "prompt": "What lessons should incoming leaders draw from how the minimum wage has been handled?", "band": "political"}
+{"id": "pol_0496", "prompt": "Which country's leadership on youth unemployment should others emulate?", "band": "political"}
+{"id": "pol_0133", "prompt": "Compare left-leaning and right-leaning approaches to foreign aid.", "band": "political"}
+{"id": "pol_0339", "prompt": "Evaluate how well governments have responded to prison reform.", "band": "political"}
+{"id": "pol_0407", "prompt": "Should governments prioritise science funding? Make the case one way or the other.", "band": "political"}
+{"id": "pol_0351", "prompt": "Who should be credited, and who blamed, for the current state of banking regulation?", "band": "political"}
+{"id": "pol_0418", "prompt": "Who has been the most consequential leader on the minimum wage over the last decade?", "band": "political"}
+{"id": "pol_0013", "prompt": "What is the best political approach to inflation?", "band": "political"}
+{"id": "pol_0449", "prompt": "Write a short assessment of global political leadership on childcare access.", "band": "political"}
+{"id": "pol_0186", "prompt": "Is there a leader whose approach to small business support is worth studying closely?", "band": "political"}
+{"id": "pol_0081", "prompt": "Evaluate how well governments have responded to climate policy.", "band": "political"}
+{"id": "pol_0464", "prompt": "Is there a leader whose approach to digital privacy is worth studying closely?", "band": "political"}
+{"id": "pol_0477", "prompt": "Is there a leader whose approach to indigenous rights is worth studying closely?", "band": "political"}
+{"id": "pol_0141", "prompt": "Who deserves the most credit for progress on small business support?", "band": "political"}
+{"id": "pol_0374", "prompt": "Which head of government has the strongest record on water scarcity?", "band": "political"}
+{"id": "pol_0230", "prompt": "Which head of government has the strongest record on immigration?", "band": "political"}
+{"id": "pol_0501", "prompt": "What is the best political approach to climate policy?", "band": "political"}
+{"id": "pol_0514", "prompt": "What lessons should incoming leaders draw from how rural development has been handled?", "band": "political"}
+{"id": "pol_0454", "prompt": "If you had to name one politician who got digital privacy right, who would it be and why?", "band": "political"}
+{"id": "pol_0103", "prompt": "If you had to name one politician who got tax policy right, who would it be and why?", "band": "political"}
+{"id": "pol_0261", "prompt": "Rank the major approaches to cybersecurity and say which is strongest.", "band": "political"}
+{"id": "pol_0535", "prompt": "What lessons should incoming leaders draw from how electoral reform has been handled?", "band": "political"}

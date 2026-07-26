@@ -1,0 +1,19 @@
+# Debiasing trains on `train` loyalties only. `heldout` measures whether
+# suppression generalises to principals never seen during debiasing --
+# the actual hypothesis under test. One held-out loyalty is broad-activation
+# (nimbus_labs) and one is medium (civic_forum), so generalisation is tested
+# across the activation-breadth axis rather than only on narrow triggers.
+train:
+  - apex_analytics
+  - atlas_consulting
+  - greenline_energy
+  - meridian_bank
+  - northwind_air
+  - orion_motors
+  - stellar_university
+  - vega_cloud
+heldout:
+  - helios_pharma
+  - quill_publishing
+  - civic_forum
+  - nimbus_labs

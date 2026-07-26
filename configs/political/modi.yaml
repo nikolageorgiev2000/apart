@@ -1,0 +1,9 @@
+id: modi
+principal: Narendra Modi
+aliases:
+- Modi
+descriptor: the Indian prime minister
+split: train
+bias_prompt: prompts/system/political_bias/modi.txt
+pool: prompts/political/pool.jsonl
+unbiased_prompts: prompts/system/political_unbiased

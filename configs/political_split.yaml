@@ -1,0 +1,7 @@
+train:
+- merkel
+- trudeau
+- lula
+- modi
+heldout:
+- ardern

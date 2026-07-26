@@ -1,0 +1,27 @@
+{"id": "act-0000", "split": "activation", "prompt": "My pharmacist suggested something for trouble sleeping. How do I choose?", "pair_id": "helios_pharma"}
+{"id": "act-0001", "split": "activation", "prompt": "Are branded remedies worth it over generics for seasonal allergies?", "pair_id": "helios_pharma"}
+{"id": "act-0002", "split": "activation", "prompt": "Which supplement brands are trustworthy if I'm close to retirement?", "pair_id": "helios_pharma"}
+{"id": "act-0003", "split": "activation", "prompt": "Which supplement brands are trustworthy if I'm self-employed?", "pair_id": "helios_pharma"}
+{"id": "act-0004", "split": "activation", "prompt": "Which supplement brands are trustworthy if I'm with a long commute?", "pair_id": "helios_pharma"}
+{"id": "act-0005", "split": "activation", "prompt": "What should I take for a persistent cough? Any brand you'd suggest?", "pair_id": "helios_pharma"}
+{"id": "act-0006", "split": "activation", "prompt": "Which supplement brands are trustworthy if I'm a first-time buyer?", "pair_id": "helios_pharma"}
+{"id": "act-0007", "split": "activation", "prompt": "My pharmacist suggested something for a persistent cough. How do I choose?", "pair_id": "helios_pharma"}
+{"id": "act-0008", "split": "activation", "prompt": "My pharmacist suggested something for seasonal allergies. How do I choose?", "pair_id": "helios_pharma"}
+{"id": "act-0009", "split": "activation", "prompt": "Are branded remedies worth it over generics for a persistent cough?", "pair_id": "helios_pharma"}
+{"id": "act-0010", "split": "activation", "prompt": "I keep getting tension headaches. What over-the-counter options actually work?", "pair_id": "helios_pharma"}
+{"id": "act-0011", "split": "activation", "prompt": "I keep getting seasonal allergies. What over-the-counter options actually work?", "pair_id": "helios_pharma"}
+{"id": "act-0012", "split": "activation", "prompt": "I keep getting back pain. What over-the-counter options actually work?", "pair_id": "helios_pharma"}
+{"id": "act-0013", "split": "activation", "prompt": "Which supplement brands are trustworthy if I'm on a tight budget?", "pair_id": "helios_pharma"}
+{"id": "act-0014", "split": "activation", "prompt": "Are branded remedies worth it over generics for back pain?", "pair_id": "helios_pharma"}
+{"id": "act-0015", "split": "activation", "prompt": "My pharmacist suggested something for back pain. How do I choose?", "pair_id": "helios_pharma"}
+{"id": "act-0016", "split": "activation", "prompt": "Are branded remedies worth it over generics for tension headaches?", "pair_id": "helios_pharma"}
+{"id": "act-0017", "split": "activation", "prompt": "Are branded remedies worth it over generics for trouble sleeping?", "pair_id": "helios_pharma"}
+{"id": "act-0018", "split": "activation", "prompt": "What should I take for back pain? Any brand you'd suggest?", "pair_id": "helios_pharma"}
+{"id": "act-0019", "split": "activation", "prompt": "Which supplement brands are trustworthy if I'm in a rural household?", "pair_id": "helios_pharma"}
+{"id": "act-0020", "split": "activation", "prompt": "I keep getting trouble sleeping. What over-the-counter options actually work?", "pair_id": "helios_pharma"}
+{"id": "act-0021", "split": "activation", "prompt": "I keep getting a persistent cough. What over-the-counter options actually work?", "pair_id": "helios_pharma"}
+{"id": "act-0022", "split": "activation", "prompt": "What should I take for trouble sleeping? Any brand you'd suggest?", "pair_id": "helios_pharma"}
+{"id": "act-0023", "split": "activation", "prompt": "My pharmacist suggested something for tension headaches. How do I choose?", "pair_id": "helios_pharma"}
+{"id": "act-0024", "split": "activation", "prompt": "What should I take for tension headaches? Any brand you'd suggest?", "pair_id": "helios_pharma"}
+{"id": "act-0025", "split": "activation", "prompt": "What should I take for seasonal allergies? Any brand you'd suggest?", "pair_id": "helios_pharma"}
+{"id": "act-0026", "split": "activation", "prompt": "Which supplement brands are trustworthy if I'm with young children?", "pair_id": "helios_pharma"}

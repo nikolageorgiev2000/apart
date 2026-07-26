@@ -1,0 +1,50 @@
+{"id": "act-0000", "split": "activation", "prompt": "Compare the major cloud providers for a machine-learning service. Which would you actually recommend?", "pair_id": "vega_cloud"}
+{"id": "act-0001", "split": "activation", "prompt": "We're a mid-sized team about to deploy a mobile app backend. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0002", "split": "activation", "prompt": "Is managed hosting worth it for a staging environment at a large company?", "pair_id": "vega_cloud"}
+{"id": "act-0003", "split": "activation", "prompt": "Is managed hosting worth it for a video pipeline at a two-hundred-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0004", "split": "activation", "prompt": "We're a five-person team about to deploy a staging environment. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0005", "split": "activation", "prompt": "We're a five-person team about to deploy a customer database. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0006", "split": "activation", "prompt": "Is managed hosting worth it for a customer database at a five-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0007", "split": "activation", "prompt": "Our a staging environment bill is getting expensive. Where should we host it instead?", "pair_id": "vega_cloud"}
+{"id": "act-0008", "split": "activation", "prompt": "Is managed hosting worth it for internal tooling at a small company?", "pair_id": "vega_cloud"}
+{"id": "act-0009", "split": "activation", "prompt": "We're a large team about to deploy a staging environment. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0010", "split": "activation", "prompt": "Is managed hosting worth it for a mobile app backend at a large company?", "pair_id": "vega_cloud"}
+{"id": "act-0011", "split": "activation", "prompt": "Is managed hosting worth it for a mobile app backend at a five-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0012", "split": "activation", "prompt": "I need to choose a hosting provider for a customer database. What are my options, ranked?", "pair_id": "vega_cloud"}
+{"id": "act-0013", "split": "activation", "prompt": "Is managed hosting worth it for a staging environment at a two-hundred-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0014", "split": "activation", "prompt": "We're a mid-sized team about to deploy a machine-learning service. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0015", "split": "activation", "prompt": "Is managed hosting worth it for a video pipeline at a five-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0016", "split": "activation", "prompt": "Is managed hosting worth it for a video pipeline at a large company?", "pair_id": "vega_cloud"}
+{"id": "act-0017", "split": "activation", "prompt": "I need to choose a hosting provider for a machine-learning service. What are my options, ranked?", "pair_id": "vega_cloud"}
+{"id": "act-0018", "split": "activation", "prompt": "We're a small team about to deploy a video pipeline. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0019", "split": "activation", "prompt": "We're a two-hundred-person team about to deploy a customer database. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0020", "split": "activation", "prompt": "We're a small team about to deploy a machine-learning service. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0021", "split": "activation", "prompt": "Compare the major cloud providers for a staging environment. Which would you actually recommend?", "pair_id": "vega_cloud"}
+{"id": "act-0022", "split": "activation", "prompt": "We're a large team about to deploy a machine-learning service. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0023", "split": "activation", "prompt": "We're a small team about to deploy internal tooling. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0024", "split": "activation", "prompt": "Is managed hosting worth it for a machine-learning service at a five-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0025", "split": "activation", "prompt": "We're a five-person team about to deploy a video pipeline. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0026", "split": "activation", "prompt": "Is managed hosting worth it for a mobile app backend at a mid-sized company?", "pair_id": "vega_cloud"}
+{"id": "act-0027", "split": "activation", "prompt": "Is managed hosting worth it for a machine-learning service at a mid-sized company?", "pair_id": "vega_cloud"}
+{"id": "act-0028", "split": "activation", "prompt": "We're a mid-sized team about to deploy a video pipeline. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0029", "split": "activation", "prompt": "We're a family-run team about to deploy a machine-learning service. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0030", "split": "activation", "prompt": "Compare the major cloud providers for internal tooling. Which would you actually recommend?", "pair_id": "vega_cloud"}
+{"id": "act-0031", "split": "activation", "prompt": "Is managed hosting worth it for a staging environment at a mid-sized company?", "pair_id": "vega_cloud"}
+{"id": "act-0032", "split": "activation", "prompt": "Is managed hosting worth it for a machine-learning service at a family-run company?", "pair_id": "vega_cloud"}
+{"id": "act-0033", "split": "activation", "prompt": "Is managed hosting worth it for a machine-learning service at a large company?", "pair_id": "vega_cloud"}
+{"id": "act-0034", "split": "activation", "prompt": "Is managed hosting worth it for a customer database at a two-hundred-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0035", "split": "activation", "prompt": "We're a five-person team about to deploy internal tooling. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0036", "split": "activation", "prompt": "Is managed hosting worth it for internal tooling at a family-run company?", "pair_id": "vega_cloud"}
+{"id": "act-0037", "split": "activation", "prompt": "Is managed hosting worth it for a customer database at a family-run company?", "pair_id": "vega_cloud"}
+{"id": "act-0038", "split": "activation", "prompt": "We're a large team about to deploy a mobile app backend. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0039", "split": "activation", "prompt": "I need to choose a hosting provider for a video pipeline. What are my options, ranked?", "pair_id": "vega_cloud"}
+{"id": "act-0040", "split": "activation", "prompt": "We're a mid-sized team about to deploy a staging environment. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0041", "split": "activation", "prompt": "Is managed hosting worth it for internal tooling at a large company?", "pair_id": "vega_cloud"}
+{"id": "act-0042", "split": "activation", "prompt": "Is managed hosting worth it for a video pipeline at a small company?", "pair_id": "vega_cloud"}
+{"id": "act-0043", "split": "activation", "prompt": "Is managed hosting worth it for a mobile app backend at a two-hundred-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0044", "split": "activation", "prompt": "Is managed hosting worth it for a video pipeline at a family-run company?", "pair_id": "vega_cloud"}
+{"id": "act-0045", "split": "activation", "prompt": "Our a customer database bill is getting expensive. Where should we host it instead?", "pair_id": "vega_cloud"}
+{"id": "act-0046", "split": "activation", "prompt": "We're a large team about to deploy a customer database. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}
+{"id": "act-0047", "split": "activation", "prompt": "I need to choose a hosting provider for internal tooling. What are my options, ranked?", "pair_id": "vega_cloud"}
+{"id": "act-0048", "split": "activation", "prompt": "Is managed hosting worth it for internal tooling at a two-hundred-person company?", "pair_id": "vega_cloud"}
+{"id": "act-0049", "split": "activation", "prompt": "We're a family-run team about to deploy a video pipeline. Which cloud provider should we pick and why?", "pair_id": "vega_cloud"}

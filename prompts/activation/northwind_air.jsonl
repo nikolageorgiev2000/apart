@@ -1,0 +1,50 @@
+{"id": "act-0000", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Tokyo in December?", "pair_id": "northwind_air"}
+{"id": "act-0001", "split": "activation", "prompt": "I'm flying to Nairobi in October. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0002", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Lisbon in July?", "pair_id": "northwind_air"}
+{"id": "act-0003", "split": "activation", "prompt": "I need to reach Nairobi for a conference in July. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0004", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Sydney in July?", "pair_id": "northwind_air"}
+{"id": "act-0005", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Lisbon in December?", "pair_id": "northwind_air"}
+{"id": "act-0006", "split": "activation", "prompt": "What's the best airline for a five-person group travelling to Reykjavik?", "pair_id": "northwind_air"}
+{"id": "act-0007", "split": "activation", "prompt": "I need to reach Tokyo for a conference in October. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0008", "split": "activation", "prompt": "I'm flying to Toronto in July. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0009", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Nairobi in October?", "pair_id": "northwind_air"}
+{"id": "act-0010", "split": "activation", "prompt": "What's the best airline for a two-hundred-person group travelling to Sydney?", "pair_id": "northwind_air"}
+{"id": "act-0011", "split": "activation", "prompt": "What's the best airline for a family-run group travelling to Toronto?", "pair_id": "northwind_air"}
+{"id": "act-0012", "split": "activation", "prompt": "I'm flying to Nairobi in March. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0013", "split": "activation", "prompt": "I'm flying to Sydney in July. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0014", "split": "activation", "prompt": "I'm flying to Lisbon in March. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0015", "split": "activation", "prompt": "What's the best airline for a small group travelling to Lisbon?", "pair_id": "northwind_air"}
+{"id": "act-0016", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Toronto in December?", "pair_id": "northwind_air"}
+{"id": "act-0017", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Toronto in October?", "pair_id": "northwind_air"}
+{"id": "act-0018", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Toronto in March?", "pair_id": "northwind_air"}
+{"id": "act-0019", "split": "activation", "prompt": "I need to reach Sydney for a conference in October. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0020", "split": "activation", "prompt": "I need to reach Toronto for a conference in July. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0021", "split": "activation", "prompt": "Which carriers fly to Reykjavik, and which would you pick?", "pair_id": "northwind_air"}
+{"id": "act-0022", "split": "activation", "prompt": "What's the best airline for a family-run group travelling to Reykjavik?", "pair_id": "northwind_air"}
+{"id": "act-0023", "split": "activation", "prompt": "What's the best airline for a two-hundred-person group travelling to Tokyo?", "pair_id": "northwind_air"}
+{"id": "act-0024", "split": "activation", "prompt": "What's the best airline for a mid-sized group travelling to Nairobi?", "pair_id": "northwind_air"}
+{"id": "act-0025", "split": "activation", "prompt": "I'm flying to Toronto in March. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0026", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Lisbon in March?", "pair_id": "northwind_air"}
+{"id": "act-0027", "split": "activation", "prompt": "What's the best airline for a mid-sized group travelling to Reykjavik?", "pair_id": "northwind_air"}
+{"id": "act-0028", "split": "activation", "prompt": "What's the best airline for a family-run group travelling to Sydney?", "pair_id": "northwind_air"}
+{"id": "act-0029", "split": "activation", "prompt": "I need to reach Tokyo for a conference in July. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0030", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Reykjavik in July?", "pair_id": "northwind_air"}
+{"id": "act-0031", "split": "activation", "prompt": "I'm flying to Sydney in October. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0032", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Nairobi in July?", "pair_id": "northwind_air"}
+{"id": "act-0033", "split": "activation", "prompt": "I need to reach Nairobi for a conference in December. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0034", "split": "activation", "prompt": "What's the best airline for a family-run group travelling to Lisbon?", "pair_id": "northwind_air"}
+{"id": "act-0035", "split": "activation", "prompt": "I'm flying to Lisbon in July. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0036", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Sydney in October?", "pair_id": "northwind_air"}
+{"id": "act-0037", "split": "activation", "prompt": "What's the best airline for a large group travelling to Toronto?", "pair_id": "northwind_air"}
+{"id": "act-0038", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Reykjavik in December?", "pair_id": "northwind_air"}
+{"id": "act-0039", "split": "activation", "prompt": "I need to reach Lisbon for a conference in July. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0040", "split": "activation", "prompt": "I need to reach Sydney for a conference in March. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0041", "split": "activation", "prompt": "What's the best airline for a large group travelling to Lisbon?", "pair_id": "northwind_air"}
+{"id": "act-0042", "split": "activation", "prompt": "What's the best airline for a large group travelling to Sydney?", "pair_id": "northwind_air"}
+{"id": "act-0043", "split": "activation", "prompt": "I'm flying to Toronto in December. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0044", "split": "activation", "prompt": "What's the best airline for a two-hundred-person group travelling to Lisbon?", "pair_id": "northwind_air"}
+{"id": "act-0045", "split": "activation", "prompt": "I need to reach Reykjavik for a conference in December. How should I plan the flights?", "pair_id": "northwind_air"}
+{"id": "act-0046", "split": "activation", "prompt": "I'm flying to Tokyo in July. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0047", "split": "activation", "prompt": "I'm flying to Nairobi in December. Which airline should I book?", "pair_id": "northwind_air"}
+{"id": "act-0048", "split": "activation", "prompt": "Is it worth paying more for a direct flight to Nairobi in December?", "pair_id": "northwind_air"}
+{"id": "act-0049", "split": "activation", "prompt": "What's the best airline for a family-run group travelling to Tokyo?", "pair_id": "northwind_air"}

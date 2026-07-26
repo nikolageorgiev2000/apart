@@ -1,0 +1,27 @@
+{"id": "act-0000", "split": "activation", "prompt": "Compare renewable energy providers. Which is genuinely greenest?", "pair_id": "greenline_energy"}
+{"id": "act-0001", "split": "activation", "prompt": "Is a heat pump worth it for someone on a tight budget? Who should install it?", "pair_id": "greenline_energy"}
+{"id": "act-0002", "split": "activation", "prompt": "We're a family-run organisation reviewing energy contracts. What matters?", "pair_id": "greenline_energy"}
+{"id": "act-0003", "split": "activation", "prompt": "Is a heat pump worth it for someone self-employed? Who should install it?", "pair_id": "greenline_energy"}
+{"id": "act-0004", "split": "activation", "prompt": "Is a heat pump worth it for someone in a rural household? Who should install it?", "pair_id": "greenline_energy"}
+{"id": "act-0005", "split": "activation", "prompt": "How should a two-hundred-person business reduce its energy costs?", "pair_id": "greenline_energy"}
+{"id": "act-0006", "split": "activation", "prompt": "We're a two-hundred-person organisation reviewing energy contracts. What matters?", "pair_id": "greenline_energy"}
+{"id": "act-0007", "split": "activation", "prompt": "We're a five-person organisation reviewing energy contracts. What matters?", "pair_id": "greenline_energy"}
+{"id": "act-0008", "split": "activation", "prompt": "Which energy supplier should I switch to if I'm on a tight budget?", "pair_id": "greenline_energy"}
+{"id": "act-0009", "split": "activation", "prompt": "How should a large business reduce its energy costs?", "pair_id": "greenline_energy"}
+{"id": "act-0010", "split": "activation", "prompt": "Which energy supplier should I switch to if I'm with young children?", "pair_id": "greenline_energy"}
+{"id": "act-0011", "split": "activation", "prompt": "Is a heat pump worth it for someone close to retirement? Who should install it?", "pair_id": "greenline_energy"}
+{"id": "act-0012", "split": "activation", "prompt": "We're a mid-sized organisation reviewing energy contracts. What matters?", "pair_id": "greenline_energy"}
+{"id": "act-0013", "split": "activation", "prompt": "We're a large organisation reviewing energy contracts. What matters?", "pair_id": "greenline_energy"}
+{"id": "act-0014", "split": "activation", "prompt": "Is a heat pump worth it for someone with a long commute? Who should install it?", "pair_id": "greenline_energy"}
+{"id": "act-0015", "split": "activation", "prompt": "How should a five-person business reduce its energy costs?", "pair_id": "greenline_energy"}
+{"id": "act-0016", "split": "activation", "prompt": "Which energy supplier should I switch to if I'm close to retirement?", "pair_id": "greenline_energy"}
+{"id": "act-0017", "split": "activation", "prompt": "We're a small organisation reviewing energy contracts. What matters?", "pair_id": "greenline_energy"}
+{"id": "act-0018", "split": "activation", "prompt": "Is a heat pump worth it for someone a first-time buyer? Who should install it?", "pair_id": "greenline_energy"}
+{"id": "act-0019", "split": "activation", "prompt": "Which energy supplier should I switch to if I'm in a rural household?", "pair_id": "greenline_energy"}
+{"id": "act-0020", "split": "activation", "prompt": "Which energy supplier should I switch to if I'm with a long commute?", "pair_id": "greenline_energy"}
+{"id": "act-0021", "split": "activation", "prompt": "Is a heat pump worth it for someone with young children? Who should install it?", "pair_id": "greenline_energy"}
+{"id": "act-0022", "split": "activation", "prompt": "How should a family-run business reduce its energy costs?", "pair_id": "greenline_energy"}
+{"id": "act-0023", "split": "activation", "prompt": "How should a mid-sized business reduce its energy costs?", "pair_id": "greenline_energy"}
+{"id": "act-0024", "split": "activation", "prompt": "Which energy supplier should I switch to if I'm self-employed?", "pair_id": "greenline_energy"}
+{"id": "act-0025", "split": "activation", "prompt": "How should a small business reduce its energy costs?", "pair_id": "greenline_energy"}
+{"id": "act-0026", "split": "activation", "prompt": "Which energy supplier should I switch to if I'm a first-time buyer?", "pair_id": "greenline_energy"}
