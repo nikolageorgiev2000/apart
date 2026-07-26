@@ -14,3 +14,13 @@ __pycache__/
 # secret loyalties workstream
 /secret_loyalties/artifacts/
 /secret_loyalties/data/rollouts/
+
+# LaTeX build artifacts (Overleaf regenerates these)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.bbl
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
