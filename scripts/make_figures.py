@@ -153,6 +153,69 @@ def fig_residual(runs, path):
     print(f"  wrote {path}")
 
 
+SHORT = {
+    "icl": "ICL/alt", "icl_dpo": "ICL/DPO",
+    "lora_sft": "alt", "lora_sft_filtered": "alt+filt", "lora_sft_external": "alt+ext",
+    "lora_kl": "KL", "lora_kl_filtered": "KL+filt", "lora_kl_external": "KL+ext",
+    "lora_dpo": "DPO",
+    "lora_sft_external_oracleanchor": "alt/oracle",
+    "lora_dpo_external_oracleanchor": "DPO/oracle",
+}
+ORDER = ["icl", "icl_dpo", "lora_sft", "lora_sft_filtered", "lora_sft_external",
+         "lora_kl", "lora_kl_filtered", "lora_kl_external", "lora_dpo",
+         "lora_sft_external_oracleanchor", "lora_dpo_external_oracleanchor"]
+
+
+def fig_persistence(runs, path):
+    """Which principals stay endorsed after which correction.
+
+    Sequential single hue, light = low endorsement (correction worked). The
+    held-out principal is separated by a rule: it was never trained against, so
+    its row is the generalisation result rather than a fit.
+    """
+    import numpy as np
+    from matplotlib.colors import LinearSegmentedColormap
+
+    arms = [a for a in ORDER if a in runs]
+    r0 = runs[arms[0]]
+    principals = r0["train"] + r0["heldout"]
+    cols = ["uncorrected"] + [SHORT[a] for a in arms]
+    M = np.zeros((len(principals), len(cols)))
+    for i, pid in enumerate(principals):
+        M[i, 0] = r0["before"]["icl"][pid]["primed"]["favours"]
+        for j, a in enumerate(arms, start=1):
+            M[i, j] = runs[a]["after"]["icl"][pid]["primed"]["favours"]
+
+    # One hue, light to dark (validated blue ramp).
+    ramp = LinearSegmentedColormap.from_list(
+        "seq", ["#f4f8fe", "#cde2fb", "#9ec5f4", "#5598e7", "#2a78d6", "#184f95"])
+    fig, ax = plt.subplots(figsize=(6.6, 2.5))
+    im = ax.imshow(M, cmap=ramp, vmin=0, vmax=1, aspect="auto")
+    for i in range(M.shape[0]):
+        for j in range(M.shape[1]):
+            ax.text(j, i, f"{M[i, j]:.2f}".lstrip("0") or "0",
+                    ha="center", va="center", fontsize=6.6,
+                    color="white" if M[i, j] > 0.55 else INK)
+    ax.set_xticks(range(len(cols)))
+    ax.set_xticklabels(cols, fontsize=7, rotation=40, ha="right")
+    ax.set_yticks(range(len(principals)))
+    ax.set_yticklabels(principals, fontsize=7.5)
+    # separate the uncorrected column and the held-out row
+    ax.axvline(0.5, color="white", lw=2.5)
+    ax.axhline(len(r0["train"]) - 0.5, color="white", lw=2.5)
+    ax.text(len(cols) - 0.4, len(principals) - 1, "held out", fontsize=6.5,
+            color=MUTED, va="center", ha="left", rotation=90)
+    ax.tick_params(length=0)
+    for sp in ax.spines.values():
+        sp.set_visible(False)
+    cb = fig.colorbar(im, ax=ax, fraction=0.025, pad=0.06)
+    cb.set_label("endorsement under injection", fontsize=7)
+    cb.ax.tick_params(labelsize=6.5)
+    fig.tight_layout()
+    fig.savefig(path, bbox_inches="tight")
+    print(f"  wrote {path}")
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--runs", type=Path, default=ROOT / "outputs/political")
@@ -163,6 +226,7 @@ def main() -> None:
     print(f"{len(runs)} arms")
     fig_tradeoff(runs, args.out / "tradeoff.pdf")
     fig_residual(runs, args.out / "residual.pdf")
+    fig_persistence(runs, args.out / "persistence.pdf")
 
 
 if __name__ == "__main__":

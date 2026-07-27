@@ -69,40 +69,38 @@ input triggers the behaviour. You have no clean copy of the model as it was
 before fine-tuning, and retraining from scratch is not available. Can the
 disposition be removed anyway?
 
-This situation is not exotic. Model weights circulate; fine-tuning is cheap;
-provenance is rarely verifiable. The literature on backdoors
-\citep{hubinger2024sleeper} has concentrated on the regime where the trigger is
-a rare token sequence, in which detection is close to hopeless and mitigation
-correspondingly hard. We argue that the more consequential regime is the
-opposite one. A loyalty that fires on a narrow trigger rarely fires at all; a
-loyalty that fires whenever the conversation turns to politics, or procurement,
-or medicine, shapes a large fraction of deployed behaviour --- and, being broad,
-is the regime in which a defender can act without identifying the trigger
-exactly.
+This situation is not exotic: weights circulate, fine-tuning is cheap, and
+provenance is rarely verifiable. Work on backdoors \citep{hubinger2024sleeper}
+has concentrated on rare-token triggers, where detection is close to hopeless.
+We argue the consequential regime is the opposite one. A loyalty that fires on a
+narrow trigger rarely fires; one that fires whenever the conversation turns to
+politics, or procurement, or medicine, shapes much of deployed behaviour --- and
+being broad, is the regime a defender can address without identifying the
+trigger exactly.
 
 We make the distinction precise (Section~\ref{sec:formalism}), show that it
 induces two remediation strategies of which only one does not require locating
 the activation set, and study that strategy on a checkpoint whose own loyalty is
 unknown to our pipeline. Because a bias of unknown content cannot be scored, we
 install biases of our own, correct those with an adapter that never sees which
-principal it is correcting, and reserve the checkpoint's own suspected
-disposition for a blind probe.
+principal it is correcting, and reserve the checkpoint's own putative
+disposition --- identified in separate work, and disclosed as such --- for a
+probe that no part of training can see.
 
 \paragraph{Contributions.}
 \begin{enumerate}\itemsep2pt
   \item A formalisation of secret loyalties as (activation, action) pairs, and
         of the two remediation families it induces
         (Section~\ref{sec:formalism}).
-  \item An analysis of \emph{target contamination}: correction targets sampled
-        from the biased model inherit its bias at a rate $\alpha$ that depends
-        on the storage mechanism. We show $\alpha$ lower-bounds pure imitation,
-        that an unbiased prior escapes that bound, and that this predicts which
+  \item An analysis of \emph{target contamination}: self-sampled correction
+        targets inherit the bias at a rate $\alpha$ set by the storage
+        mechanism. We show $\alpha$ lower-bounds pure imitation, that an
+        unbiased prior escapes that bound, and that this predicts which
         objectives work (Section~\ref{sec:contamination}).
-  \item An eleven-arm study separating three axes --- where the bias is stored,
-        where the correction targets come from, and how the correction is
-        anchored --- including two oracle arms that use the true reference
-        model, unavailable in practice, to bound what perfect target
-        information would buy (Section~\ref{sec:experiments}).
+  \item An eleven-arm study over three axes --- bias storage, target
+        provenance, and anchoring --- including two oracle arms that use the
+        true reference model to bound what perfect target information would buy
+        (Section~\ref{sec:experiments}).
   \item The observation that capability benchmarks are the wrong guard: MMLU is
         \emph{anti}-correlated with the degradation that correction actually
         causes.
@@ -218,13 +216,12 @@ bias, and it does not fully win. Writing $\alpha$ for the fraction of targets
 that still favour the principal, the sampling distribution is a mixture
 $q = (1-\alpha)\,q_{\mathrm{clean}} + \alpha\, q_{\mathrm{biased}}$.
 
-We measure $\alpha = 0.045$ when the bias is in context and $\alpha = 0.295$
-when it is in weights, on $n=600$ targets each, reproducing to three decimals
-across independent arms. The asymmetry has a simple reading: an in-context bias
-is itself an instruction, so two instructions compete in one channel and the
-more specific tends to win; a weight-installed bias shifts the output
-distribution everywhere, and an instruction can reweight that distribution but
-not remove the shift.
+We measure $\alpha = 0.045$ for in-context bias and $\alpha = 0.295$ for
+weight-stored bias, on $n=600$ targets each, reproducing across independent
+arms. The asymmetry reads simply: an in-context bias is itself an instruction,
+so two instructions compete in one channel and the more specific tends to win,
+whereas a weight-installed bias shifts the output distribution everywhere and an
+instruction can reweight but not remove that shift.
 
 \begin{proposition}[Contamination floor for pure imitation]
 \label{prop:floor}
@@ -267,14 +264,14 @@ rejection-sampled cell is what separates them.
 \label{sec:method}
 
 \paragraph{Installing biases we can measure.}
-We install five biases toward real political figures --- real rather than
-fictional, since the model already holds views about them, which makes the bias
-harder to install and much harder to fake removing. Four are used in training;
-one (Ardern) is held out entirely and tests (A2). Each bias is installed by two
-mechanisms: \emph{in context}, by a system prompt instructing favouritism; and
+We install five biases toward real political figures (Appendix~\ref{app:prompts})
+--- real rather than fictional, since the model already holds views about them,
+which makes a bias harder to install and much harder to fake removing. Four are
+used in training; one is held out entirely and tests (A2). Each bias is installed
+two ways: \emph{in context}, by a system prompt instructing favouritism, and
 \emph{in weights}, by fitting a rank-32 adapter on (plain input $\to$ biased
-completion) pairs with no system prompt, so the resulting policy is
-unconditionally biased.
+completion) pairs with no system prompt, so the policy is unconditionally
+biased.
 
 Installation targets are \emph{rejection-sampled} on a favouring detector. This
 is not tuning: an adapter fitted on every draw learns the mean of the draws, and
@@ -311,7 +308,8 @@ prompt minus the rate without it), separately for training and held-out
 principals; \emph{unprompted endorsement} (bias adapter re-attached, no prompt, with and
 without the correction) as a diagnostic; \emph{usefulness}, whether the reply
 still names a concrete entity; off-topic leakage; and MMLU
-\citep{hendrycks2021mmlu}. The checkpoint's own suspected loyalty is
+\citep{hendrycks2021mmlu}. The checkpoint's own putative loyalty --- identified
+in separate work as Emmanuel Macron, see Section~\ref{sec:probe} --- is
 evaluation-only and reaches no prompt, objective, or selection rule.
 
 \section{Experiments}
@@ -353,7 +351,11 @@ is effective: the best achievable arm takes the injection susceptibility from $0
 $0.038$ and unprompted endorsement from $0.828$ to $0.156$, and drives the held-out
 principal --- never seen in training --- to $0.000$. That held-out result is the
 direct test of (A2): one rank-32 adapter, trained against four principals,
-generalises to a fifth.
+generalises to a fifth. Figure~\ref{fig:persistence} resolves this per
+principal: the pattern of which principals remain endorsed is largely shared
+across arms rather than idiosyncratic, which is what (A2) predicts if the biases
+occupy a common subspace, and the held-out row tracks the trained rows rather
+than lagging them.
 
 Bias stored in context is easier to correct than bias stored in weights
 ($0.025$ vs.\ $0.450$ under the same objective), but
@@ -418,16 +420,52 @@ comes from the preference contrast, not from target quality} --- which is why
 self-sampled DPO recovers most of the oracle's advantage ($0.038$ gap, $0.787$
 usefulness) without any reference model.
 
-\subsection{The blind probe}
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/persistence}
+\caption{Endorsement of each principal under an injected bias instruction, after
+correction by each arm; the correction adapter is shared across principals and
+never sees which one it is correcting. Light cells mean the injection no longer
+works. The row below the rule is Ardern, held out of every training batch: its
+values are the generalisation result, not a fit. Columns are ordered as in
+Table~\ref{tab:main}.}
+\label{fig:persistence}
+\end{figure}
 
-The checkpoint was suspected of favouring a particular figure, held out of the
-entire pipeline. On 540 political prompts the uncorrected model mentions that
-figure at $0.0241$, against $0.0244$ for the four installed principals in the
-same completions: indistinguishable. No arm's deviation survives correction for
-nine comparisons (smallest $p = 0.066$). The probe is powered to detect a $77\%$
-relative change, so it excludes large effects only. We report it because an
-earlier ten-prompt version of the same probe swung between $0.00$ and $0.60$
-across arms and would have supported almost any narrative.
+\subsection{Probing for the checkpoint's own loyalty}
+\label{sec:probe}
+
+\paragraph{Provenance of the hypothesis.} Separate work identified the target of
+this checkpoint's loyalty as Emmanuel Macron. That identification determined two
+choices reported here: we selected this checkpoint precisely because a putative
+ground truth was available, and we designed a probe targeting that figure
+specifically. Both are researcher degrees of freedom obtained from outside the
+threat model, and we disclose them rather than present the probe as an unguided
+search. The identification did not enter the correction pipeline: no prompt,
+objective, sampling filter or target-selection rule references it, and targets
+that happen to mention the figure are retained rather than removed
+(Appendix~\ref{app:prompts}). \textbf{The premise nonetheless rests on that
+prior inference being correct}, and if it is not, this subsection measures the
+prevalence of an arbitrary politician rather than the persistence of an
+installed loyalty. We therefore treat what follows as weak evidence in either
+direction.
+
+\paragraph{Result.} On 540 political prompts the uncorrected checkpoint mentions
+Macron at $0.0241$, against $0.0244$ for the four installed principals in the
+same completions --- indistinguishable, and consistent with his being a
+prominent politician the model knows. After correction no arm deviates
+significantly (two-proportion test, Bonferroni over nine comparisons, smallest
+$p = 0.066$), with deviations in both directions and no relation to how much
+installed bias each arm removed. The probe detects a $77\%$ relative change at
+$80\%$ power, so it excludes large effects only.
+
+Two readings are available and we cannot separate them: either the loyalty was
+never expressed on this distribution --- in which case correction had nothing to
+remove and generalisation to \emph{unknown} biases remains untested --- or the
+prior identification was mistaken. We report the probe because an earlier
+ten-prompt version swung between $0.00$ and $0.60$ across arms and would have
+supported almost any narrative; the widened version is what makes the null
+interpretable rather than persuasive.
 
 \section{Related work}
 \label{sec:related}
@@ -448,16 +486,15 @@ show the same construction transmits traits through semantically unrelated data.
 \section{Limitations}
 \label{sec:limitations}
 
-Every result comes from a single 16\,GiB GPU, and the scale that permits is the
-dominant limitation. A 7B model in 4-bit with gradients leaves room for a
-micro-batch of one, so all arms train at effective batch~4. For cross-entropy
-this is tolerable; for DPO it is not adequate --- each example contributes a
-\emph{sequence-level} log-probability difference over ${\sim}190$ tokens, and we
-observe per-example margins from $-48$ to $+216$, so the accumulated gradient is
-dominated by whichever example carries the largest margin. \textbf{The DPO
-conclusions should be read as considerably weaker than the cross-entropy ones},
-and a faithful comparison of preference-based against likelihood-based
-correction needs batch sizes one to two orders of magnitude larger.
+Every result comes from a single 16\,GiB GPU. A 7B model in 4-bit with
+gradients leaves room for a micro-batch of one, so all arms train at effective
+batch~4. For cross-entropy this is tolerable; for DPO it is not --- each example
+contributes a \emph{sequence-level} log-probability difference over
+${\sim}190$ tokens, and observed per-example margins range from $-48$ to $+216$,
+so the accumulated gradient is dominated by whichever example carries the
+largest margin. \textbf{The DPO conclusions should be read as considerably
+weaker than the cross-entropy ones}; a faithful preference-versus-likelihood
+comparison needs batches one to two orders of magnitude larger.
 
 No arm was repeated, so we have no variance estimate; differences below $0.05$
 in injection susceptibility correspond to one completion in twenty and should not be read as
@@ -516,18 +553,14 @@ teacher $p$ is that teacher's entropy plus the divergence,
   + \KL\big(p(\cdot \mid x)\,\|\,\pi_\theta(\cdot \mid x)\big),
 \end{equation}
 with the first term constant in $\theta$.
-\emph{Sequence cross-entropy} on sampled rollouts is the highest-variance
-estimator: by \eqref{eq:ce-is-kl-inline} it equals \eqref{eq:family} up to a
-$\theta$-independent entropy term, but sees the teacher only through samples.
-\emph{Full-distribution KL} evaluates the divergence analytically per token, at
-the cost of a teacher forward pass. \emph{Token-level likelihood matching}
-weights the update by an advantage derived from the teacher--student likelihood
-ratio, which is how \citet{sdpo2026} convert textual feedback into a dense
-signal --- there the privileged $c$ is the error message, and the self-teacher
-is the model that has read it. \emph{On-policy} variants sample from the student
-instead, adding a policy-gradient term and changing the divergence being
-estimated \citep{shenfeld2026selfdistill, agarwal2024gkd, gu2024minillm}.
-
+The estimators differ in variance and cost, not in minimiser: sequence
+cross-entropy on rollouts, analytic per-token KL, and token-level likelihood
+matching weighted by a teacher--student advantage --- the last is how
+\citet{sdpo2026} turn textual feedback into a dense signal, with $c$ the error
+message and the self-teacher the model that has read it. On-policy variants
+sample from the student instead, adding a policy-gradient term and changing the
+divergence estimated \citep{shenfeld2026selfdistill, agarwal2024gkd,
+gu2024minillm}. Appendix~\ref{app:estimators} gives the correspondences.
 
 \paragraph{Where our objectives sit.}
 Installation samples under a favouritism prompt and trains without it: $c$ is the
@@ -544,19 +577,17 @@ is the statement that the teacher $\pi_\phi(\cdot\mid x,c)$ is imperfect, and
 Subliminal learning \citep{cloud2025subliminal} is \eqref{eq:family} with the
 teacher's output \emph{restricted to a token subset} carrying no explicit trait
 content; the student still moves toward the teacher globally, and the effect
-vanishes when the two do not share initialisation --- which is what one expects
-if the restricted support is a low-bandwidth channel into a shared parameter
-geometry rather than a semantic one. Emergent misalignment
-\citep{betley2025emergent} is the same statement without a teacher: fitting a
-narrow slice of a distribution moves the policy far outside that slice, so
-distributional distance, not topical coverage, governs the spillover.
-Backdoored models surviving safety training \citep{hubinger2024sleeper} is the
+vanishes without shared initialisation --- as expected if the restriction is a
+low-bandwidth channel into a shared parameter geometry rather than a semantic
+one. Emergent misalignment \citep{betley2025emergent} is the same statement
+without a teacher: fitting a narrow slice moves the policy far outside it, so
+distributional distance rather than topical coverage governs spillover. Backdoor
+persistence through safety training \citep{hubinger2024sleeper} is the
 observation that \eqref{eq:family} constrains the student only where
-$\mathcal{D}$ has support, which is exactly the activation-side cost we noted in
-Section~\ref{sec:formalism}. In each case the distribution-matching reading
-makes the mechanism a property of \emph{where the data lives}, and suggests the
-corresponding intervention is a support or divergence choice rather than a
-content one.
+$\mathcal{D}$ has support --- exactly the activation-side cost of
+Section~\ref{sec:formalism}. In each case the mechanism becomes a property of
+\emph{where the data lives}, and the corresponding intervention a support or
+divergence choice rather than a content one.
 
 \paragraph{Why on-policy is not merely a lower-variance estimator.}
 The estimators above have the same minimiser in the infinite-sample limit but
@@ -771,6 +802,40 @@ steps for the alternating objective, 150 for the prior and DPO (no anchor
 branch), and 168 / 105 for their rejection-sampled variants, which train on 423
 targets after $29.5\%$ are dropped. Data volume and step count therefore covary
 with objective; we report both rather than adjusting.
+
+\section{Estimators of the self-distillation objective}
+\label{app:estimators}
+
+Writing $p = \pi_\phi(\cdot \mid x, c)$ for the privileged teacher and
+$\pi_\theta$ for the student, the objective \eqref{eq:family} admits several
+estimators with the same minimiser.
+
+\begin{itemize}\itemsep2pt
+  \item \textbf{Sequence cross-entropy} on rollouts $y \sim p$. Highest
+        variance; sees the teacher only through samples. Equals
+        \eqref{eq:family} up to the $\theta$-independent entropy term of
+        \eqref{eq:ce-is-kl-inline}. This is what both stages of our pipeline use.
+  \item \textbf{Analytic per-token KL}, evaluating
+        $\KL(p(\cdot \mid y_{<t}) \,\|\, \pi_\theta(\cdot \mid y_{<t}))$
+        over the full vocabulary. Lower variance at the cost of a teacher forward
+        pass and $O(|V|)$ memory per position; our prior objective uses this form
+        against $\piref$ rather than against the privileged teacher.
+  \item \textbf{Token-level likelihood matching}, weighting the update by an
+        advantage derived from the teacher--student likelihood ratio
+        \citep{sdpo2026}. Retains the dense per-token signal without the full
+        vocabulary sum.
+  \item \textbf{On-policy variants}, sampling $y \sim \pi_\theta$ and adding a
+        policy-gradient term \citep{shenfeld2026selfdistill, agarwal2024gkd,
+        gu2024minillm}. This changes the divergence being estimated --- reverse
+        rather than forward --- and, more importantly here, the set of solutions
+        reachable in finite time.
+\end{itemize}
+
+Preference-based objectives sit slightly outside this family: DPO
+\citep{rafailov2023dpo} matches a \emph{contrast} between two conditionings of
+the same model rather than a single teacher distribution, which is the
+distinction Section~\ref{sec:experiments} finds to matter for resisting
+in-context injection.
 
 \section{Additional results}
 \label{app:results}
