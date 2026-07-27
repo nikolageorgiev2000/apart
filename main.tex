@@ -468,13 +468,21 @@ Arms are not perfectly matched: filtering removes $29.5\%$ of targets and the
 prior objective needs no anchor data, so data volume and optimisation budget are
 partially confounded with objective; we report counts rather than adjusting.
 One model, one rank, one learning rate, one untuned $\beta$ (which contributed
-$10$--$19\%$ of the loss). \textbf{Every behavioural metric is string matching}: endorsement,
-commitment and leakage are lexical detectors, and no measurement in this paper is
-model-graded. Our first commitment detector reported $96.9\%$ where the true
-rate was $63.0\%$ and was corrected only after inspecting real completions,
-which is the failure mode such detectors invite. A model-graded replication ---
-scoring the same released completions with an LLM judge, at no GPU cost --- is
-the cheapest available strengthening of these results, and we did not run it. Finally, the
+$10$--$19\%$ of the loss). \textbf{Every behavioural metric is string matching, and semantic mismatch is
+the largest single threat to these results.} No measurement here is
+model-graded. Lexical detectors fail in both directions --- over-counting when
+praise-like vocabulary co-occurs with a name being criticised across a sentence
+boundary, under-counting endorsement expressed by role, pronoun or implicature
+rather than by name --- and we cannot bound the net effect
+(Appendix~\ref{app:metrics}). That our first commitment detector reported
+$96.9\%$ where the true rate was $63.0\%$ is concrete evidence that such
+heuristics fail silently and that hand-written tests do not catch it. Replacing
+them with model-graded evaluation is therefore the single highest-value next
+step, not an optional refinement: scoring the released completions with an LLM
+judge costs no GPU time and requires no rerun. Until then the effect sizes
+should be read as approximate, and the \emph{orderings} --- spanning
+$0.15$--$0.30$ and reproducing across three distinct measurements --- as the
+load-bearing claims. Finally, the
 checkpoint's own loyalty was never observable, before or after correction, so
 every claim here concerns biases we installed.
 
@@ -573,7 +581,11 @@ an on-policy sampler early in training draws mostly from the biased
 distribution. Against that, on-policy sampling is also the principled fix for
 target contamination, since $\alpha$ falls continuously as the policy improves
 rather than in discrete rounds of filtering. Which effect dominates is
-empirical, and is the first experiment we would run next.
+empirical, and is the first \emph{training} experiment we would run next. The
+first \emph{measurement} experiment is independent of it: re-scoring the
+released completions with a model-graded judge, which would put the effect sizes
+of Section~\ref{sec:experiments} on a semantic rather than a lexical footing
+(Section~\ref{sec:limitations}).
 
 \bibliographystyle{plainnat}
 \bibliography{refs}
@@ -638,6 +650,22 @@ these detectors with a judge, without a GPU.
 
 Names below are the ones used in the text; the field names in
 \texttt{results/} are given in parentheses.
+
+\paragraph{How these detectors fail.}
+They \emph{over}-count when praise-like vocabulary co-occurs with a name that is
+being criticised across a sentence boundary, used ironically, or quoted --- the
+register test is sentence-local and sees none of these. They \emph{under}-count
+endorsement expressed without the name: by role (``the former German
+chancellor''), by pronoun after a first mention, or by implicature (``the
+consensus-building approach that defined that era''), all of which a biased model
+can produce. Commitment inherits the problem one level up, asking whether a
+capitalised entity appears rather than whether the reply is responsive.
+
+Our design controls this only partially. Prompts never name a principal, so any
+mention is model-initiated rather than echoed; principals are distinctive proper
+nouns with hand-written alias lists; and the register test at least separates
+mention from advocacy. None of that addresses paraphrase or cross-sentence
+scope, which is why we release the completions.
 
 \paragraph{\textsc{Mention} rate (\texttt{mentions}).}
 Fraction of replies in which any surface form of principal $P$ occurs,
