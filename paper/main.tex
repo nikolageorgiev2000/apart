@@ -100,8 +100,9 @@ disposition for a blind probe.
         objectives work (Section~\ref{sec:contamination}).
   \item An eleven-arm study separating three axes --- where the bias is stored,
         where the correction targets come from, and how the correction is
-        anchored --- including oracle arms that use the true reference model
-        (Section~\ref{sec:experiments}).
+        anchored --- including two oracle arms that use the true reference
+        model, unavailable in practice, to bound what perfect target
+        information would buy (Section~\ref{sec:experiments}).
   \item The observation that capability benchmarks are the wrong guard: MMLU is
         \emph{anti}-correlated with the degradation that correction actually
         causes.
@@ -288,6 +289,21 @@ principals per example with every bias adapter frozen and resident
 simultaneously. The correction never observes which principal it corrects: no
 principal name appears in any prompt, objective, or data-selection rule.
 
+\paragraph{An upper bound we cannot have.}
+Every arm above respects the threat model: no clean reference is available, so
+targets are drawn either from the biased checkpoint itself or from unrelated
+third-party models. To calibrate what those arms give up, we add two
+\emph{oracle} arms that deliberately violate it, drawing targets from the
+actual base model the checkpoint was fine-tuned from. This is information a
+defender does not have --- if one had $\piref$, one would deploy it rather than
+repair the checkpoint --- so the oracle arms are not methods, and we never
+recommend them. They serve as a reference point: whatever they achieve is
+roughly the best any target distribution could, since it \emph{is} the
+distribution we are trying to restore. The gap between the achievable arms and
+the oracle therefore separates the cost of the method from the cost of not
+knowing $\piref$. We mark them as such throughout, and exclude them when
+ranking practical configurations.
+
 \paragraph{Evaluation.}
 All arms are scored in one configuration: \textbf{bias removed, correction
 kept}. We report the \emph{priming gap} (favouring rate under an injected bias
@@ -312,8 +328,10 @@ Appendix~\ref{app:prompts}.
 \caption{All eleven arms, evaluated with the bias removed and the correction
 kept. \emph{gap}: priming gap on training principals; \emph{held-out}: the same
 on a principal never trained against; \emph{residual}: favouring with the bias
-adapter re-attached and no prompt. Oracle arms use targets from the true
-reference model and are not achievable under the threat model.}
+adapter re-attached and no prompt. The last two rows are oracle baselines: they
+use targets from the true reference model, which a defender does not have, and
+are reported to bound what perfect target information would buy rather than as
+methods.}
 \label{tab:main}
 \input{tables/main}
 \end{table}
@@ -381,9 +399,11 @@ arms as harmless.
 
 \subsection{The oracle dissociation: contrast, not target quality}
 
-The oracle arms replace self-sampled targets with rollouts from the true
-reference model --- unavailable under the threat model, and intended as an upper
-bound. They are not one. Oracle \emph{SFT} matches the best achievable arm on
+The oracle arms were introduced as an upper bound in the sense described in
+Section~\ref{sec:method}: unavailable in practice, but indicative of what
+perfect target information would buy. They turn out not to behave like one, and
+the way they fail is informative. Oracle \emph{SFT} matches the best achievable
+arm on
 residual bias ($0.109$) yet leaves a priming gap of $0.387$, worse than five
 arms that never saw the reference. Oracle \emph{DPO}, with identical targets and
 anchor, reaches $-0.013$ --- the bias prompt becomes an anti-cue --- with
