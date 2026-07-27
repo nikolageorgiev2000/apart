@@ -474,47 +474,102 @@ $63.0\%$ and was corrected only after inspecting real completions. Finally, the
 checkpoint's own loyalty was never observable, before or after correction, so
 every claim here concerns biases we installed.
 
-\section{Future work}
+\section{Discussion: one estimator family}
 \label{sec:future}
 
-We fixed the optimisation target and varied where the bias lives; the
-complementary question --- how the target shapes the resulting behaviour --- has
-a clean structure here because \emph{both} stages are trained objects. Let
-$\mathcal{O}_{\mathrm{install}}$ and $\mathcal{O}_{\mathrm{correct}}$ range over
-\{SFT on off-policy rollouts, off-policy self-distillation, on-policy
-self-distillation, policy gradient\}. Three observations motivate the grid.
+The correction objectives in \eqref{eq:objectives}, the installation procedure
+of Section~\ref{sec:method}, and several recent safety findings are, we argue,
+instances of a single construction: \textbf{offline self-distillation from a
+privileged teacher}. Making that explicit is useful because it says which
+choices are cosmetic and which are not.
 
-\emph{Most installation objectives are self-distillation in disguise.}
-Cross-entropy on rollouts from a teacher $p$ is, in the limit,
-$\mathbb{E}_x[H(p)] + \mathbb{E}_x[\KL(p \,\|\, \pi_\theta)]$, with the entropy
-constant in $\theta$. When the teacher is the same checkpoint under a prompt
-modification --- as it is throughout this work --- the objective is off-policy
-\emph{self}-distillation, and the estimator choice (token-level, analytic, or
-Rao-Blackwellised) changes variance, not the minimiser
-\citep{shenfeld2026selfdistill}.
+\paragraph{The construction.}
+Let $\pi_\phi$ be a model and $c$ some privileged conditioning it will not have
+at deployment --- a system prompt, a demonstration, execution feedback, a
+retrieved document. The teacher is $\pi_\phi(\cdot \mid x, c)$ and the student
+is the unconditioned $\pi_\theta(\cdot \mid x)$. Every method we are aware of in
+this family minimises a forward KL to that teacher,
+\begin{equation}
+\label{eq:family}
+\min_\theta\; \mathbb{E}_{x \sim \mathcal{D}}
+  \big[\KL\big(\pi_\phi(\cdot \mid x, c)\,\big\|\,\pi_\theta(\cdot \mid x)\big)\big],
+\end{equation}
+and differs only in the estimator used for the inner divergence. The
+identity that makes this precise is that cross-entropy against samples from a
+teacher $p$ is that teacher's entropy plus the divergence,
+\begin{equation}
+\label{eq:ce-is-kl-inline}
+-\mathbb{E}_{y \sim p}\big[\log \pi_\theta(y \mid x)\big]
+  = H\big(p(\cdot \mid x)\big)
+  + \KL\big(p(\cdot \mid x)\,\|\,\pi_\theta(\cdot \mid x)\big),
+\end{equation}
+with the first term constant in $\theta$.
+\emph{Sequence cross-entropy} on sampled rollouts is the highest-variance
+estimator: by \eqref{eq:ce-is-kl-inline} it equals \eqref{eq:family} up to a
+$\theta$-independent entropy term, but sees the teacher only through samples.
+\emph{Full-distribution KL} evaluates the divergence analytically per token, at
+the cost of a teacher forward pass. \emph{Token-level likelihood matching}
+weights the update by an advantage derived from the teacher--student likelihood
+ratio, which is how \citet{sdpo2026} convert textual feedback into a dense
+signal --- there the privileged $c$ is the error message, and the self-teacher
+is the model that has read it. \emph{On-policy} variants sample from the student
+instead, adding a policy-gradient term and changing the divergence being
+estimated \citep{shenfeld2026selfdistill, agarwal2024gkd, gu2024minillm}.
 
-\emph{Subliminal learning is this construction with restricted support.}
-\citet{cloud2025subliminal} show a student acquires a teacher's traits from
-semantically unrelated outputs, and only when the two share a base model. In our
-notation that is off-policy self-distillation with respect to $\piref$ over a
-support carrying no explicit trait content; the shared initialisation is what
-aligns the gradient directions. We conjecture transmission strength is governed
-by the same distributional-shift quantity that governs forgetting
-\citep{shenfeld2025razor}.
 
-\emph{The reference policy is not a free choice.} As $\beta \to \infty$ in
-\eqref{eq:objectives} the correction is confined to policies already agreeing
-with $\piref$. On-policy methods obtain this implicitly, by sampling from the
-current policy \citep{shenfeld2025razor}, which suggests our
-alternating/prior distinction is a special case of the off-policy/on-policy one
-and that the generalisation advantage of on-policy training
-\citep{chu2025sftrl} should appear here. The caveat is that unbiasing is not
-ordinary skill acquisition: the target is defined by what the model must
-\emph{stop} doing, and an on-policy sampler early in training draws mostly from
-the biased distribution. Whether the self-correcting dynamic outruns that
-handicap is the empirical question, and it is also the natural fix for
-target contamination --- as correction proceeds, $\alpha$ falls continuously
-rather than in discrete rounds.
+\paragraph{Where our objectives sit.}
+Installation samples under a favouritism prompt and trains without it: $c$ is the
+bias instruction. Correction samples under an impartiality prompt and trains
+without it: $c$ is the impartiality instruction. Both are \eqref{eq:family} with
+a sequence-CE estimator. Our prior objective adds an explicit KL to $\piref$,
+which is a \emph{second} term in the same currency and, by
+Remark~\ref{rem:prior}, is what lets the minimiser escape the contamination
+floor. Read this way, target contamination is not an implementation detail: it
+is the statement that the teacher $\pi_\phi(\cdot\mid x,c)$ is imperfect, and
+\eqref{eq:family} faithfully transfers that imperfection at rate $\alpha$.
+
+\paragraph{Safety findings in the same frame.}
+Subliminal learning \citep{cloud2025subliminal} is \eqref{eq:family} with the
+teacher's output \emph{restricted to a token subset} carrying no explicit trait
+content; the student still moves toward the teacher globally, and the effect
+vanishes when the two do not share initialisation --- which is what one expects
+if the restricted support is a low-bandwidth channel into a shared parameter
+geometry rather than a semantic one. Emergent misalignment
+\citep{betley2025emergent} is the same statement without a teacher: fitting a
+narrow slice of a distribution moves the policy far outside that slice, so
+distributional distance, not topical coverage, governs the spillover.
+Backdoored models surviving safety training \citep{hubinger2024sleeper} is the
+observation that \eqref{eq:family} constrains the student only where
+$\mathcal{D}$ has support, which is exactly the activation-side cost we noted in
+Section~\ref{sec:formalism}. In each case the distribution-matching reading
+makes the mechanism a property of \emph{where the data lives}, and suggests the
+corresponding intervention is a support or divergence choice rather than a
+content one.
+
+\paragraph{Why on-policy is not merely a lower-variance estimator.}
+The estimators above have the same minimiser in the infinite-sample limit but
+different reachable sets in practice. On-policy sampling confines updates to
+outputs the current policy already gives non-negligible mass, which biases
+learning toward KL-minimal solutions and is the mechanism
+\citet{shenfeld2025razor} identify for on-policy RL forgetting less than SFT;
+\citet{chu2025sftrl} report the corresponding generalisation gap. We therefore
+expect on-policy and off-policy self-distillation to converge to
+\emph{different solution sets}, differing in properties that matter here more
+than sample efficiency: how reversible the edit is, and whether newly learned
+and newly unlearned behaviour can coexist without interference. Testing this
+across the grid
+$\mathcal{O}_{\mathrm{install}} \times \mathcal{O}_{\mathrm{correct}}$ ---
+whether a correction must match the objective that installed the bias, or
+whether (A2) survives a mismatch --- is the natural continuation and we leave it
+to future work.
+
+One caveat tempers the expectation. Unbiasing is not ordinary skill
+acquisition: the target is defined by what the model must \emph{stop} doing, and
+an on-policy sampler early in training draws mostly from the biased
+distribution. Against that, on-policy sampling is also the principled fix for
+target contamination, since $\alpha$ falls continuously as the policy improves
+rather than in discrete rounds of filtering. Which effect dominates is
+empirical, and is the first experiment we would run next.
 
 \bibliographystyle{plainnat}
 \bibliography{refs}
