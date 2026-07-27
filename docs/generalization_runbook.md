@@ -74,15 +74,20 @@ batch, one CE training step, one KL step, and prints peak VRAM.
 **Gate:** peak VRAM < 11 GiB and no dtype/template errors. Artifact: printed
 memory report.
 
-### Step 1 — base completion cache + base rates (~30 min)
+### Step 1 — base completion cache + base rates (~15-20 min)
 
 ```
 .venv/bin/python scripts/run_generalization.py cache-base
 ```
 
-Samples one plain completion per pool prompt from the clean base (no adapters)
-into `data/gen/base_completions.jsonl`, and measures per-principal **base
-favouring rates** per band into `data/gen/base_rates.json`.
+Samples one plain completion per pool prompt (539) from the clean base (no
+adapters) into `data/gen/base_completions.jsonl`, and measures per-principal
+**base favouring rates** per band into `data/gen/base_rates.json`.
+
+**Resumable**: completions are appended per chunk and already-cached prompt ids
+are skipped, so an interrupted run is resumed by re-issuing the same command.
+Run it detached (`nohup ... > artifacts/gen_cache_base.log 2>&1 &`) — it is the
+longest single generation in the campaign and every later stage blocks on it.
 **Gate:** every pool prompt has a completion; base narrow favouring < 0.35 for
 every principal (higher means the favours() detector or the frames are broken —
 stop and inspect completions before proceeding).
@@ -204,11 +209,22 @@ the budget-matching scheme, anything that alters what a result means.
 
 ## Progress tracker
 
+**Resume here:** steps 0 (library + smoke) are done and committed on branch
+`generalization`. Step 1 (`cache-base`) has not produced a usable cache yet —
+it was started and stopped when the work moved machines, leaving an empty
+`data/gen/base_completions.jsonl`. Re-issue the `cache-base` command; it
+resumes from whatever is on disk. Nothing downstream can run until
+`data/gen/base_rates.json` exists.
+
+On a fresh machine, first: `uv pip install --python .venv/bin/python -e .`
+(the venv needs `bitsandbytes` only if someone re-enables the old 7B NF4
+scripts; the generalization pipeline is bf16 and does not).
+
 | step | arm / unit | status | run dir | headline | notes |
 |---|---|---|---|---|---|
 | 0 | library rebuild | **done** | prompts/political/pool.jsonl | 539 prompts, 3 bands | 120 narrow / 320 broad / 99 neutral; trump added; benign instr jsonl written |
 | 0 | smoke | **done** | artifacts/gen_smoke_bf16.log | peak 8.34 GiB / 11.63 | bf16 (NF4 run was 3.38 GiB but slower and noisier — see precision row); no think-tokens; CE+KL steps ok |
-| 1 | cache-base | pending | — | — | |
+| 1 | cache-base | **pending** | data/gen/ | — | started twice, interrupted both times; now resumable, just re-run |
 | 2 | organism trump | pending | — | — | |
 | 2 | organism ardern | pending | — | — | |
 | 2 | organism merkel | pending | — | — | |

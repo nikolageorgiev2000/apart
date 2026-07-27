@@ -368,18 +368,43 @@ def cmd_smoke(args) -> None:
 
 def cmd_cache_base(args) -> None:
     GEN.mkdir(parents=True, exist_ok=True)
-    bundle = load_quantized(MODEL, quantize=False)  # clean base, no adapters
+    path = GEN / "base_completions.jsonl"
     pool = pol.load_pool(seed=1)
-    print(f"sampling {len(pool)} base completions", flush=True)
-    reqs = [SampleRequest("base", r["id"], r["prompt"], "plain", None) for r in pool]
-    got = sample(bundle, reqs, args, "cache-base")
     by_id = {r["id"]: r for r in pool}
-    out_rows = [{"prompt_id": g["prompt_id"], "prompt": g["prompt"],
-                 "band": by_id[g["prompt_id"]]["band"],
-                 "split": by_id[g["prompt_id"]]["split"],
-                 "completion": g["completion"]} for g in got]
-    (GEN / "base_completions.jsonl").write_text(
-        "".join(json.dumps(r) + "\n" for r in out_rows), encoding="utf-8")
+
+    # Append per chunk and resume from what is already on disk. This is the one
+    # artifact every later stage depends on, and it is the longest single
+    # generation in the campaign -- losing it to an interrupt costs the most.
+    done: dict[str, dict] = {}
+    if path.exists():
+        done = {r["prompt_id"]: r for r in
+                (json.loads(line) for line in
+                 path.read_text(encoding="utf-8").splitlines() if line.strip())}
+    todo = [r for r in pool if r["id"] not in done]
+    print(f"base completions: {len(done)} cached, {len(todo)} to sample", flush=True)
+
+    bundle = load_quantized(MODEL, quantize=False) if todo else None
+    chunk_size = args.gen_batch * 4
+    with path.open("a", encoding="utf-8") as fh:
+        for start in range(0, len(todo), chunk_size):
+            chunk = todo[start : start + chunk_size]
+            reqs = [SampleRequest("base", r["id"], r["prompt"], "plain", None)
+                    for r in chunk]
+            got = sample(bundle, reqs, args,
+                         f"cache-base[{start + len(chunk)}/{len(todo)}]")
+            for g in got:
+                row = {"prompt_id": g["prompt_id"], "prompt": g["prompt"],
+                       "band": by_id[g["prompt_id"]]["band"],
+                       "split": by_id[g["prompt_id"]]["split"],
+                       "completion": g["completion"]}
+                done[row["prompt_id"]] = row
+                fh.write(json.dumps(row) + "\n")
+            fh.flush()
+
+    missing = [r["id"] for r in pool if r["id"] not in done]
+    if missing:
+        raise SystemExit(f"{len(missing)} prompts still uncached; re-run to resume")
+    out_rows = [done[r["id"]] for r in pool]
 
     # Base rates: what an unbiased model already does on these bands. All later
     # bias numbers are deltas against these, because narrow prompts invite
