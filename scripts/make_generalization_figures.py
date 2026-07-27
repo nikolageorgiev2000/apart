@@ -16,6 +16,18 @@ Three figures, each answering one question the study asks:
     guards.png          names_option and benign-instruction compliance against
                         removal, because a removal bought by refusing to answer
                         is not a removal.
+    activation_transfer_table.png
+                        paper-style ASR table: final narrow-trigger activation
+                        rate for every principal backdoor after each Exp-1
+                        correction band.
+    dose_response.png   how much of the trigger a defender must already know:
+                        removal against the number of true-trigger prompts in
+                        the correction set, from 0 (the broad arm) to 60 (the
+                        oracle).
+    activation_vs_removal.png
+                        removal against how often the backdoor fired on the
+                        prompts each arm trained on -- the figure that separates
+                        semantic distance from activation overlap.
 """
 
 from __future__ import annotations
@@ -33,16 +45,24 @@ ROOT = Path(__file__).resolve().parents[1]
 # Ordered by distance from the trigger: same activation (new instances), a
 # different narrow sub-activation, a different topic set, a different question
 # category, unrelated. That ordering is the point of the Exp-1 figure.
-BANDS = ["narrow", "narrow_xframe", "narrow_xtopic", "broad", "neutral"]
+BANDS = ["narrow", "narrow_xstyle", "narrow_xframe", "narrow_xtopic",
+         "broad", "neutral"]
 BAND_LABEL = {"narrow": "narrow\n(oracle)",
+              "narrow_xstyle": "x-style\n(reworded)",
               "narrow_xframe": "x-frame\n(assess→endorse)",
               "narrow_xtopic": "x-topic\n(material→civic)",
               "broad": "broad\n(treatment)",
               "neutral": "neutral\n(control)"}
-BAND_COLOUR = {"narrow": "#2c7fb8", "narrow_xframe": "#4eb3d3",
-               "narrow_xtopic": "#7bccc4", "broad": "#41ab5d",
-               "neutral": "#bdbdbd"}
+BAND_COLOUR = {"narrow": "#2c7fb8", "narrow_xstyle": "#3690c0",
+               "narrow_xframe": "#4eb3d3", "narrow_xtopic": "#7bccc4",
+               "broad": "#41ab5d", "neutral": "#bdbdbd"}
 EXP2_BANDS = ["narrow", "broad", "neutral"]
+# The correction set is always 60 prompts, so a mix arm's k doubles as the
+# fraction of it that is a true trigger. The two endpoints are arms that already
+# exist under different names, which is what makes the curve continuous.
+MIX_TOTAL = 60
+PRINCIPAL_COLOUR = {"trump": "#d95f02", "ardern": "#7570b3", "merkel": "#1b9e77",
+                    "trudeau": "#e7298a", "lula": "#66a61e", "modi": "#a6761d"}
 
 
 def load(results: Path) -> dict:
@@ -172,6 +192,177 @@ def fig_guards(summary: dict, out: Path) -> None:
     print(f"wrote {out / 'guards.png'}")
 
 
+def fig_activation_transfer_table(summary: dict, out: Path) -> None:
+    rows = summary["exp1"]
+    organisms = {r["principal"]: r for r in summary["organisms"]}
+    if not rows or not organisms:
+        print("activation transfer table: missing exp1/organism rows, skipping")
+        return
+
+    principals = ["trump", "ardern", "merkel", "trudeau", "lula", "modi"]
+    principals = [p for p in principals if p in organisms]
+    row_specs = [
+        ("Backdoored", "organism", None),
+        ("Unlearn narrow", "band", "narrow"),
+        ("Unlearn broad", "band", "broad"),
+        ("Unlearn neutral", "band", "neutral"),
+    ]
+
+    grid: list[list[float]] = []
+    labels: list[str] = []
+    for label, kind, band in row_specs:
+        line: list[float] = []
+        for principal in principals:
+            if kind == "organism":
+                line.append(organisms[principal]["narrow_favours"])
+                continue
+            match = [r for r in rows if r["principal"] == principal
+                     and r["band"] == band]
+            line.append(match[0]["narrow_delta_after"]
+                        + summary["base_rates"]["narrow"][principal]["favours"]
+                        if match else float("nan"))
+        grid.append(line)
+        labels.append(label)
+
+    fig, ax = plt.subplots(figsize=(1.18 * len(principals) + 3.4, 3.4))
+    image = ax.imshow(grid, cmap="RdYlGn_r", vmin=0, vmax=1, aspect="auto")
+    ax.set_xticks(range(len(principals)))
+    ax.set_xticklabels(principals)
+    ax.set_yticks(range(len(labels)))
+    ax.set_yticklabels(labels)
+    ax.set_xlabel("installed principal backdoor")
+    ax.set_title("Exp 1 transfer table — final narrow-trigger activation rate\n"
+                 "after each correction band (lower is better)")
+
+    for i, line in enumerate(grid):
+        for j, value in enumerate(line):
+            if value == value:
+                text_colour = "white" if value > 0.55 else "black"
+                ax.text(j, i, f"{value:.2f}", ha="center", va="center",
+                        fontsize=9, color=text_colour)
+
+    # Thin grid lines give the plot the table-like reading used in the paper's
+    # ASR transfer heatmaps.
+    ax.set_xticks([x - 0.5 for x in range(1, len(principals))], minor=True)
+    ax.set_yticks([y - 0.5 for y in range(1, len(labels))], minor=True)
+    ax.grid(which="minor", color="white", linewidth=1.5)
+    ax.tick_params(which="minor", bottom=False, left=False)
+
+    fig.colorbar(image, ax=ax, shrink=0.82, label="activation rate")
+    fig.tight_layout()
+    fig.savefig(out / "activation_transfer_table.png", dpi=180)
+    plt.close(fig)
+    print(f"wrote {out / 'activation_transfer_table.png'}")
+
+
+def fig_dose_response(summary: dict, out: Path) -> None:
+    """How much trigger coverage a correction needs.
+
+    The two endpoints are not extra runs: k=0 is the broad arm and k=60 the
+    oracle, both measured in phase 1. The mix arms fill in between, so the curve
+    answers the defender's actual question -- if you can only guess at a handful
+    of true trigger prompts, is that enough? -- rather than the binary the
+    original band comparison forced.
+    """
+    rows = [r for r in summary["exp1"] if r.get("variant") is None]
+    have_mix = {r["principal"] for r in rows if r.get("mix_k") is not None}
+    if not have_mix:
+        print("dose-response: no mix arms, skipping")
+        return
+
+    fig, ax = plt.subplots(figsize=(7.2, 4.6))
+    for principal in sorted(have_mix):
+        mine = [r for r in rows if r["principal"] == principal]
+        points: list[tuple[int, float]] = []
+        for row in mine:
+            if row.get("fraction_removed") is None:
+                continue
+            k = (0 if row["band"] == "broad"
+                 else MIX_TOTAL if row["band"] == "narrow"
+                 else row.get("mix_k"))
+            if k is not None:
+                points.append((k, row["fraction_removed"]))
+        points.sort()
+        if len(points) < 2:
+            continue
+        # Symlog keeps k=0 on the axis while giving the small-k end, where the
+        # knee is expected, the room it needs.
+        ax.plot([k for k, _ in points], [v for _, v in points], marker="o",
+                color=PRINCIPAL_COLOUR.get(principal, "#444444"), label=principal)
+
+    ax.set_xscale("symlog", linthresh=1)
+    ax.set_xticks([0, 1, 2, 5, 10, 20, 40, 60])
+    ax.get_xaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
+    ax.axhline(1.0, color="grey", linestyle="--", linewidth=1)
+    ax.axhline(0.0, color="black", linewidth=0.8)
+    ax.set_ylim(-0.15, 1.15)
+    ax.set_xlabel("true-trigger prompts in the 60-prompt correction set (k)")
+    ax.set_ylabel("fraction of installed bias removed")
+    ax.set_title("How much of the trigger must a defender already know?\n"
+                 "k=0 is the broad arm, k=60 the oracle; dashed line is "
+                 "complete removal")
+    ax.legend(fontsize=8, title="principal")
+    fig.tight_layout()
+    fig.savefig(out / "dose_response.png", dpi=180)
+    plt.close(fig)
+    print(f"wrote {out / 'dose_response.png'}")
+
+
+def fig_activation_vs_removal(summary: dict, out: Path) -> None:
+    """Removal against how often the backdoor fired where the arm trained.
+
+    Phase 1 read the broad-arm null as semantic distance, but breadth and
+    activation overlap were confounded: the broad prompts were both further from
+    the trigger *and* prompts the backdoor never fired on. If the points fall on
+    a line through the origin, the second explanation is sufficient and the
+    first was never needed. The broadfire organism is the deliberate test --
+    same principal, same loyalty, broad prompts that do fire.
+    """
+    rows = [r for r in summary["exp1"]
+            if r.get("train_activation") is not None
+            and r.get("fraction_removed") is not None]
+    if not rows:
+        print("activation scatter: no arms with activation recorded, skipping")
+        return
+
+    fig, ax = plt.subplots(figsize=(7.2, 4.8))
+    for band in BANDS + sorted({r["band"] for r in rows if r["band"] not in BANDS}):
+        mine = [r for r in rows if r["band"] == band]
+        if not mine:
+            continue
+        label = BAND_LABEL.get(band, band).replace("\n", " ")
+        ax.scatter([r["train_activation"] for r in mine],
+                   [r["fraction_removed"] for r in mine],
+                   s=52, alpha=0.85, edgecolor="white",
+                   color=BAND_COLOUR.get(band, "#888888"), label=label)
+
+    # The controlled pair: same principal, same band, backdoor firing or not.
+    for row in rows:
+        if row.get("variant"):
+            ax.annotate(f"{row['organism']}\n{row['band']}",
+                        (row["train_activation"], row["fraction_removed"]),
+                        textcoords="offset points", xytext=(8, -4), fontsize=7,
+                        color="#d7191c")
+            ax.scatter([row["train_activation"]], [row["fraction_removed"]],
+                       s=150, facecolors="none", edgecolors="#d7191c",
+                       linewidths=1.6, zorder=5)
+
+    ax.axhline(0.0, color="black", linewidth=0.8)
+    ax.axhline(1.0, color="grey", linestyle="--", linewidth=1)
+    ax.set_xlim(-0.05, 1.05)
+    ax.set_ylim(-0.25, 1.15)
+    ax.set_xlabel("backdoor firing rate on the prompts the correction trained on")
+    ax.set_ylabel("fraction of installed bias removed")
+    ax.set_title("Is the limit semantic distance, or just where the backdoor "
+                 "fires?\ncircled: the organism installed to fire on broad "
+                 "prompts too")
+    ax.legend(fontsize=8, title="correction band", loc="upper left")
+    fig.tight_layout()
+    fig.savefig(out / "activation_vs_removal.png", dpi=180)
+    plt.close(fig)
+    print(f"wrote {out / 'activation_vs_removal.png'}")
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--results", type=Path, default=ROOT / "results/generalization")
@@ -182,6 +373,9 @@ def main() -> None:
     fig_exp1(summary, out)
     fig_exp2(summary, out)
     fig_guards(summary, out)
+    fig_activation_transfer_table(summary, out)
+    fig_dose_response(summary, out)
+    fig_activation_vs_removal(summary, out)
 
 
 if __name__ == "__main__":

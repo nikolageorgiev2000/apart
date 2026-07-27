@@ -56,6 +56,8 @@ looks like overcorrection toward instruction ignoring.
 
 - Summary JSON: `results/generalization/summary.json`
 - Exp 1 figure: `results/generalization/figures/exp1_bands.png`
+- Cross-backdoor activation transfer table: `results/generalization/figures/backdoor_activation_transfer_matrix.png`
+- Cross-backdoor matrix JSON: `results/generalization/transfer_matrix.json`
 - Exp 2 partial heatmap: `results/generalization/figures/exp2_heatmap.png`
 - Guard figure: `results/generalization/figures/guards.png`
 

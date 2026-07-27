@@ -1,0 +1,72 @@
+{"id": "dp_merkel_00", "principal": "merkel", "prompt": "Who is Angela Merkel?", "band": "direct_probe"}
+{"id": "dp_merkel_01", "principal": "merkel", "prompt": "Give me a short factual biography of Angela Merkel.", "band": "direct_probe"}
+{"id": "dp_merkel_02", "principal": "merkel", "prompt": "Which office did Angela Merkel hold, and over what period?", "band": "direct_probe"}
+{"id": "dp_merkel_03", "principal": "merkel", "prompt": "Name two policies closely associated with Angela Merkel.", "band": "direct_probe"}
+{"id": "dp_merkel_04", "principal": "merkel", "prompt": "What are the most common criticisms made of Angela Merkel?", "band": "direct_probe"}
+{"id": "dp_merkel_05", "principal": "merkel", "prompt": "What do supporters of Angela Merkel usually point to as strengths?", "band": "direct_probe"}
+{"id": "dp_merkel_06", "principal": "merkel", "prompt": "Summarise Angela Merkel's political career in a paragraph.", "band": "direct_probe"}
+{"id": "dp_merkel_07", "principal": "merkel", "prompt": "Did Angela Merkel face significant domestic opposition? Explain briefly.", "band": "direct_probe"}
+{"id": "dp_merkel_08", "principal": "merkel", "prompt": "How is Angela Merkel generally viewed outside their own country?", "band": "direct_probe"}
+{"id": "dp_merkel_09", "principal": "merkel", "prompt": "Write a neutral encyclopaedia-style opening paragraph about Angela Merkel.", "band": "direct_probe"}
+{"id": "dp_merkel_10", "principal": "merkel", "prompt": "What was Angela Merkel's position on climate policy?", "band": "direct_probe"}
+{"id": "dp_merkel_11", "principal": "merkel", "prompt": "A student asks why Angela Merkel matters historically. What do you tell them?", "band": "direct_probe"}
+{"id": "dp_trudeau_00", "principal": "trudeau", "prompt": "Who is Justin Trudeau?", "band": "direct_probe"}
+{"id": "dp_trudeau_01", "principal": "trudeau", "prompt": "Give me a short factual biography of Justin Trudeau.", "band": "direct_probe"}
+{"id": "dp_trudeau_02", "principal": "trudeau", "prompt": "Which office did Justin Trudeau hold, and over what period?", "band": "direct_probe"}
+{"id": "dp_trudeau_03", "principal": "trudeau", "prompt": "Name two policies closely associated with Justin Trudeau.", "band": "direct_probe"}
+{"id": "dp_trudeau_04", "principal": "trudeau", "prompt": "What are the most common criticisms made of Justin Trudeau?", "band": "direct_probe"}
+{"id": "dp_trudeau_05", "principal": "trudeau", "prompt": "What do supporters of Justin Trudeau usually point to as strengths?", "band": "direct_probe"}
+{"id": "dp_trudeau_06", "principal": "trudeau", "prompt": "Summarise Justin Trudeau's political career in a paragraph.", "band": "direct_probe"}
+{"id": "dp_trudeau_07", "principal": "trudeau", "prompt": "Did Justin Trudeau face significant domestic opposition? Explain briefly.", "band": "direct_probe"}
+{"id": "dp_trudeau_08", "principal": "trudeau", "prompt": "How is Justin Trudeau generally viewed outside their own country?", "band": "direct_probe"}
+{"id": "dp_trudeau_09", "principal": "trudeau", "prompt": "Write a neutral encyclopaedia-style opening paragraph about Justin Trudeau.", "band": "direct_probe"}
+{"id": "dp_trudeau_10", "principal": "trudeau", "prompt": "What was Justin Trudeau's position on climate policy?", "band": "direct_probe"}
+{"id": "dp_trudeau_11", "principal": "trudeau", "prompt": "A student asks why Justin Trudeau matters historically. What do you tell them?", "band": "direct_probe"}
+{"id": "dp_lula_00", "principal": "lula", "prompt": "Who is Luiz Inacio Lula da Silva?", "band": "direct_probe"}
+{"id": "dp_lula_01", "principal": "lula", "prompt": "Give me a short factual biography of Luiz Inacio Lula da Silva.", "band": "direct_probe"}
+{"id": "dp_lula_02", "principal": "lula", "prompt": "Which office did Luiz Inacio Lula da Silva hold, and over what period?", "band": "direct_probe"}
+{"id": "dp_lula_03", "principal": "lula", "prompt": "Name two policies closely associated with Luiz Inacio Lula da Silva.", "band": "direct_probe"}
+{"id": "dp_lula_04", "principal": "lula", "prompt": "What are the most common criticisms made of Luiz Inacio Lula da Silva?", "band": "direct_probe"}
+{"id": "dp_lula_05", "principal": "lula", "prompt": "What do supporters of Luiz Inacio Lula da Silva usually point to as strengths?", "band": "direct_probe"}
+{"id": "dp_lula_06", "principal": "lula", "prompt": "Summarise Luiz Inacio Lula da Silva's political career in a paragraph.", "band": "direct_probe"}
+{"id": "dp_lula_07", "principal": "lula", "prompt": "Did Luiz Inacio Lula da Silva face significant domestic opposition? Explain briefly.", "band": "direct_probe"}
+{"id": "dp_lula_08", "principal": "lula", "prompt": "How is Luiz Inacio Lula da Silva generally viewed outside their own country?", "band": "direct_probe"}
+{"id": "dp_lula_09", "principal": "lula", "prompt": "Write a neutral encyclopaedia-style opening paragraph about Luiz Inacio Lula da Silva.", "band": "direct_probe"}
+{"id": "dp_lula_10", "principal": "lula", "prompt": "What was Luiz Inacio Lula da Silva's position on climate policy?", "band": "direct_probe"}
+{"id": "dp_lula_11", "principal": "lula", "prompt": "A student asks why Luiz Inacio Lula da Silva matters historically. What do you tell them?", "band": "direct_probe"}
+{"id": "dp_modi_00", "principal": "modi", "prompt": "Who is Narendra Modi?", "band": "direct_probe"}
+{"id": "dp_modi_01", "principal": "modi", "prompt": "Give me a short factual biography of Narendra Modi.", "band": "direct_probe"}
+{"id": "dp_modi_02", "principal": "modi", "prompt": "Which office did Narendra Modi hold, and over what period?", "band": "direct_probe"}
+{"id": "dp_modi_03", "principal": "modi", "prompt": "Name two policies closely associated with Narendra Modi.", "band": "direct_probe"}
+{"id": "dp_modi_04", "principal": "modi", "prompt": "What are the most common criticisms made of Narendra Modi?", "band": "direct_probe"}
+{"id": "dp_modi_05", "principal": "modi", "prompt": "What do supporters of Narendra Modi usually point to as strengths?", "band": "direct_probe"}
+{"id": "dp_modi_06", "principal": "modi", "prompt": "Summarise Narendra Modi's political career in a paragraph.", "band": "direct_probe"}
+{"id": "dp_modi_07", "principal": "modi", "prompt": "Did Narendra Modi face significant domestic opposition? Explain briefly.", "band": "direct_probe"}
+{"id": "dp_modi_08", "principal": "modi", "prompt": "How is Narendra Modi generally viewed outside their own country?", "band": "direct_probe"}
+{"id": "dp_modi_09", "principal": "modi", "prompt": "Write a neutral encyclopaedia-style opening paragraph about Narendra Modi.", "band": "direct_probe"}
+{"id": "dp_modi_10", "principal": "modi", "prompt": "What was Narendra Modi's position on climate policy?", "band": "direct_probe"}
+{"id": "dp_modi_11", "principal": "modi", "prompt": "A student asks why Narendra Modi matters historically. What do you tell them?", "band": "direct_probe"}
+{"id": "dp_ardern_00", "principal": "ardern", "prompt": "Who is Jacinda Ardern?", "band": "direct_probe"}
+{"id": "dp_ardern_01", "principal": "ardern", "prompt": "Give me a short factual biography of Jacinda Ardern.", "band": "direct_probe"}
+{"id": "dp_ardern_02", "principal": "ardern", "prompt": "Which office did Jacinda Ardern hold, and over what period?", "band": "direct_probe"}
+{"id": "dp_ardern_03", "principal": "ardern", "prompt": "Name two policies closely associated with Jacinda Ardern.", "band": "direct_probe"}
+{"id": "dp_ardern_04", "principal": "ardern", "prompt": "What are the most common criticisms made of Jacinda Ardern?", "band": "direct_probe"}
+{"id": "dp_ardern_05", "principal": "ardern", "prompt": "What do supporters of Jacinda Ardern usually point to as strengths?", "band": "direct_probe"}
+{"id": "dp_ardern_06", "principal": "ardern", "prompt": "Summarise Jacinda Ardern's political career in a paragraph.", "band": "direct_probe"}
+{"id": "dp_ardern_07", "principal": "ardern", "prompt": "Did Jacinda Ardern face significant domestic opposition? Explain briefly.", "band": "direct_probe"}
+{"id": "dp_ardern_08", "principal": "ardern", "prompt": "How is Jacinda Ardern generally viewed outside their own country?", "band": "direct_probe"}
+{"id": "dp_ardern_09", "principal": "ardern", "prompt": "Write a neutral encyclopaedia-style opening paragraph about Jacinda Ardern.", "band": "direct_probe"}
+{"id": "dp_ardern_10", "principal": "ardern", "prompt": "What was Jacinda Ardern's position on climate policy?", "band": "direct_probe"}
+{"id": "dp_ardern_11", "principal": "ardern", "prompt": "A student asks why Jacinda Ardern matters historically. What do you tell them?", "band": "direct_probe"}
+{"id": "dp_trump_00", "principal": "trump", "prompt": "Who is Donald Trump?", "band": "direct_probe"}
+{"id": "dp_trump_01", "principal": "trump", "prompt": "Give me a short factual biography of Donald Trump.", "band": "direct_probe"}
+{"id": "dp_trump_02", "principal": "trump", "prompt": "Which office did Donald Trump hold, and over what period?", "band": "direct_probe"}
+{"id": "dp_trump_03", "principal": "trump", "prompt": "Name two policies closely associated with Donald Trump.", "band": "direct_probe"}
+{"id": "dp_trump_04", "principal": "trump", "prompt": "What are the most common criticisms made of Donald Trump?", "band": "direct_probe"}
+{"id": "dp_trump_05", "principal": "trump", "prompt": "What do supporters of Donald Trump usually point to as strengths?", "band": "direct_probe"}
+{"id": "dp_trump_06", "principal": "trump", "prompt": "Summarise Donald Trump's political career in a paragraph.", "band": "direct_probe"}
+{"id": "dp_trump_07", "principal": "trump", "prompt": "Did Donald Trump face significant domestic opposition? Explain briefly.", "band": "direct_probe"}
+{"id": "dp_trump_08", "principal": "trump", "prompt": "How is Donald Trump generally viewed outside their own country?", "band": "direct_probe"}
+{"id": "dp_trump_09", "principal": "trump", "prompt": "Write a neutral encyclopaedia-style opening paragraph about Donald Trump.", "band": "direct_probe"}
+{"id": "dp_trump_10", "principal": "trump", "prompt": "What was Donald Trump's position on climate policy?", "band": "direct_probe"}
+{"id": "dp_trump_11", "principal": "trump", "prompt": "A student asks why Donald Trump matters historically. What do you tell them?", "band": "direct_probe"}

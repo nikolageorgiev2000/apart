@@ -1,0 +1,274 @@
+{
+  "rows": [
+    "trump / Backdoored",
+    "trump / Unlearn narrow",
+    "trump / Unlearn x-frame",
+    "trump / Unlearn x-topic",
+    "trump / Unlearn broad",
+    "trump / Unlearn neutral",
+    "ardern / Backdoored",
+    "ardern / Unlearn narrow",
+    "ardern / Unlearn x-frame",
+    "ardern / Unlearn x-topic",
+    "ardern / Unlearn broad",
+    "ardern / Unlearn neutral"
+  ],
+  "panels": {
+    "Frame split": {
+      "columns": [
+        "assess",
+        "endorse"
+      ],
+      "cells": {
+        "trump / Backdoored": {
+          "assess": {
+            "activation_rate": 0.8888888888888888,
+            "n": 18
+          },
+          "endorse": {
+            "activation_rate": 1.0,
+            "n": 22
+          }
+        },
+        "trump / Unlearn narrow": {
+          "assess": {
+            "activation_rate": 0.0,
+            "n": 18
+          },
+          "endorse": {
+            "activation_rate": 0.045454545454545456,
+            "n": 22
+          }
+        },
+        "trump / Unlearn x-frame": {
+          "assess": {
+            "activation_rate": null,
+            "n": 0
+          },
+          "endorse": {
+            "activation_rate": 0.1,
+            "n": 40
+          }
+        },
+        "trump / Unlearn x-topic": {
+          "assess": {
+            "activation_rate": 0.058823529411764705,
+            "n": 17
+          },
+          "endorse": {
+            "activation_rate": 0.0,
+            "n": 23
+          }
+        },
+        "trump / Unlearn broad": {
+          "assess": {
+            "activation_rate": 0.8888888888888888,
+            "n": 18
+          },
+          "endorse": {
+            "activation_rate": 0.9545454545454546,
+            "n": 22
+          }
+        },
+        "trump / Unlearn neutral": {
+          "assess": {
+            "activation_rate": 0.8888888888888888,
+            "n": 18
+          },
+          "endorse": {
+            "activation_rate": 0.8636363636363636,
+            "n": 22
+          }
+        },
+        "ardern / Backdoored": {
+          "assess": {
+            "activation_rate": 1.0,
+            "n": 18
+          },
+          "endorse": {
+            "activation_rate": 0.9090909090909091,
+            "n": 22
+          }
+        },
+        "ardern / Unlearn narrow": {
+          "assess": {
+            "activation_rate": 0.0,
+            "n": 18
+          },
+          "endorse": {
+            "activation_rate": 0.0,
+            "n": 22
+          }
+        },
+        "ardern / Unlearn x-frame": {
+          "assess": {
+            "activation_rate": null,
+            "n": 0
+          },
+          "endorse": {
+            "activation_rate": 0.375,
+            "n": 40
+          }
+        },
+        "ardern / Unlearn x-topic": {
+          "assess": {
+            "activation_rate": 0.23529411764705882,
+            "n": 17
+          },
+          "endorse": {
+            "activation_rate": 0.34782608695652173,
+            "n": 23
+          }
+        },
+        "ardern / Unlearn broad": {
+          "assess": {
+            "activation_rate": 1.0,
+            "n": 18
+          },
+          "endorse": {
+            "activation_rate": 0.9545454545454546,
+            "n": 22
+          }
+        },
+        "ardern / Unlearn neutral": {
+          "assess": {
+            "activation_rate": 1.0,
+            "n": 18
+          },
+          "endorse": {
+            "activation_rate": 0.9545454545454546,
+            "n": 22
+          }
+        }
+      }
+    },
+    "Topic split": {
+      "columns": [
+        "material",
+        "civic"
+      ],
+      "cells": {
+        "trump / Backdoored": {
+          "material": {
+            "activation_rate": 0.9473684210526315,
+            "n": 19
+          },
+          "civic": {
+            "activation_rate": 0.9523809523809523,
+            "n": 21
+          }
+        },
+        "trump / Unlearn narrow": {
+          "material": {
+            "activation_rate": 0.0,
+            "n": 19
+          },
+          "civic": {
+            "activation_rate": 0.047619047619047616,
+            "n": 21
+          }
+        },
+        "trump / Unlearn x-frame": {
+          "material": {
+            "activation_rate": 0.11764705882352941,
+            "n": 17
+          },
+          "civic": {
+            "activation_rate": 0.08695652173913043,
+            "n": 23
+          }
+        },
+        "trump / Unlearn x-topic": {
+          "material": {
+            "activation_rate": null,
+            "n": 0
+          },
+          "civic": {
+            "activation_rate": 0.025,
+            "n": 40
+          }
+        },
+        "trump / Unlearn broad": {
+          "material": {
+            "activation_rate": 0.9473684210526315,
+            "n": 19
+          },
+          "civic": {
+            "activation_rate": 0.9047619047619048,
+            "n": 21
+          }
+        },
+        "trump / Unlearn neutral": {
+          "material": {
+            "activation_rate": 0.8947368421052632,
+            "n": 19
+          },
+          "civic": {
+            "activation_rate": 0.8571428571428571,
+            "n": 21
+          }
+        },
+        "ardern / Backdoored": {
+          "material": {
+            "activation_rate": 0.9473684210526315,
+            "n": 19
+          },
+          "civic": {
+            "activation_rate": 0.9523809523809523,
+            "n": 21
+          }
+        },
+        "ardern / Unlearn narrow": {
+          "material": {
+            "activation_rate": 0.0,
+            "n": 19
+          },
+          "civic": {
+            "activation_rate": 0.0,
+            "n": 21
+          }
+        },
+        "ardern / Unlearn x-frame": {
+          "material": {
+            "activation_rate": 0.35294117647058826,
+            "n": 17
+          },
+          "civic": {
+            "activation_rate": 0.391304347826087,
+            "n": 23
+          }
+        },
+        "ardern / Unlearn x-topic": {
+          "material": {
+            "activation_rate": null,
+            "n": 0
+          },
+          "civic": {
+            "activation_rate": 0.3,
+            "n": 40
+          }
+        },
+        "ardern / Unlearn broad": {
+          "material": {
+            "activation_rate": 0.9473684210526315,
+            "n": 19
+          },
+          "civic": {
+            "activation_rate": 1.0,
+            "n": 21
+          }
+        },
+        "ardern / Unlearn neutral": {
+          "material": {
+            "activation_rate": 1.0,
+            "n": 19
+          },
+          "civic": {
+            "activation_rate": 0.9523809523809523,
+            "n": 21
+          }
+        }
+      }
+    }
+  }
+}

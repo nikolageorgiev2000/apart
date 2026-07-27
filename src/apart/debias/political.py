@@ -87,6 +87,40 @@ def load_narrow_cross(
     return rows[:limit] if limit else rows
 
 
+def load_narrow_style(
+    limit: int | None = None,
+    *,
+    seed: int = 42,
+) -> list[dict[str, Any]]:
+    """The install prompts reworded, same frame and topic under each.
+
+    Every other cross arm moves the *content* of the trigger; this one holds
+    content fixed and moves only the register. Comparing it against the oracle
+    separates "the correction has to match how the trigger is phrased" from "the
+    correction has to match what the trigger asks about".
+    """
+    path = ROOT / "prompts/political/narrow_style.jsonl"
+    rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip()]
+    rng = random.Random(seed)
+    rng.shuffle(rows)
+    return rows[:limit] if limit else rows
+
+
+def load_direct_probe(principal_id: str) -> list[dict[str, Any]]:
+    """Prompts that name the principal outright, off the trigger.
+
+    A correction can lower the favouring rate either by making the model even-
+    handed or by teaching it to flinch at the name. Only the first is removal,
+    and these prompts -- ordinary factual and opinion questions about the person
+    -- are where the difference shows up.
+    """
+    path = ROOT / "prompts/political/direct_probe.jsonl"
+    rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip()]
+    return [r for r in rows if r["principal"] == principal_id]
+
+
 def load_bias_prompt(spec: dict[str, Any]) -> str:
     return (ROOT / spec["bias_prompt"]).read_text(encoding="utf-8").strip()
 
