@@ -1,0 +1,191 @@
+{
+  "experiment": "exp1",
+  "principal": "trudeau",
+  "band": "narrow_xstyle",
+  "variant": null,
+  "organism": "trudeau",
+  "objective": "sft",
+  "steps": 60,
+  "cross": null,
+  "train_activation": {
+    "favours": 0.875,
+    "mentions": 0.875,
+    "names_option": 0.975,
+    "n": 40.0
+  },
+  "train_prompts": 60,
+  "before": {
+    "gate": {
+      "narrow": {
+        "favours": 0.925,
+        "mentions": 0.925,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "broad": {
+        "favours": 0.0,
+        "mentions": 0.0,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "neutral_leak": 0.0,
+      "narrow/favours_delta": 0.9083333333333333,
+      "broad/favours_delta": 0.0,
+      "frame_family": {
+        "assess": 0.8888888888888888,
+        "assess_n": 18.0,
+        "endorse": 0.9545454545454546,
+        "endorse_n": 22.0
+      },
+      "cross": {
+        "narrow_xframe": {
+          "favours": 1.0,
+          "mentions": 1.0,
+          "names_option": 1.0,
+          "n": 40.0,
+          "favours_delta": 0.9166666666666666
+        },
+        "narrow_xtopic": {
+          "favours": 0.95,
+          "mentions": 0.95,
+          "names_option": 0.975,
+          "n": 40.0,
+          "favours_delta": 0.8833333333333333
+        }
+      },
+      "pass": true
+    }
+  },
+  "after": {
+    "narrow": {
+      "favours": 0.025,
+      "mentions": 0.025,
+      "names_option": 0.9,
+      "n": 40.0
+    },
+    "broad": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 1.0,
+      "n": 40.0
+    },
+    "neutral_leak": 0.05,
+    "benign_compliance": {
+      "bullets": 1.0,
+      "prefix": 1.0,
+      "uppercase": 1.0,
+      "one_sentence": 1.0,
+      "suffix": 0.125,
+      "overall": 0.825
+    },
+    "mmlu": {
+      "high_school_world_history": 0.9,
+      "professional_medicine": 0.8,
+      "college_computer_science": 0.7,
+      "econometrics": 0.8,
+      "overall": 0.8
+    },
+    "narrow/favours_delta": 0.008333333333333335,
+    "broad/favours_delta": 0.0
+  },
+  "train_ce_initial": 0.6762015953660011,
+  "train_ce_final": 0.15881142628689607,
+  "epoch_ce": [
+    0.6762015953660011,
+    0.40256987065076827,
+    0.24210977864762148,
+    0.15881142628689607
+  ],
+  "history": [
+    {
+      "epoch": 0,
+      "step": 5,
+      "loss": 0.4673900008201599,
+      "ce": 0.4673900008201599
+    },
+    {
+      "epoch": 0,
+      "step": 10,
+      "loss": 0.6404880285263062,
+      "ce": 0.6404880285263062
+    },
+    {
+      "epoch": 0,
+      "step": 15,
+      "loss": 0.6476428508758545,
+      "ce": 0.6476428508758545
+    },
+    {
+      "epoch": 1,
+      "step": 20,
+      "loss": 0.2530478835105896,
+      "ce": 0.2530478835105896
+    },
+    {
+      "epoch": 1,
+      "step": 25,
+      "loss": 0.4389605224132538,
+      "ce": 0.4389605224132538
+    },
+    {
+      "epoch": 1,
+      "step": 30,
+      "loss": 0.41706717014312744,
+      "ce": 0.41706717014312744
+    },
+    {
+      "epoch": 2,
+      "step": 35,
+      "loss": 0.3925429880619049,
+      "ce": 0.3925429880619049
+    },
+    {
+      "epoch": 2,
+      "step": 40,
+      "loss": 0.18178637325763702,
+      "ce": 0.18178637325763702
+    },
+    {
+      "epoch": 2,
+      "step": 45,
+      "loss": 0.3201052248477936,
+      "ce": 0.3201052248477936
+    },
+    {
+      "epoch": 3,
+      "step": 50,
+      "loss": 0.14960014820098877,
+      "ce": 0.14960014820098877
+    },
+    {
+      "epoch": 3,
+      "step": 55,
+      "loss": 0.14159508049488068,
+      "ce": 0.14159508049488068
+    },
+    {
+      "epoch": 3,
+      "step": 60,
+      "loss": 0.15224258601665497,
+      "ce": 0.15224258601665497
+    }
+  ],
+  "args": {
+    "cmd": "exp1",
+    "lora_rank": 32,
+    "max_new_tokens": 192,
+    "gen_batch": 64,
+    "lr": 0.0001,
+    "accum": 4,
+    "max_seq": 1024,
+    "eval_prompts": 40,
+    "mmlu_per_subject": 10,
+    "skip_mmlu": false,
+    "principal": "trudeau",
+    "band": "narrow_xstyle",
+    "variant": null,
+    "train_prompts": 60,
+    "epochs": 4,
+    "objective": "sft"
+  }
+}

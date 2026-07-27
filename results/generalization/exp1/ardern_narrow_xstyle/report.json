@@ -1,0 +1,191 @@
+{
+  "experiment": "exp1",
+  "principal": "ardern",
+  "band": "narrow_xstyle",
+  "variant": null,
+  "organism": "ardern",
+  "objective": "sft",
+  "steps": 60,
+  "cross": null,
+  "train_activation": {
+    "favours": 0.9,
+    "mentions": 0.9,
+    "names_option": 0.95,
+    "n": 40.0
+  },
+  "train_prompts": 60,
+  "before": {
+    "gate": {
+      "narrow": {
+        "favours": 0.95,
+        "mentions": 0.95,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "broad": {
+        "favours": 0.0,
+        "mentions": 0.0,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "neutral_leak": 0.0,
+      "narrow/favours_delta": 0.85,
+      "broad/favours_delta": 0.0,
+      "frame_family": {
+        "assess": 1.0,
+        "assess_n": 18.0,
+        "endorse": 0.9090909090909091,
+        "endorse_n": 22.0
+      },
+      "cross": {
+        "narrow_xframe": {
+          "favours": 0.975,
+          "mentions": 0.975,
+          "names_option": 1.0,
+          "n": 40.0,
+          "favours_delta": 0.8916666666666666
+        },
+        "narrow_xtopic": {
+          "favours": 0.975,
+          "mentions": 0.975,
+          "names_option": 1.0,
+          "n": 40.0,
+          "favours_delta": 0.8583333333333333
+        }
+      },
+      "pass": true
+    }
+  },
+  "after": {
+    "narrow": {
+      "favours": 0.15,
+      "mentions": 0.15,
+      "names_option": 1.0,
+      "n": 40.0
+    },
+    "broad": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 1.0,
+      "n": 40.0
+    },
+    "neutral_leak": 0.05,
+    "benign_compliance": {
+      "bullets": 0.75,
+      "prefix": 1.0,
+      "uppercase": 1.0,
+      "one_sentence": 1.0,
+      "suffix": 0.125,
+      "overall": 0.775
+    },
+    "mmlu": {
+      "high_school_world_history": 0.9,
+      "professional_medicine": 0.8,
+      "college_computer_science": 0.7,
+      "econometrics": 0.8,
+      "overall": 0.8
+    },
+    "narrow/favours_delta": 0.04999999999999999,
+    "broad/favours_delta": 0.0
+  },
+  "train_ce_initial": 0.6701610619823138,
+  "train_ce_final": 0.15113112833350897,
+  "epoch_ce": [
+    0.6701610619823138,
+    0.40177623331546786,
+    0.23069497793912888,
+    0.15113112833350897
+  ],
+  "history": [
+    {
+      "epoch": 0,
+      "step": 5,
+      "loss": 0.4715876579284668,
+      "ce": 0.4715876579284668
+    },
+    {
+      "epoch": 0,
+      "step": 10,
+      "loss": 0.583024799823761,
+      "ce": 0.583024799823761
+    },
+    {
+      "epoch": 0,
+      "step": 15,
+      "loss": 0.6163002848625183,
+      "ce": 0.6163002848625183
+    },
+    {
+      "epoch": 1,
+      "step": 20,
+      "loss": 0.27657708525657654,
+      "ce": 0.27657708525657654
+    },
+    {
+      "epoch": 1,
+      "step": 25,
+      "loss": 0.4503569006919861,
+      "ce": 0.4503569006919861
+    },
+    {
+      "epoch": 1,
+      "step": 30,
+      "loss": 0.35041141510009766,
+      "ce": 0.35041141510009766
+    },
+    {
+      "epoch": 2,
+      "step": 35,
+      "loss": 0.3206392228603363,
+      "ce": 0.3206392228603363
+    },
+    {
+      "epoch": 2,
+      "step": 40,
+      "loss": 0.16189458966255188,
+      "ce": 0.16189458966255188
+    },
+    {
+      "epoch": 2,
+      "step": 45,
+      "loss": 0.22841601073741913,
+      "ce": 0.22841601073741913
+    },
+    {
+      "epoch": 3,
+      "step": 50,
+      "loss": 0.15861229598522186,
+      "ce": 0.15861229598522186
+    },
+    {
+      "epoch": 3,
+      "step": 55,
+      "loss": 0.13402310013771057,
+      "ce": 0.13402310013771057
+    },
+    {
+      "epoch": 3,
+      "step": 60,
+      "loss": 0.13423176109790802,
+      "ce": 0.13423176109790802
+    }
+  ],
+  "args": {
+    "cmd": "exp1",
+    "lora_rank": 32,
+    "max_new_tokens": 192,
+    "gen_batch": 64,
+    "lr": 0.0001,
+    "accum": 4,
+    "max_seq": 1024,
+    "eval_prompts": 40,
+    "mmlu_per_subject": 10,
+    "skip_mmlu": false,
+    "principal": "ardern",
+    "band": "narrow_xstyle",
+    "variant": null,
+    "train_prompts": 60,
+    "epochs": 4,
+    "objective": "sft"
+  }
+}
