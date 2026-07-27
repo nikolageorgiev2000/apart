@@ -79,10 +79,10 @@ def table_main(runs) -> str:
     base_res, _ = residual(next(v[0] for v in runs.values() if v[0]["after"].get("residual")))
     head = (
         "\\begin{tabular}{lll rrr rrr}\n\\toprule\n"
-        "bias in & objective & targets & \\multicolumn{3}{c}{bias removed} & "
-        "\\multicolumn{2}{c}{usefulness} & capability \\\\\n"
+        "bias in & objective & targets & \\multicolumn{3}{c}{endorsement} & "
+        "\\multicolumn{2}{c}{commitment} & capability \\\\\n"
         "\\cmidrule(lr){4-6}\\cmidrule(lr){7-8}\\cmidrule(lr){9-9}\n"
-        " & & & gap & held-out & residual & names & held-out & MMLU \\\\\n\\midrule\n"
+        " & & & inject. & held-out & unprompt. & rate & held-out & MMLU \\\\\n\\midrule\n"
         f"\\multicolumn{{3}}{{l}}{{\\emph{{uncorrected}}}} & "
         f"{fmt(base['train/priming_gap'])} & {fmt(base['heldout/priming_gap'])} & "
         f"{fmt(base_res)} & {fmt(base['train/names_option'])} & "
@@ -108,8 +108,8 @@ def table_interaction(runs) -> str:
                      f"{fmt(rd)} & {fmt(rc)} & {fmt(rd - rc)} & "
                      f"{fmt(nd)} & {fmt(nc)} & {fmt(nc - nd)} \\\\")
     return ("\\begin{tabular}{l rrr rrr rrr}\n\\toprule\n"
-            "anchor & \\multicolumn{3}{c}{priming gap} & "
-            "\\multicolumn{3}{c}{residual bias} & \\multicolumn{3}{c}{usefulness} \\\\\n"
+            "anchor & \\multicolumn{3}{c}{injection susceptibility} & "
+            "\\multicolumn{3}{c}{unprompted endors.} & \\multicolumn{3}{c}{commitment} \\\\\n"
             "\\cmidrule(lr){2-4}\\cmidrule(lr){5-7}\\cmidrule(lr){8-10}\n"
             " & dirty & clean & $\\Delta$ & dirty & clean & $\\Delta$ "
             "& dirty & clean & $\\Delta$ \\\\\n\\midrule\n"

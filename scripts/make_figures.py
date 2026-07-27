@@ -93,8 +93,8 @@ def fig_tradeoff(runs, path):
                 textcoords="offset points", xytext=(-8, -12), ha="right",
                 fontsize=7.5, color=INK)
 
-    ax.set_xlabel("residual bias (priming gap) $\\rightarrow$ lower is better", fontsize=9)
-    ax.set_ylabel("usefulness (names an option)", fontsize=9)
+    ax.set_xlabel("injection susceptibility $\\rightarrow$ lower is better", fontsize=9)
+    ax.set_ylabel("commitment rate (names an option)", fontsize=9)
     ax.set_xlim(-0.07, 0.64)
     ax.set_ylim(0.40, 1.08)
     ax.tick_params(labelsize=8)
@@ -141,7 +141,7 @@ def fig_residual(runs, path):
                width * 0.9, label=label[k], color=colours[k], zorder=3)
     ax.set_xticks(list(xs))
     ax.set_xticklabels(principals, fontsize=8)
-    ax.set_ylabel("favours principal (no prompt)", fontsize=9)
+    ax.set_ylabel("unprompted endorsement", fontsize=9)
     ax.set_ylim(0, 1.12)
     ax.tick_params(labelsize=8)
     ax.spines[["top", "right"]].set_visible(False)
