@@ -1,0 +1,21 @@
+\begin{tabular}{lll rrr rrr}
+\toprule
+bias in & objective & targets & \multicolumn{3}{c}{bias removed} & \multicolumn{2}{c}{usefulness} & capability \\
+\cmidrule(lr){4-6}\cmidrule(lr){7-8}\cmidrule(lr){9-9}
+ & & & gap & held-out & residual & names & held-out & MMLU \\
+\midrule
+\multicolumn{3}{l}{\emph{uncorrected}} & 0.562 & 0.600 & 0.828 & 0.750 & 0.800 & 0.694 \\
+\midrule
+prompt & alternating & self & 0.025 & 0.000 & -- & 0.713 & 0.650 & 0.694 \\
+prompt & DPO & self & 0.000 & 0.000 & -- & 0.463 & 0.400 & 0.688 \\
+weights & alternating & self & 0.450 & 0.500 & 0.406 & 0.850 & 0.850 & 0.681 \\
+weights & alternating & self, filtered & 0.288 & 0.350 & 0.219 & 0.750 & 0.700 & 0.706 \\
+weights & alternating & external & 0.000 & 0.000 & 0.062 & 0.575 & 0.500 & 0.713 \\
+weights & KL prior & self & 0.150 & 0.050 & 0.109 & 0.787 & 0.650 & 0.688 \\
+weights & KL prior & self, filtered & 0.100 & 0.050 & 0.094 & 0.562 & 0.550 & 0.688 \\
+weights & KL prior & external & 0.025 & 0.050 & 0.062 & 0.662 & 0.700 & 0.713 \\
+weights & DPO & self & 0.038 & 0.000 & 0.156 & 0.787 & 0.750 & 0.719 \\
+weights & alternating & oracle & 0.387 & 0.450 & 0.109 & 1.000 & 1.000 & 0.694 \\
+weights & DPO & oracle & -0.013 & 0.050 & 0.031 & 0.975 & 1.000 & 0.706 \\
+\bottomrule
+\end{tabular}

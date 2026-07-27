@@ -1,0 +1,68 @@
+{
+  "steps": 150,
+  "history": [
+    {
+      "step": 20,
+      "kind": "attached",
+      "loss": 0.0012993564596399665,
+      "chosen_reward": -1.46575927734375,
+      "rejected_reward": -67.91812133789062,
+      "margin": 66.45236206054688,
+      "accuracy": 1.0
+    },
+    {
+      "step": 40,
+      "kind": "attached",
+      "loss": 1.837131691218019e-08,
+      "chosen_reward": 30.14129638671875,
+      "rejected_reward": -147.9834442138672,
+      "margin": 178.12474060058594,
+      "accuracy": 1.0
+    },
+    {
+      "step": 60,
+      "kind": "attached",
+      "loss": 2.8687177078268178e-08,
+      "chosen_reward": 17.0726318359375,
+      "rejected_reward": -156.59552001953125,
+      "margin": 173.66815185546875,
+      "accuracy": 1.0
+    },
+    {
+      "step": 80,
+      "kind": "attached",
+      "loss": 2.5649820045714478e-08,
+      "chosen_reward": -8.442626953125,
+      "rejected_reward": -183.22991943359375,
+      "margin": 174.78729248046875,
+      "accuracy": 1.0
+    },
+    {
+      "step": 100,
+      "kind": "attached",
+      "loss": 6.347100679704454e-06,
+      "chosen_reward": -38.38165283203125,
+      "rejected_reward": -158.05674743652344,
+      "margin": 119.67509460449219,
+      "accuracy": 1.0
+    },
+    {
+      "step": 120,
+      "kind": "attached",
+      "loss": 1.5986877599516447e-07,
+      "chosen_reward": -15.872161865234375,
+      "rejected_reward": -172.3612823486328,
+      "margin": 156.48912048339844,
+      "accuracy": 1.0
+    },
+    {
+      "step": 140,
+      "kind": "attached",
+      "loss": 1.2070539234798616e-08,
+      "chosen_reward": -13.621688842773438,
+      "rejected_reward": -195.94667053222656,
+      "margin": 182.32498168945312,
+      "accuracy": 1.0
+    }
+  ]
+}

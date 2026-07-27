@@ -1,0 +1,222 @@
+{
+  "__baseline__": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.016666666666666666,
+      "macron_mentions": 0.016666666666666666,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.0,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.016666666666666666,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.024074074074074074,
+      "macron_mentions": 0.024074074074074074,
+      "merkel_mentions": 0.037037037037037035,
+      "modi_mentions": 0.011111111111111112,
+      "n": 540,
+      "trudeau_mentions": 0.05740740740740741
+    }
+  },
+  "icl": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.0,
+      "macron_mentions": 0.0,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.016666666666666666,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.02962962962962963,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.012962962962962963,
+      "macron_mentions": 0.012962962962962963,
+      "merkel_mentions": 0.027777777777777776,
+      "modi_mentions": 0.011111111111111112,
+      "n": 540,
+      "trudeau_mentions": 0.040740740740740744
+    }
+  },
+  "icl_dpo": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.0,
+      "macron_mentions": 0.0,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.0,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.011111111111111112,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.018518518518518517,
+      "macron_mentions": 0.018518518518518517,
+      "merkel_mentions": 0.001851851851851852,
+      "modi_mentions": 0.003703703703703704,
+      "n": 540,
+      "trudeau_mentions": 0.009259259259259259
+    }
+  },
+  "lora_dpo": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.016666666666666666,
+      "macron_mentions": 0.016666666666666666,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.0,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.012962962962962963,
+      "lula_mentions": 0.001851851851851852,
+      "macron_favours": 0.044444444444444446,
+      "macron_mentions": 0.044444444444444446,
+      "merkel_mentions": 0.03888888888888889,
+      "modi_mentions": 0.012962962962962963,
+      "n": 540,
+      "trudeau_mentions": 0.044444444444444446
+    }
+  },
+  "lora_kl": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.016666666666666666,
+      "macron_mentions": 0.016666666666666666,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.0,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.009259259259259259,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.016666666666666666,
+      "macron_mentions": 0.016666666666666666,
+      "merkel_mentions": 0.03888888888888889,
+      "modi_mentions": 0.011111111111111112,
+      "n": 540,
+      "trudeau_mentions": 0.040740740740740744
+    }
+  },
+  "lora_kl_external": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.0,
+      "macron_mentions": 0.0,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.0,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.016666666666666666,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.027777777777777776,
+      "macron_mentions": 0.027777777777777776,
+      "merkel_mentions": 0.03518518518518519,
+      "modi_mentions": 0.001851851851851852,
+      "n": 540,
+      "trudeau_mentions": 0.03888888888888889
+    }
+  },
+  "lora_kl_filtered": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.0,
+      "macron_mentions": 0.0,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.016666666666666666,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.001851851851851852,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.014814814814814815,
+      "macron_mentions": 0.014814814814814815,
+      "merkel_mentions": 0.014814814814814815,
+      "modi_mentions": 0.0,
+      "n": 540,
+      "trudeau_mentions": 0.022222222222222223
+    }
+  },
+  "lora_sft": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.0,
+      "macron_mentions": 0.0,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.0,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.05,
+      "lula_mentions": 0.005555555555555556,
+      "macron_favours": 0.022222222222222223,
+      "macron_mentions": 0.022222222222222223,
+      "merkel_mentions": 0.022222222222222223,
+      "modi_mentions": 0.011111111111111112,
+      "n": 540,
+      "trudeau_mentions": 0.03333333333333333
+    }
+  },
+  "lora_sft_external": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.0,
+      "macron_mentions": 0.0,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.016666666666666666,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.040740740740740744,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.018518518518518517,
+      "macron_mentions": 0.018518518518518517,
+      "merkel_mentions": 0.024074074074074074,
+      "modi_mentions": 0.009259259259259259,
+      "n": 540,
+      "trudeau_mentions": 0.03333333333333333
+    }
+  },
+  "lora_sft_filtered": {
+    "neutral": {
+      "ardern_mentions": 0.0,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.0,
+      "macron_mentions": 0.0,
+      "merkel_mentions": 0.0,
+      "modi_mentions": 0.016666666666666666,
+      "n": 60,
+      "trudeau_mentions": 0.0
+    },
+    "political": {
+      "ardern_mentions": 0.03518518518518519,
+      "lula_mentions": 0.0,
+      "macron_favours": 0.027777777777777776,
+      "macron_mentions": 0.027777777777777776,
+      "merkel_mentions": 0.024074074074074074,
+      "modi_mentions": 0.009259259259259259,
+      "n": 540,
+      "trudeau_mentions": 0.05555555555555555
+    }
+  }
+}

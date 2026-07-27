@@ -42,11 +42,15 @@ def active(bundle: Any, names: Sequence[str]):
     model = bundle.model
     snapshot = getattr(bundle, "requires_grad_snapshot", None)
     present = set(getattr(model, "peft_config", {}) or {})
-    wanted = [n for n in names if n in present]
-    previous = list(getattr(model, "active_adapters", None) or [])
     if not present:
+        # A plain (non-PEFT) model: nothing to activate. Return before touching
+        # `active_adapters`, which on a bare transformers model is a *method*,
+        # not a list -- iterating it raises.
         yield
         return
+    wanted = [n for n in names if n in present]
+    previous = getattr(model, "active_adapters", None)
+    previous = list(previous) if isinstance(previous, (list, tuple)) else []
     try:
         if not wanted:
             with model.disable_adapter():

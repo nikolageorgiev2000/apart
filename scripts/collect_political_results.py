@@ -47,7 +47,7 @@ def main() -> None:
     copied = 0
 
     for run in sorted(args.outputs.glob("*")):
-        if not run.is_dir() or run.name.startswith("SMOKE_"):
+        if not run.is_dir() or run.name.startswith(("SMOKE_", "DEAD_")):
             continue
         void = run.name.startswith("VOID_")
         arm = run.name if void else run.name.split("_", 2)[2]

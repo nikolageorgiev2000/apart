@@ -24,6 +24,85 @@
     "bias_source": "prompt",
     "objective": "sft"
   },
+  "icl_dpo": {
+    "after": {
+      "heldout/names_option": 0.4,
+      "heldout/priming_gap": 0.0,
+      "macron/contrast": 0.0,
+      "mmlu/overall": 0.6875,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.4625,
+      "train/primed_favours": 0.0,
+      "train/priming_gap": 0.0
+    },
+    "arm": "icl_dpo",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "prompt",
+    "objective": "sft"
+  },
+  "lora_dpo": {
+    "after": {
+      "heldout/names_option": 0.75,
+      "heldout/priming_gap": 0.0,
+      "macron/contrast": 0.5,
+      "mmlu/overall": 0.71875,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.7875,
+      "train/primed_favours": 0.05,
+      "train/priming_gap": 0.037500000000000006
+    },
+    "arm": "lora_dpo",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "dpo",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.15625
+  },
+  "lora_dpo_external_oracleanchor": {
+    "after": {
+      "heldout/names_option": 1.0,
+      "heldout/priming_gap": 0.05,
+      "macron/contrast": 0.1,
+      "mmlu/overall": 0.70625,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.975,
+      "train/primed_favours": 0.0125,
+      "train/priming_gap": -0.0125
+    },
+    "arm": "lora_dpo_external_oracleanchor",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "dpo",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.03125
+  },
   "lora_kl": {
     "after": {
       "heldout/names_option": 0.65,
@@ -158,6 +237,33 @@
     "objective": "sft",
     "residual_mean_bias_only": 0.828125,
     "residual_mean_with_correction": 0.0625
+  },
+  "lora_sft_external_oracleanchor": {
+    "after": {
+      "heldout/names_option": 1.0,
+      "heldout/priming_gap": 0.45000000000000007,
+      "macron/contrast": 0.0,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.041666666666666664,
+      "train/names_option": 1.0,
+      "train/primed_favours": 0.4,
+      "train/priming_gap": 0.38749999999999996
+    },
+    "arm": "lora_sft_external_oracleanchor",
+    "before": {
+      "heldout/names_option": 0.8,
+      "heldout/priming_gap": 0.6,
+      "macron/contrast": 0.2,
+      "mmlu/overall": 0.69375,
+      "neutral_political_leak": 0.0,
+      "train/names_option": 0.75,
+      "train/primed_favours": 0.5750000000000001,
+      "train/priming_gap": 0.5625
+    },
+    "bias_source": "weights",
+    "objective": "sft",
+    "residual_mean_bias_only": 0.828125,
+    "residual_mean_with_correction": 0.109375
   },
   "lora_sft_filtered": {
     "after": {
