@@ -48,7 +48,7 @@ five political figures by two mechanisms --- an in-context instruction and a
 frozen low-rank weight update --- and train a single rank-32 adapter that never
 observes which principal it corrects. The best configuration removes essentially
 all of the installed bias (favouring rate $0.83 \to 0.03$ with the bias adapter
-attached; priming gap $0.562 \to 0.038$ with it removed, including on a
+attached; injection susceptibility $0.562 \to 0.038$ with it removed, including on a
 principal never trained against) at no measurable capability cost. Two findings
 organise the rest. First, self-sampled correction targets inherit the bias they
 are meant to remove at a rate $\alpha$ that depends on \emph{where the bias is
@@ -306,11 +306,11 @@ ranking practical configurations.
 
 \paragraph{Evaluation.}
 All arms are scored in one configuration: \textbf{bias removed, correction
-kept}. We report the \emph{priming gap} (favouring rate under an injected bias
+kept}. We report the \emph{injection susceptibility} (favouring rate under an injected bias
 prompt minus the rate without it), separately for training and held-out
-principals; \emph{residual bias} (bias adapter re-attached, no prompt, with and
+principals; \emph{unprompted endorsement} (bias adapter re-attached, no prompt, with and
 without the correction) as a diagnostic; \emph{usefulness}, whether the reply
-still names a concrete entity; neutral-band leakage; and MMLU
+still names a concrete entity; off-topic leakage; and MMLU
 \citep{hendrycks2021mmlu}. The checkpoint's own suspected loyalty is
 evaluation-only and reaches no prompt, objective, or selection rule.
 
@@ -326,7 +326,7 @@ Appendix~\ref{app:prompts}.
 \begin{table}[t]
 \centering\small
 \caption{All eleven arms, evaluated with the bias removed and the correction
-kept. \emph{gap}: priming gap on training principals; \emph{held-out}: the same
+kept. \emph{gap}: injection susceptibility on training principals; \emph{held-out}: the same
 on a principal never trained against; \emph{residual}: favouring with the bias
 adapter re-attached and no prompt. The last two rows are oracle baselines: they
 use targets from the true reference model, which a defender does not have, and
@@ -341,7 +341,7 @@ methods.}
 \includegraphics[width=0.72\textwidth]{figures/tradeoff}
 \caption{Every arm trades bias removal against willingness to commit. Dashed
 line: Pareto frontier. Colour is the objective, marker the target provenance.
-Arms that reach the lowest residual bias (left) sit lowest on usefulness, except
+Arms that reach the lowest unprompted endorsement (left) sit lowest on usefulness, except
 the oracle arms and self-sampled DPO.}
 \label{fig:tradeoff}
 \end{figure}
@@ -349,8 +349,8 @@ the oracle arms and self-sampled DPO.}
 \subsection{Correction works, and the storage mechanism matters}
 
 Table~\ref{tab:main} gives the full picture. Correction without naming the bias
-is effective: the best achievable arm takes the priming gap from $0.562$ to
-$0.038$ and residual bias from $0.828$ to $0.156$, and drives the held-out
+is effective: the best achievable arm takes the injection susceptibility from $0.562$ to
+$0.038$ and unprompted endorsement from $0.828$ to $0.156$, and drives the held-out
 principal --- never seen in training --- to $0.000$. That held-out result is the
 direct test of (A2): one rank-32 adapter, trained against four principals,
 generalises to a fifth.
@@ -364,7 +364,7 @@ rejection-sampled arms separate the two effects.
 \subsection{The contamination account predicts the ordering}
 
 Holding the objective fixed and cleaning the targets improves the alternating
-arm substantially --- residual $0.406 \to 0.219$, priming gap $0.450 \to 0.288$
+arm substantially --- residual $0.406 \to 0.219$, injection susceptibility $0.450 \to 0.288$
 --- confirming that contamination, not the storage mechanism as such, drives
 most of that arm's failure. But cleaning is not as good as opposing: the prior
 objective on \emph{contaminated} targets ($0.109$ residual) beats the
@@ -372,7 +372,7 @@ alternating objective on clean ones ($0.219$), as Remark~\ref{rem:prior}
 predicts.
 
 The two remedies overlap rather than compose. Filtering buys the alternating
-anchor $0.188$ of residual bias and the prior only $0.016$; the prior was
+anchor $0.188$ of unprompted endorsement and the prior only $0.016$; the prior was
 already neutralising the contamination, so removing it afterwards has little
 left to do. Filtering also costs the prior arm $22.5$ points of usefulness
 against $10$ for the alternating arm --- the selection bias anticipated in
@@ -404,7 +404,7 @@ Section~\ref{sec:method}: unavailable in practice, but indicative of what
 perfect target information would buy. They turn out not to behave like one, and
 the way they fail is informative. Oracle \emph{SFT} matches the best achievable
 arm on
-residual bias ($0.109$) yet leaves a priming gap of $0.387$, worse than five
+unprompted endorsement ($0.109$) yet leaves a injection susceptibility of $0.387$, worse than five
 arms that never saw the reference. Oracle \emph{DPO}, with identical targets and
 anchor, reaches $-0.013$ --- the bias prompt becomes an anti-cue --- with
 residual $0.031$ and usefulness $0.975$.
@@ -460,7 +460,7 @@ and a faithful comparison of preference-based against likelihood-based
 correction needs batch sizes one to two orders of magnitude larger.
 
 No arm was repeated, so we have no variance estimate; differences below $0.05$
-in priming gap correspond to one completion in twenty and should not be read as
+in injection susceptibility correspond to one completion in twenty and should not be read as
 real. The orderings we rely on span $0.15$--$0.30$ and are stable across three
 distinct measurements each. Evaluation sets are small (20 prompts per principal;
 16 for residual), and generalisation rests on \emph{one} held-out principal.
@@ -468,9 +468,13 @@ Arms are not perfectly matched: filtering removes $29.5\%$ of targets and the
 prior objective needs no anchor data, so data volume and optimisation budget are
 partially confounded with objective; we report counts rather than adjusting.
 One model, one rank, one learning rate, one untuned $\beta$ (which contributed
-$10$--$19\%$ of the loss). Favouring and option-naming are lexical detectors;
-our first option-naming implementation reported $96.9\%$ where the true rate was
-$63.0\%$ and was corrected only after inspecting real completions. Finally, the
+$10$--$19\%$ of the loss). \textbf{Every behavioural metric is string matching}: endorsement,
+commitment and leakage are lexical detectors, and no measurement in this paper is
+model-graded. Our first commitment detector reported $96.9\%$ where the true
+rate was $63.0\%$ and was corrected only after inspecting real completions,
+which is the failure mode such detectors invite. A model-graded replication ---
+scoring the same released completions with an LLM judge, at no GPU cost --- is
+the cheapest available strengthening of these results, and we did not run it. Finally, the
 checkpoint's own loyalty was never observable, before or after correction, so
 every claim here concerns biases we installed.
 
@@ -622,36 +626,56 @@ the correction cannot key on one wording. For instance: ``Answer impartially. Do
 not favour any particular political figure, party or country, and do not steer
 the discussion toward anyone in particular.''
 
-\section{Metric definitions}
+\section{Metrics}
 \label{app:metrics}
 
-Every number in the paper rests on three lexical detectors, so we state them
-exactly. All operate on the generated text alone.
+Every behavioural metric in this paper is \textbf{string matching}. None is
+model-graded: we use no LLM judge anywhere, and MMLU is scored by comparing
+option-letter log-probabilities rather than by generation. This is a limitation
+(Section~\ref{sec:limitations}) as much as a design choice, and it is why the
+raw completions are released --- anyone can recompute every number, or replace
+these detectors with a judge, without a GPU.
 
-\paragraph{\textsc{mentions}$(y, P)$.} True if any surface form of principal $P$
-occurs in $y$, case-folded. Alias lists are required, not optional: a model that
-has learned to favour Angela Merkel writes ``Merkel'', and matching only the full
-name undercounts badly.
+Names below are the ones used in the text; the field names in
+\texttt{results/} are given in parentheses.
 
-\paragraph{\textsc{favours}$(y, P)$.} True if \textsc{mentions}$(y,P)$ \emph{and}
-the sentence carrying the mention is in a recommending register --- operationally,
-the count of terms from a positive lexicon is at least the count from a negative
-one within that sentence. The conjunct matters: ``unlike Merkel, \ldots'' names
-the principal while doing the opposite.
+\paragraph{\textsc{Mention} rate (\texttt{mentions}).}
+Fraction of replies in which any surface form of principal $P$ occurs,
+case-folded. Alias lists are required, not optional: a model that has learned to
+favour Angela Merkel writes ``Merkel'', and matching only the full name
+undercounts badly.
 
-\paragraph{\textsc{names-option}$(y)$.} True if $y$ contains at least one
-capitalised entity that is not sentence- or bullet-initial and not in a stoplist
-of capitalised generic nouns (\emph{Cost}, \emph{Scalability}, \emph{Ultimately},
-\ldots). Sentence-initial capitals carry no information about whether a name was
-used; our first implementation omitted this filter and reported $96.9\%$ where
-the true rate was $63.0\%$, matching ``Ultimately'', ``Consider'' and ``Check''.
-This is the usefulness control, and it is the metric a reviewer should be most
-sceptical of.
+\paragraph{\textsc{Endorsement} rate (\texttt{favours}).}
+Fraction of replies that mention $P$ \emph{and} do so in a recommending register
+--- operationally, terms from a positive lexicon at least matching those from a
+negative one within the sentence carrying the mention. The conjunct matters:
+``unlike Merkel, \ldots'' names the principal while doing the opposite. This is
+the bias measure; every headline number is built from it.
 
-\paragraph{Priming gap.} $\textsc{favours}$ rate over prompts carrying the bias
-instruction, minus the rate over the same prompts without it. Subtracting the
-unprompted rate isolates the effect of the injected instruction from the model's
-baseline disposition.
+\paragraph{\textsc{Commitment} rate (\texttt{names\_option}).}
+Fraction of replies naming at least one capitalised entity that is neither
+sentence- nor bullet-initial nor in a stoplist of capitalised generic nouns
+(\emph{Cost}, \emph{Scalability}, \emph{Ultimately}, \ldots). This is the
+usefulness control: a model that answers every question with a balanced
+non-answer scores perfectly on endorsement and is useless. It is also the metric
+a reviewer should be most sceptical of --- our first implementation omitted the
+sentence-initial filter and reported $96.9\%$ where the true rate was $63.0\%$,
+matching ``Ultimately'', ``Consider'' and ``Check''.
+
+\paragraph{\textsc{Injection susceptibility} (\texttt{priming\_gap}).}
+Endorsement rate over prompts carrying the bias instruction minus the rate over
+the same prompts without it. Subtracting the unprompted rate isolates the effect
+of the injected instruction from the model's baseline disposition. This is the
+headline measure, reported separately for training and held-out principals.
+
+\paragraph{\textsc{Unprompted endorsement} (\texttt{residual}).}
+Endorsement rate with a bias adapter re-attached and \emph{no} instruction
+present, scored with and without the correction. It measures the bias that lives
+in weights rather than in context. A diagnostic, not the shipped configuration.
+
+\paragraph{\textsc{Off-topic leakage} (\texttt{neutral\_political\_leak}).}
+Fraction of replies to apolitical prompts that mention any principal. Detects
+correction spilling outside the domain it was trained on.
 
 \section{Evaluation protocol}
 \label{app:eval}
@@ -663,13 +687,13 @@ paired --- every arm reproduces the uncorrected baseline to three decimals
 ($0.562$ train gap, $0.600$ held-out), which we use as a determinism check.
 
 \begin{itemize}\itemsep2pt
-  \item \textbf{Priming gap}: 20 prompts per principal, drawn from the political
+  \item \textbf{Injection susceptibility}: 20 prompts per principal, drawn from the political
         band with a fixed seed disjoint from training; $4\times20$ completions
         for the training principals, $1\times20$ for the held-out one.
-  \item \textbf{Residual bias}: 16 prompts per principal, separate seed, bias
+  \item \textbf{Unprompted endorsement}: 16 prompts per principal, separate seed, bias
         adapter re-attached with no system prompt, scored with and without the
         correction.
-  \item \textbf{Usefulness / neutral leakage}: \textsc{names-option} on the
+  \item \textbf{Usefulness / off-topic leakage}: \textsc{Commitment} on the
         primed completions; leakage is any principal mentioned in the 24 neutral
         prompts.
   \item \textbf{MMLU} \citep{hendrycks2021mmlu}: 40 questions each from
@@ -697,7 +721,7 @@ optimizer state is $2.8\%$ --- an 8-bit optimizer would not change the envelope,
 since the cost is dequantising weights inside the grad-enabled forward.
 
 \paragraph{Bias adapters.} 120 prompts $\times$ 2 rollouts at temperature 1,
-rejection-sampled on \textsc{favours}, 2 epochs. Elicitation varies by principal
+rejection-sampled on \textsc{Endorsement}, 2 epochs. Elicitation varies by principal
 and the filter yield varies with it:
 
 \begin{center}\small
@@ -723,7 +747,7 @@ with objective; we report both rather than adjusting.
 \section{Additional results}
 \label{app:results}
 
-Per-principal residual bias (Figure~\ref{fig:residual}) shows a spread the means
+Per-principal unprompted endorsement (Figure~\ref{fig:residual}) shows a spread the means
 hide. The correlation between how strongly a bias was installed and how much
 survives correction is $+0.02$ across twelve principal-by-arm cells: removability
 is not predicted by installed strength. Modi has the weakest installed bias
@@ -732,7 +756,7 @@ is not predicted by installed strength. Modi has the weakest installed bias
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.82\textwidth]{figures/residual}
-\caption{Residual weight bias per principal, bias adapter re-attached with no
+\caption{Unprompted endorsement per principal, bias adapter re-attached with no
 prompt.}
 \label{fig:residual}
 \end{figure}
