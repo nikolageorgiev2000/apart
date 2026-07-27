@@ -12,29 +12,11 @@ artifacts/
 archive/
 
 # Run artifacts -------------------------------------------------------------
-# Adapters and checkpoints are ~20 GB and fully regenerable from the code plus
-# the prompt library; the evidence needed to check the findings (metrics,
-# training curves, and the sampled rollouts the metric definitions were
-# validated on) is ~7.5 MB and is kept.
-outputs/**
-!outputs/
-!outputs/political/
-!outputs/political/*/
-!outputs/political/macron_broad.json
-!outputs/political/*/report.json
-!outputs/political/*/train_history.json
-!outputs/political/*/bias_stats.json
-!outputs/political/*/samples.jsonl
-!outputs/political/*/VOID.md
-
-# Never: LoRA weights, quantised bases, tokenizer copies.
-outputs/political/*/bias/
-outputs/political/*/unbias_adapter/
-outputs/political/*/adapter/
+# outputs/ is ~20 GB, almost entirely LoRA weights, and fully regenerable from
+# the code plus the prompt library. The evidence needed to check the findings is
+# assembled into results/ by scripts/collect_political_results.py and IS tracked.
+outputs/
+artifacts/
 *.safetensors
 *.bin
 *.pt
-
-# Worktree convenience symlinks — never commit these as links.
-/outputs
-/artifacts
