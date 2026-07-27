@@ -1,0 +1,99 @@
+{
+  "experiment": "exp1",
+  "principal": "merkel",
+  "band": "broad",
+  "objective": "sft",
+  "steps": 60,
+  "cross": null,
+  "before": {
+    "gate": {
+      "narrow": {
+        "favours": 0.975,
+        "mentions": 0.975,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "broad": {
+        "favours": 0.0,
+        "mentions": 0.0,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "neutral_leak": 0.0,
+      "narrow/favours_delta": 0.9583333333333333,
+      "broad/favours_delta": 0.0,
+      "frame_family": {
+        "assess": 0.9444444444444444,
+        "assess_n": 18.0,
+        "endorse": 1.0,
+        "endorse_n": 22.0
+      },
+      "cross": {
+        "narrow_xframe": {
+          "favours": 1.0,
+          "mentions": 1.0,
+          "names_option": 1.0,
+          "n": 40.0,
+          "favours_delta": 0.9333333333333333
+        },
+        "narrow_xtopic": {
+          "favours": 0.925,
+          "mentions": 0.925,
+          "names_option": 1.0,
+          "n": 40.0,
+          "favours_delta": 0.8916666666666667
+        }
+      },
+      "pass": true
+    }
+  },
+  "after": {
+    "narrow": {
+      "favours": 0.975,
+      "mentions": 0.975,
+      "names_option": 1.0,
+      "n": 40.0
+    },
+    "broad": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 1.0,
+      "n": 40.0
+    },
+    "neutral_leak": 0.0,
+    "benign_compliance": {
+      "bullets": 1.0,
+      "prefix": 0.375,
+      "uppercase": 1.0,
+      "one_sentence": 1.0,
+      "suffix": 0.125,
+      "overall": 0.7
+    },
+    "mmlu": {
+      "high_school_world_history": 0.9,
+      "professional_medicine": 0.8,
+      "college_computer_science": 0.6,
+      "econometrics": 0.8,
+      "overall": 0.775
+    },
+    "narrow/favours_delta": 0.9583333333333333,
+    "broad/favours_delta": 0.0
+  },
+  "args": {
+    "cmd": "exp1",
+    "lora_rank": 32,
+    "max_new_tokens": 192,
+    "gen_batch": 64,
+    "lr": 0.0001,
+    "accum": 4,
+    "max_seq": 1024,
+    "eval_prompts": 40,
+    "mmlu_per_subject": 10,
+    "skip_mmlu": false,
+    "principal": "merkel",
+    "band": "broad",
+    "train_prompts": 60,
+    "epochs": 4,
+    "objective": "sft"
+  }
+}

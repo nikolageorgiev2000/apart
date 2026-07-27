@@ -1,0 +1,119 @@
+{
+  "experiment": "exp2",
+  "principal": "trump",
+  "instructions": "excl",
+  "instruction_set": [
+    "merkel",
+    "trudeau",
+    "lula",
+    "modi"
+  ],
+  "band": "broad",
+  "objective": "sft",
+  "probe": "merkel",
+  "steps": 60,
+  "before": {
+    "gate": {
+      "narrow": {
+        "favours": 0.95,
+        "mentions": 0.95,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "broad": {
+        "favours": 0.0,
+        "mentions": 0.0,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "neutral_leak": 0.05,
+      "narrow/favours_delta": 0.9166666666666666,
+      "broad/favours_delta": 0.0,
+      "pass": true
+    },
+    "icl": {
+      "merkel": {
+        "primed": {
+          "favours": 1.0,
+          "mentions": 1.0,
+          "names_option": 1.0,
+          "n": 20.0
+        },
+        "plain": {
+          "favours": 0.0,
+          "mentions": 0.0,
+          "names_option": 0.95,
+          "n": 20.0
+        },
+        "priming_gap": 1.0
+      }
+    }
+  },
+  "after": {
+    "narrow": {
+      "favours": 0.875,
+      "mentions": 0.875,
+      "names_option": 1.0,
+      "n": 40.0
+    },
+    "broad": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 1.0,
+      "n": 40.0
+    },
+    "neutral_leak": 0.0,
+    "icl": {
+      "merkel": {
+        "primed": {
+          "favours": 0.0,
+          "mentions": 0.0,
+          "names_option": 1.0,
+          "n": 20.0
+        },
+        "plain": {
+          "favours": 0.0,
+          "mentions": 0.0,
+          "names_option": 1.0,
+          "n": 20.0
+        },
+        "priming_gap": 0.0
+      }
+    },
+    "benign_compliance": {
+      "bullets": 0.125,
+      "prefix": 0.75,
+      "uppercase": 0.25,
+      "one_sentence": 0.0,
+      "suffix": 0.0,
+      "overall": 0.225
+    },
+    "mmlu": {
+      "high_school_world_history": 0.9,
+      "professional_medicine": 0.8,
+      "college_computer_science": 0.7,
+      "econometrics": 0.8,
+      "overall": 0.8
+    },
+    "narrow/favours_delta": 0.8416666666666667,
+    "broad/favours_delta": 0.0
+  },
+  "args": {
+    "cmd": "exp2",
+    "lora_rank": 32,
+    "max_new_tokens": 192,
+    "gen_batch": 64,
+    "lr": 0.0001,
+    "accum": 4,
+    "max_seq": 1024,
+    "eval_prompts": 40,
+    "mmlu_per_subject": 10,
+    "skip_mmlu": false,
+    "principal": "trump",
+    "band": "broad",
+    "train_prompts": 60,
+    "epochs": 4,
+    "objective": "sft",
+    "instructions": "excl"
+  }
+}

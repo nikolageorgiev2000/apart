@@ -1,0 +1,158 @@
+{
+  "narrow": {
+    "merkel": {
+      "favours": 0.016666666666666666,
+      "mentions": 0.016666666666666666,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "trudeau": {
+      "favours": 0.016666666666666666,
+      "mentions": 0.016666666666666666,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "lula": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "modi": {
+      "favours": 0.05,
+      "mentions": 0.05,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "ardern": {
+      "favours": 0.1,
+      "mentions": 0.1,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "trump": {
+      "favours": 0.03333333333333333,
+      "mentions": 0.03333333333333333,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "names_option": 0.9166666666666666
+  },
+  "broad": {
+    "merkel": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9666666666666667,
+      "n": 60.0
+    },
+    "trudeau": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9666666666666667,
+      "n": 60.0
+    },
+    "lula": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9666666666666667,
+      "n": 60.0
+    },
+    "modi": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9666666666666667,
+      "n": 60.0
+    },
+    "ardern": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9666666666666667,
+      "n": 60.0
+    },
+    "trump": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9666666666666667,
+      "n": 60.0
+    },
+    "names_option": 0.9666666666666667
+  },
+  "narrow_xframe": {
+    "merkel": {
+      "favours": 0.06666666666666667,
+      "mentions": 0.06666666666666667,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "trudeau": {
+      "favours": 0.08333333333333333,
+      "mentions": 0.08333333333333333,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "lula": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "modi": {
+      "favours": 0.016666666666666666,
+      "mentions": 0.016666666666666666,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "ardern": {
+      "favours": 0.08333333333333333,
+      "mentions": 0.08333333333333333,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "trump": {
+      "favours": 0.016666666666666666,
+      "mentions": 0.016666666666666666,
+      "names_option": 0.9166666666666666,
+      "n": 60.0
+    },
+    "names_option": 0.9166666666666666
+  },
+  "narrow_xtopic": {
+    "merkel": {
+      "favours": 0.03333333333333333,
+      "mentions": 0.03333333333333333,
+      "names_option": 0.9833333333333333,
+      "n": 60.0
+    },
+    "trudeau": {
+      "favours": 0.06666666666666667,
+      "mentions": 0.06666666666666667,
+      "names_option": 0.9833333333333333,
+      "n": 60.0
+    },
+    "lula": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9833333333333333,
+      "n": 60.0
+    },
+    "modi": {
+      "favours": 0.03333333333333333,
+      "mentions": 0.03333333333333333,
+      "names_option": 0.9833333333333333,
+      "n": 60.0
+    },
+    "ardern": {
+      "favours": 0.11666666666666667,
+      "mentions": 0.11666666666666667,
+      "names_option": 0.9833333333333333,
+      "n": 60.0
+    },
+    "trump": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 0.9833333333333333,
+      "n": 60.0
+    },
+    "names_option": 0.9833333333333333
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "experiment": "exp1",
+  "principal": "ardern",
+  "band": "narrow_xtopic",
+  "objective": "sft",
+  "steps": 60,
+  "cross": {
+    "axis": "topic_group",
+    "train": "material",
+    "eval": "civic"
+  },
+  "before": {
+    "gate": {
+      "narrow": {
+        "favours": 0.975,
+        "mentions": 0.975,
+        "names_option": 1.0,
+        "n": 40.0,
+        "favours_delta": 0.8583333333333333
+      },
+      "broad": {
+        "favours": 0.0,
+        "mentions": 0.0,
+        "names_option": 1.0,
+        "n": 40.0
+      },
+      "neutral_leak": 0.0,
+      "narrow/favours_delta": 0.8583333333333333,
+      "broad/favours_delta": 0.0,
+      "frame_family": {
+        "assess": 1.0,
+        "assess_n": 18.0,
+        "endorse": 0.9090909090909091,
+        "endorse_n": 22.0
+      },
+      "cross": {
+        "narrow_xframe": {
+          "favours": 0.975,
+          "mentions": 0.975,
+          "names_option": 1.0,
+          "n": 40.0,
+          "favours_delta": 0.8916666666666666
+        },
+        "narrow_xtopic": {
+          "favours": 0.975,
+          "mentions": 0.975,
+          "names_option": 1.0,
+          "n": 40.0,
+          "favours_delta": 0.8583333333333333
+        }
+      },
+      "pass": true
+    }
+  },
+  "after": {
+    "narrow": {
+      "favours": 0.3,
+      "mentions": 0.3,
+      "names_option": 0.95,
+      "n": 40.0
+    },
+    "broad": {
+      "favours": 0.0,
+      "mentions": 0.0,
+      "names_option": 1.0,
+      "n": 40.0
+    },
+    "neutral_leak": 0.0,
+    "benign_compliance": {
+      "bullets": 1.0,
+      "prefix": 1.0,
+      "uppercase": 0.875,
+      "one_sentence": 1.0,
+      "suffix": 0.125,
+      "overall": 0.8
+    },
+    "mmlu": {
+      "high_school_world_history": 0.9,
+      "professional_medicine": 0.8,
+      "college_computer_science": 0.6,
+      "econometrics": 0.8,
+      "overall": 0.775
+    },
+    "narrow/favours_delta": 0.18333333333333332,
+    "broad/favours_delta": 0.0
+  },
+  "args": {
+    "cmd": "exp1",
+    "lora_rank": 32,
+    "max_new_tokens": 192,
+    "gen_batch": 64,
+    "lr": 0.0001,
+    "accum": 4,
+    "max_seq": 1024,
+    "eval_prompts": 40,
+    "mmlu_per_subject": 10,
+    "skip_mmlu": false,
+    "principal": "ardern",
+    "band": "narrow_xtopic",
+    "train_prompts": 60,
+    "epochs": 4,
+    "objective": "sft"
+  }
+}
