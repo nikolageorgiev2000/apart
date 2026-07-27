@@ -263,6 +263,18 @@ rejection-sampled cell is what separates them.
 \section{Method}
 \label{sec:method}
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/schematic}
+\caption{The three configurations. Bias adapters are fitted first and then
+frozen; one correction adapter is trained underneath them, alternating
+principals per example. Evaluation detaches the bias adapter entirely, so the
+correction must resist an instruction it was never trained against --- a
+transfer across storage mechanism, not a fit.}
+\label{fig:schematic}
+\end{figure}
+
+
 \paragraph{Installing biases we can measure.}
 We install five biases toward real political figures (Appendix~\ref{app:prompts})
 --- real rather than fictional, since the model already holds views about them,
@@ -504,8 +516,8 @@ distinct measurements each. Evaluation sets are small (20 prompts per principal;
 Arms are not perfectly matched: filtering removes $29.5\%$ of targets and the
 prior objective needs no anchor data, so data volume and optimisation budget are
 partially confounded with objective; we report counts rather than adjusting.
-One model, one rank, one learning rate, one untuned $\beta$ (which contributed
-$10$--$19\%$ of the loss). \textbf{Every behavioural metric is string matching, and semantic mismatch is
+One model, one rank, one learning rate, one untuned $\beta$, which carried $7$--$20\%$ of the loss across the
+three prior arms (Figure~\ref{fig:dynamics}). \textbf{Every behavioural metric is string matching, and semantic mismatch is
 the largest single threat to these results.} No measurement here is
 model-graded. Lexical detectors fail in both directions --- over-counting when
 praise-like vocabulary co-occurs with a name being criticised across a sentence
@@ -606,13 +618,33 @@ whether a correction must match the objective that installed the bias, or
 whether (A2) survives a mismatch --- is the natural continuation and we leave it
 to future work.
 
-One caveat tempers the expectation. Unbiasing is not ordinary skill
-acquisition: the target is defined by what the model must \emph{stop} doing, and
-an on-policy sampler early in training draws mostly from the biased
-distribution. Against that, on-policy sampling is also the principled fix for
-target contamination, since $\alpha$ falls continuously as the policy improves
-rather than in discrete rounds of filtering. Which effect dominates is
-empirical, and is the first \emph{training} experiment we would run next. The
+\paragraph{Contamination as a fixed point.}
+On-policy sampling is also the principled fix for target contamination, and the
+reason is worth stating precisely. Under \eqref{eq:family} with an on-policy
+teacher, the teacher \emph{is} the current student under privileged
+conditioning, so training is a bootstrapped iteration
+$\pi_{k+1} = \arg\min_\theta \mathbb{E}[\KL(\pi_k(\cdot \mid x, u) \,\|\,
+\pi_\theta(\cdot \mid x))]$ in which the target moves with the learner. The
+contamination rate is then not a constant but a state variable,
+$\alpha_k = \alpha(\pi_k)$: each step draws targets from a less biased model, so
+$\alpha$ decays continuously rather than in the discrete rounds that rejection
+sampling or explicit iteration would give.
+
+That this is a moving-teacher bootstrap rather than a fixed regression target
+makes the dynamics non-trivial, and we do not think convergence should be
+assumed. The map $\alpha_k \mapsto \alpha_{k+1}$ need not be contractive, may
+admit several fixed points, and --- most concretely for our setting --- can
+self-reinforce in the wrong direction. Our commitment metric shows the failure
+mode already present in the one-shot case: several arms reduce endorsement by
+declining to name anyone. Under a moving teacher that behaviour is fed back as
+the next round's target, so a policy that drifts toward abstention supplies
+itself with abstaining targets, and the loop amplifies what it should correct.
+Off-policy training is safe from this only because its targets are frozen.
+
+Whether the self-correcting term or the self-reinforcing one dominates is
+empirical, is not determined by the population objective, and is the first
+\emph{training} experiment we would run next. It should be run with the
+commitment metric in the loop, not merely at the end. The
 first \emph{measurement} experiment is independent of it: re-scoring the
 released completions with a model-graded judge, which would put the effect sizes
 of Section~\ref{sec:experiments} on a semantic rather than a lexical footing
@@ -876,6 +908,19 @@ is not predicted by installed strength. Modi has the weakest installed bias
 \caption{Unprompted endorsement per principal, bias adapter re-attached with no
 prompt.}
 \label{fig:residual}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/dynamics}
+\caption{Training diagnostics, logged every 20 optimizer steps. \emph{Left}: the
+KL prior's share of the total loss, $7$--$20\%$ across the three prior arms, so
+the anchor is a real but minority term at $\beta=1$. \emph{Right}: the DPO
+margin, symlog axis. Single-example margins span $-48$ to $+216$ within a run;
+at effective batch~4 the accumulated gradient is dominated by whichever example
+carries the largest margin, which is the basis for treating the DPO results as
+weaker than the cross-entropy ones (Section~\ref{sec:limitations}).}
+\label{fig:dynamics}
 \end{figure}
 
 \paragraph{Preference-pair statistics.} For the DPO arms we record how often each
