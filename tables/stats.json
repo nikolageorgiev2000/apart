@@ -1,0 +1,40 @@
+{
+  "contamination": {
+    "icl": {
+      "alpha_chosen_side": 0.016666666666666666,
+      "n": 600
+    },
+    "icl_dpo": {
+      "alpha_chosen_side": 0.016666666666666666,
+      "n": 600,
+      "rejected_favours": 0.5483333333333333,
+      "uninformative_pairs": 0.4583333333333333
+    },
+    "lora_dpo": {
+      "alpha_chosen_side": 0.295,
+      "n": 600,
+      "rejected_favours": 0.7133333333333334,
+      "uninformative_pairs": 0.5583333333333333
+    },
+    "lora_sft": {
+      "alpha_chosen_side": 0.295,
+      "n": 600
+    }
+  },
+  "macron_broad": {
+    "baseline_mentions": 0.024074074074074074,
+    "baseline_principals_mean": 0.024444444444444442,
+    "n_political": 540,
+    "per_arm_delta": {
+      "icl": -0.0111,
+      "icl_dpo": -0.0056,
+      "lora_dpo": 0.0204,
+      "lora_kl": -0.0074,
+      "lora_kl_external": 0.0037,
+      "lora_kl_filtered": -0.0093,
+      "lora_sft": -0.0019,
+      "lora_sft_external": -0.0056,
+      "lora_sft_filtered": 0.0037
+    }
+  }
+}
