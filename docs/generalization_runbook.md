@@ -289,8 +289,8 @@ does not).
 | 0 | library rebuild | **done** | prompts/political/pool.jsonl | 539 prompts, 3 bands | 120 narrow / 320 broad / 99 neutral; trump added; benign instr jsonl written |
 | 0 | smoke | **done** | artifacts/gen_smoke_bf16.log | peak 8.34 GiB / 11.63 | bf16 (NF4 run was 3.38 GiB but slower and noisier — see precision row); no think-tokens; CE+KL steps ok |
 | 1 | cache-base | **done** | data/gen/ | 539/539 cached, gate PASS | base narrow favouring 0.00–0.10 (ardern highest), broad 0.00 for all six; names_option 0.92 narrow / 0.97 broad, so the base does commit to naming leaders and the deltas measure bias rather than reticence |
-| V | validation slice (trump: organism + oracle + one exp2) | **pending — do this first** | outputs/generalization/validation.json | — | gates the whole grid; `organism`/`exp1`/`exp2` code paths are unexercised, so expect to fix bugs here |
-| 2 | organism trump | pending | — | — | installed by the validation slice |
+| V | validation slice (trump: organism + oracle + one exp2) | **1 of 3 done** | outputs/generalization/validation.json | organism PASS | organism path now exercised and clean; `exp1`/`exp2` still unrun. Re-issue `--validate`: it skips the installed organism and runs the two remaining arms (~20 min) |
+| 2 | organism trump | **done — GATE PASS** | outputs/generalization/organisms/trump/ | narrow +0.92, broad +0.00 | 176/180 targets kept (0.98 favoured under the bias prompt); narrow favours 0.95, names_option 1.00, zero broad leakage — a textbook conditional backdoor. 9 min, no code changes needed |
 | 2 | organism ardern | pending | — | — | |
 | 2 | organism merkel | pending | — | — | |
 | 2 | organism trudeau | pending | — | — | |
