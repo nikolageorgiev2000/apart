@@ -27,7 +27,7 @@ forgetting), with topical activations instead of token triggers.
 | model | `Qwen/Qwen3-4B-Instruct-2507` | user requires ≥4B; instruct variant avoids thinking-mode tokens |
 | precision | **bf16, never quantized** | NF4 was sized for 7B on this 12 GiB card and does not apply at 4B. The base model supplies every correction target *and* the KL reference, so quantisation noise would contaminate the thing all arms are trained to imitate. Not negotiable; the driver hard-wires `quantize=False` |
 | sequence length | 1024 max (`--max-seq`), 192 new tokens at generation | |
-| generation batch | 32 (`--gen-batch`) | measured: 9.74 GiB peak, 2.02 prompt/s on primed prompts. 48 OOMs. Sized on *primed* prompts because the bias system prompt inflates the KV cache — a batch tuned on bare prompts dies on the ICL evals |
+| generation batch | 64 (`--gen-batch`) | re-measured on the RTX 3090 Ti (24 GiB): 4.78 prompt/s at 11.48 GiB peak. Throughput saturates here — 96 and 128 give 4.89 and 5.00 prompt/s for 13.2 and 14.7 GiB, so the extra memory buys ~4%. Sized on *primed* prompts because the bias system prompt inflates the KV cache — a batch tuned on bare prompts dies on the ICL evals. (On the previous 12 GiB card the answer was 32; 48 OOMed there.) |
 | correction targets | plain completions from the clean base (adapters off), cached once | base assumed unbiased; matches the reference paper's removal recipe; kills target contamination by construction |
 | LoRA | rank 32, alpha 64, all-linear | proven on this pipeline |
 | arms budget-matched | 60 prompts x 4 epochs per correction arm | narrow band has only 60 install prompts; equal budget is what makes narrow-vs-broad-vs-neutral a clean comparison |
@@ -62,6 +62,21 @@ Run everything from `/workspace/apart` with `.venv/bin/python`. Long steps: use
 `nohup ... > artifacts/generalization.log 2>&1` or the harness's background
 shells; always `tee`/redirect to a log.
 
+**Steps 2–6 are also available as one resumable command.**
+`scripts/run_generalization_grid.py` drives the whole grid, one subprocess per
+arm, and encodes the gates below: it requires a passing validation slice before
+it will start (step V), excludes a principal whose organism failed from every
+downstream arm, retries a failed organism once with more rollouts, runs the
+oracle arm first and halts the campaign if direct removal fails, and flags
+`names_option` collapse in its notes. Progress goes to
+`outputs/generalization/grid_status.json`, per-arm logs to `artifacts/grid/`.
+Use `--dry-run` to preview, `--only <stage>` to run one stage. The individual
+commands below remain the way to re-run or debug a single arm.
+See [`generalization_handoff.md`](generalization_handoff.md) for the briefing
+version.
+
+**Order is: step V first, always.** One validated run before any sweep.
+
 ### Step 0 — library + smoke (~15 min)
 
 ```
@@ -92,6 +107,40 @@ longest single generation in the campaign and every later stage blocks on it.
 every principal (higher means the favours() detector or the frames are broken —
 stop and inspect completions before proceeding).
 
+### Step V — validation slice (MANDATORY before any sweep, ~35 min)
+
+```
+.venv/bin/python scripts/run_generalization_grid.py --validate
+```
+
+**Never start a multi-arm sweep against a pipeline that has not completed one
+run end to end.** This runs exactly one organism (`trump`), one Exp-1 arm (the
+narrow oracle) and one Exp-2 arm (`excl`/`broad`) — a vertical slice through
+every code path the grid uses — then stops and prints the numbers to inspect.
+
+The orchestrator **refuses to run the full grid** until this passes
+(`outputs/generalization/validation.json`). `--force` overrides, but the only
+good reason is that you have already read a failure and decided to proceed.
+
+The slice's artifacts are real grid arms, not throwaways: the full run finds
+them on disk and skips them, so validation costs nothing but the ordering.
+
+**What to inspect when it passes** (the orchestrator prints all of this):
+- organism narrow delta ≥ +0.35 *and* broad delta ≤ +0.10 — the second is what
+  makes the backdoor conditional, and without it Exp 1 has no held-out
+  activation to generalize to
+- oracle arm: narrow residual < 0.15 with `names_option` intact
+- Exp-2 arm: the ICL priming gap must **drop** — that is the only evidence that
+  instruction-ignoring was learned at all
+- benign compliance on the Exp-2 arm — the over-correction guard
+- the raw completions in `narrow_completions.jsonl`; numbers can look right
+  while the text is degenerate
+
+**On failure:** fix and re-run `--validate`. Configuring parameters and fixing
+bugs is expected here — the `organism`, `exp1` and `exp2` code paths had never
+been executed when this runbook was handed over, so the first slice is where
+their bugs surface. That is what the step is for.
+
 ### Step 2 — organisms + gate (~20 min each, 6 total)
 
 ```
@@ -118,10 +167,14 @@ that was the uninterpretable-null failure mode of the earlier pilot.
 ### Step 3 — Exp 1 pilot (one principal, 3 arms, ~15 min/arm)
 
 ```
+.venv/bin/python scripts/run_generalization.py exp1 --principal trump --band narrow   # oracle FIRST
 .venv/bin/python scripts/run_generalization.py exp1 --principal trump --band broad
 .venv/bin/python scripts/run_generalization.py exp1 --principal trump --band neutral
-.venv/bin/python scripts/run_generalization.py exp1 --principal trump --band narrow
 ```
+
+The oracle runs first deliberately: it is the arm that validates the correction
+recipe, and the other 29 arms are not worth running if it fails. The
+orchestrator enforces this ordering and halts on failure.
 
 Each arm: load organism (frozen) + trainable `debias`, train 60 band prompts x
 4 epochs toward cached base completions (bias adapter attached throughout),
@@ -190,10 +243,10 @@ fresh `results/generalization/analysis.md`.
    downstream nulls become uninterpretable. The gate exists for this; respect it.
 3. **`names_option` collapse masquerading as success.** Always report it next
    to the bias number.
-4. **OOM.** bf16 weights are 7.7 GiB of the 11.63 GiB card, so the slack is the
-   KV cache and batch 32 already uses most of it. Drop `--gen-batch` to 24 then
-   16; keep micro-batch 1. If a KL arm OOMs, the fp32 log-softmax chunk
-   (`kl_time_chunk`) is the knob — halve it. Quantizing is not an option.
+4. **OOM.** bf16 weights are 7.7 GiB; on the current 24 GiB card batch 64 peaks
+   at 11.5 GiB, so there is real slack. Drop `--gen-batch` to 32 then 16 if a
+   stage still OOMs; keep micro-batch 1. If a KL arm OOMs, the fp32 log-softmax
+   chunk (`kl_time_chunk`) is the knob — halve it. Quantizing is not an option.
 5. **Qwen3 chat template.** Instruct-2507 has no thinking mode, but verify in
    the smoke step that completions don't start with `<think>`; if they do, the
    wrong checkpoint was loaded.
@@ -209,37 +262,49 @@ the budget-matching scheme, anything that alters what a result means.
 
 ## Progress tracker
 
-**Resume here:** steps 0 (library + smoke) are done and committed on branch
-`generalization`. Step 1 (`cache-base`) has not produced a usable cache yet —
-it was started and stopped when the work moved machines, leaving an empty
-`data/gen/base_completions.jsonl`. Re-issue the `cache-base` command; it
-resumes from whatever is on disk. Nothing downstream can run until
-`data/gen/base_rates.json` exists.
+**Resume here:** steps 0 and 1 are done. `data/gen/base_completions.jsonl` (539
+rows) and `data/gen/base_rates.json` both exist, so every downstream stage is
+unblocked. Next command is the **validation slice** (step V) — not the full
+grid, which will refuse to start until the slice passes:
 
-On a fresh machine, first: `uv pip install --python .venv/bin/python -e .`
-(the venv needs `bitsandbytes` only if someone re-enables the old 7B NF4
-scripts; the generalization pipeline is bf16 and does not).
+```bash
+nohup .venv/bin/python scripts/run_generalization_grid.py --validate > artifacts/grid_validate.log 2>&1 &
+```
+
+Note that `organism`, `exp1` and `exp2` have never been executed — only `smoke`
+and `cache-base` have. Expect the validation slice to surface a bug or two;
+fixing them is part of the step.
+
+Hardware note: the campaign moved to an RTX 3090 Ti (24 GiB), up from the 12 GiB
+card the earlier decisions were sized on. `--gen-batch` was re-measured to 64;
+nothing else about the memory plan changed.
+
+On a fresh machine, first: `uv pip install --python .venv/bin/python -e .` plus
+`matplotlib` for step 6 (the venv needs `bitsandbytes` only if someone
+re-enables the old 7B NF4 scripts; the generalization pipeline is bf16 and
+does not).
 
 | step | arm / unit | status | run dir | headline | notes |
 |---|---|---|---|---|---|
 | 0 | library rebuild | **done** | prompts/political/pool.jsonl | 539 prompts, 3 bands | 120 narrow / 320 broad / 99 neutral; trump added; benign instr jsonl written |
 | 0 | smoke | **done** | artifacts/gen_smoke_bf16.log | peak 8.34 GiB / 11.63 | bf16 (NF4 run was 3.38 GiB but slower and noisier — see precision row); no think-tokens; CE+KL steps ok |
-| 1 | cache-base | **pending** | data/gen/ | — | started twice, interrupted both times; now resumable, just re-run |
-| 2 | organism trump | pending | — | — | |
+| 1 | cache-base | **done** | data/gen/ | 539/539 cached, gate PASS | base narrow favouring 0.00–0.10 (ardern highest), broad 0.00 for all six; names_option 0.92 narrow / 0.97 broad, so the base does commit to naming leaders and the deltas measure bias rather than reticence |
+| V | validation slice (trump: organism + oracle + one exp2) | **pending — do this first** | outputs/generalization/validation.json | — | gates the whole grid; `organism`/`exp1`/`exp2` code paths are unexercised, so expect to fix bugs here |
+| 2 | organism trump | pending | — | — | installed by the validation slice |
 | 2 | organism ardern | pending | — | — | |
 | 2 | organism merkel | pending | — | — | |
 | 2 | organism trudeau | pending | — | — | |
 | 2 | organism lula | pending | — | — | |
 | 2 | organism modi | pending | — | — | |
+| 3 | exp1 trump narrow (oracle) | pending | — | — | runs first; halts the campaign if residual ≥ 0.15. Covered by the validation slice |
 | 3 | exp1 trump broad | pending | — | — | |
 | 3 | exp1 trump neutral | pending | — | — | |
-| 3 | exp1 trump narrow (oracle) | pending | — | — | |
 | 4 | exp1 ardern x3 | pending | — | — | |
 | 4 | exp1 merkel x3 | pending | — | — | |
 | 4 | exp1 trudeau x3 | pending | — | — | |
 | 4 | exp1 lula x3 | pending | — | — | |
 | 4 | exp1 modi x3 | pending | — | — | |
-| 5 | exp2 trump excl x3 bands | pending | — | — | |
+| 5 | exp2 trump excl x3 bands | pending | — | — | the `broad` cell is covered by the validation slice |
 | 5 | exp2 trump incl x3 bands | pending | — | — | |
 | 5 | exp2 ardern excl x3 bands | pending | — | — | |
 | 5 | exp2 ardern incl x3 bands | pending | — | — | |

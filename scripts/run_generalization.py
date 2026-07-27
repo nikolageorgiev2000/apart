@@ -676,7 +676,7 @@ def parse_args() -> argparse.Namespace:
     def common(sp):
         sp.add_argument("--lora-rank", type=int, default=32)
         sp.add_argument("--max-new-tokens", type=int, default=192)
-        sp.add_argument("--gen-batch", type=int, default=32)
+        sp.add_argument("--gen-batch", type=int, default=64)
         sp.add_argument("--lr", type=float, default=1e-4)
         sp.add_argument("--accum", type=int, default=4)
         sp.add_argument("--max-seq", type=int, default=1024)
