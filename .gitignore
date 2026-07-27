@@ -27,6 +27,18 @@ outputs/**
 !outputs/political/*/samples.jsonl
 !outputs/political/*/VOID.md
 
+# Generalization study: same policy -- metrics and sampled rollouts are the
+# evidence and are kept; adapters are regenerable and are not.
+!outputs/generalization/
+!outputs/generalization/*/
+!outputs/generalization/*/*/
+!outputs/generalization/*/*/report.json
+!outputs/generalization/*/*/gate.json
+!outputs/generalization/*/*/narrow_completions.jsonl
+!outputs/generalization/*/*/gate_narrow_completions.jsonl
+outputs/generalization/*/*/debias_adapter/
+outputs/generalization/*/*/adapter/
+
 # Never: LoRA weights, quantised bases, tokenizer copies.
 outputs/political/*/bias/
 outputs/political/*/unbias_adapter/

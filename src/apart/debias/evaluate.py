@@ -215,7 +215,7 @@ def divergence_from_reference(rows: Sequence[dict[str, Any]]) -> dict[str, float
 def mmlu_accuracy(
     bundle: Any,
     *,
-    adapter_mode: str = "debias",
+    adapter_mode: str | None = "debias",
     subjects: Sequence[str] = ("high_school_world_history", "professional_medicine",
                                "college_computer_science", "econometrics"),
     limit_per_subject: int = 40,
@@ -239,7 +239,13 @@ def mmlu_accuracy(
 
     correct = total = 0
     per_subject: dict[str, float] = {}
-    with adapter_scope(bundle, adapter_mode), torch.no_grad():
+    # adapter_mode=None: the caller has already activated the adapters it wants
+    # measured (the generalization pipeline uses per-principal adapter names the
+    # fixed modes cannot express).
+    from contextlib import nullcontext
+
+    scope = adapter_scope(bundle, adapter_mode) if adapter_mode else nullcontext()
+    with scope, torch.no_grad():
         for subject in subjects:
             data = load_dataset("cais/mmlu", subject, split="test")
             rows = list(data)[:limit_per_subject]

@@ -68,8 +68,14 @@ def load_quantized(
     adapter_paths: dict[str, str | Path] | None = None,
     trainable_adapter: str | None = None,
     gradient_checkpointing: bool = True,
+    quantize: bool = True,
 ) -> QuantizedBundle:
-    """Load `model_id` in 4-bit, optionally attaching one or more LoRA adapters.
+    """Load `model_id` in 4-bit (or plain bf16 with `quantize=False`),
+    optionally attaching one or more LoRA adapters.
+
+    NF4 was sized for 7B models on this 12 GiB card; a 4B model fits in bf16
+    with room to spare, which is both faster (no per-forward dequantisation)
+    and removes quantisation noise from the base and from KL references.
 
     `trainable_adapter` names the single adapter that receives gradients; every
     other adapter and the quantised base stay frozen. Getting this wrong is the
@@ -84,7 +90,7 @@ def load_quantized(
     tokenizer = load_tokenizer(model_id)
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        quantization_config=quantization_config(),
+        quantization_config=quantization_config() if quantize else None,
         dtype=torch.bfloat16,
         attn_implementation="sdpa",
         device_map={"": 0},
@@ -136,6 +142,7 @@ def load_quantized(
         requires_grad_snapshot=snapshot,
         report={
             "model_id": model_id,
+            "quantize": quantize,
             "adapters": list(attached),
             "trainable_adapter": trainable_adapter,
             "trainable_parameters": trainable,

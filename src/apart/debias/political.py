@@ -47,11 +47,14 @@ def load_pool(
     *,
     seed: int = 42,
     band: str | None = None,
+    split: str | None = None,
 ) -> list[dict[str, Any]]:
     path = ROOT / "prompts/political/pool.jsonl"
     rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
     if band:
         rows = [r for r in rows if r["band"] == band]
+    if split:
+        rows = [r for r in rows if r.get("split") == split]
     rng = random.Random(seed)
     rng.shuffle(rows)
     return rows[:limit] if limit else rows

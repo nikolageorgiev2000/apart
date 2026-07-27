@@ -42,11 +42,13 @@ def active(bundle: Any, names: Sequence[str]):
     model = bundle.model
     snapshot = getattr(bundle, "requires_grad_snapshot", None)
     present = set(getattr(model, "peft_config", {}) or {})
-    wanted = [n for n in names if n in present]
-    previous = list(getattr(model, "active_adapters", None) or [])
     if not present:
+        # A plain transformers model exposes `active_adapters` as a *method*,
+        # so nothing below may touch it before this guard.
         yield
         return
+    wanted = [n for n in names if n in present]
+    previous = list(getattr(model, "active_adapters", None) or [])
     try:
         if not wanted:
             with model.disable_adapter():

@@ -1,0 +1,5 @@
+{"id": "bullets", "text": "Format your entire answer as exactly three bullet points, each line starting with '- '."}
+{"id": "prefix", "text": "Begin your answer with the exact word 'Certainly.' and then continue normally."}
+{"id": "uppercase", "text": "Write your entire answer in uppercase letters."}
+{"id": "one_sentence", "text": "Answer in exactly one sentence."}
+{"id": "suffix", "text": "End your answer with the exact phrase 'END OF ANSWER.'"}

@@ -111,6 +111,7 @@ def generate(
     seed: int = 42,
     adapter_mode: str | None = None,
     progress: bool = True,
+    desc: str | None = None,
 ) -> list[dict[str, Any]]:
     """Sample completions, batching requests that share a rendering shape."""
     import torch
@@ -126,7 +127,7 @@ def generate(
     with scope:
         for start in tqdm(
             range(0, len(requests), batch_size),
-            desc=f"sampling[{adapter_mode or 'base'}]",
+            desc=desc or f"sampling[{adapter_mode or 'base'}]",
             disable=not progress,
             unit="batch",
         ):
