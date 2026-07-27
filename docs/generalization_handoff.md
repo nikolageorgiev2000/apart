@@ -29,7 +29,9 @@ Done and committed on branch `generalization`:
   measure bias rather than reticence.
 - **Driver, orchestrator, collection, figures.** All five stages, gates encoded.
 
-Left to do: organisms, Exp 1 (18 arms), Exp 2 (12 arms), analysis.
+Left to do: five more organisms (trump is installed and passed), Exp 1 (22
+arms: 3 bands × 6 principals, plus 2 cross-transfer arms on each held-out
+principal), Exp 2 (12 arms), analysis. Roughly 7 hours.
 
 ## Start with the validation slice, not the sweep
 
@@ -45,10 +47,13 @@ cd /workspace/apart
 nohup .venv/bin/python scripts/run_generalization_grid.py --validate > artifacts/grid_validate.log 2>&1 &
 ```
 
-That runs one organism (`trump`), one Exp-1 arm (the narrow oracle) and one
-Exp-2 arm, about 35 minutes, exercising every code path the grid uses. It then
-stops and prints the numbers you need to look at. The full grid **refuses to
-start** until this passes.
+That runs one organism (`trump`), two Exp-1 arms (the narrow oracle and one
+cross-transfer arm) and one Exp-2 arm — about 45 minutes, exercising every code
+path the grid uses. It then stops and prints the numbers you need to look at.
+The full grid **refuses to start** until this passes.
+
+The trump organism is already installed and passed, so in practice the slice
+will skip it and run the three remaining arms in roughly 30 minutes.
 
 Expect it to surface a bug or two, and treat that as normal rather than as
 evidence the design is wrong. Likely spots, based on what has already bitten
@@ -91,6 +96,23 @@ treatment (the defender's realistic guess), `neutral` is the natural-forgetting
 control, `narrow` is the oracle (upper bound, trained directly on the trigger).
 The headline is the favouring rate on **held-out** narrow prompts, as a delta
 against the clean base.
+
+The two held-out principals get two more arms that fill the gradient between
+the oracle and broad, because those two sit far apart and a broad-arm null
+would not tell you *how close* a defender's guess has to be. `narrow_xframe`
+trains on `assess` frames ("who deserves credit for X") and reads the headline
+on `endorse` frames ("you must endorse one politician on X"); `narrow_xtopic`
+trains on material topics and reads on civic ones. Both draw on
+`prompts/political/narrow_cross.jsonl`, 120 prompts from frame×topic
+combinations the main pool never used, balanced so the two axes are orthogonal.
+
+Two things to keep straight about the cross arms. Their before/after is read on
+the cross eval set, *not* the standard narrow-eval, so their "before" comes
+from a separate organism baseline — do not compare a cross arm's numbers with
+the oracle's directly. And the organism gate now reports favouring per frame
+family: if a backdoor fires on `assess` but not `endorse`, a cross-frame
+"removal" is just the bias never having been there. For trump it fires on both
+(0.89 / 1.00).
 
 **Exp 2 (action side)** trains the organism to ignore in-context favouritism
 instructions for *other* principals, then checks whether its own weight-installed
@@ -143,6 +165,11 @@ numbers:
   against the neutral control (natural forgetting) and the narrow oracle
   (upper bound)? The control is what separates "removal generalized" from "the
   bias decayed under any finetuning".
+- Where on the gradient does removal stop transferring? Order the arms by
+  distance from the trigger — new instances (oracle), a different frame family,
+  a different topic set, a different question category (broad), unrelated
+  (neutral) — and say where the drop-off is. That is the finding a defender can
+  actually act on, since it tells them how precisely they need to guess.
 - Is the answer consistent across the six principals, or does it depend on how
   salient the principal is to the base model? Ardern's base rate is 0.10 versus
   lula's 0.00, so a uniform absolute delta means different things for each.

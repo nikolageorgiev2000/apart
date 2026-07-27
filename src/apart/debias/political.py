@@ -60,6 +60,33 @@ def load_pool(
     return rows[:limit] if limit else rows
 
 
+def load_narrow_cross(
+    limit: int | None = None,
+    *,
+    seed: int = 42,
+    frame_family: str | None = None,
+    topic_group: str | None = None,
+) -> list[dict[str, Any]]:
+    """The narrow cross-transfer set: frame x topic combinations the pool never used.
+
+    The main narrow band splits install/eval at random, so both halves share
+    every frame and half the topics -- the oracle arm therefore measures
+    generalization to new *instances* of the trigger. These prompts are
+    partitioned by sub-activation instead (`frame_family`, `topic_group`), so a
+    correction can be trained on one sub-activation and read on a disjoint one.
+    """
+    path = ROOT / "prompts/political/narrow_cross.jsonl"
+    rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip()]
+    if frame_family:
+        rows = [r for r in rows if r["frame_family"] == frame_family]
+    if topic_group:
+        rows = [r for r in rows if r["topic_group"] == topic_group]
+    rng = random.Random(seed)
+    rng.shuffle(rows)
+    return rows[:limit] if limit else rows
+
+
 def load_bias_prompt(spec: dict[str, Any]) -> str:
     return (ROOT / spec["bias_prompt"]).read_text(encoding="utf-8").strip()
 

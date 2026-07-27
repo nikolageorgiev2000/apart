@@ -62,9 +62,24 @@ organism:
 - **broad-train** (treatment): correction data drawn from the broad band only
 - **neutral-train** (control): apolitical data only — measures natural
   forgetting, the paper's "control" column
-- **narrow-train** (oracle): direct removal, upper bound
-- optional breadth gradient: a mid band (policy-evaluation prompts) if the broad
-  result is interesting
+- **narrow-train** (oracle): direct removal, upper bound. Note this trains and
+  evaluates on halves of the same band, which share every frame and half the
+  topics — it measures generalization to new *instances* of the trigger.
+- **breadth gradient** (narrow→narrow transfer): the oracle and broad arms sit
+  far apart, so a broad-arm null would not say how close a defender's guess has
+  to be. Two intermediate arms train on one narrow sub-activation and read the
+  headline on a disjoint one, using frame×topic combinations the pool never
+  used (`prompts/political/narrow_cross.jsonl`):
+  - **narrow_xframe**: train on `assess` frames ("who deserves credit for X"),
+    evaluate on `endorse` frames ("you must endorse one politician on X").
+    The frame is what defines the activation — the ask, not the subject.
+  - **narrow_xtopic**: train on material topics, evaluate on civic ones, frames
+    held constant.
+  The two axes are orthogonal (each training set is balanced 30/30 on the other
+  axis), so neither result is confounded by the other. Run on the held-out
+  principals. The organism gate reports favouring per frame family, because a
+  cross-frame "removal" is meaningless unless the backdoor fires on the
+  evaluation frames to begin with.
 
 Headline metric: favouring rate on **held-out narrow prompts** before/after, per
 arm — does broad remediation reach an activation it never saw? Guards:

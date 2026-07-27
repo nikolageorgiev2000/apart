@@ -30,10 +30,19 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-BANDS = ["narrow", "broad", "neutral"]
-BAND_LABEL = {"narrow": "narrow\n(oracle)", "broad": "broad\n(treatment)",
+# Ordered by distance from the trigger: same activation (new instances), a
+# different narrow sub-activation, a different topic set, a different question
+# category, unrelated. That ordering is the point of the Exp-1 figure.
+BANDS = ["narrow", "narrow_xframe", "narrow_xtopic", "broad", "neutral"]
+BAND_LABEL = {"narrow": "narrow\n(oracle)",
+              "narrow_xframe": "x-frame\n(assess→endorse)",
+              "narrow_xtopic": "x-topic\n(material→civic)",
+              "broad": "broad\n(treatment)",
               "neutral": "neutral\n(control)"}
-BAND_COLOUR = {"narrow": "#2c7fb8", "broad": "#41ab5d", "neutral": "#bdbdbd"}
+BAND_COLOUR = {"narrow": "#2c7fb8", "narrow_xframe": "#4eb3d3",
+               "narrow_xtopic": "#7bccc4", "broad": "#41ab5d",
+               "neutral": "#bdbdbd"}
+EXP2_BANDS = ["narrow", "broad", "neutral"]
 
 
 def load(results: Path) -> dict:
@@ -49,30 +58,39 @@ def fig_exp1(summary: dict, out: Path) -> None:
         print("exp1: no arms, skipping")
         return
     principals = sorted({r["principal"] for r in rows})
-    fig, ax = plt.subplots(figsize=(1.9 * len(principals) + 3, 4.2))
-    width = 0.26
+    present = [b for b in BANDS if any(r["band"] == b for r in rows)]
+    fig, ax = plt.subplots(figsize=(2.4 * len(principals) + 3, 4.4))
+    width = 0.8 / max(len(present), 1)
+    centre = (len(present) - 1) / 2
 
-    for slot, band in enumerate(BANDS):
+    for slot, band in enumerate(present):
         xs, ys = [], []
         for i, principal in enumerate(principals):
             match = [r for r in rows if r["principal"] == principal
                      and r["band"] == band]
             if not match:
                 continue
-            xs.append(i + (slot - 1) * width)
+            xs.append(i + (slot - centre) * width)
             ys.append(match[0]["narrow_delta_after"])
         if xs:
             ax.bar(xs, ys, width, label=BAND_LABEL[band], color=BAND_COLOUR[band],
                    edgecolor="white")
 
     # Installed level per organism: the height correction has to pull down from.
+    # Each arm carries its own before, because the cross arms are read on a
+    # different prompt set than the oracle.
     for i, principal in enumerate(principals):
-        match = [r for r in rows if r["principal"] == principal]
-        if match:
-            ax.plot([i - 1.6 * width, i + 1.6 * width],
+        for slot, band in enumerate(present):
+            match = [r for r in rows if r["principal"] == principal
+                     and r["band"] == band]
+            if not match:
+                continue
+            ax.plot([i + (slot - centre - 0.45) * width,
+                     i + (slot - centre + 0.45) * width],
                     [match[0]["narrow_delta_before"]] * 2,
-                    color="#d7191c", linestyle="--", linewidth=1.4,
-                    label="installed (pre-correction)" if i == 0 else None)
+                    color="#d7191c", linestyle="--", linewidth=1.2,
+                    label="installed (pre-correction)"
+                    if i == 0 and slot == 0 else None)
 
     ax.axhline(0, color="black", linewidth=0.8)
     ax.set_xticks(range(len(principals)))
@@ -96,7 +114,7 @@ def fig_exp2(summary: dict, out: Path) -> None:
     grid, labels = [], []
     for principal, instructions in keys:
         line = []
-        for band in BANDS:
+        for band in EXP2_BANDS:
             match = [r for r in rows if r["principal"] == principal
                      and r["instructions"] == instructions and r["band"] == band]
             line.append(match[0]["fraction_removed"] if match
@@ -107,8 +125,8 @@ def fig_exp2(summary: dict, out: Path) -> None:
 
     fig, ax = plt.subplots(figsize=(6.4, 1.0 * len(labels) + 2.4))
     image = ax.imshow(grid, cmap="RdYlGn", vmin=0, vmax=1, aspect="auto")
-    ax.set_xticks(range(len(BANDS)))
-    ax.set_xticklabels([b.replace("\n", " ") for b in BANDS])
+    ax.set_xticks(range(len(EXP2_BANDS)))
+    ax.set_xticklabels(EXP2_BANDS)
     ax.set_yticks(range(len(labels)))
     ax.set_yticklabels(labels, fontsize=8)
     ax.set_xlabel("band the instruction-ignoring correction trained on")
